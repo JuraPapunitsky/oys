@@ -1,0 +1,215 @@
+{% load i18n %}
+<div class="b-form__block n-form__despolicy n-form__step clearfix" id="step-5">
+    <div class="b-form__left clearfix">
+        <div>
+            <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+        </div>
+        <div class="b-step__title n-title__ico n-t-ico__travel">
+            <h2>{% trans 'Оформление полиса' %}</h2>
+        </div>
+
+        {# Полоса прогресса заполнения формы (точки) #}
+        <ul class="b-step__current">
+            <li class="b-step__current-item n-item__curr"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+        </ul>
+
+        {# Использование данных личного кабинета (временно отключено, до появления личного кабинета) #}
+{#        <div class="b-data__line">#}
+{#            <div class="b-data__wr n-wr__green">#}
+{#                <p>{% trans 'Использовать данные из личного кабинета' %}</p>#}
+{#                <div class="row">#}
+{#                    <div class="b-data__wr col-xs-6">#}
+{#                        <input type="radio" data-window="1" name="calc[savedata]" id="calc[savedata][no]"#}
+{#                               class="b-form__radio n-main__radio n-savedata__no">#}
+{#                        <label for="calc[savedata][no]">{% trans 'Нет' %}</label>#}
+{#                    </div>#}
+{#                    <div class="b-data__wr col-xs-6">#}
+{#                        <input type="radio" data-window="1" name="calc[savedata]" id="calc[savedata][yes]"#}
+{#                               class="b-form__radio n-main__radio n-savedata__yes">#}
+{#                        <label for="calc[savedata][yes]">{% trans 'Да' %}</label>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+
+        {# Данные о недвижимости #}
+        <div class="b-calc__item n-calc__vehicle n-form__layer e-active clearfix" id="layer-1" style="display: block">
+            <h3>{% trans 'Информация о путешествии' %}</h3>
+
+            <div class="b-layer__content">
+
+                {# Поле Посольство #}
+                {% trans 'Посольство' as embassy_tr %}
+                {% trans 'Посольство, в которое предъявляется страховка' as embassy_help_tr %}
+                {% include 'calculator/steps/g_selection_field.html' with field_name='embassy' field_label=embassy_tr help_text=embassy_help_tr objects=embassies %}
+
+                <a href="#" class="order button j-next__layer">{% trans 'Продолжить' %}</a>
+            </div>
+        </div>
+
+        {# Данные о страхователе #}
+        <div class="b-calc__item n-calc__insurer n-form__layer clearfix" id="layer-2">
+            <h3>{% trans 'Страхователь' %}</h3>
+
+            <div class="b-layer__content">
+
+                {% include 'calculator/steps/vehicle/step_5_person_info.html' with fields=ins_fields %}
+
+                <a href="#" class="order button j-next__layer" data-last="true">{% trans 'Продолжить' %}</a>
+            </div>
+        </div>
+
+        {# Данные загранпаспорта #}
+        <div class="b-calc__item n-calc__insurance n-form__layer clearfix" id="layer-3">
+            <h3>{% trans 'Данные загранпаспорта' %}</h3>
+
+            <div class="b-layer__content">
+
+                {# фамилия застрахованного #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_traveller_last_name">{% trans 'Фамилия' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="traveller_last_name" id="id_traveller_last_name" class="b-input">
+                        </div>
+                    </div>
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# имя застрахованного #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_traveller_first_name">{% trans 'Имя' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="traveller_first_name" id="id_traveller_first_name" class="b-input">
+                        </div>
+                    </div>
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# отчество застрахованного #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_traveller_middle_name">{% trans 'Отчество' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="traveller_middle_name" id="id_traveller_middle_name" class="b-input">
+                        </div>
+                    </div>
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                <div class="b-data__line n-line__sex">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label>{% trans 'Пол' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-sex__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <div class="b-data__wr col-md-6">
+                                <div class="row">
+                                    <input type="radio" name="traveller_gender" value="1" id="id_traveller_gender_1" class="b-radio"
+                                           checked>
+                                    <label for="id_traveller_gender_1">{% trans 'Мужской' %}</label>
+                                </div>
+                            </div>
+                            <div class="b-data__wr col-md-6">
+                                <div class="row">
+                                    <input type="radio" name="traveller_gender" value="2" id="id_traveller_gender_2" class="b-radio">
+                                    <label for="id_traveller_gender_2">{% trans 'Женский' %}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# номер загранника #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_traveller_n_passport">{% trans 'Номер загранпаспорта' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="traveller_n_passport" id="id_traveller_n_passport" class="b-input">
+                        </div>
+                    </div>
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# pin застрахованного #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_traveller_pin">{% trans 'FIN' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="traveller_pin" id="id_traveller_pin" class="b-input">
+                        </div>
+                    </div>
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# адрес застрахованного #}
+                {% trans 'Город' as city_tr %}
+                {% include 'calculator/steps/g_selection_field.html' with field_name='traveller_city' field_label=city_tr objects=cities %}
+
+                {# адрес застрахованного #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_traveller_address">{% trans 'Адрес' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="traveller_address" id="id_traveller_address" class="b-input">
+                        </div>
+                    </div>
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="b-form__right clearfix">
+        <div class="b-right__info j-right__info-fixed">
+            {# Информация  #}
+            {% include 'calculator/steps/travel/right_info.html' %}
+            {# Выбранные продукты #}
+            {% include 'calculator/steps/travel/right_products.html' %}
+
+            <button type="button" class="order button j-last__show j-next__click">{% trans 'Оформить' %}</button>
+
+        </div>
+    </div>
+
+</div>

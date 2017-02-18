@@ -1,0 +1,11 @@
+{% load lib_filters %}
+
+<input type="hidden" 
+       id="{{attrs.id}}" 
+       class="autocomplete_multiple_widget" 
+       value="{% if value %}{{value|join:','}}{% endif %}" 
+       name="{{name}}"
+       data-readonly="{{readonly}}"
+       data-handler_path="{{handler_path}}"
+       data-related_fields="{{related_fields|default:''}}"
+       data-handler_params="{{handler_params|to_json}}"/>

@@ -1,0 +1,123 @@
+{% load i18n %}
+<div class="b-form__block n-form__insurance-item n-form__step clearfix" id="step-4">
+    <div class="b-form__left clearfix">
+        <div>
+            <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+        </div>
+        <div class="b-step__title n-title__ico n-t-ico__travel"><h2></h2></div>
+
+        <div class="b-data__line hidden" id="schengen-warning">
+            <div class="b-data__wr n-wr__green">
+                <p>{% trans 'Срок действия полиса увеличен на <span></span> дня(-ей) в соответствии с Визовым Кодексом стран Шенгенской зоны' %}</p>
+            </div>
+        </div>
+
+        <div class="b-step-4__options">
+
+            {# Поле Валюта #}
+            <div class="b-data__line clearfix b-sts_selection">
+                <div class="b-data__wr">
+                    <p class="b-title__sm">{% trans 'Валюта' %}</p>
+
+                    <div class="b-data__wr col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="currency" id="id_currency[0]" value="2" checked
+                                   class="b-form__radio">
+                            <label for="id_currency[0]">EUR</label>
+                        </div>
+                    </div>
+                    <div class="b-data__wr col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="currency" id="id_currency[1]" value="1"
+                                   class="b-form__radio">
+                            <label for="id_currency[1]">USD</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-error"><span></span></div>
+            </div>
+
+            {# Поле Страхровое покрытие #}
+            <div class="b-data__line clearfix">
+                <div class="b-data__wr">
+                    <p class="b-title__sm">{% trans 'Страховое покрытие' %}</p>
+
+                    {% for iv in ins_values %}
+                    <div class="b-data__wr col-md-4 col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="ins_value" value="{{ iv.id }}"  data-value="{{ iv.title }}" id="id_ins_value_{{ iv.id }}" {% if iv.id == 2 %}checked{% endif %}>
+                            <label for="id_ins_value_{{ iv.id }}">{{ iv.title }}</label>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <div class="field-error"><span></span></div>
+            </div>
+
+            {# Поле Группа рисков #}
+            <div class="b-data__line clearfix">
+                <div class="b-data__wr">
+                    <p class="b-title__sm">{% trans 'Группа рисков' %}</p>
+
+                    <div class="b-data__wr col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="risk_group" id="id_risk_group[0]" value="1" checked
+                                   class="b-form__radio">
+                            <label for="id_risk_group[0]">{% trans 'Стандарт' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-data__wr col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="risk_group" id="id_risk_group[1]" value="2"
+                                   class="b-form__radio">
+                            <label for="id_risk_group[1]">{% trans 'Премиум' %}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-error"><span></span></div>
+            </div>
+
+            <div class="b-data__line clearfix b-sts_selection">
+                <div class="b-data__wr">
+                    <p class="b-title__sm">{% trans 'Количество выездов за границу' %}</p>
+
+                    <div class="b-data__wr col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="departure_type" id="id_departure_type[0]" value="1" checked
+                                   class="b-form__radio">
+                            <label for="id_departure_type[0]">{% trans 'Один' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-data__wr col-sm-6">
+                        <div class="row">
+                            <input type="radio" name="departure_type" id="id_departure_type[1]" value="2"
+                                   class="b-form__radio">
+                            <label for="id_departure_type[1]">{% trans 'Несколько' %}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-error"><span></span></div>
+            </div>
+        </div>
+
+        <div class="b-data__line clearfix" style="text-align: center">
+            <a class="text-uppercase" href="#" onclick="compare_box_show('travel', '?buttons=1'); return false;">{% trans 'описание и сравнение продуктов' %}</a>
+        </div>
+
+        <div class="b-line__separator table-separator"></div>
+
+        <table class="b-sigorta__table"></table>
+    </div>
+
+    <div class="b-form__right clearfix">
+        <div class="b-right__info j-right__info-fixed">
+            {# Информация о поездаке #}
+            {% include 'calculator/steps/travel/right_info.html' %}
+            {# Выбранные продукты #}
+            {% include 'calculator/steps/travel/right_products.html' %}
+
+            <a href="#" class="order button b-to__pass j-next__click">{% trans 'Перейти к оформлению' %}</a>
+        </div>
+    </div>
+</div>

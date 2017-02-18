@@ -1,0 +1,121 @@
+.b-sale__block .modal-dialog {
+    /*position: relative;*/
+    width: 100%;
+    max-width: 1055px;
+    margin: 150px auto;
+    background: #fff;
+    bottom: auto;
+		text-align: center;
+    /*min-height: 560px;*/
+    -webkit-box-shadow: 0 0px 10px rgba(80, 67, 78, 0.1);
+    -moz-box-shadow: 0 0px 10px rgba(80, 67, 78, 0.1);
+    box-shadow: 0 0px 10px rgba(80, 67, 78, 0.1);
+}
+.b-sale__block .modal-dialog .sticker-window {padding: 15px 30px 80px 30px;}
+.b-sale__block .modal-dialog .b-line__separator {margin: 28px 0px 50px;}
+.b-sale__block .modal-dialog .b-line__separator::before {left: 40px; right: 40px;}
+.b-sale__block.text .modal-dialog {margin: 70px auto; text-align: left;}
+.b-sale__block.text .modal-dialog h2 {text-align: center;}
+.b-sale__block.text .modal-dialog .sticker-window {padding: 30px 40px;}
+
+.sale-container .inner-container {padding-bottom: 35px;}
+
+.sale-container label {font: 16px 'Lato-Light'; display: block; white-space: nowrap;}
+.sale-container select {height: 50px;}
+.sale-container .form-group {margin-bottom: 20px;}
+.sale-container .radio-inline, .sale-container .radio,
+.sale-container .checkbox-inline, .sale-container .checkbox {padding-left: 0px;}
+.sale-container .radio-inline label, .sale-container .radio label,
+.sale-container .checkbox-inline label, .sale-container .checkbox label {cursor: pointer; height: 30px;}
+.sale-container input, .sale-container textarea {
+    border: 1px solid #978594;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #978594;
+    font: 16px 'Lato-Light';
+    resize: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+}
+
+.sale-container .radio-inline .jClever-element, .sale-container .radio .jClever-element,
+.sale-container .checkbox-inline .jClever-element, .sale-container .checkbox .jClever-element
+	{display: inline-block; vertical-align: middle;}
+.sale-container .clevered.default .jClever-element-radio-twins
+	{width: 30px; height: 30px; background: url(../img/form-sprite.png) no-repeat 0px -40px;}
+.sale-container .clevered.default .jClever-element-checkbox-twins
+	{width: 30px; height: 30px; background: url(../img/form-sprite.png) no-repeat 0px 0px;}
+.sale-container .clevered.default .jClever-element-radio-twins.checked {background-position: -30px -40px;}
+.sale-container .clevered.default .jClever-element-checkbox-twins.checked {background-position: -30px 0px;}
+
+.sale-container .step-1 {display: none;}
+.sale-container .step-1 .form-group {margin-bottom: 25px;}
+.sale-container .step-1 .car-type {width: 60%;}
+.sale-container .step-1 .car-more {width: 35%; display: none;}
+.sale-container .step-1 .person {width: 50%;}
+.sale-container .step-1 .docs {width: 50%; text-align: right;}
+.sale-container .step-1 .help {margin-left: 25px; font: 16px 'Lato-Light'; line-height: 25px;}
+.sale-container .step-1 .question {color: #50434e;}
+.sale-container .step-1 .order:hover .premium {border-right-color: #50434e;}
+.sale-container .step-1 .order .premium {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 15px;
+	margin-right: 10px;
+	line-height: 30px;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-right: 1px solid #fff;
+}
+
+.sale-container .step-2 {font: 16px 'Lato-Light';}
+.sale-container .step-2 form {margin: 30px 0px; text-align: left;}
+.sale-container .step-2 h1 {margin-top: 30px;}
+.sale-container .step-2 p {text-transform: none; font-size: 20px;}
+.sale-container .step-2 .doc .pull-left {width: 27%;}
+.sale-container .step-2 .doc .pull-right {width: 70%;}
+.sale-container .step-2 .order {width: 100%; margin-top: 15px;}
+
+.sale-container .step-3 {font: 16px 'Lato-Light';}
+.sale-container .step-3 form {margin: 30px 0px; text-align: left;}
+.sale-container .step-3 .col-xs-6 {margin-top: 0px;}
+.sale-container .step-3 h1 {margin-top: 30px;}
+.sale-container .step-3 p {text-transform: none; font-size: 20px;}
+.sale-container .step-3 .data {font-weight: bold; font-size: 18px; margin-bottom: 10px;}
+.sale-container .step-3 .checkbox-inline {margin-top: 10px;}
+.sale-container .step-3 .has-error .form-error {display: none;}
+.sale-container .step-3 .order {width: 100%; margin-top: 15px;}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .b-sale__block .modal-dialog {max-width: 90%;}
+		.sale-container .step-1 .form-group {margin-bottom: 20px;}
+}
+
+@media (max-width: 768px) {
+    .b-sale__block .modal-dialog {max-width: 100%; margin: 0px;}
+
+		.sale-container .inner-container {padding-bottom: 0px;}
+
+		.sale-container .step-1 .form-group {margin-bottom: 20px;}
+		.sale-container .step-1 .car-type, .sale-container .step-1 .car-more,
+		.sale-container .step-1 .person, .sale-container .step-1 .docs,
+		.sale-container .step-1 .submit, .sale-container .step-1 .help {
+			width: 100%;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+			float: none !important;
+		}
+
+		.sale-container .step-3 .col-xs-6 {width: 70%; margin-left: 15%;}
+}
+
+@media (max-width: 550px) {
+    .sale-container .step-3 .col-xs-6 {width: 90%; margin-left: 5%;}
+}

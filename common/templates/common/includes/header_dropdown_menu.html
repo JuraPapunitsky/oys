@@ -1,0 +1,32 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load static %}
+<div class="dropdown menu">
+    <a data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+       aria-expanded="false">
+    </a>
+
+    <div class="dropdown-menu" role="menu">
+        <p class="big">{% trans 'страхование' %} </p>
+        <a href="/insurance/auto/" class="menu-border">{% trans 'Автомобиль' %}
+            <img src="{% static "common/img/menu-icon_03.png" %}">
+        </a>
+        <a href="/insurance/property/" class="menu-border">{% trans 'Недвижимость' %}
+            <img src="{% static "common/img/menu-icon_06.png" %}">
+        </a>
+        <a href="/insurance/health/" class="menu-border">{% trans 'Здоровье' %}
+            <img src="{% static "common/img/menu-icon_08.png" %}">
+        </a>
+        <a href="/insurance/travel/">{% trans 'Путешествия' %}
+            <img src="{% static "common/img/menu-icon_10.png" %}">
+        </a>
+
+{#        <div class="m_fill">#}
+{#            <p class="big">{% trans 'Банковские услуги' %}</p>#}
+{#            <a href="#" class="menu-border">{% trans 'Кредитование' %}</a>#}
+{#            <a href="#">{% trans 'Вклады' %}</a>#}
+{#        </div>#}
+
+        {# <a href="#" data-toggle="modal" data-backdrop="false" data-target=".log_in" class="personal">Мой кабинет</a>#}
+    </div>
+</div>

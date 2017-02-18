@@ -1,0 +1,47 @@
+{% load i18n %}
+<div class="b-form__block n-form__insurance-item n-form__step clearfix" id="step-4">
+    <div class="b-form__left clearfix">
+        <div>
+            <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+        </div>
+        <div class="b-step__title n-title__ico n-t-ico__travel"><h2></h2></div>
+
+        <div class="b-step-4__options">
+
+        </div>
+
+        <div class="b-line__separator table-separator"></div>
+
+        <table class="b-sigorta__table">
+            <thead>
+            <tr>
+                <th></th>
+                <th id="product-table-product"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td id="product-table-company"></td>
+                <td>
+                    <div class="b-data__wr">
+                        <input type="radio" value="" data-price="" id="id_product_generic"
+                               class="b-form__radio n-main__radio" checked>
+                        <label for="id_product_generic" id="product-table-price"></label>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="b-form__right clearfix">
+        <div class="b-right__info j-right__info-fixed">
+            {# Информация о поездаке #}
+            {% include 'calculator/steps/health/right_info.html' %}
+            {# Выбранные продукты #}
+            {% include 'calculator/steps/health/right_products.html' %}
+
+            <a href="#" class="order button b-to__pass j-next__click">{% trans 'Перейти к оформлению' %}</a>
+        </div>
+    </div>
+</div>

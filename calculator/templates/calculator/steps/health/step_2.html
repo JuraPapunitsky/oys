@@ -1,0 +1,63 @@
+{% load i18n %}
+<div class="b-form__block n-form__detailinfo n-form__step clearfix" id="step-2">
+    <div style="padding-right: 20px;">
+        <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+    </div>
+    <div class="b-step__title n-title__ico n-t-ico__health">
+        <h2>{% trans 'Информация о застрахованном' %}</h2>
+    </div>
+
+    {# Выбранные значения #}
+    <ul class="b-step__list">
+        <li class="b-step__item">
+            <span></span>
+            <a href="#" class="b-step__item-close j-step__item-close"><small>{% trans 'изменить' %}</small></a>
+        </li>
+    </ul>
+
+    {# Полоса прогресса заполнения формы (точки) #}
+    <ul class="b-step__current">
+        <li class="b-step__current-item n-item__curr"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+    </ul>
+
+    {#  Подэтапы данного этапа #}
+
+    <div class="b-calc__item n-calc__slider n-radio__hidden n-form__substep e-active" id="substep-1">
+        <h3>{% trans 'Дата рождения застрахованного' %}</h3>
+
+        <div class="b-data__line b-d_rest_start input-wr">
+
+            <div class="b-input__wr col-md-2 col-xs-2">
+                <div class="row">
+                    <input type="text" name="insured_birthday" id="id_insured_birthday" class="b-input j-insured__birthday n-calendar" placeholder="{% trans 'Дата рождения' %}">
+                </div>
+            </div>
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+    <div class="b-calc__item n-calc__slider n-radio__hidden n-form__substep" id="substep-2">
+        <h3>{% trans 'Анкета REFUND Pediatric' %}</h3>
+
+        <p style="margin-top: 10px">{% trans 'Пожалуйста, укажите наличие приведенных ниже состояний здоровья у Вашего ребенка' %}</p>
+
+        <div class="b-data__line b-d_rest_start input-wr">
+
+            {% for opt in health_poll %}
+            <div class="b-radio__wr" style="display: block">
+                <input type="checkbox" name="health_poll" id="id_health_poll[{{ opt.id }}]" value="{{ opt.id }}" data-value="{{ opt.title }}">
+                <label for="id_health_poll[{{ opt.id }}]">{{ opt.id }}. {{ opt.title }}</label>
+            </div>
+            {% endfor %}
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <a href="#" class="order button j-next__click" style="margin: 10px auto">{% trans 'Продолжить' %}</a>
+    </div>
+
+</div>

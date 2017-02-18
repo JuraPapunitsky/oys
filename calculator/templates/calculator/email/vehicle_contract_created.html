@@ -1,0 +1,8 @@
+<html>
+<body>
+    На сайте создан договор по автострахованию.<br/>
+    {% if p2_number %}Документ ОСАГО: <a href="{{ asan_url }}/docflow/2/{{ p2_number }}">{{ p2_number }}</a><br/>{% endif %}
+    {% if p11_number %}Документ Уверенный водитель: <a href="{{ asan_url }}/docflow/11/{{ p11_number }}">{{ p11_number }}</a><br/>{% endif %}
+    {% if p12_number %}Документ Простое КАСКО: <a href="{{ asan_url }}/docflow/12/{{ p12_number }}">{{ p12_number }}</a><br/>{% endif %}
+</body>
+</html>

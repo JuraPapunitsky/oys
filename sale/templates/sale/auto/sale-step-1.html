@@ -1,0 +1,194 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+{% load staticfiles %}
+{% load static %}
+
+
+
+{% block body_content %}
+
+    <!-- NEW HTML START -->
+    <div class="insurance-vehicle-header sale-container">
+        <div class="container-fluid inner-container">
+            <div class="row">
+                <div class="col-xs-offset-1 col-md-7 col-lg-4 col-xs-10">
+                    <div class="row">
+                        <h1>Обязательное страхование</h1>
+                        <p class="insurance-sub-title">Это обязательное страхование автогражданской ответственности.</p>
+
+                        <form method="post" action="/sale/auto-step-2/" class="clearfix j-clr-form step-1">
+                            {% csrf_token %}
+                            <div class="form-group car-type pull-left">
+                                <label for="carType">Вид транспорта </label>
+                                <select id="carType" name="car[type]" class="form-control">
+                                    {% for transport_type in transport_types %}
+                                        <option value="{{ transport_type.id }}" data-more = "#carTypeMore_{{ transport_type.id }}"  {% if transport_type.tag_value == 1 %}
+                                            selected
+                                        {% endif %}>{{ transport_type.transport_type }}</option>
+                                    {% endfor %}
+
+                                <!--    <option value="1" data-more="#carTypeMore_1" selected>Легковые автомобили</option>
+                                    <option value="2" data-more="#carTypeMore_2">Мотоцикл</option>
+                                    <option value="3" data-more="#carTypeMore_3">Автобус и микроавтобусы</option>
+                                    <option value="4" data-more="#carTypeMore_4">Грузовые автомобили</option>
+                                    <option value="5" data-more="#carTypeMore_5">Прицепы и полуприцепы</option>
+                                    <option value="6" data-more="#carTypeMore_6">Тракторы</option>
+                                    <option value="7" data-more="#carTypeMore_7">Трамваи и троллейбусы</option> -->
+                                </select>
+                            </div>
+
+                            <div class="form-group car-more pull-right">
+                                <label for="carTypeMore_1">Объем двигателя</label>
+                                <select name="car[more][1]" class="form-control" id="carTypeMore_1">
+                                    {% for engine_capacity in engine_capacitys %}
+                                        <option value="{{ engine_capacity.id }}" {% if engine_capacity.tag_value == 1 %}
+                                            selected
+                                        {% endif %}>{{ engine_capacity.engine_capacity }}</option>
+                                    {% endfor %}
+                                  <!--   <option value="1" selected>50-1500 sm3</option>
+                                    <option value="2">1501-2000 sm3</option>
+                                    <option value="3">2001-2500 sm3</option>
+                                    <option value="4">2501-3000 sm3</option>
+                                    <option value="5">3001-3500 sm3</option>
+                                    <option value="6">3501-4000 sm3</option>
+                                    <option value="7">4001-4500 sm3</option>
+                                    <option value="8">4501-5000 sm3</option>
+                                    <option value="9">>5000 sm3</option>-->
+
+                                </select>
+                            </div>
+                            <div class="form-group car-more pull-right">
+                                <label for="carTypeMore_3">Пассажирские места</label>
+                                <select name="car[more][3]" class="form-control" id="carTypeMore_3">
+                                    {% for passenger_seat in passenger_seats %}
+                                        <option value="{{ passenger_seat.id }}" {% if passenger_seat.tag_value == 1 %}
+                                            selected
+                                        {% endif %}>{{ passenger_seat.passenger_seats }}</option>
+                                    {% endfor %}
+                                 <!--   <option value="1" selected>9-16</option>
+                                    <option value="2">16 и более</option> -->
+                                </select>
+                            </div>
+                            <div class="form-group car-more pull-right">
+                                <label for="carTypeMore_4">Максимальный вес</label>
+                                <select name="car[more][4]" class="form-control" id="carTypeMore_4">
+                                    {% for bearing_capasity in bearing_capasitys %}
+                                        <option value="{{ bearing_capasity.id }}" {% if bearing_capasity.tag_value == 1 %}
+                                            selected
+                                        {% endif %}>{{ bearing_capasity.bearing_capacity }}</option>
+                                    {% endfor %}
+                                <!--    <option value="1" selected>3500 kq</option>
+                                    <option value="2">3500-7000 kq</option>
+                                    <option value="3">7000 kq и более</option> -->
+                                </select>
+                            </div>
+
+                            <div class="form-group pull-left person" id="personType">
+                                {% for person_type in person_types %}
+                                    <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="person" value="{{ person_type.id }}" {% if person_type.tag_value == 1 %}
+                                            checked
+                                        {% endif %}>
+                                        {{ person_type.person_type }}
+                                    </label>
+                                </div>
+                                {% endfor %}
+                            <!--    <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="person" value="1" checked>
+                                        Физ. лицо
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="person" value="2">
+                                        Юр. лицо
+                                    </label>
+                                </div> -->
+                            </div>
+
+                            <div class="form-group pull-right docs" id="docType">
+                                 {% for doc_type in doc_types %}
+                                    <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="doc" value="{{ doc_type.id }}" {% if doc_type.id == 1 %}
+                                            checked
+                                        {% endif %}>
+                                        {{ doc_type.doc_type }}
+                                    </label>
+                                </div>
+                                {% endfor %}
+
+                               <!-- <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="docs" value="1" checked>
+                                        Рег. номер
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="docs" value="2">
+                                        Другие
+                                    </label>
+                                </div> -->
+                            </div>
+
+                            <div class="form-group pull-left submit">
+                                <button type="submit" class="order button">
+                                    <span id="insurancePremium" class="premium">15.00 AZN</span>
+                                    Купить онлайн
+                                </button>
+                            </div>
+
+                            <ul class="help list-unstyled form-group pull-left">
+                                <li><a href="#" class="question">Все еще есть вопрос?</a></li>
+                                <li><a href="#" class="more" data-toggle="modal" data-backdrop="false"
+                                       data-target=".b-sale__block">Подробнее</a></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW HTML END -->
+
+    <!-- NEW HTML START -->
+
+
+
+		<!-- NEW HTML END -->
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами покупки полиса #}
+{% include 'flatpages/includes/inner_policy_ordering_auto.html' %}
+
+{# Блок "Как работает" #}
+{% include 'flatpages/includes/inner_insurance_details_auto.html' %}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+{% include 'flatpages/includes/inner_policy_delivery_auto.html' %}
+
+{% endblock body_content %}
+
+{% block sale_js %}
+<script type="text/javascript">
+			window.saleInsurancePremiumCurency = 'AZN';
+			window.saleInsurancePremiumDefault = 10;
+			window.saleInsurancePremiumVals = {
+
+                 {{ js }}
+
+            };
+
+
+
+
+
+
+		</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+.rollbar-path-vertical, .rollbar-path-horizontal{position:absolute;background-color:transparent;z-index:100;}
+.rollbar-path-horizontal{bottom:5px;left:0;width:100%;height:10px;}
+.rollbar-path-vertical{right:5px;top:0;height:100%;width:10px;}
+.rollbar-path-vertical{}
+.rollbar-path-horizontal{}
+.rollbar-handle{position:relative;top:0;left:0;background-color:#b2aab1;}
+.rollbar-handle{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.rollbar-path-vertical .rollbar-handle{height:20%;width:100%;}
+.rollbar-path-horizontal .rollbar-handle{width:20%;height:100%;}
+.rollbar-path-vertical,
+.rollbar-path-horizontal,
+.rollbar-handle{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}

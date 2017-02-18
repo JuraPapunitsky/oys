@@ -1,0 +1,12 @@
+{% load i18n %}
+
+<div class="b-data__line clearfix">
+    <div class="b-data__wr">
+        <input type="checkbox" name="p2_selected" id="id_p2_selected" class="b-form__input">
+        <label for="id_p2_selected">{% trans 'ОСАГО' %}</label>
+
+        {# Help block #}
+        {% trans 'Обязательное страхование ответственности автовладельцев перед 3-ми лицами' as fin_help %}
+        {% include 'calculator/question.html' with answ=fin_help %}
+    </div>
+</div>

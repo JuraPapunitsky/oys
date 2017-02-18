@@ -1,0 +1,69 @@
+{% load i18n %}
+<div>
+    <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+</div>
+<div class="b-step__title n-title__ico n-t-ico__health">
+    <h2>{% trans 'Страховые продукты' %}</h2>
+</div>
+
+{% if '9_1' in ins_products or '9_3' in ins_products %}
+<div class="b-insurance__row">
+
+    {% if '9_1' in ins_products %}
+    <div class="b-insurance__item">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p9_1.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p9_1.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+            <p class="b-insurance__price">{{ p9_1.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p9_1.id }}" data-product-title="{{ p9_1.title }}">{% trans 'выбрать' %}</a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if '9_3' in ins_products %}
+    <div class="b-insurance__item">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p9_3.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p9_3.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+            <p class="b-insurance__price">{{ p9_3.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p9_3.id }}" data-product-title="{{ p9_3.title }}">{% trans 'выбрать' %}</a>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+{% endif %}
+
+{% if '9_2' in ins_products %}
+<div class="b-insurance__row">
+
+    <div class="b-insurance__item">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p9_2.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p9_2.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+
+            {% if not p9_2.error %}
+            <p class="b-insurance__price">{{ p9_2.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p9_2.id }}" data-product-title="{{ p9_2.title }}">{% trans 'выбрать' %}</a>
+            {% else %}
+            {% trans 'Отмечены 5 и более состояний (1..17), что препятствует страхованию по программе REFUND Pediatric' as health_error_1 %}
+            {% trans 'Отмечены состояния (19..25), которые препятствуют страхованию по программе REFUND Pediatric' as health_error_2 %}
+            <p style="padding-top: 10px; color: indianred">{% trans p9_2.error %}</p>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+{% endif %}

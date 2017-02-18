@@ -1,0 +1,64 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+{% load common_tags %}
+
+
+{% block body_content %}
+
+<div class="container-fluid visible-xs black-title-xs partners-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'о компании' %}</span>
+        </div>
+    </div>
+</div>
+<div class="partners-header">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'партнеры' %}</span>
+                    <h1>{% trans 'Нашими партнерами являются лидирующие страховые компании и банки Азербайджана.' %}</h1>
+                    <p class="partners-sub-title"></p>
+{#                    <a href="#" class="order button" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block">{% trans 'Калькулятор' %}</a>#}
+                    <a href="#" class="order button" data-toggle="modal" data-backdrop="false" data-target=".callback">{% trans 'Калькулятор' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Иконки рассчет, чат и отзывы для мобильных устройств #}
+{% include 'common/includes/base_modal_icons_xs.html' %}
+
+<div class="about-text container-fluid">
+    <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/a-qroup.png"></div>
+            <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/az.png"></div>
+            <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/ata.png" style="width:100%"></div>
+        </div>
+
+         <div class="row">
+             <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/ateshgah.png" style="width:100%"></div>
+             <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/axa.png" style="width:100%"></div>
+             <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/meqa.png" style="width:100%"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/pasha.png" style="width:100%"></div>
+            <div class="col-md-4 col-sm-6 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/pasha-life.png"></div>
+            <div class="col-md-4 col-sm-4 partner-logo"><img src="{{ STATIC_URL }}common/img/partners/standart.png"></div>
+        </div>
+
+        <div style="margin-bottom: 30px;"></div>
+    </div>
+</div>
+
+{# FEEDBACK #}
+{#{% include 'flatpages/includes/home_feedback.html' %}#}
+
+{# Модальное окно калькулятора #}
+{#{% include 'calculator/calculator_modal.html' %}#}
+
+{% endblock %}

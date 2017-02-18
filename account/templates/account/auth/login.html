@@ -1,0 +1,24 @@
+{% extends 'common/base.html' %}
+{% load lib_tags %}
+{% load i18n %}
+
+{% block navigation_menu %}
+{% endblock %}
+
+
+{% block body_content %}
+    <form method='post' class="form-horizontal single_form well" role="form">
+        {% csrf_token %}
+        {% form_bootstrap form layout="horizontal" %}
+        
+        <div class="pull-right">
+            <input type='submit' class="btn btn-primary" value='{% trans 'Login' %}'>
+            
+            <a href="{% url 'account:password_restore' %}" class="btn btn-link">
+                {% trans 'Forgot your password' %}?
+            </a>
+        </div>
+        <div class="clearfix"></div>
+
+    </form>
+{% endblock %}

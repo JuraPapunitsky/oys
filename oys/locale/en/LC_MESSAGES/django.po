@@ -1,0 +1,4548 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-03 12:48+0500\n"
+"PO-Revision-Date: 2015-09-03 10:56+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8\n"
+
+#: account/admin.py:15
+msgid "Personal info"
+msgstr "Personal info"
+
+#: account/admin.py:16
+msgid "Permissions"
+msgstr "Permissions"
+
+#: account/admin.py:18
+msgid "Important dates"
+msgstr "Important dates"
+
+#: account/forms.py:13 account/forms.py:39 account/models.py:35
+msgid "Phone"
+msgstr "Phone"
+
+#: account/forms.py:14 account/models.py:36
+msgid "Email"
+msgstr "Email"
+
+#: account/forms.py:15 account/models.py:37
+msgid "FIN"
+msgstr "FIN"
+
+#: account/forms.py:16 account/models.py:39
+msgid "Last name"
+msgstr "Last name"
+
+#: account/forms.py:17 account/models.py:40
+msgid "First name"
+msgstr "First name"
+
+#: account/forms.py:18 account/models.py:41
+msgid "Middle name"
+msgstr "Middle name"
+
+#: account/forms.py:24
+msgid "User with phone exists"
+msgstr "User with phone exists"
+
+#: account/forms.py:32
+msgid "User with email exists"
+msgstr "User with email exists"
+
+#: account/forms.py:48
+msgid "User with email and phone not exists"
+msgstr "User with email and phone not exists"
+
+#: account/models.py:14 calculator/templates/calculator/steps/vehicle/step_5_person_info.html:77
+msgid "Мужской"
+msgstr "Male"
+
+#: account/models.py:14 calculator/templates/calculator/steps/vehicle/step_5_person_info.html:83
+msgid "Женский"
+msgstr "Female "
+
+#: account/templates/account/auth/login.html:15
+#: account/templates/account/auth/password_restore.html:19
+#: account/templates/account/auth/password_restore_confirm.html:14
+msgid "Login"
+msgstr "Login"
+
+#: account/templates/account/auth/login.html:18
+#: account/templates/account/auth/password_restore.html:22
+msgid "Forgot your password"
+msgstr "Forgot your password"
+
+#: account/templates/account/register.html:12
+msgid "Register"
+msgstr "Register"
+
+#: calculator/constants.py:17 calculator/constants.py:18
+#: calculator/templates/calculator/steps/vehicle/step_4_options_2.html:6
+#: templates/flatpages/compare/vehicle.html:6
+#: templates/flatpages/includes/inner_insurance_details_auto.html:97
+#: templates/flatpages/insurance.html:50 templates/flatpages/insurance/auto/cvi.html:50
+#: templates/flatpages/insurance/auto/icbariplus.html:86
+msgid "ОСАГО"
+msgstr "Compulsory TPL"
+
+#: calculator/constants.py:19
+#: calculator/templates/calculator/steps/vehicle/step_4_options_2.html:9
+msgid "Обязательное страхование ответственности автовладельцев перед 3-ми лицами"
+msgstr "Third party civil liability compulsory insurance"
+
+#: calculator/constants.py:22 calculator/constants.py:23 templates/flatpages/insurance.html:104
+msgid "ОС Недвижимости"
+msgstr "Compulsory real property insurance"
+
+#: calculator/constants.py:24 calculator/templates/calculator/steps/property/right_products.html:8
+msgid ""
+"Страхование от ущерба, причиненный конструктивным элементам, помещениям, в том числе дверным и "
+"оконным конструкциям, включая стекла, трубам систем водоснабжения, канализации и газоснабжения, "
+"а также тепловой системы, проводам связи, электрическим и иным проводам, элементам украшения, в "
+"том числе всем видам внешних или внутренних штукатурных работ, стенам, потолку и полу"
+msgstr ""
+"Compulsory insurance related to residential buildings, residential houses and apartments (flats) "
+"is designated to provide compensation for damages caused to constructive elements, rooms, door "
+"and window elements, including glass, piping related to water, sewage and gas, as well as "
+"heating supply, communication, electricity and other wiring, decorative elements, including all "
+"types of external or internal plastering and cover works, walls, ceilings and floors."
+
+#: calculator/constants.py:31 calculator/constants.py:32
+msgid "Страхование путешественников"
+msgstr "Insurance of travellers"
+
+#: calculator/constants.py:33 calculator/templates/calculator/steps/travel/right_products.html:8
+msgid ""
+"Защита от непредвиденных расходов, связанных с предоставлением застрахованному медицинской, "
+"юридической, административной и иной помощи за границей"
+msgstr ""
+"Protection against unexpected expenses related with the provision for insured medical, legal, "
+"administrative and other assistance abroad"
+
+#: calculator/constants.py:39 calculator/templates/calculator/steps/health/right_products.html:9
+msgid ""
+"Лечение и обеспечение медикаментами во время неотложной помощи (вкл. стоматологию и вакцинацию)"
+msgstr "Treatment and medication during the emergency care (excl. Dental care and vaccinations)"
+
+#: calculator/constants.py:45 calculator/templates/calculator/steps/health/right_products.html:21
+#: calculator/templates/calculator/steps/health/right_products.html:57
+msgid ""
+"Добровольное медицинское страхование (патронаж новорожденных, возмещение расходов на скорую "
+"помощь, амбулаторную помощь, стационарную помощь, стоматологию, физиотерапию и т.д.)"
+msgstr ""
+"Voluntary medical insurance (nursing newborns, recovery of costs for ambulance, outpatient care, "
+"inpatient care, dental care, physical therapy, etc.)"
+
+#: calculator/constants.py:49 calculator/constants.py:50
+#: calculator/templates/calculator/steps/health/right_products.html:29
+msgid "Программа 69"
+msgstr "Program 69"
+
+#: calculator/constants.py:51 calculator/templates/calculator/steps/health/right_products.html:33
+#: calculator/templates/calculator/steps/health/right_products.html:45
+msgid "Лечение при диагностировании злокачественного онкозаболевания"
+msgstr "Treatment at diagnosing malignant oncological disease"
+
+#: calculator/constants.py:54
+msgid "КАСКО: Уверенный водитель"
+msgstr "Confident driver"
+
+#: calculator/constants.py:55 calculator/templates/calculator/steps/vehicle/step_4_options.html:77
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:142
+#: templates/flatpages/compare/vehicle.html:8
+#: templates/flatpages/includes/inner_insurance_details_auto.html:103
+#: templates/flatpages/insurance.html:60
+#: templates/flatpages/insurance/auto/confidentdriver.html:50
+#: templates/flatpages/insurance/auto/simplekasko.html:128
+#: templates/flatpages/insurance/auto/superkasko.html:91
+msgid "Уверенный водитель"
+msgstr "Confident driver"
+
+#: calculator/constants.py:56 calculator/templates/calculator/steps/vehicle/step_4_options.html:82
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:147
+msgid ""
+"Полноценное страхование вашего автомобиля от ущерба, гибели, угон и противоправных действий 3х "
+"лиц. Страховая выплата только в случае вашей невиновности."
+msgstr ""
+"The full insurance of your vehicle against damage, loss, theft and unlawful actions of 3 "
+"persons.\n"
+"Insurance payment only in case of your innocence."
+
+#: calculator/constants.py:60
+msgid "КАСКО: Простое КАСКО"
+msgstr "Simple Casco"
+
+#: calculator/constants.py:61 calculator/templates/calculator/steps/vehicle/step_4_options.html:96
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:119
+#: templates/flatpages/compare/vehicle.html:7
+#: templates/flatpages/includes/inner_insurance_details_auto.html:109
+#: templates/flatpages/insurance.html:55
+#: templates/flatpages/insurance/auto/confidentdriver.html:98
+#: templates/flatpages/insurance/auto/simplekasko.html:50
+#: templates/flatpages/insurance/auto/superkasko.html:92
+msgid "Простое КАСКО"
+msgstr "Simple Casco"
+
+#: calculator/constants.py:62
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:101
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:124
+msgid ""
+"Самое доступное каско с возможностью застраховать Ваш автомобиль от ущерба на сумму до 5000 AZN"
+msgstr ""
+"The most accessible Casco with the possibility insure your vehicle from damage in the amount of "
+"up to AZN 5000"
+
+#: calculator/constants.py:94
+msgid ""
+"Травмы, повреждения/дефекты, их последствия. Имеются ли привычные вывихи/ ограничения движений "
+"суставов"
+msgstr ""
+"Injury / defects and their consequences. Are there usual sprains / restrictions of movements of "
+"joints"
+
+#: calculator/constants.py:96
+msgid "Доброкачественные опухоли"
+msgstr "Benign tumors"
+
+#: calculator/constants.py:97
+msgid ""
+"Проблемы со спиной или  с позвоночником. Имеются ли видимые пороки развития опорно-двигательного аппарат (плоскостопие, "
+"косолапость, синдактилии, кривошея, воронкообразная грудь"
+msgstr ""
+"Problems with back or spine. Are there any visible malformations of musculoskeletal (flat feet, "
+"clubfoot, \\ torticollis, funnel chest)"
+
+#: calculator/constants.py:100
+msgid "Принимает ли Ваш ребенок сейчас какое-либо лечение или лекарство?"
+msgstr "Does your child accept any treatment or medication currently?"
+
+#: calculator/constants.py:101
+msgid "Частые заболевания пищевода/желудка/ кишечника"
+msgstr "Frequent diseases of the esophagus / stomach / intestines"
+
+#: calculator/constants.py:102
+msgid "Частые легочные заболевания"
+msgstr "Frequent lung disease"
+
+#: calculator/constants.py:103
+msgid "Заболевания почек/ мочевого тракта"
+msgstr "Diseases of the kidney / urinary tract"
+
+#: calculator/constants.py:104
+msgid "Есть ли у Вашего ребенка врожденные и наследственные заболевания"
+msgstr "Do your child has congenital and hereditary diseases?"
+
+#: calculator/constants.py:105
+msgid "Болезни печени/  поджелудочной железы"
+msgstr "Diseases of the liver / pancreas"
+
+#: calculator/constants.py:106
+msgid "Ревматизм/заболевания мышц, суставов, костей"
+msgstr "Rheumatism / diseases of the muscles, joints, bones"
+
+#: calculator/constants.py:107
+msgid "Детский церебральный паралич (ДЦП), эпилепсия"
+msgstr "Infantile cerebral paralysis, epilepsy"
+
+#: calculator/constants.py:108
+msgid "Операции на головном мозге"
+msgstr "Operations on the brain"
+
+#: calculator/constants.py:109
+msgid "Заболевания сосудов"
+msgstr "Vascular diseases"
+
+#: calculator/constants.py:110
+msgid "Эндокринные заболевания"
+msgstr "Endocrine diseases"
+
+#: calculator/constants.py:111
+msgid "Аллергия"
+msgstr "Allergy"
+
+#: calculator/constants.py:112
+msgid "Повышение артериального  давления"
+msgstr "Increased blood pressure"
+
+#: calculator/constants.py:113
+msgid "Неврологические заболевания, миопатии"
+msgstr "Neurological diseases, myopathies"
+
+#: calculator/constants.py:114
+msgid "Нарушения ритма, проводимости сердца"
+msgstr "Rhythm disorders, cardiac conduction"
+
+#: calculator/constants.py:115
+msgid "Заболевания крови лейкемия/ лимфогранулематоз/ гемофилия /талассемия"
+msgstr "Blood disease leukemia / lymphoma / haemophilia / thalassemia"
+
+#: calculator/constants.py:116
+msgid "Пороки сердца"
+msgstr "Heart defects"
+
+#: calculator/constants.py:117
+msgid "Бронхиальная астма"
+msgstr "Bronchial asthma"
+
+#: calculator/constants.py:118
+msgid "Сахарный диабет"
+msgstr "Diabetes mellitus"
+
+#: calculator/constants.py:119
+msgid "Является ли Ваш ребенок ВИЧ-инфицированным?"
+msgstr "Are your child is HIV infected?"
+
+#: calculator/constants.py:120
+msgid "Злокачественные опухоли"
+msgstr "Malignant tumors"
+
+#: calculator/constants.py:121
+msgid "Имеет ли Ваш ребенок инвалидность?"
+msgstr "Does your child have a disability?"
+
+#: calculator/forms.py:54
+msgid "Требуется заполнить VIN, Номер двигателя или Номер кузова"
+msgstr "Required to complete VIN, engine number"
+
+#: calculator/forms.py:129 calculator/forms.py:150 calculator/forms.py:213 calculator/forms.py:240
+#: calculator/forms.py:307 calculator/forms.py:326 calculator/forms.py:369 calculator/forms.py:391
+msgid "This field is required."
+msgstr "This field is required"
+
+#: calculator/forms.py:136 calculator/forms.py:220 calculator/forms.py:312 calculator/forms.py:377
+msgid "Age must exceed 18 full years."
+msgstr "Age must exceed 18 full years"
+
+#: calculator/forms.py:144 calculator/forms.py:228 calculator/forms.py:320 calculator/forms.py:385
+msgid "This date must be tomorrow or afterward."
+msgstr "This date must be tomorrow or afterward"
+
+#: calculator/forms.py:183
+msgid "Требуется заполнить Номер из госреестра или Номер другого документа"
+msgstr "Required to fill in Number of state register or Number of other document"
+
+#: calculator/forms.py:234
+msgid "2 буквы, 7 и более цифр, например ÖM1567356"
+msgstr "2 letters and 7 digits, for example ÖM1567356"
+
+#: calculator/forms.py:372
+msgid "Insured birthday must be today or earlier"
+msgstr "Insured birthday must be today or earlier"
+
+#: calculator/models.py:11
+msgid "Male"
+msgstr "Male"
+
+#: calculator/models.py:12
+msgid "Female"
+msgstr "Female"
+
+#: calculator/models.py:16
+msgid "No"
+msgstr "No"
+
+#: calculator/models.py:17
+msgid "Yes"
+msgstr "Yes"
+
+#: calculator/models.py:21
+msgid "Cash"
+msgstr "Cash"
+
+#: calculator/models.py:22
+msgid "Online payment"
+msgstr "Online payment"
+
+#: calculator/models.py:41
+msgid "client"
+msgstr "client"
+
+#: calculator/models.py:42
+msgid "creation date"
+msgstr "creation date"
+
+#: calculator/models.py:45
+msgid "completed"
+msgstr "completed"
+
+#: calculator/models.py:47
+msgid "issued"
+msgstr "issued"
+
+#: calculator/models.py:50
+msgid "calculator step"
+msgstr "calculator step"
+
+#: calculator/models.py:51
+msgid "calculator sub step"
+msgstr "calculator sub step"
+
+#: calculator/models.py:52
+msgid "calculator layer"
+msgstr "calculator layer"
+
+#: calculator/models.py:55
+msgid "main product ID"
+msgstr "main product ID"
+
+#: calculator/models.py:56
+msgid "main product title"
+msgstr "main product title"
+
+#: calculator/models.py:59
+msgid "contract start date"
+msgstr "contract start date"
+
+#: calculator/models.py:60
+msgid "term insurance"
+msgstr "term insurance"
+
+#: calculator/models.py:63 calculator/models.py:158 calculator/models.py:176
+#: calculator/models.py:194
+msgid "PIN"
+msgstr "PIN"
+
+#: calculator/models.py:64 calculator/models.py:159 calculator/models.py:177
+#: calculator/models.py:195
+msgid "last name"
+msgstr "last name"
+
+#: calculator/models.py:65 calculator/models.py:160 calculator/models.py:178
+#: calculator/models.py:196
+msgid "first name"
+msgstr "first name"
+
+#: calculator/models.py:66 calculator/models.py:161 calculator/models.py:179
+#: calculator/models.py:197
+msgid "middle name"
+msgstr "middle name"
+
+#: calculator/models.py:67 calculator/models.py:162 calculator/models.py:180
+#: calculator/models.py:198
+msgid "gender"
+msgstr "gender"
+
+#: calculator/models.py:68 calculator/models.py:163 calculator/models.py:181
+#: calculator/models.py:199
+msgid "birthday"
+msgstr "birthday"
+
+#: calculator/models.py:69 calculator/models.py:164 calculator/models.py:182
+#: calculator/models.py:200
+msgid "country"
+msgstr "country"
+
+#: calculator/models.py:71 calculator/models.py:165 calculator/models.py:183
+#: calculator/models.py:201
+msgid "postal index (ZIP)"
+msgstr "postal index (ZIP)"
+
+#: calculator/models.py:72 calculator/models.py:85 calculator/models.py:166
+#: calculator/models.py:184 calculator/models.py:202 calculator/models.py:232
+msgid "city"
+msgstr "city"
+
+#: calculator/models.py:73 calculator/models.py:167 calculator/models.py:185
+#: calculator/models.py:203
+msgid "city (custom)"
+msgstr "city (custom)"
+
+#: calculator/models.py:74 calculator/models.py:168 calculator/models.py:186
+#: calculator/models.py:204 calculator/models.py:239
+msgid "address"
+msgstr "address"
+
+#: calculator/models.py:75 calculator/models.py:87 calculator/models.py:169
+#: calculator/models.py:187 calculator/models.py:205
+msgid "street"
+msgstr "street"
+
+#: calculator/models.py:76 calculator/models.py:88 calculator/models.py:170
+#: calculator/models.py:188 calculator/models.py:206
+msgid "house"
+msgstr "house"
+
+#: calculator/models.py:77 calculator/models.py:89 calculator/models.py:171
+#: calculator/models.py:189 calculator/models.py:207
+msgid "apartment"
+msgstr "apartment"
+
+#: calculator/models.py:78 calculator/models.py:90 calculator/models.py:172
+#: calculator/models.py:190 calculator/models.py:208
+msgid "phone"
+msgstr "phone"
+
+#: calculator/models.py:79 calculator/models.py:173 calculator/models.py:191
+#: calculator/models.py:209
+msgid "email"
+msgstr "email"
+
+#: calculator/models.py:82
+msgid "delivery type"
+msgstr "delivery type"
+
+#: calculator/models.py:83
+msgid "delivery date"
+msgstr "delivery date"
+
+#: calculator/models.py:84
+msgid "delivery time interval"
+msgstr "delivery time interval"
+
+#: calculator/models.py:86
+msgid "region"
+msgstr "region"
+
+#: calculator/models.py:91
+msgid "comments"
+msgstr "comments"
+
+#: calculator/models.py:92
+msgid "takeout point"
+msgstr "takeout point"
+
+#: calculator/models.py:93
+msgid "delivery email"
+msgstr "delivery email"
+
+#: calculator/models.py:94
+msgid "payment type"
+msgstr "payment type"
+
+#: calculator/models.py:107
+msgid "product 2 selected"
+msgstr "product 2 selected"
+
+#: calculator/models.py:108
+msgid "product 11 selected"
+msgstr "product 11 selected"
+
+#: calculator/models.py:109
+msgid "product 12 selected"
+msgstr "product 12 selected"
+
+#: calculator/models.py:110
+msgid "p2 document id"
+msgstr "p2 document id"
+
+#: calculator/models.py:111
+msgid "p11 document id"
+msgstr "p11 document id"
+
+#: calculator/models.py:112
+msgid "p12 document id"
+msgstr "p12 document id"
+
+#: calculator/models.py:117
+msgid "vehicle type"
+msgstr "vehicle type"
+
+#: calculator/models.py:118
+msgid "vehicle mark"
+msgstr "vehicle mark"
+
+#: calculator/models.py:119
+msgid "vehicle model"
+msgstr "vehicle model"
+
+#: calculator/models.py:120
+msgid "vehicle engine capacity"
+msgstr "vehicle engine capacity"
+
+#: calculator/models.py:121
+msgid "vehicle payload"
+msgstr "vehicle payload"
+
+#: calculator/models.py:122
+msgid "vehicle seats"
+msgstr "vehicle seats"
+
+#: calculator/models.py:123
+msgid "vehicle creation year"
+msgstr "vehicle creation year"
+
+#: calculator/models.py:127
+msgid "vehicle registration number"
+msgstr "vehicle registration number"
+
+#: calculator/models.py:128
+msgid "vehicle registration region"
+msgstr "vehicle registration region"
+
+#: calculator/models.py:129
+msgid "vehicle cost"
+msgstr "vehicle cost"
+
+#: calculator/models.py:132 calculator/models.py:138 calculator/models.py:144
+#: calculator/models.py:243 calculator/models.py:288 calculator/models.py:334
+msgid "insurance company"
+msgstr "insurance company"
+
+#: calculator/models.py:133
+msgid "ateshgah beshlik"
+msgstr "ateshgah beshlik"
+
+#: calculator/models.py:134
+msgid "ateshgah icbariplus"
+msgstr "ateshgah icbariplus"
+
+#: calculator/models.py:135
+msgid "ateshgah superkasko"
+msgstr "ateshgah superkasko"
+
+#: calculator/models.py:139
+msgid "station selection"
+msgstr "station selection"
+
+#: calculator/models.py:140 calculator/models.py:145
+msgid "beneficiary"
+msgstr "beneficiary"
+
+#: calculator/models.py:141 calculator/models.py:146
+msgid "bank"
+msgstr "bank"
+
+#: calculator/models.py:147 calculator/models.py:234 calculator/models.py:235
+msgid "insurance sum"
+msgstr "insurance sum"
+
+#: calculator/models.py:148
+msgid "accidents quantity"
+msgstr "accidents quantity"
+
+#: calculator/models.py:149
+msgid "evacuation"
+msgstr "evacuation"
+
+#: calculator/models.py:150
+msgid "cvi extension sum"
+msgstr "cvi extension sum"
+
+#: calculator/models.py:151
+msgid "accident insurance sum"
+msgstr "accident insurance sum"
+
+#: calculator/models.py:152
+msgid "accident insurance drivers"
+msgstr "accident insurance drivers"
+
+#: calculator/models.py:153
+msgid "additional drivers"
+msgstr "additional drivers"
+
+#: calculator/models.py:154
+msgid "second additional driver"
+msgstr "second additional driver"
+
+#: calculator/models.py:157
+msgid "insurant is vehicle owner"
+msgstr "insurant is vehicle owner"
+
+#: calculator/models.py:225
+msgid "product 3 selected"
+msgstr "product 3 selected"
+
+#: calculator/models.py:226
+msgid "p3 document id"
+msgstr "p3 document id"
+
+#: calculator/models.py:231
+msgid "realty type"
+msgstr "realty type"
+
+#: calculator/models.py:233
+msgid "branch"
+msgstr "branch"
+
+#: calculator/models.py:236
+msgid "registry number"
+msgstr "registry number"
+
+#: calculator/models.py:237
+msgid "document reason"
+msgstr "document reason"
+
+#: calculator/models.py:238
+msgid "using method"
+msgstr "using method"
+
+#: calculator/models.py:240
+msgid "index"
+msgstr "index"
+
+#: calculator/models.py:258
+msgid "product 4 selected"
+msgstr "product 4 selected"
+
+#: calculator/models.py:259
+msgid "p4 document id"
+msgstr "p4 document id"
+
+#: calculator/models.py:264
+msgid "currency"
+msgstr "currency"
+
+#: calculator/models.py:265
+msgid "rest type"
+msgstr "rest type"
+
+#: calculator/models.py:266
+msgid "countries"
+msgstr "countries"
+
+#: calculator/models.py:267
+msgid "ins value"
+msgstr "ins value"
+
+#: calculator/models.py:268
+msgid "risk group"
+msgstr "risk group"
+
+#: calculator/models.py:269
+msgid "rest date start"
+msgstr "rest date start"
+
+#: calculator/models.py:270
+msgid "rest date end"
+msgstr "rest date end"
+
+#: calculator/models.py:273
+msgid "traveller first name"
+msgstr "traveller first name"
+
+#: calculator/models.py:274
+msgid "traveller last name"
+msgstr "traveller last name"
+
+#: calculator/models.py:275
+msgid "traveller middle name"
+msgstr "traveller middle name"
+
+#: calculator/models.py:276
+msgid "traveller n passport"
+msgstr "traveller n passport"
+
+#: calculator/models.py:277
+msgid "traveller birthday"
+msgstr "traveller birthday"
+
+#: calculator/models.py:280
+msgid "embassy"
+msgstr "embassy"
+
+#: calculator/models.py:302
+msgid "product 9 urgent selected"
+msgstr "product 9 urgent selected"
+
+#: calculator/models.py:303
+msgid "product 9 refund selected"
+msgstr "product 9 refund selected"
+
+#: calculator/models.py:304
+msgid "product 9 program 69 selected"
+msgstr "product 9 program 69 selected"
+
+#: calculator/models.py:309
+msgid "p9 urgent document id"
+msgstr "p9 urgent document id"
+
+#: calculator/models.py:310
+msgid "p9 refund document id"
+msgstr "p9 refund document id"
+
+#: calculator/models.py:311
+msgid "p9 program 69 document id"
+msgstr "p9 program 69 document id"
+
+#: calculator/models.py:314
+msgid "Urgent Care payment"
+msgstr "Urgent Care payment"
+
+#: calculator/models.py:315
+msgid "REFUND payment"
+msgstr "REFUND payment"
+
+#: calculator/models.py:316
+msgid "Program 69 payment"
+msgstr "Program 69 payment"
+
+#: calculator/models.py:322
+msgid "refund vip"
+msgstr "refund vip"
+
+#: calculator/models.py:323
+msgid "vaccination"
+msgstr "vaccination"
+
+#: calculator/models.py:324
+msgid "massage"
+msgstr "massage"
+
+#: calculator/models.py:325
+msgid "program 69 extended"
+msgstr "program 69 extended"
+
+#: calculator/models.py:329
+msgid "insured last name"
+msgstr "insured last name"
+
+#: calculator/models.py:330
+msgid "insured first name"
+msgstr "insured first name"
+
+#: calculator/models.py:331
+msgid "insured middle name"
+msgstr "insured middle name"
+
+#: calculator/models.py:332
+msgid "insured birthday"
+msgstr "insured birthday"
+
+#: calculator/templates/calculator/calculator_modal.html:21
+msgid "Расчет стоимости полиса"
+msgstr "Calculation of policy value"
+
+#: calculator/templates/calculator/calculator_modal.html:24
+msgid "Выберите категорию для определения параметров наиболее подходящего Вам полиса."
+msgstr "Please, choose category for determination of policy parameters most suitable for you."
+
+#: calculator/templates/calculator/calculator_modal.html:32 templates/flatpages/site_home.html:28
+#: templates/flatpages/site_home.html:65
+msgid "страхование<br/> автомобиля"
+msgstr "Auto<br/> insurance"
+
+#: calculator/templates/calculator/calculator_modal.html:37 templates/flatpages/site_home.html:33
+#: templates/flatpages/site_home.html:70
+msgid "страхование<br/> недвижимости"
+msgstr "Property <br/> insurance"
+
+#: calculator/templates/calculator/calculator_modal.html:42 templates/flatpages/site_home.html:38
+#: templates/flatpages/site_home.html:75
+msgid "страхование<br/> здоровья"
+msgstr "Health<br/> insurance"
+
+#: calculator/templates/calculator/calculator_modal.html:47 templates/flatpages/site_home.html:43
+#: templates/flatpages/site_home.html:80
+msgid "страхование<br/> путешествий"
+msgstr "Travel<br/> insurance"
+
+#: calculator/templates/calculator/calculator_modal_error.html:3
+msgid "Ошибка"
+msgstr "Error"
+
+#: calculator/templates/calculator/calculator_modal_error.html:6
+msgid "В настоящее время расчет стоимости этого продукта не возможен"
+msgstr "At present time calculation of the cost of this product is impossible"
+
+#: calculator/templates/calculator/includes/buy_now_button.html:2
+#: templates/flatpages/contacts.html:33
+#: templates/flatpages/includes/inner_insurance_details_auto.html:32
+#: templates/flatpages/includes/inner_insurance_details_auto.html:81
+#: templates/flatpages/includes/inner_insurance_details_auto.html:120
+#: templates/flatpages/includes/inner_insurance_details_health.html:33
+#: templates/flatpages/includes/inner_insurance_details_health.html:66
+#: templates/flatpages/includes/inner_insurance_details_health.html:88
+#: templates/flatpages/includes/inner_insurance_details_property.html:33
+#: templates/flatpages/includes/inner_insurance_details_property.html:81
+#: templates/flatpages/includes/inner_insurance_details_property.html:108
+#: templates/flatpages/includes/inner_insurance_details_travel.html:33
+#: templates/flatpages/includes/inner_insurance_details_travel.html:72
+#: templates/flatpages/includes/inner_insurance_details_travel.html:118
+#: templates/flatpages/includes/inner_policy_delivery_auto.html:42
+#: templates/flatpages/includes/inner_policy_delivery_health.html:42
+#: templates/flatpages/includes/inner_policy_delivery_property.html:42
+#: templates/flatpages/includes/inner_policy_delivery_travel.html:42
+#: templates/flatpages/insurance/auto.html:27 templates/flatpages/insurance/health.html:28
+#: templates/flatpages/insurance/property.html:28 templates/flatpages/insurance/travel.html:28
+#: templates/flatpages/partners.html:24
+msgid "Калькулятор"
+msgstr "Calculator"
+
+#: calculator/templates/calculator/steps/g_selection_field.html:15
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:43
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:97
+msgid "Выбрать"
+msgstr "Select"
+
+#: calculator/templates/calculator/steps/g_selection_field.html:33
+#: calculator/templates/calculator/steps/g_variative_substep.html:12
+#: templates/flatpages/insurance.html:51 templates/flatpages/insurance.html:56
+#: templates/flatpages/insurance.html:61 templates/flatpages/insurance.html:66
+#: templates/flatpages/insurance.html:71 templates/flatpages/insurance.html:76
+#: templates/flatpages/insurance.html:105 templates/flatpages/insurance.html:130
+#: templates/flatpages/insurance.html:135 templates/flatpages/insurance.html:140
+#: templates/flatpages/insurance.html:163
+msgid "Подробнее"
+msgstr "In details"
+
+#: calculator/templates/calculator/steps/general/step_6.html:5
+#: calculator/templates/calculator/steps/health/step_2.html:4
+#: calculator/templates/calculator/steps/health/step_3_content.html:3
+#: calculator/templates/calculator/steps/health/step_4.html:5
+#: calculator/templates/calculator/steps/health/step_5.html:5
+#: calculator/templates/calculator/steps/property/step_2.html:4
+#: calculator/templates/calculator/steps/property/step_3_content.html:3
+#: calculator/templates/calculator/steps/property/step_4.html:5
+#: calculator/templates/calculator/steps/property/step_5.html:5
+#: calculator/templates/calculator/steps/travel/step_2.html:4
+#: calculator/templates/calculator/steps/travel/step_3_content.html:3
+#: calculator/templates/calculator/steps/travel/step_4.html:5
+#: calculator/templates/calculator/steps/travel/step_5.html:5
+#: calculator/templates/calculator/steps/vehicle/step_2.html:4
+#: calculator/templates/calculator/steps/vehicle/step_3_content.html:3
+#: calculator/templates/calculator/steps/vehicle/step_4.html:5
+#: calculator/templates/calculator/steps/vehicle/step_5.html:5
+msgid "В начало"
+msgstr "To Start"
+
+#: calculator/templates/calculator/steps/general/step_6.html:8
+msgid "Оплата и доставка"
+msgstr "Payment and delivery"
+
+#: calculator/templates/calculator/steps/general/step_6.html:14
+msgid "Доставка полиса"
+msgstr "Policy delivery"
+
+#: calculator/templates/calculator/steps/general/step_6.html:20
+msgid "Курьерская доставка"
+msgstr "Delivery by courier"
+
+#: calculator/templates/calculator/steps/general/step_6.html:46
+msgid "Дата доставки"
+msgstr "Date of delivery"
+
+#: calculator/templates/calculator/steps/general/step_6.html:59
+msgid "Время"
+msgstr "Time"
+
+#: calculator/templates/calculator/steps/general/step_6.html:85
+#: calculator/templates/calculator/steps/property/step_2.html:53
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:118
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:128
+#: templates/flatpages/insurance/property/crpi.html:88
+msgid "Город"
+msgstr "City"
+
+#: calculator/templates/calculator/steps/general/step_6.html:89
+msgid "Район"
+msgstr "Area"
+
+#: calculator/templates/calculator/steps/general/step_6.html:94
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:161
+msgid "Улица"
+msgstr "Street"
+
+#: calculator/templates/calculator/steps/general/step_6.html:106
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:176
+msgid "Дом"
+msgstr "Building "
+
+#: calculator/templates/calculator/steps/general/step_6.html:118
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:189
+msgid "Квартира"
+msgstr "Apartment"
+
+#: calculator/templates/calculator/steps/general/step_6.html:133
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:225 common/models.py:24
+#: common/templates/common/forms/callback.html:7
+msgid "Телефон"
+msgstr "Phone  "
+
+#: calculator/templates/calculator/steps/general/step_6.html:146
+msgid "Комментарий"
+msgstr "Comments"
+
+#: calculator/templates/calculator/steps/general/step_6.html:214
+msgid "Оплата"
+msgstr "Payment"
+
+#: calculator/templates/calculator/steps/general/step_6.html:219
+msgid "Наличным курьеру"
+msgstr "Cash payment"
+
+#: calculator/templates/calculator/steps/general/step_6.html:238
+msgid "Завершить оформление"
+msgstr "End official procedures"
+
+#: calculator/templates/calculator/steps/general/step_7.html:4
+msgid "Поздравляем вас! Вы&nbsp;застрахованы!"
+msgstr "Congratulations! You&nbsp;are insured!"
+
+#: calculator/templates/calculator/steps/general/step_7.html:5
+msgid "В ближайшее время с Вами свяжется оператор для подтверждения адреса доставки"
+msgstr "Shortly you will contact the operator to confirm the delivery address"
+
+#: calculator/templates/calculator/steps/health/right_info.html:2
+#: calculator/templates/calculator/steps/property/right_info.html:2
+#: calculator/templates/calculator/steps/travel/right_info.html:2
+#: calculator/templates/calculator/steps/vehicle/right_info.html:2
+msgid "горячая линия"
+msgstr "Hot line"
+
+#: calculator/templates/calculator/steps/health/right_info.html:3
+#: calculator/templates/calculator/steps/health/step_2.html:7
+#: calculator/templates/calculator/steps/travel/step_2.html:106
+msgid "Информация о застрахованном"
+msgstr "Information about the insured"
+
+#: calculator/templates/calculator/steps/health/right_info.html:6
+#: calculator/templates/calculator/steps/property/right_info.html:6
+#: calculator/templates/calculator/steps/travel/right_info.html:6
+#: calculator/templates/calculator/steps/vehicle/right_info.html:6
+msgid "Редактировать"
+msgstr "Edit  "
+
+#: calculator/templates/calculator/steps/health/right_products.html:4
+msgid "Полис Urgent Care"
+msgstr "Urgent Care Policy"
+
+#: calculator/templates/calculator/steps/health/right_products.html:6
+#: calculator/templates/calculator/steps/health/right_products.html:18
+#: calculator/templates/calculator/steps/health/right_products.html:30
+#: calculator/templates/calculator/steps/health/right_products.html:42
+#: calculator/templates/calculator/steps/health/right_products.html:54
+#: calculator/templates/calculator/steps/property/right_products.html:5
+#: calculator/templates/calculator/steps/travel/right_products.html:5
+#: calculator/templates/calculator/steps/vehicle/right_products.html:5
+#: calculator/templates/calculator/steps/vehicle/right_products.html:21
+#: calculator/templates/calculator/steps/vehicle/right_products.html:37
+#: calculator/templates/calculator/steps/vehicle/right_products.html:53
+#: calculator/templates/calculator/steps/vehicle/right_products.html:69
+#: calculator/templates/calculator/steps/vehicle/right_products.html:85
+msgid "Оформление в"
+msgstr "Official procedure"
+
+#: calculator/templates/calculator/steps/health/right_products.html:16
+msgid "Полис REFUND Pediatric"
+msgstr "REFUND Pediatric Policy"
+
+#: calculator/templates/calculator/steps/health/right_products.html:28
+msgid "Полис Программы 69"
+msgstr "Program 69 Policy"
+
+#: calculator/templates/calculator/steps/health/right_products.html:31
+#: calculator/templates/calculator/steps/health/right_products.html:43
+msgid "год"
+msgstr "year"
+
+#: calculator/templates/calculator/steps/health/right_products.html:40
+msgid "Полис Программы 69+"
+msgstr "Program 69+ Policy"
+
+#: calculator/templates/calculator/steps/health/right_products.html:41
+msgid "Программа 69+"
+msgstr "Program 69+"
+
+#: calculator/templates/calculator/steps/health/right_products.html:52
+msgid "Полис REFUND Pediatric VIP"
+msgstr "REFUND Pediatric VIP Policy"
+
+#: calculator/templates/calculator/steps/health/right_products.html:64
+#: calculator/templates/calculator/steps/property/right_products.html:15
+#: calculator/templates/calculator/steps/travel/right_products.html:15
+#: calculator/templates/calculator/steps/vehicle/right_products.html:100
+msgid "Доставка курьером"
+msgstr "Delivery by courier"
+
+#: calculator/templates/calculator/steps/health/right_products.html:65
+#: calculator/templates/calculator/steps/property/right_products.html:16
+#: calculator/templates/calculator/steps/travel/right_products.html:16
+#: calculator/templates/calculator/steps/vehicle/right_products.html:101
+msgid "осуществляется в Bakı или Sumqayıt"
+msgstr "Carried in Baku or Sumgayit"
+
+#: calculator/templates/calculator/steps/health/right_products.html:70
+#: calculator/templates/calculator/steps/property/right_products.html:21
+#: calculator/templates/calculator/steps/travel/right_products.html:21
+#: calculator/templates/calculator/steps/vehicle/right_products.html:106
+msgid "итого Стоимость"
+msgstr "Total cost"
+
+#: calculator/templates/calculator/steps/health/step_2.html:14
+#: calculator/templates/calculator/steps/property/step_2.html:14
+#: calculator/templates/calculator/steps/travel/step_2.html:14
+#: calculator/templates/calculator/steps/vehicle/step_2.html:14
+msgid "изменить"
+msgstr "change"
+
+#: calculator/templates/calculator/steps/health/step_2.html:27
+msgid "Дата рождения застрахованного"
+msgstr "Date of birth of the insured"
+
+#: calculator/templates/calculator/steps/health/step_2.html:33
+#: calculator/templates/calculator/steps/travel/step_2.html:112
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:52
+msgid "Дата рождения"
+msgstr "Date of birth "
+
+#: calculator/templates/calculator/steps/health/step_2.html:40
+#: calculator/templates/calculator/steps/health/step_2.html:60
+#: calculator/templates/calculator/steps/health/step_5.html:64
+#: calculator/templates/calculator/steps/health/step_5.html:76
+#: calculator/templates/calculator/steps/property/step_2.html:71
+#: calculator/templates/calculator/steps/property/step_2.html:82
+#: calculator/templates/calculator/steps/property/step_2.html:93
+#: calculator/templates/calculator/steps/property/step_5.html:113
+#: calculator/templates/calculator/steps/property/step_5.html:163
+#: calculator/templates/calculator/steps/travel/step_2.html:35
+#: calculator/templates/calculator/steps/travel/step_2.html:86
+#: calculator/templates/calculator/steps/travel/step_2.html:102
+#: calculator/templates/calculator/steps/travel/step_2.html:119
+#: calculator/templates/calculator/steps/travel/step_5.html:50
+#: calculator/templates/calculator/steps/travel/step_5.html:62
+#: calculator/templates/calculator/steps/vehicle/step_2.html:86
+#: calculator/templates/calculator/steps/vehicle/step_2.html:113
+#: calculator/templates/calculator/steps/vehicle/step_5.html:112
+#: calculator/templates/calculator/steps/vehicle/step_5.html:162
+#: calculator/templates/calculator/steps/vehicle/step_5.html:174
+#: calculator/templates/calculator/steps/vehicle/step_5.html:196
+#: calculator/templates/calculator/steps/vehicle/step_5.html:220
+msgid "Продолжить"
+msgstr "Continue "
+
+#: calculator/templates/calculator/steps/health/step_2.html:44
+msgid "Анкета REFUND Pediatric"
+msgstr "REFUND Pediatric Quetionnaire"
+
+#: calculator/templates/calculator/steps/health/step_2.html:46
+msgid "Пожалуйста, укажите наличие приведенных ниже состояний здоровья у Вашего ребенка"
+msgstr "Please enter the presence of the following health conditions of your child."
+
+#: calculator/templates/calculator/steps/health/step_3_content.html:6
+#: calculator/templates/calculator/steps/property/step_3_content.html:6
+#: calculator/templates/calculator/steps/travel/step_3_content.html:6
+#: calculator/templates/calculator/steps/vehicle/step_3_content.html:6
+#: templates/flatpages/insurance.html:18 templates/flatpages/insurance/auto/5lik.html:18
+#: templates/flatpages/insurance/auto/confidentdriver.html:18
+#: templates/flatpages/insurance/auto/cvi.html:18
+#: templates/flatpages/insurance/auto/icbariplus.html:18
+#: templates/flatpages/insurance/auto/simplekasko.html:18
+#: templates/flatpages/insurance/auto/superkasko.html:18
+#: templates/flatpages/insurance/health/program69.html:18
+#: templates/flatpages/insurance/health/refundpediatric.html:18
+#: templates/flatpages/insurance/health/urgentcare.html:18
+#: templates/flatpages/insurance/property/crpi.html:18
+#: templates/flatpages/insurance/travel/programtravel.html:18
+msgid "Страховые продукты"
+msgstr "Insurance products"
+
+#: calculator/templates/calculator/steps/health/step_3_content.html:22
+#: calculator/templates/calculator/steps/health/step_3_content.html:37
+#: calculator/templates/calculator/steps/health/step_3_content.html:59
+#: calculator/templates/calculator/steps/property/step_3_content.html:19
+#: calculator/templates/calculator/steps/travel/step_3_content.html:19
+#: calculator/templates/calculator/steps/vehicle/step_3_content.html:19
+#: calculator/templates/calculator/steps/vehicle/step_3_content.html:33
+#: calculator/templates/calculator/steps/vehicle/step_3_content.html:51
+#: templates/flatpages/compare/travel.html:139 templates/flatpages/compare/travel.html:142
+#: templates/flatpages/compare/travel.html:145 templates/flatpages/compare/travel.html:148
+#: templates/flatpages/compare/travel.html:151 templates/flatpages/compare/travel.html:154
+#: templates/flatpages/compare/travel.html:157
+msgid "выбрать"
+msgstr "Select"
+
+#: calculator/templates/calculator/steps/health/step_3_content.html:61
+msgid ""
+"Отмечены 5 и более состояний (1..17), что препятствует страхованию по программе REFUND Pediatric"
+msgstr "It marked 5 or more states (1..17), which prevents insurance program for REFUND Pediatric"
+
+#: calculator/templates/calculator/steps/health/step_3_content.html:62
+msgid "Отмечены состояния (19..25), которые препятствуют страхованию по программе REFUND Pediatric"
+msgstr "It marked states (19..25), which prevents insurance program for REFUND Pediatric"
+
+#: calculator/templates/calculator/steps/health/step_4.html:44
+#: calculator/templates/calculator/steps/property/step_4.html:25
+#: calculator/templates/calculator/steps/travel/step_4.html:120
+#: calculator/templates/calculator/steps/vehicle/step_4.html:29
+msgid "Перейти к оформлению"
+msgstr "Proceed to Checkout"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:7
+msgid "Продукт Urgent Care включает возмещение расходов на"
+msgstr "Urgent Care product includes recovery of costs for"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:8
+msgid "вызовы скорой помощи (лимит 3 вызова)"
+msgstr "emergency call (limit 3 call)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:9
+msgid ""
+"лечение в стационаре (в т.ч. и хирургическое) одного неотложного заболевания (лимит на "
+"количество дней пребывания в стационаре - 21)"
+msgstr ""
+"inpatient treatment (including surgery) one emergency disease (a limit on the number of days of "
+"hospitalization - 21)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:10
+#: calculator/templates/calculator/steps/health/step_4_options.html:30
+#: calculator/templates/calculator/steps/health/step_4_options.html:49
+#: templates/flatpages/insurance/health/refundpediatric.html:76
+msgid "обеспечение медикаментами (во время оказания неотложной помощи и пребывания в стационаре)"
+msgstr "providing medicines (during emergency care and hospital stay)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:11
+#: calculator/templates/calculator/steps/health/step_4_options.html:31
+#: calculator/templates/calculator/steps/health/step_4_options.html:50
+#: templates/flatpages/insurance/health/refundpediatric.html:77
+msgid "неотложная стоматология"
+msgstr "emergency dentistry"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:12
+msgid "неотложная вакцинация"
+msgstr "emergency vaccination"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:20
+#: calculator/templates/calculator/steps/health/step_4_options.html:39
+#: templates/flatpages/insurance/health/refundpediatric.html:64
+msgid "Патронаж для новорожденных"
+msgstr "Patronage for newborns"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:21
+#: calculator/templates/calculator/steps/health/step_4_options.html:40
+#: templates/flatpages/insurance/health/refundpediatric.html:66
+msgid ""
+"1-й месяц - Медицинский осмотр: консультация педиатра, рентген грудной клетки, УЗИ брюшной "
+"полости, общий анализ крови, общий анализ мочи"
+msgstr ""
+"1st month - Medical examination: consulting pediatrician, chest x-ray, abdominal ultrasound, "
+"complete blood count, urinalysis"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:22
+#: calculator/templates/calculator/steps/health/step_4_options.html:41
+#: templates/flatpages/insurance/health/refundpediatric.html:67
+msgid "2-й месяц - осмотр педиатра"
+msgstr "2nd month - visiting of pediatrician"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:23
+#: calculator/templates/calculator/steps/health/step_4_options.html:42
+#: templates/flatpages/insurance/health/refundpediatric.html:68
+msgid ""
+"3-й месяц - осмотр педиатра, по показаниям осмотры хирурга-ортопеда, невролога, окулиста, "
+"оториноларинголога"
+msgstr ""
+"3rd month - inspection of pediatrician, on the testimony of checkups orthopedic surgeon, "
+"neurologist, ophthalmologist, otolaryngologist"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:24
+#: calculator/templates/calculator/steps/health/step_4_options.html:43
+#: templates/flatpages/insurance/health/refundpediatric.html:69
+msgid "12-месяц - осмотр педиатра, общий анализ крови, общий анализ мочи"
+msgstr "12-month - inspection of pediatrician, complete blood count, urinalysis"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:26
+#: calculator/templates/calculator/steps/health/step_4_options.html:45
+#: templates/flatpages/insurance/health/refundpediatric.html:71
+msgid "Возмещение расходов на медицинские услуги"
+msgstr "Compensation of expenses for medical services"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:27
+#: calculator/templates/calculator/steps/health/step_4_options.html:46
+#: templates/flatpages/insurance/health/refundpediatric.html:73
+msgid "скорая помощь (лимит 4 вызова)"
+msgstr "ambulance (Limit 4 calls)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:28
+#: calculator/templates/calculator/steps/health/step_4_options.html:47
+#: templates/flatpages/insurance/health/refundpediatric.html:74
+msgid "амбулаторная помощь (лимит 8 обращений)"
+msgstr "ambulatory care (limit of 8 calls)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:29
+#: calculator/templates/calculator/steps/health/step_4_options.html:48
+#: templates/flatpages/insurance/health/refundpediatric.html:75
+msgid "стационарная помощь"
+msgstr "inpatient care"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:32
+#: calculator/templates/calculator/steps/health/step_4_options.html:51
+#: templates/flatpages/insurance/health/refundpediatric.html:78
+msgid "терапевтическая стоматология (лимит 2 пломбы)"
+msgstr "therapeutic dentistry (fillings limit 2)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:33
+#: calculator/templates/calculator/steps/health/step_4_options.html:52
+#: templates/flatpages/insurance/health/refundpediatric.html:79
+msgid "неотложная вакцинация (франшиза 25&#37;)"
+msgstr "emergency vaccination (25&#37; deductible)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:34
+#: calculator/templates/calculator/steps/health/step_4_options.html:53
+#: templates/flatpages/insurance/health/refundpediatric.html:80
+msgid "физиотерапия (лимит 10 процедур)"
+msgstr "physiotherapy (limit of 10 procedures)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:55
+msgid "Расширения для VIP пакета"
+msgstr "Extensions for the VIP package"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:56
+msgid "массаж с выездом на дом (лимит 10 процедур)"
+msgstr "massage with home visits (limit of 10 procedures)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:57
+msgid "осмотр специалистами на дому"
+msgstr "inspection by specialists at home"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:58
+msgid "медикаменты для амбулаторного лечения (лимит 200 AZN)"
+msgstr "medicines for outpatient treatment (limit of 200 AZN)"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:59
+msgid "пребывание в стационаре в одноместной палате"
+msgstr "stay in a hospital in a single ward"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:60
+msgid "пребывание матери в палате"
+msgstr "staying of mother in the ward"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:69
+msgid ""
+"Данное страхование оплачивает расходы на лечение, если у Страхователя диагностировано "
+"злокачественное онкозаболевание в течение срока действия договора страхования."
+msgstr ""
+"This insurance pays treatment if diagnosed with a malignant oncologic diseases of the insured "
+"during the term of the insurance contract."
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:70
+msgid "Ежегодный рост страховой суммы 2000 манат"
+msgstr "The annual growth of the sum insured 2000 man"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:71
+msgid "Waiting Period 4 мес."
+msgstr "Waiting Period 4 months."
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:72
+msgid "Эффективность полиса после диагностирования заболевания 1 год 8 мес"
+msgstr "The effectiveness of the policy after the diagnosis of the disease – 1 year 8 months"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:73
+msgid "Максимальный лимит 45000 манат"
+msgstr "The maximum limit – 45000 man"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:78
+msgid ""
+"Данное страхование оплачивает расходы на лечение, если у Страхователя диагностировано "
+"злокачественное онкозаболевание в течение срока действия договора страхования. "
+msgstr ""
+"This insurance pays treatment if diagnosed with a malignant oncologic diseases of the insured "
+"during the term of the insurance contract."
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:79
+msgid "Ежегодный рост страховой суммы 3000 манат "
+msgstr "The annual growth of the sum insured 3000 man"
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:80
+msgid "Waiting Period 4 мес. "
+msgstr "Waiting Period 4 months."
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:81
+msgid "Эффективность полиса после диагностирования заболевания 2 года "
+msgstr "The effectiveness of the policy after the diagnosis of the disease – 2 year "
+
+#: calculator/templates/calculator/steps/health/step_4_options.html:82
+msgid "Максимальный лимит 55000 манат"
+msgstr "The maximum limit – 55000 man"
+
+#: calculator/templates/calculator/steps/health/step_4_options_2.html:5
+#: calculator/templates/calculator/steps/property/step_2.html:86
+#: calculator/templates/calculator/steps/property/step_4_options.html:25
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:64
+#: templates/flatpages/compare/vehicle.html:219
+msgid "Франшиза"
+msgstr "Franchise"
+
+#: calculator/templates/calculator/steps/health/step_4_options_2.html:11
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:141
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:174
+msgid "Нет"
+msgstr "No"
+
+#: calculator/templates/calculator/steps/health/step_4_options_2.html:35
+msgid "Плановая вакцинация"
+msgstr "Planned vaccination"
+
+#: calculator/templates/calculator/steps/health/step_4_options_2.html:42
+msgid "Массаж"
+msgstr "Massage"
+
+#: calculator/templates/calculator/steps/health/step_4_options_2.html:49
+msgid "VIP программа"
+msgstr "VIP Program"
+
+#: calculator/templates/calculator/steps/health/step_4_options_3.html:6
+msgid "Расширенная программа"
+msgstr "The expanded program"
+
+#: calculator/templates/calculator/steps/health/step_5.html:8
+#: calculator/templates/calculator/steps/property/step_5.html:8
+#: calculator/templates/calculator/steps/travel/step_5.html:8
+#: calculator/templates/calculator/steps/vehicle/step_5.html:8
+msgid "Оформление полиса"
+msgstr "Issue insurance policy"
+
+#: calculator/templates/calculator/steps/health/step_5.html:41
+#: calculator/templates/calculator/steps/property/step_5.html:119
+#: calculator/templates/calculator/steps/vehicle/step_5.html:118
+msgid "Условия страхования"
+msgstr "Insurance conditions"
+
+#: calculator/templates/calculator/steps/health/step_5.html:49
+#: calculator/templates/calculator/steps/property/step_5.html:127
+#: calculator/templates/calculator/steps/vehicle/step_5.html:126
+msgid "Дата начала договора"
+msgstr "Effective date of an agreement"
+
+#: calculator/templates/calculator/steps/health/step_5.html:58
+#: calculator/templates/calculator/steps/property/step_5.html:136
+#: calculator/templates/calculator/steps/vehicle/step_5.html:135
+msgid "Дата, с которой договор страхования вступает в силу"
+msgstr "Date from which the insurance contract enters into force"
+
+#: calculator/templates/calculator/steps/health/step_5.html:70
+#: calculator/templates/calculator/steps/property/step_5.html:169
+#: calculator/templates/calculator/steps/travel/step_5.html:56
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:35
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:89
+#: calculator/templates/calculator/steps/vehicle/step_5.html:168
+msgid "Страхователь"
+msgstr "Insured"
+
+#: calculator/templates/calculator/steps/health/step_5.html:82
+msgid "Данные застрахованного"
+msgstr "Personal details"
+
+#: calculator/templates/calculator/steps/health/step_5.html:90
+#: calculator/templates/calculator/steps/travel/step_5.html:76
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:7
+#: common/templates/common/forms/ask_question.html:7
+#: common/templates/common/forms/make_complaint.html:7
+msgid "Фамилия"
+msgstr "Surname"
+
+#: calculator/templates/calculator/steps/health/step_5.html:106
+#: calculator/templates/calculator/steps/travel/step_5.html:92
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:22 common/models.py:23
+#: common/templates/common/forms/ask_question.html:8 common/templates/common/forms/callback.html:6
+#: common/templates/common/forms/make_complaint.html:8
+msgid "Имя"
+msgstr "Name "
+
+#: calculator/templates/calculator/steps/health/step_5.html:122
+#: calculator/templates/calculator/steps/travel/step_5.html:108
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:37
+#: common/templates/common/forms/ask_question.html:9
+#: common/templates/common/forms/make_complaint.html:9
+msgid "Отчество"
+msgstr "Patronymic name "
+
+#: calculator/templates/calculator/steps/health/step_5.html:145
+#: calculator/templates/calculator/steps/property/step_5.html:187
+#: calculator/templates/calculator/steps/travel/step_5.html:147
+#: calculator/templates/calculator/steps/vehicle/step_5.html:234
+msgid "Оформить"
+msgstr "Checkout"
+
+#: calculator/templates/calculator/steps/property/right_info.html:3
+msgid "Ваша недвижимость"
+msgstr "Your property"
+
+#: calculator/templates/calculator/steps/property/right_products.html:4
+msgid "Полис недвижимости"
+msgstr "Property insurance policy"
+
+#: calculator/templates/calculator/steps/property/step_2.html:7
+#: calculator/templates/calculator/steps/property/step_5.html:41
+msgid "Информация о недвижимости"
+msgstr "Information about real estate"
+
+#: calculator/templates/calculator/steps/property/step_2.html:30
+msgid "Тип недвижимости"
+msgstr "Property Type"
+
+#: calculator/templates/calculator/steps/property/step_2.html:34
+#: calculator/templates/calculator/steps/property/step_2.html:35
+msgid "Квартира / Жилой дом"
+msgstr "Flat/apartment house"
+
+#: calculator/templates/calculator/steps/property/step_2.html:39
+#: calculator/templates/calculator/steps/property/step_2.html:40
+msgid "Административное здание"
+msgstr "Administrative building"
+
+#: calculator/templates/calculator/steps/property/step_2.html:44
+#: calculator/templates/calculator/steps/property/step_2.html:45
+msgid "Другой"
+msgstr "Other"
+
+#: calculator/templates/calculator/steps/property/step_2.html:67
+msgid "Сфера"
+msgstr "Scope"
+
+#: calculator/templates/calculator/steps/property/step_2.html:75
+msgid "Стоимость недвижимости"
+msgstr "The value of real estate"
+
+#: calculator/templates/calculator/steps/property/step_4_options.html:6
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:6
+#: templates/flatpages/compare/vehicle.html:18
+msgid "Страховая сумма"
+msgstr "Sum insured"
+
+#: calculator/templates/calculator/steps/property/step_5.html:48
+msgid "Номер из госреестра"
+msgstr "Number of State register"
+
+#: calculator/templates/calculator/steps/property/step_5.html:56
+msgid "номер документа государственной регистрации имущества"
+msgstr "document number of the State registration of property"
+
+#: calculator/templates/calculator/steps/property/step_5.html:65
+msgid "Номер другого документа"
+msgstr "Another document number"
+
+#: calculator/templates/calculator/steps/property/step_5.html:73
+msgid "номер иного документа, подтверждающий право собственности на имущество"
+msgstr "a number of the document certifying the right of ownership to property"
+
+#: calculator/templates/calculator/steps/property/step_5.html:80
+msgid "Цель использования"
+msgstr "Purpose of use"
+
+#: calculator/templates/calculator/steps/property/step_5.html:87
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:209
+msgid "Адрес"
+msgstr "Address"
+
+#: calculator/templates/calculator/steps/property/step_5.html:102
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:144
+msgid "Индекс"
+msgstr "Index"
+
+#: calculator/templates/calculator/steps/property/step_5.html:146
+#: calculator/templates/calculator/steps/vehicle/step_5.html:145
+msgid "Срок страхования"
+msgstr "Period of insurance"
+
+#: calculator/templates/calculator/steps/property/step_5.html:152
+#: calculator/templates/calculator/steps/vehicle/step_5.html:151
+msgid "12 месяцев"
+msgstr "12 months"
+
+#: calculator/templates/calculator/steps/property/step_5.html:157
+#: calculator/templates/calculator/steps/vehicle/step_5.html:156
+msgid "Срок, в течение которого договор страхования будет действовать"
+msgstr "The period during which insurance contract will be valid"
+
+#: calculator/templates/calculator/steps/travel/right_info.html:3
+#: calculator/templates/calculator/steps/travel/step_2.html:7
+msgid "Информация о поездке"
+msgstr "Information about the trip"
+
+#: calculator/templates/calculator/steps/travel/right_products.html:4
+msgid "Полис Travel"
+msgstr "Travel Policy"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:28
+msgid "Куда едите?"
+msgstr "Where are you going?"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:50
+msgid "Даты поездки"
+msgstr "Travel days"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:55
+msgid "Дата начала поездки"
+msgstr "Date of beginning of a trip"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:70
+msgid "Дата окончания поездки"
+msgstr "Date of ending of a trip"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:90
+msgid "Тип поездки"
+msgstr "Type of trip"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:93
+msgid "Туризм"
+msgstr "Tourism"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:94
+msgid "Учеба"
+msgstr "Education"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:95
+msgid "Любительский спорт"
+msgstr "Həvəskar idman"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:96
+msgid "Профессиональный спорт"
+msgstr "Professional sports"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:97
+msgid "Командировка"
+msgstr "Business trip"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:98
+msgid "Работа c низким уровнем риска"
+msgstr "Low-risk work"
+
+#: calculator/templates/calculator/steps/travel/step_2.html:99
+msgid "Тяжелая и опасная работа"
+msgstr "Difficult and dangerous work"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:11
+msgid ""
+"Срок действия полиса увеличен на <span></span> дня(-ей) в соответствии с Визовым Кодексом стран "
+"Шенгенской зоны"
+msgstr ""
+"The term of the policy is increased by <span></span> day (s) in accordance with the Visa Code of "
+"Schengen countries"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:20
+msgid "Валюта"
+msgstr "Currency"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:43
+msgid "Страховое покрытие"
+msgstr "Insurance coverage"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:61
+msgid "Группа рисков"
+msgstr "Group of risks"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:67
+msgid "Стандарт"
+msgstr "Standart"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:74
+#: templates/flatpages/compare/travel.html:14 templates/flatpages/compare/travel.html:16
+#: templates/flatpages/compare/travel.html:18 templates/flatpages/compare/travel.html:20
+msgid "Премиум"
+msgstr "Premium"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:83
+msgid "Количество выездов за границу"
+msgstr "Number of trips abroad"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:89
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:45
+msgid "Один"
+msgstr "One"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:96
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:53
+msgid "Несколько"
+msgstr "Several"
+
+#: calculator/templates/calculator/steps/travel/step_4.html:105
+#: calculator/templates/calculator/steps/vehicle/step_4.html:14
+msgid "описание и сравнение продуктов"
+msgstr "DESCRIPTION AND COMPARING OF PRODUCTS"
+
+#: calculator/templates/calculator/steps/travel/step_5.html:41
+msgid "Информация о путешествии"
+msgstr "Travel Information"
+
+#: calculator/templates/calculator/steps/travel/step_5.html:46
+msgid "Посольство"
+msgstr "Embassy"
+
+#: calculator/templates/calculator/steps/travel/step_5.html:47
+msgid "Посольство, в которое предъявляется страховка"
+msgstr "The embassy, where is presented your insurance"
+
+#: calculator/templates/calculator/steps/travel/step_5.html:68
+msgid "Данные загранпаспорта"
+msgstr "Foreign Passport Information"
+
+#: calculator/templates/calculator/steps/travel/step_5.html:124
+msgid "Номер загранпаспорта"
+msgstr "Foreign Passport Number"
+
+#: calculator/templates/calculator/steps/vehicle/right_info.html:3
+#: templates/flatpages/insurance/auto/confidentdriver.html:57
+#: templates/flatpages/insurance/auto/simplekasko.html:57
+#: templates/flatpages/insurance/auto/superkasko.html:57
+msgid "Ваш автомобиль"
+msgstr "Your vehicle"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:4
+msgid "Полис ОСАГО"
+msgstr "Compulsory vehicle insurance policy"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:12
+#: calculator/templates/calculator/steps/vehicle/right_products.html:28
+#: calculator/templates/calculator/steps/vehicle/right_products.html:44
+#: calculator/templates/calculator/steps/vehicle/right_products.html:60
+msgid "Страхование ответственности перед 3-ми лицами."
+msgstr "Third party liability insurance"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:20
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:26
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:32
+#: templates/flatpages/compare/vehicle.html:10 templates/flatpages/insurance.html:70
+#: templates/flatpages/insurance/auto/cvi.html:91
+#: templates/flatpages/insurance/auto/icbariplus.html:50
+msgid "ОСАГО+"
+msgstr "Icibari Plus"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:36
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:41
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:47
+msgid "Супер КАСКО"
+msgstr "SuperKasko"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:52
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:56
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:62
+#: templates/flatpages/compare/vehicle.html:11 templates/flatpages/insurance.html:75
+#: templates/flatpages/insurance/auto/5lik.html:50
+msgid "Пятерочка"
+msgstr "Five"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:68
+msgid "Полис Уверенный водитель"
+msgstr "GÖYDƏNDÜŞMƏ TƏKLİF policy"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:76
+msgid "Страхование от ущерба, гибели, угон и противоправных действий 3х лиц."
+msgstr "Insurance against damage, destruction, car theft and third party illegal acts"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:84
+msgid "Полис Простое КАСКО"
+msgstr "Sadə Kasko policy"
+
+#: calculator/templates/calculator/steps/vehicle/right_products.html:92
+msgid "Полное возмещение ущерба ТС в случае ДТП при отсутствии вашей виновности."
+msgstr "In the event of accident full damage recovery of a vehicle if you are not guilty "
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:7
+msgid "Информация об автомобиле"
+msgstr "Information about vehicle"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:32
+msgid "Тип автомобиля"
+msgstr "Type of vehicle"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:36
+#: calculator/templates/calculator/steps/vehicle/step_2.html:37
+msgid "Легковой автомобиль"
+msgstr "Motor vehicle"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:41
+#: calculator/templates/calculator/steps/vehicle/step_2.html:42
+msgid "Прицеп и полуприцеп"
+msgstr "Trailers and semitrailers"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:46
+#: calculator/templates/calculator/steps/vehicle/step_2.html:47
+msgid "Автобус и микроавтобус"
+msgstr "Bus and minibus"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:51
+#: calculator/templates/calculator/steps/vehicle/step_2.html:52
+msgid "Мотоцикл&nbsp;и&nbsp;скутер"
+msgstr "Motorcycle&nbsp;and&nbsp;scooter"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:56
+#: calculator/templates/calculator/steps/vehicle/step_2.html:57
+msgid "Грузовой автомобиль"
+msgstr "Truck"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:61
+#: calculator/templates/calculator/steps/vehicle/step_2.html:62
+msgid "Трактор и Спецтехника"
+msgstr "Tractors&nbsp;and&nbsp;special&nbsp;machinery"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:79
+msgid "Стоимость автомобиля"
+msgstr "Vehicle's price"
+
+#: calculator/templates/calculator/steps/vehicle/step_2.html:90
+msgid "FIN код страхователя"
+msgstr "FIN insurer code"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:16
+msgid "Дополнительные страховые продукты"
+msgstr "Additional insurance products"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:27
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:42
+#: calculator/templates/calculator/steps/vehicle/step_4_options.html:57
+msgid "только с ОСАГО Atəşgah Sığorta"
+msgstr "Only in case when your CMTPL is in the Ateshgah IC"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:6
+msgid "Выбор СТОА"
+msgstr "Choose vehicle service station "
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:12
+msgid "По выбору страховщика"
+msgstr "By choice of  insurer"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:19
+msgid "По выбору страхователя"
+msgstr "By choice of insuree "
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:29
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:83
+msgid "Выгодоприобретатель"
+msgstr "Beneficiary"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_11.html:42
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:96
+msgid "Банк"
+msgstr "Bank"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:39
+msgid "Количество страховых случаев"
+msgstr "Insured accidents count"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:74
+msgid ""
+"Это часть причиненного в результате страхового случая ущерба, которая не обеспечивается "
+"страхованием и оплачивается страхователем"
+msgstr ""
+"This is the part of the damage caused by the insurance accident which is not provided by the "
+"insurance and paid by the insurer"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:124
+#: templates/flatpages/compare/vehicle.html:143
+msgid "Эвакуация"
+msgstr "Evacuation"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:126
+msgid "Оплата услуг эвакуатора с места ДТП"
+msgstr "Payment for the evacuation service from the place of traffic accindent"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:135
+msgid "Расширение ОСАГО"
+msgstr "Extension compulsory TPL"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:168
+msgid "Страховая сумма по НС"
+msgstr "Insurance money payable at accident"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:201
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:239
+msgid "Количество застрахованных по НС"
+msgstr "Count of people insured against accidents"
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:252
+#: calculator/templates/calculator/steps/vehicle/step_5.html:203
+msgid "Дополнительные водители"
+msgstr "Additional drivers "
+
+#: calculator/templates/calculator/steps/vehicle/step_4_options_12.html:254
+msgid ""
+"Водители, при управлении которыми указанное ТС так же будет считать застрахованным по выбранным "
+"рискам. Страхователь включен в список водителей по-умолчанию."
+msgstr ""
+"Drivers in the management of which said CU will also be considered in selected insured risks. "
+"Insured included in the list of drivers by default"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:41
+msgid "Транспортное средство"
+msgstr "Vehicle"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:56
+msgid ""
+"Vehicle identification number — уникальный код транспортного средства, состоящий из 17 символов"
+msgstr "Vehicle identification number - a unique vehicle code consisting of 17 characters"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:66
+msgid "Номер двигателя"
+msgstr "Engine number"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:81
+msgid "Номер кузова"
+msgstr "Chassis number"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:96
+msgid "Регистрационный<br/>номер ТС"
+msgstr "Vehicle plate<br/> number"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:108
+msgid "Регион регистрации"
+msgstr "Region registration"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:109
+msgid "Регион, в котором ТС зарегистрировано"
+msgstr "The region in which the vehicle is registered"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:181
+msgid "Владелец ТС"
+msgstr "Car owner"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:188
+msgid "Страхователь - владелец ТС"
+msgstr "Insured- vehicle’s owner"
+
+#: calculator/templates/calculator/steps/vehicle/step_5.html:212
+msgid "Есть еще один дополнительный водитель"
+msgstr "Additional drivers"
+
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:68
+msgid "Пол"
+msgstr "Sex "
+
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:95
+msgid "ПИН Код"
+msgstr "PİN code"
+
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:107
+msgid "Адрес регистрации"
+msgstr "Registered Address"
+
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:111
+msgid "Страна"
+msgstr "Country"
+
+#: calculator/templates/calculator/steps/vehicle/step_5_person_info.html:112
+msgid "Указывается в какой стране вы проживаете более 180 дней в году"
+msgstr "Indicated which country you live in more than 180 days in a year"
+
+#: calculator/views.py:217
+msgid "Марка автомобиля"
+msgstr "Make of vehicle"
+
+#: calculator/views.py:231 calculator/views.py:238
+msgid "Модель автомобиля"
+msgstr "Model of vehicle"
+
+#: calculator/views.py:247
+msgid "Объем двигателя"
+msgstr "Engine capacity"
+
+#: calculator/views.py:256
+msgid "Количество мест"
+msgstr "Number of seats"
+
+#: calculator/views.py:265
+msgid "Максимальная грузоподъемность"
+msgstr "Maximum load capacity"
+
+#: calculator/views.py:275
+msgid "Год выпуска автомобиля"
+msgstr "Vehicle's manufacturing year "
+
+#: common/models.py:8 common/templates/common/forms/callback.html:53
+msgid "Купить страховку"
+msgstr "To buy insurance"
+
+#: common/models.py:9 common/templates/common/forms/callback.html:54
+msgid "Обсудить условия"
+msgstr "Discuss the terms"
+
+#: common/models.py:10 common/templates/common/forms/callback.html:55
+msgid "Прочее"
+msgstr "Other "
+
+#: common/models.py:14
+msgid "Мобильным телефоном"
+msgstr "By mobile phone"
+
+#: common/models.py:15
+msgid "Электронной почтой"
+msgstr "By email"
+
+#: common/models.py:22
+msgid "Дата создания"
+msgstr "Date of create"
+
+#: common/models.py:25 common/templates/common/forms/callback.html:8
+msgid "Дата звонка"
+msgstr "Date of call"
+
+#: common/models.py:26
+msgid "Время с"
+msgstr "Time from"
+
+#: common/models.py:27
+msgid "Время до"
+msgstr "Time till "
+
+#: common/models.py:28 common/templates/common/forms/callback.html:49
+msgid "Тема звонка"
+msgstr "Subject of call "
+
+#: common/templates/common/base.html:49
+msgid "Внимание"
+msgstr "Attention!"
+
+#: common/templates/common/base.html:79 templates/flatpages/insurance.html:9
+#: templates/flatpages/insurance/auto.html:9 templates/flatpages/insurance/auto/5lik.html:9
+#: templates/flatpages/insurance/auto/confidentdriver.html:9
+#: templates/flatpages/insurance/auto/cvi.html:9
+#: templates/flatpages/insurance/auto/icbariplus.html:9
+#: templates/flatpages/insurance/auto/simplekasko.html:9
+#: templates/flatpages/insurance/auto/superkasko.html:9
+#: templates/flatpages/insurance/health.html:9
+#: templates/flatpages/insurance/health/program69.html:9
+#: templates/flatpages/insurance/health/refundpediatric.html:9
+#: templates/flatpages/insurance/health/urgentcare.html:9
+#: templates/flatpages/insurance/property.html:9
+#: templates/flatpages/insurance/property/crpi.html:9 templates/flatpages/insurance/travel.html:9
+#: templates/flatpages/insurance/travel/programtravel.html:9
+msgid "Страхование"
+msgstr "Insurance  "
+
+#: common/templates/common/base.html:81
+msgid "Все страховые продукты"
+msgstr "All insurance products"
+
+#: common/templates/common/base.html:82
+#: templates/flatpages/includes/inner_insurance_details_auto.html:23
+#: templates/flatpages/includes/inner_insurance_details_auto.html:90
+#: templates/flatpages/insurance/auto.html:18
+msgid "Страхование автомобиля"
+msgstr "Auto insurance"
+
+#: common/templates/common/base.html:83
+#: templates/flatpages/includes/inner_insurance_details_property.html:23
+#: templates/flatpages/includes/inner_insurance_details_property.html:90
+msgid "Страхование недвижимости"
+msgstr "Property insurance"
+
+#: common/templates/common/base.html:84
+#: templates/flatpages/includes/inner_insurance_details_health.html:23
+#: templates/flatpages/includes/inner_insurance_details_health.html:73
+#: templates/flatpages/insurance/health.html:18
+msgid "Страхование здоровья"
+msgstr "Health insurance"
+
+#: common/templates/common/base.html:85
+#: templates/flatpages/includes/inner_insurance_details_travel.html:23
+#: templates/flatpages/includes/inner_insurance_details_travel.html:80
+#: templates/flatpages/insurance/travel.html:18
+msgid "Страхование путешествий"
+msgstr "Travel insurance"
+
+#: common/templates/common/base.html:102
+msgid "Компания"
+msgstr "Company"
+
+#: common/templates/common/base.html:104
+msgid "О компании"
+msgstr "About us"
+
+#: common/templates/common/base.html:105
+msgid "Партнеры"
+msgstr "Partners"
+
+#: common/templates/common/base.html:106
+msgid "Вопросы и ответы"
+msgstr "Questions and replies "
+
+#: common/templates/common/base.html:107 common/templates/common/base.html:146
+msgid "Контакты"
+msgstr "Contacts"
+
+#: common/templates/common/base.html:116
+msgid "Язык"
+msgstr "Language"
+
+#: common/templates/common/base.html:138
+msgid "Задайте вопрос"
+msgstr "Ask a question"
+
+#: common/templates/common/base.html:166
+msgid "Лицензия С № 080624 от 05 ноября 2014 года"
+msgstr "License No. 080624 dated November 5, 2014 year"
+
+#: common/templates/common/forms/ask_question.html:6
+msgid "Ваш вопрос"
+msgstr "Your question"
+
+#: common/templates/common/forms/ask_question.html:10
+#: common/templates/common/forms/make_complaint.html:10
+msgid "Мобильный телефон"
+msgstr "Mobile phone"
+
+#: common/templates/common/forms/ask_question.html:11
+#: common/templates/common/forms/make_complaint.html:11
+msgid "Электронная почта"
+msgstr "Email "
+
+#: common/templates/common/forms/ask_question.html:12
+#: common/templates/common/forms/make_complaint.html:12
+msgid "Связаться со мной"
+msgstr "Contact with me"
+
+#: common/templates/common/forms/ask_question.html:17
+#: common/templates/common/forms/make_complaint.html:17
+msgid "По мобильному телефону"
+msgstr "By mobile phone"
+
+#: common/templates/common/forms/ask_question.html:18
+#: common/templates/common/forms/make_complaint.html:18
+msgid "По электронной почте"
+msgstr "By email"
+
+#: common/templates/common/forms/ask_question.html:24
+#: common/templates/common/forms/make_complaint.html:24
+msgid "отправить"
+msgstr "Send"
+
+#: common/templates/common/forms/callback.html:10
+msgid "Время звонка"
+msgstr "Calling time"
+
+#: common/templates/common/forms/callback.html:13
+msgid "с"
+msgstr "From"
+
+#: common/templates/common/forms/callback.html:31
+msgid "по"
+msgstr "Till"
+
+#: common/templates/common/forms/callback.html:61
+msgid "Позвоните мне"
+msgstr "Call me"
+
+#: common/templates/common/forms/make_complaint.html:6
+msgid "Жалоба"
+msgstr "Complaint"
+
+#: common/templates/common/includes/base_header.html:24
+#: common/templates/common/includes/base_header.html:40
+#: common/templates/common/includes/inner_header.html:19
+#: common/templates/common/includes/inner_header.html:33
+msgid "заказ звонка"
+msgstr "Call request"
+
+#: common/templates/common/includes/header_dropdown_menu.html:8
+#: templates/flatpages/site_home.html:16 templates/flatpages/site_home.html:55
+msgid "страхование"
+msgstr "Insurance"
+
+#: common/templates/common/includes/header_dropdown_menu.html:9
+msgid "Автомобиль"
+msgstr "Auto"
+
+#: common/templates/common/includes/header_dropdown_menu.html:12
+#: templates/flatpages/contacts.html:100 templates/flatpages/contacts.html:113
+#: templates/flatpages/contacts.html:126 templates/flatpages/contacts.html:139
+#: templates/flatpages/contacts.html:152 templates/flatpages/contacts.html:165
+#: templates/flatpages/contacts.html:178 templates/flatpages/contacts.html:191
+#: templates/flatpages/includes/inner_insurance_details_property.html:97
+msgid "Недвижимость"
+msgstr "Property"
+
+#: common/templates/common/includes/header_dropdown_menu.html:15
+#: templates/flatpages/contacts.html:100 templates/flatpages/contacts.html:113
+#: templates/flatpages/contacts.html:126 templates/flatpages/contacts.html:139
+#: templates/flatpages/contacts.html:152 templates/flatpages/contacts.html:165
+#: templates/flatpages/contacts.html:178 templates/flatpages/contacts.html:191
+msgid "Здоровье"
+msgstr "Health"
+
+#: common/templates/common/includes/header_dropdown_menu.html:18
+#: templates/flatpages/includes/inner_insurance_details_travel.html:97
+#: templates/flatpages/includes/inner_insurance_details_travel.html:107
+msgid "Путешествия"
+msgstr "Travel"
+
+#: common/templates/common/modals/bank_offer.html:2
+msgid "Уникальное банковское предложение"
+msgstr "The unique banking offer"
+
+#: common/templates/common/modals/bank_offer.html:10
+msgid "Банковские услуги"
+msgstr "Banking services"
+
+#: common/templates/common/modals/bank_offer.html:12
+msgid "Всеми остальными вопросами займется профессионал."
+msgstr "The rest questions will be replied by professional"
+
+#: common/templates/common/modals/bank_offer.html:13
+msgid "Узнать больше"
+msgstr "To learn more"
+
+#: common/templates/common/modals/calc.html:7
+msgid "Мои рассчеты"
+msgstr "My calculations"
+
+#: common/templates/common/modals/callback.html:7
+msgid "Обратный звонок"
+msgstr "Callback"
+
+#: common/templates/common/modals/chat.html:7
+msgid "Онлайн поддержка"
+msgstr "Online support"
+
+#: common/templates/common/modals/chat.html:11
+msgid "Пожалуйста, подождите - идет соединение со свободным специалистом."
+msgstr "Please, hold on the line, you are connected to operator"
+
+#: common/templates/common/modals/login.html:7 common/templates/common/modals/login.html:27
+msgid "Авторизация"
+msgstr "Authorization"
+
+#: common/templates/common/modals/login.html:10
+msgid "Введите код доступа, полученный по SMS на указанный номер телефона"
+msgstr "Please, enter access code received by SMS to the mobile number"
+
+#: common/templates/common/modals/login.html:15
+msgid "Вход"
+msgstr "Entry"
+
+#: common/templates/common/modals/login.html:16
+msgid "Отправить SMS повторно"
+msgstr "To send SMS repeatedly"
+
+#: common/templates/common/modals/login.html:30
+msgid "Введите номер мобильного телефона для получения SMS с кодом доступа"
+msgstr "Please enter mobile phone number for getting access code by SMS"
+
+#: common/templates/common/modals/login.html:32
+msgid "Получить пароль"
+msgstr "To get password"
+
+#: common/templates/common/modals/question.html:8
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: common/templates/common/modals/question.html:16
+msgid "Задать вопрос"
+msgstr "Ask a question"
+
+#: common/templates/common/modals/question.html:22
+msgid "Пожаловаться"
+msgstr "Make  complaints"
+
+#: common/templates/common/modals/question.html:41
+msgid "Проверьте, возможно ваш вопрос уже задавали ранее."
+msgstr "Check if your question was asked earlier."
+
+#: common/templates/common/modals/question.html:48 common/templates/common/modals/question.html:83
+#: templates/flatpages/faq.html:75
+msgid "Что такое франшиза и как она влияет на страховую плату?"
+msgstr "What is a franchise and how it affects the insurance cost?"
+
+#: common/templates/common/modals/question.html:53 common/templates/common/modals/question.html:90
+#: templates/flatpages/faq.html:87
+msgid "Могу ли я застраховать автомобиль, которым пользуюсь на основании доверенности?"
+msgstr "Can i insure the car which i drive on the warrant?"
+
+#: common/templates/common/modals/question.html:58 common/templates/common/modals/question.html:97
+#: templates/flatpages/faq.html:95
+msgid "На какой срок можно оформить полис каско, ОСАГО?"
+msgstr "For how long can be issued the Casco policy, compulsory TPL?"
+
+#: common/templates/common/modals/question.html:63
+#: common/templates/common/modals/question.html:104 templates/flatpages/faq.html:130
+msgid ""
+"Надо ли страховать своё имущество и недвижимость, если квартира находится в ипотеке и, "
+"соответственно, застрахована по программе ипотечного страхования?"
+msgstr ""
+"Whether a property and a real estate should be insured if a flat has been mortgaged or insured "
+"under mortgage insurance program?"
+
+#: common/templates/common/modals/question.html:68
+#: common/templates/common/modals/question.html:111 templates/flatpages/faq.html:152
+msgid "Возможно ли внести изменения в полис, если я выйду замуж/женюсь/разведусь?"
+msgstr "Is it possible to make amendments to policy if I marry/divorce?"
+
+#: common/templates/common/modals/question.html:73
+#: common/templates/common/modals/question.html:118 templates/flatpages/faq.html:182
+msgid "Подходит ли полис TRAVEL для получения визы в страны Шенген?"
+msgstr "Is Travel policy suitable for obtaining of Schengen visa?"
+
+#: common/templates/common/modals/question.html:78
+msgid "Все вопросы и ответы"
+msgstr "All questions and replies"
+
+#: common/templates/common/modals/question.html:85 templates/flatpages/faq.html:76
+msgid ""
+"Франшиза – это часть причиненного в результате страхового случая ущерба, которая не "
+"обеспечивается страхованием и оплачивается страхователем. Вы часто сталкиваетесь с мелкими "
+"ущербами, с которыми можете разбираться самостоятельно, без обращения к страховщику. Для таких "
+"случаев в договоре страхования предусмотрена франшиза. Страховщик оплачивает сумму причиненного "
+"в результате страхового случая ущерба, за вычетом франшизы"
+msgstr ""
+"Franchise is a part of damage caused in the result of insured accident which is not covered by "
+"insurance and is paid by insurer.  You often face with minor damages that you may settle "
+"yourself, without insurer's assistance. For such cases, a franchise has been stipulated in an "
+"insurance contract. Insurer pays an amount of damage, caused in the result of insured accident, "
+"less a franchise."
+
+#: common/templates/common/modals/question.html:92 templates/flatpages/faq.html:88
+msgid "Да, Вы можете застраховать автомобиль, которым пользуетесь на основании доверенности"
+msgstr "Yes, you can get insured a vehicle which you drive by proxy"
+
+#: common/templates/common/modals/question.html:99 templates/flatpages/faq.html:96
+msgid "Полис Каско оформляется на срок от 1 года. Срок страхования по полису ОСАГО 1 год"
+msgstr ""
+"Motor third-party liability insurance is issued for a period of one year or more. Hull insurance "
+"validity period is 1 year"
+
+#: common/templates/common/modals/question.html:106 templates/flatpages/faq.html:131
+msgid ""
+"Ипотечное страхование по требованию банков подразумевает страхование только конструктивных "
+"элементов квартиры, т.е. защиту от тотального повреждения или разрушения несущих конструкций. "
+"При этом ваш ремонт, вся внутренняя отделка квартиры и движимое имущество остаются "
+"незащищенными. По программе добровольного страхования имущества вы можете застраховать отделку "
+"квартиры и движимое имущество, а также ответственность перед соседями"
+msgstr ""
+" Upon request of banks mortgage insurance stipulates insurance of apartments’ building elements, "
+"in other words protection against total damage or destruction of supporting frameworks. At the "
+"same time, repair, internal decoration of your apartment as well as movable property remains "
+"unprotected. Using voluntary insurance program You may insure decoration of your apartment and "
+"movable property as well as your third party responsibility"
+
+#: common/templates/common/modals/question.html:113 templates/flatpages/faq.html:153
+msgid ""
+"Конечно, в любое время вы можете внести изменения в договор, позвонив нам в контактный центр по "
+"телефону *0707, либо через личный кабинет на нашем сайте"
+msgstr ""
+" Of course, you can make an amendment to your contract at any time, by calling us at number "
+"*0707, or using your personal account on our website."
+
+#: common/templates/common/modals/question.html:120 templates/flatpages/faq.html:183
+#: templates/flatpages/faq.html.py:191
+msgid ""
+"Полис TRAVEL соответствует всем необходимым требованиям для получения визы в страны Шенгенского "
+"соглашения. Некоторые страны предъявляют особые требования к полису страхования. Все они "
+"учитываются нашей системой онлайн-оформления"
+msgstr ""
+"Travel policy meets all requirements for applying and obtaining of Schengen visa. Some countries "
+"raise special claims in relation to insurance policy. Our online registration system takes into "
+"account all these requirements."
+
+#: common/templatetags/common_tags.py:13
+msgid "Есть вещи, о которых стоит позаботиться заранее!"
+msgstr "There are things you should be concerned in advance!"
+
+#: common/templatetags/common_tags.py:17
+msgid "Нам доверяют самое ценное!"
+msgstr "Insure your vehicle staying at home!"
+
+#: common/templatetags/common_tags.py:21
+msgid "Защитите самое дорогое. Финансовая поддержка в трудных жизненных ситуациях!"
+msgstr "Protect the most valuable. Financial support in difficult life situations!"
+
+#: common/templatetags/common_tags.py:25
+msgid "Позаботьтесь о своих любимых вместе с нами!"
+msgstr "Concern on your  favorites"
+
+#: common/templatetags/common_tags.py:29 common/templatetags/common_tags.py:37
+msgid "Смело отправляйтесь<br/>на встречу ярким впечатлениям!"
+msgstr "Bravely set out<br/>towards bright impressions!"
+
+#: common/templatetags/common_tags.py:33
+msgid "Пусть ваш отдых пройдет легко и весело!"
+msgstr "Let your rest be easy and cheerful!"
+
+#: common/templatetags/common_tags.py:41 common/templatetags/common_tags.py:45
+msgid "Водить ты можешь не уметь, но застрахован быть обязан!"
+msgstr "Insure and release yourself from financial losses."
+
+#: common/views.py:37 common/views.py:56 common/views.py:75
+msgid "Request sent. expect an answer"
+msgstr "Request sent. expect an answer"
+
+#: common/views.py:42 common/views.py:61 common/views.py:80
+#, python-format
+msgid "Request not sent: %(error_message)s"
+msgstr "Request not sent: %(error_message)s"
+
+#: oys/dashboard.py:26
+msgid "AppList: Applications"
+msgstr "AppList: Applications"
+
+#: oys/dashboard.py:37
+msgid "Support"
+msgstr "Support"
+
+#: oys/dashboard.py:41
+msgid "Django Documentation"
+msgstr "Django Documentation"
+
+#: oys/dashboard.py:46
+msgid "Grappelli Documentation"
+msgstr "Grappelli Documentation"
+
+#: oys/dashboard.py:51
+msgid "Grappelli Google-Code"
+msgstr "Grappelli Google-Code"
+
+#: oys/dashboard.py:62
+msgid "Recent Actions"
+msgstr "Recent Actions"
+
+#: templates/flatpages/about.html:11 templates/flatpages/partners.html:20
+msgid "партнеры"
+msgstr "partners"
+
+#: templates/flatpages/about.html:20 templates/flatpages/partners.html:11
+msgid "о компании"
+msgstr "About Company"
+
+#: templates/flatpages/about.html:22
+msgid ""
+"профессиональный эксперт в области страхования,<br/> действующий от имени и в интересах клиентов "
+"с целью<br/> обеспечения максимального уровня комфорта и<br/> удовлетворения их потребностей в "
+"страховании,<br/> гарантируя защиту прав страхователей"
+msgstr ""
+"professional expert in the field of insurance, acting on behalf and in the interests of "
+"customers to ensure the highest level of comfort and satisfaction of their needs in insurance, "
+"guaranteeing protection of the rights of policyholders."
+
+#: templates/flatpages/about.html:37
+msgid ""
+"Наша компания придерживается высоких стандартов обслуживания клиентов. Мы всегда учитываем "
+"индивидуальные особенности клиента или его особые требования."
+msgstr ""
+"Our company is keeping high servicing standards. We always take into consideration clients' "
+"individual features or special requirements."
+
+#: templates/flatpages/about.html:38
+msgid ""
+"Специалисты «Odlar Yurdu Sigorta Brokeri» – Ваши надежные помощники и консультанты на весь "
+"период действия страхового полиса. При наступлении страхового случая наши специалисты разъяснят "
+"вам все процедуры взаимодействия со страховой компанией и помогут решить все вопросы, связанные "
+"со страховой выплатой."
+msgstr ""
+"The specialists of \" Odlar Yurdu Sığorta Brokeri\"are your reliable helpers and consultants for "
+"a whole validity period of insurance policy. In case of the insurance incident our specialists "
+"will explain you all procedures of the cooperation with the insurance company and help you to "
+"solve all problems with an insurance payment."
+
+#: templates/flatpages/about.html:48
+msgid "Лицензии и сертификаты"
+msgstr "Licenses and certificates"
+
+#: templates/flatpages/about.html:58
+msgid "Лицензия"
+msgstr "License"
+
+#: templates/flatpages/about.html:71
+msgid "\"Сертификат \"За предоставление высоких этических стандартов обслуживания\""
+msgstr "Certificate «For the provision of high ethical standards of service\""
+
+#: templates/flatpages/about.html:88
+msgid "Наша команда"
+msgstr "Our team"
+
+#: templates/flatpages/compare/travel.html:13 templates/flatpages/compare/travel.html:15
+#: templates/flatpages/compare/travel.html:17 templates/flatpages/compare/travel.html:19
+msgid "Стандартная"
+msgstr "Standard"
+
+#: templates/flatpages/compare/travel.html:26
+#: templates/flatpages/includes/inner_insurance_details_travel.html:58
+msgid "Медицинские расходы"
+msgstr "Medical expenses"
+
+#: templates/flatpages/compare/travel.html:37
+msgid "Расходы на медицинскую эвакуацию"
+msgstr "Expenses for medical evacuation"
+
+#: templates/flatpages/compare/travel.html:48
+msgid "Расходы на репартацию"
+msgstr "Expences for repatration"
+
+#: templates/flatpages/compare/travel.html:59
+#: templates/flatpages/includes/inner_insurance_details_travel.html:63
+msgid "Потеря багажа"
+msgstr "Luggage lost"
+
+#: templates/flatpages/compare/travel.html:70
+msgid "Отмена поездки"
+msgstr "Trip cancellation"
+
+#: templates/flatpages/compare/travel.html:81
+msgid "Задержка рейса"
+msgstr "Flight delay"
+
+#: templates/flatpages/compare/travel.html:92
+msgid "Потеря документов / Юридическая поддержка"
+msgstr "Loss of documents / Legal Support"
+
+#: templates/flatpages/compare/travel.html:103
+msgid "Смерть или получение инвалидности 1 группы"
+msgstr "Death or first group disability"
+
+#: templates/flatpages/compare/travel.html:114
+msgid "Экстренное возвращение в случае смерти или болезни близкого родственника"
+msgstr "Emergency return in case of the death or illness of a close relative"
+
+#: templates/flatpages/compare/travel.html:125
+msgid "Медицинское обследование близкого родственника"
+msgstr "Medical examination of a close relative"
+
+#: templates/flatpages/compare/vehicle.html:9 templates/flatpages/insurance.html:65
+#: templates/flatpages/insurance/auto/confidentdriver.html:97
+#: templates/flatpages/insurance/auto/simplekasko.html:129
+#: templates/flatpages/insurance/auto/superkasko.html:50
+msgid "СуперКАСКО"
+msgstr "SuperKasko"
+
+#: templates/flatpages/compare/vehicle.html:21
+msgid "Сумма в пределах, которой осуществляется выплата при наступлении страхового случая"
+msgstr "The amount payable on the insurance case"
+
+#: templates/flatpages/compare/vehicle.html:26
+msgid "Рыночная стоимость авто"
+msgstr "The market value of car"
+
+#: templates/flatpages/compare/vehicle.html:27
+msgid "До 5000&nbsp;AZN"
+msgstr "Up to 5000&nbsp;AZN"
+
+#: templates/flatpages/compare/vehicle.html:33
+msgid "Ответственность перед 3-ми лицами"
+msgstr "Third party civil liability insurance"
+
+#: templates/flatpages/compare/vehicle.html:36
+msgid ""
+"Возмещение убытков и ущерба, которые были причинены Вами при управлении ТС другому автомобилю, "
+"жизни и здоровью пассажиров."
+msgstr ""
+"Compensation for the damages that have been caused by you in controlling the vehicle to another "
+"vehicle, the life and health of passengers"
+
+#: templates/flatpages/compare/vehicle.html:47
+msgid "Расширение ОСАГО до 10 000 AZN - Стоимость 25 AZN"
+msgstr "Expanding CMTPL to 10 000 AZN - 25 AZN Cost"
+
+#: templates/flatpages/compare/vehicle.html:47
+msgid "Расширение ОСАГО до 15 000 AZN - Стоимость 50 AZN"
+msgstr "Expanding CMTPL to 15 000 AZN - 50 AZN Cost"
+
+#: templates/flatpages/compare/vehicle.html:48 templates/flatpages/compare/vehicle.html:154
+#: templates/flatpages/compare/vehicle.html:192
+msgid "платно"
+msgstr "paid"
+
+#: templates/flatpages/compare/vehicle.html:59
+msgid "Ущерб во время ДТП"
+msgstr "Damage during an accident"
+
+#: templates/flatpages/compare/vehicle.html:62
+msgid "Возмещение убытков и ущерба, которые были причинены Вашем автомобилю во время ДТП"
+msgstr "Compensation for the damages that have been caused by your car during an accident"
+
+#: templates/flatpages/compare/vehicle.html:75
+msgid "Противоправные действия 3х лиц"
+msgstr "Third party illegal actions"
+
+#: templates/flatpages/compare/vehicle.html:78
+msgid ""
+"Возмещение ущерба, когда Ваш автомобиль был поцарапан, получил вмятины, будучи припаркованным, "
+"был облит краской. Также под понятие повреждений в результате ПДТЛ подпадают случаи, когда "
+"транспортное средство повреждено в результате попытки угона или хищения оставленного в салоне "
+"имущества, например, были взломаны двери или разбиты элементы остекления."
+msgstr ""
+"Сompensation for damage when your car was scratched, dented while was being parked, was doused "
+"with paint. Also under the meaning damage as a result of the outlaw actions of the 3 parties is "
+"meant cases when the vehicle is damaged because of the driving away try or stealing the object "
+"left in the saloon,for instance door were crashed or glass elements were broken."
+
+#: templates/flatpages/compare/vehicle.html:91
+#: templates/flatpages/includes/inner_insurance_details_auto.html:52
+msgid "Угон"
+msgstr "Driving away"
+
+#: templates/flatpages/compare/vehicle.html:103
+msgid "Падение предметов"
+msgstr "Falling of items"
+
+#: templates/flatpages/compare/vehicle.html:115
+msgid "Пожар"
+msgstr "Fire"
+
+#: templates/flatpages/compare/vehicle.html:127
+msgid "Нападение животных"
+msgstr "Attack of animals"
+
+#: templates/flatpages/compare/vehicle.html:130
+msgid "Возмещение ущерба, когда Ваш автомобиль был поврежден в результате нападения диких животных"
+msgstr "Compensation for damage when your car was damaged in an attack by wild animals"
+
+#: templates/flatpages/compare/vehicle.html:146
+msgid ""
+"Возмещение расходов на эвакуацию при наступлении страхового случая. Эвакуация с места ДТП/"
+"Страхового случая до автостоянки."
+msgstr ""
+"Compensation of expenses for evacuation in case of insured accident. The evacuation of the "
+"accident scene / Insured Event to the car park."
+
+#: templates/flatpages/compare/vehicle.html:153
+msgid "Стоимость 30 AZN"
+msgstr "Insurance cost – 30 AZN"
+
+#: templates/flatpages/compare/vehicle.html:165
+msgid "Сбор справок в ГАИ"
+msgstr "Collection of documents to the traffic police"
+
+#: templates/flatpages/compare/vehicle.html:168
+msgid "Услуги по сбору всех необходимых документов для признания страхового случая из ГАИ"
+msgstr ""
+"Services for the collection of all necessary documents for recognition of an insurance case from "
+"traffic police"
+
+#: templates/flatpages/compare/vehicle.html:181
+#: templates/flatpages/includes/inner_insurance_details_auto.html:72
+msgid "Здоровье пассажиров"
+msgstr "Passengers' health"
+
+#: templates/flatpages/compare/vehicle.html:184
+msgid ""
+"Возмещение расходов на лечение пассажиров, получивших травмы/повреждения при наступлении "
+"страхового случая"
+msgstr ""
+"Compensation of expenses for the treatment of passengers who were injured / damaged in case of "
+"insured accident"
+
+#: templates/flatpages/compare/vehicle.html:191
+msgid "Страхование  1 пассажира на сумму 5000 AZN - Стоимость 8 AZN"
+msgstr "Insurance of 1 passenger in the amount of 5000 AZN - Cost 8 AZN"
+
+#: templates/flatpages/compare/vehicle.html:203
+msgid "Наличие вашей НЕВИНОВНОСТИ для выплаты"
+msgstr "The presence of your innocence for payment"
+
+#: templates/flatpages/compare/vehicle.html:206
+msgid ""
+"Страховая выплата производится только в случае, если Вы не были причиной возникновения ущерба"
+msgstr "Insurance payment carried out only if you were not the cause of the damage."
+
+#: templates/flatpages/compare/vehicle.html:222
+msgid "Часть суммы, которая не возмещается со стороны Страховой компании"
+msgstr "Part of the amount that is not compensated by insurance company."
+
+#: templates/flatpages/compare/vehicle.html:235
+msgid "Выплата без учета износа"
+msgstr "Payment without amortization"
+
+#: templates/flatpages/compare/vehicle.html:238
+msgid ""
+"При расчете размера причиненного ущерба Вашему автомобилю не учитывается процент износа/"
+"амортизации"
+msgstr ""
+"When calculating the amount the damage caused to your vehicle is not taken into account the "
+"percentage of depreciation / amortization"
+
+#: templates/flatpages/compare/vehicle.html:251
+msgid "Кол-во страховых случаев"
+msgstr "Number of insurance accidents"
+
+#: templates/flatpages/compare/vehicle.html:254
+msgid ""
+"Количество страховых случаев, когда можно обратиться в страховую компанию в период действия "
+"договора страхования"
+msgstr ""
+"Number of insurance accidents when you can contact with insurance company during the period of "
+"the insurance contract."
+
+#: templates/flatpages/compare/vehicle.html:257 templates/flatpages/compare/vehicle.html:265
+#: templates/flatpages/compare/vehicle.html:267 templates/flatpages/compare/vehicle.html:268
+msgid "не ограничено"
+msgstr "not limited"
+
+#: templates/flatpages/compare/vehicle.html:261
+msgid "На ваш выбор, либо 1, либо до тех пор пока не израсходуется страховая сумма"
+msgstr "It's your choice, either 1 or until the insured amount is consumed"
+
+#: templates/flatpages/compare/vehicle.html:262 templates/flatpages/compare/vehicle.html:278
+#: templates/flatpages/compare/vehicle.html:285
+msgid "подробнее"
+msgstr "read more"
+
+#: templates/flatpages/compare/vehicle.html:266
+msgid "Только 1"
+msgstr "Only 1"
+
+#: templates/flatpages/compare/vehicle.html:272
+msgid "ПРОЧИЕ УСЛОВИЯ"
+msgstr "OTHER CONDITIONS"
+
+#: templates/flatpages/compare/vehicle.html:277
+msgid "Если ТС управляет не страхователь, он должен быть обязательно вписан в полис"
+msgstr "If the vehicle is not run by the insurer, it must always be inscribed in policy"
+
+#: templates/flatpages/compare/vehicle.html:284
+msgid ""
+"При получении водителем или пассажирами застрахованного ТС  телесных повреждений в результате "
+"страхового случая, полис покрывает расходы на услугу скорой помощи со стороны MediClub."
+msgstr ""
+"In case of injury of the drivers and passengers of the insured vehicle as a result of accident, "
+"the policy covers the cost of ambulance services from the MediClub."
+
+#: templates/flatpages/compare/vehicle.html:288 templates/flatpages/compare/vehicle.html:289
+#: templates/flatpages/compare/vehicle.html:290
+msgid "ТОЛЬКО С ОСАГО АТЕШГЯХ"
+msgstr "Only in case when your CMTPL is in the Ateshgah IC"
+
+#: templates/flatpages/compare/vehicle.html:295
+msgid "Стоимость"
+msgstr "Cost"
+
+#: templates/flatpages/compare/vehicle.html:298
+msgid "Стоимость страхового продукта с учетом указанных вами параметров по ТС"
+msgstr "The cost of insurance product considering the parameters of your vehicle."
+
+#: templates/flatpages/compare/vehicle.html:302
+msgid "от"
+msgstr "from"
+
+#: templates/flatpages/contacts.html:16 templates/flatpages/contacts.html:26
+msgid "контакты"
+msgstr "contacts "
+
+#: templates/flatpages/contacts.html:52
+msgid "По всем интересующим Вас вопросам обращайтесь по телефону * 0707 или электронной почте"
+msgstr "If you have any questions, please call * 0707 or e-mail"
+
+#: templates/flatpages/contacts.html:100 templates/flatpages/contacts.html:113
+#: templates/flatpages/contacts.html:126 templates/flatpages/contacts.html:139
+#: templates/flatpages/contacts.html:152 templates/flatpages/contacts.html:165
+#: templates/flatpages/contacts.html:178 templates/flatpages/contacts.html:191
+msgid "Автострахование"
+msgstr "Auto insurance"
+
+#: templates/flatpages/contacts.html:100 templates/flatpages/contacts.html:113
+#: templates/flatpages/contacts.html:126 templates/flatpages/contacts.html:139
+#: templates/flatpages/contacts.html:152 templates/flatpages/contacts.html:165
+#: templates/flatpages/contacts.html:178 templates/flatpages/contacts.html:191
+msgid "Путешествие"
+msgstr "Travel"
+
+#: templates/flatpages/contacts.html:104 templates/flatpages/contacts.html:117
+#: templates/flatpages/contacts.html:130 templates/flatpages/contacts.html:143
+#: templates/flatpages/contacts.html:156 templates/flatpages/contacts.html:169
+#: templates/flatpages/contacts.html:182 templates/flatpages/contacts.html:195
+msgid "ежедневно"
+msgstr "Every day"
+
+#: templates/flatpages/contacts.html:106 templates/flatpages/contacts.html:119
+#: templates/flatpages/contacts.html:132 templates/flatpages/contacts.html:145
+#: templates/flatpages/contacts.html:158 templates/flatpages/contacts.html:171
+#: templates/flatpages/contacts.html:184 templates/flatpages/contacts.html:197
+msgid "Показать на карте"
+msgstr "Show on a map"
+
+#: templates/flatpages/faq.html:10
+msgid "вопросы и ответы"
+msgstr "Questions and replies "
+
+#: templates/flatpages/faq.html:28
+msgid "страхование<br/>автомобиля"
+msgstr "Auto<br/> insurance"
+
+#: templates/flatpages/faq.html:35
+msgid "страхование<br/>недвижимости"
+msgstr "Property <br/> insurance"
+
+#: templates/flatpages/faq.html:42
+msgid "страхование<br/>здоровья"
+msgstr "Health<br/> insurance"
+
+#: templates/flatpages/faq.html:49
+msgid "страхование<br/>путешествий"
+msgstr "Travel<br/> insurance"
+
+#: templates/flatpages/faq.html:63
+msgid "Что такое страхование?"
+msgstr "What is insurance?"
+
+#: templates/flatpages/faq.html:64
+msgid ""
+"Страхование - это механизм передачи и разделения рисков. Таким образом, страхование обеспечивает "
+"лицам, которым был причинен ущерб, восстановить свое прежнее финансовое положение"
+msgstr ""
+"Insurance is a mechanism for transferring and sharing of risks. In this way insurance allows "
+"people who have suffered damage to restore their previous financial status."
+
+#: templates/flatpages/faq.html:67
+msgid "Что такое договор страхования?"
+msgstr "What is an insurance contract?"
+
+#: templates/flatpages/faq.html:68
+msgid ""
+"Договор страхования - это соглашение, достигнутое между страхователем и страховщиком, в "
+"соответствии с которым страховщик берет на себя обязательства возместить причиненные страховым "
+"случаем убытки, а страхователь - оплатить страховую плату (премию)"
+msgstr ""
+"An insurance contract is an agreement reached by insured and insurer, whereby insurer undertakes "
+"to repair the damages caused in the result of insured accident, and insured undertakes to pay an "
+"insurance premium."
+
+#: templates/flatpages/faq.html:71
+msgid "Что такое страховая плата (премия)?"
+msgstr "What is an insurance premium?"
+
+#: templates/flatpages/faq.html:72
+msgid ""
+"Страховая плата (премия) – это денежная сумма, оплаченная Вами страховой компании в период и в "
+"порядке, предусмотренными договором страхования"
+msgstr ""
+"An insurance premium is money paid to insurance company by you within a period and order "
+"stipulated by insurance contract"
+
+#: templates/flatpages/faq.html:79
+msgid "Какие риски охватывает автомобильное страхование?"
+msgstr "What risks does car insurance cover?"
+
+#: templates/flatpages/faq.html:80
+msgid ""
+"При страховании автомобиля Вы можете выбрать любой из предложенных ниже трех или же все три вида "
+"страхового покрытия:<br/>1.Страхование автомобиля - возмещение ущерба, причиненного вашему "
+"автомобилю. (при дорожно-транспортном происшествии, пожаре, взрыве, злонамеренных действиях "
+"третьих лиц, краже и т.д.)<br/>2.Возмещение ущерба, причиненного вашему здоровью и здоровью "
+"пассажиров, находившихся в автомобиле.<br/>3.Страхование гражданской ответственности - "
+"возмещение страховщиком ущерба, причиненного окружающим, по вашей вине"
+msgstr ""
+"When insuring your vehicle you can choose any of three or all insurance coverages   outlined as "
+"below: 1. Vehicle insurance is compensation for damages caused to your vehicle (in the result of "
+"road accident, fire, explosion, third party abusive actions, theft and etc.). 2. Compensation "
+"for damages caused to your health and health of your passengers who were in a vehicle. 3. Civil "
+"liability insurance is reimbursement by insurer of damages caused to wider public due to your "
+"fault."
+
+#: templates/flatpages/faq.html:83
+msgid "Как определяется стоимость автомобиля при страховании?"
+msgstr "How the value of vehicle is determined when it is insured?"
+
+#: templates/flatpages/faq.html:84
+msgid "При страховании за основу берется рыночная стоимость Вашего автомобиля"
+msgstr "How the value of vehicle is determined when it is insured?"
+
+#: templates/flatpages/faq.html:91
+msgid "Что такое «полная гибель» транспортного средства?"
+msgstr "What is \"total loss\" of vehicle?"
+
+#: templates/flatpages/faq.html:92
+msgid ""
+"Полная гибель – это состояние автомобиля, когда повреждения настолько большие, что затраты на "
+"ремонт превысят 70&#37; стоимости автомобиля (в некоторых договорах указывается цифра 75&#37;). "
+"В таких случаях клиенту выплачивается общая страховая сумма (за вычетом соответствующих "
+"отчислений в соответствии с условиями страхового полиса, то есть, эксцедент, неполное "
+"страхование и т.д.)"
+msgstr ""
+"Total loss is a condition of vehicle when repair expenses exceed 70&#37; of vehicle's value (in "
+"some agreements this figure is 75&#37;). In such cases total sum insured (less than appropriate "
+"deductions in compliance with policy conditions that is excess, partial insurance) is by paid to "
+"a client."
+
+#: templates/flatpages/faq.html:105
+#: templates/flatpages/includes/inner_insurance_details_auto.html:24
+#: templates/flatpages/includes/inner_insurance_details_auto.html:117
+#: templates/flatpages/includes/inner_insurance_details_health.html:24
+#: templates/flatpages/includes/inner_insurance_details_health.html:85
+#: templates/flatpages/includes/inner_insurance_details_property.html:24
+#: templates/flatpages/includes/inner_insurance_details_property.html:105
+#: templates/flatpages/includes/inner_insurance_details_travel.html:24
+#: templates/flatpages/includes/inner_insurance_details_travel.html:115
+msgid "Что можно застраховать?"
+msgstr "What can be insured?"
+
+#: templates/flatpages/faq.html:106
+msgid ""
+"Страхование имущества подразумевает страхование личного движимого имущества и недвижимости. "
+"Недвижимость - это квартира, апартаменты, дача, дом, а именно: их конструктивные элементы "
+"(стены, перегородки, фундамент, перекрытия и пр.), внутренняя отделка и инженерное оборудование. "
+"Движимое/личное имущество – это то, что наполняет недвижимость. Это бытовая техника, мебель, "
+"одежда, хозяйственный и спортивный инвентарь и другое движимое имущество кроме исключений, "
+"указанных в Правилах страхования. <br/>Если вы страхуете дом/дачу, то можно застраховать не "
+"только дом, но и иные постройки на участке – сарай, летнюю кухню и т.д., а также беседку, забор, "
+"ландшафтные сооружения и т.п."
+msgstr ""
+"Property insurance means insurance of private movable and immovable property. Immovable property "
+"is a flat, an apartment, a house, a cottage, in other words, their constructive elements (walls, "
+"partitions, foundations, coverings, and etc) internal decoration and utility equipment. Movable "
+"property /individual property include all items are contained in immovable property.  They are "
+"household appliances, furniture, clothes, household and sporting equipment, and others, with the "
+"exception of those outlined in insurance rules. If you insure your home /cottage, you may insure "
+"other constructions : shed, summer kitchen and etc, as well as arbor, fence , landscape and etc."
+
+#: templates/flatpages/faq.html:109
+msgid "От чего можно застраховать свое имущество?"
+msgstr "What risks can indemnify property insurance?"
+
+#: templates/flatpages/faq.html:110
+msgid ""
+"Мы страхуем личное движимое и недвижимое имущество от самых распространённых рисков: пожар, "
+"взрыв, удар молнии, залив, противоправные действия третьих лиц, стихийные бедствия и "
+"механические повреждения.<br/>Помимо базовых (стандартных) рисков и покрытий, мы предлагаем "
+"клиентам набор дополнительных опций при выборе программы страхования. Дополнительно можно "
+"защитить имущество от рисков: неисправность сетей, бой стёкол, расширенный перечень ситуаций, "
+"относящихся к риску «Залив», а также застраховать собственную гражданскую ответственность перед "
+"соседями, здоровье и жизнь проживающих на территории недвижимости, непредвиденные расходы в "
+"случае потери арендной платы либо временного отсутствия жилья"
+msgstr ""
+"We insure movable and immovable property against very different risks: fire, explosion, "
+"lightning stroke, flood, third party illegal behavior, disasters and mechanical damages. Besides "
+"standard risks and coverage we offer to clients additional options when they choose insurance "
+"programs. Additionally, property may be insured against risks: power failures, windows breaking, "
+"many types of “Flooding” risks, as well as your civil liability against neighbors, health and "
+"life of people residing in this immovable property, unexcited expenses in the event losing lease "
+"fee or temporarily dwelling absence."
+
+#: templates/flatpages/faq.html:113 templates/flatpages/faq.html.py:156
+msgid "Что будет при отказе от полиса?"
+msgstr "What will happen if refuse from policy?"
+
+#: templates/flatpages/faq.html:114 templates/flatpages/faq.html.py:157
+msgid ""
+"Если вы решите отказаться от полиса до вступления его в силу, мы полностью возвратим страховую "
+"премию. Если вы откажетесь от оплаченного ежемесячного полиса во время его действия, то ваш "
+"полис будет действовать до окончания оплаченного периода, а далее мы просто прекратим его "
+"продление. Если ваш полис годовой – Страховая компания вернет премию за не истекший оплаченный "
+"срок страхования"
+msgstr ""
+"If you surrender your policy prior to its coming to effect we shall fully return insurance "
+"premium to you. If you surrender your policy during its validity then your policy will be valid "
+"till the end of period you paid, and after we shall cease its prolongation. If your policy is "
+"annual, an insurance company will return insurance premium for not expired, but paid insurance "
+"period."
+
+#: templates/flatpages/faq.html:117 templates/flatpages/faq.html.py:160
+msgid "Если я раздумаю страховаться, что делать?"
+msgstr "If I change my mind to insure, what to do?"
+
+#: templates/flatpages/faq.html:118 templates/flatpages/faq.html.py:161
+msgid ""
+"Вы можете сообщить о своем решении в любой момент, позвонив по телефону *0707 или обратившись в "
+"один из центов оказания услуг ASAN Xidmet к сотрудникам нашей компании"
+msgstr ""
+"You can inform on this at any moment, by calling at number *0707 or applying to our company "
+"officers at any ASAN Service Centers."
+
+#: templates/flatpages/faq.html:121 templates/flatpages/faq.html.py:134
+#: templates/flatpages/faq.html:164
+msgid "Кто получит выплату в случае смерти Застрахованного?"
+msgstr "Who will be paid an insurance compensation in case of insurer's death?"
+
+#: templates/flatpages/faq.html:122 templates/flatpages/faq.html.py:135
+#: templates/flatpages/faq.html:165
+msgid ""
+"В случае смерти Застрахованного, выплату получают его наследники, если иное не предусмотрено "
+"договором страхования"
+msgstr ""
+"An insurance compensation is paid to insurer's heirs, unless otherwise provided by an insurance "
+"agreement."
+
+#: templates/flatpages/faq.html:126
+msgid "Кто может являться выгодоприобретателем по полису страхования квартиры или дома?"
+msgstr "Who can be beneficiary under insurance policy for an apartment or a house?"
+
+#: templates/flatpages/faq.html:127
+msgid ""
+"В соответствии с законодательством выгодоприобретателем по договору страхования имущества может "
+"являться лицо, имеющее основанный на законе, ином правовом акте или договоре интерес в "
+"сохранении этого имущества. На практике это означает, что выгодоприобретателем может быть:<br/>1."
+"Собственник жилья<br/> 2.Арендатор жилого помещения по договору коммерческого или социального "
+"найма"
+msgstr ""
+"In accordance with legislation a beneficiary under property insurance contract is a person "
+"having interest in protection of that property, based on a law, another legal act or a contract. "
+"In practice, a beneficiary is:<br/> 1. A property owner<br/> 2. A tenant renting an apartment "
+"under commercial or social renting."
+
+#: templates/flatpages/faq.html:144
+msgid "Что делать при наступлении страхового события по страхованию здоровья?"
+msgstr "What to do when an insured event for medical reasons occurs?"
+
+#: templates/flatpages/faq.html:145
+msgid ""
+"При наступлении страхового случая, связанного с причинением вреда здоровью, прежде всего, "
+"незамедлительно обратитесь к врачу и соблюдайте все его рекомендации;<br/> Сообщите о "
+"случившемся в Страховую компанию или нам по телефону *0707 не позднее 30 дней с момента "
+"наступления события"
+msgstr ""
+"Upon occurrence of an insured event related to health damage, immediately apply to a physician "
+"and follow his/her  instructions ; Please, inform about it your insurance company or us, by "
+"calling  at number *0707, within 30 days when insured event occurred."
+
+#: templates/flatpages/faq.html:148
+msgid ""
+"Будет ли производиться выплата клиенту, имевшему инвалидность на момент заключения договора "
+"страхования, при получении им более тяжкой группы инвалидности?"
+msgstr ""
+"Will be there any payment to a client who had disability when concluded insurance contract if he/"
+"she gets more serious disability?"
+
+#: templates/flatpages/faq.html:149
+msgid ""
+"Да, будет, если в результате страхового случая Клиент получил более тяжкую группу инвалидности"
+msgstr "Yes, if a client gets more serious invalidity in the result of insurance accident."
+
+#: templates/flatpages/faq.html:174
+msgid ""
+"Какой вариант страхования подобрать для моего путешествия: полис на одну поездку или годовой "
+"полис?"
+msgstr ""
+"Which type of travel insurance policy is more suitable for me:  one trip policy or annual policy?"
+
+#: templates/flatpages/faq.html:175
+msgid ""
+"Это зависит от того, как часто Вы путешествуете. Если Вы выезжаете за границу несколько раз в "
+"год - выгоднее приобрести годовой полис. Вам не придется оформлять страховку перед каждой новой "
+"поездкой. Действие годового полиса распространяется на 90 дней путешествий без ограничения по "
+"количеству дней в каждой поездке"
+msgstr ""
+"It depends on how often you travel. If you are going abroad several times a year - it is more "
+"profitable to buy an annual policy. You do not need to make out insurance before each new trip. "
+"Annual policy covers 90 days of travel without restriction on the number of days in each trip."
+
+#: templates/flatpages/faq.html:178
+msgid "Какие виды спорта могут быть включены в страховое покрытие?"
+msgstr "Which kinds of sport can be included into the insurance cover"
+
+#: templates/flatpages/faq.html:179
+msgid ""
+"Полисы TRAVEL предусматривают возможность страховой защиты во время занятий любительским спортом "
+"и активным отдыхом. Под ними понимаются: горнолыжный спорт, сноубординг, дайвинг (на глубине до "
+"30 метров), подводная охота, а также иные виды физической активности. Подробнее см. Правила "
+"Страхования. Если в поездке Вы планируете заниматься спортом – не забудьте включить это покрытие "
+"в Ваш страховой полис"
+msgstr ""
+"TRAVEL policies provide the possibility of insurance coverage for amateur sports and "
+"recreational activities. For more details, please see ‘Insurance rules’. If you are planning to "
+"engage in sports during your travel - ensure to include this coverage into your insurance policy."
+
+#: templates/flatpages/faq.html:186
+msgid "Что предполагает страхование «гражданской ответственности» при поездках за границу?"
+msgstr "What does \"civil liability\" insurance imply while traveling abroad?"
+
+#: templates/flatpages/faq.html:187
+msgid ""
+"Электронный полис страхования имеет такую же силу, как его традиционный бумажный аналог. Это "
+"значит, он также подходит для получения визы. Для включения полиса в пакет документов с целью "
+"получения визы мы рекомендуем распечатать полис на принтере и поставить на него свою подпись в "
+"соответствующей графе"
+msgstr ""
+"Electronic policy has the same power as the traditional paper analogue. It means it is "
+"appropriate for getting visa. To include policy into documentation package for visa obtaining "
+"purposes we advise to print electronic policy and sign it."
+
+#: templates/flatpages/faq.html:190
+msgid "Чем отличается бумажный полис от электронного?"
+msgstr "What is the difference between the paper and electronic version of the policy?"
+
+#: templates/flatpages/faq.html:194
+msgid ""
+"Что делать в экстренной ситуации, когда нет возможности самостоятельно связаться со страховой "
+"компанией?"
+msgstr ""
+"What to do in an emergency situation when there is no possibility to contact with the insurance "
+"company?"
+
+#: templates/flatpages/faq.html:195
+msgid ""
+"Именно для таких ситуаций мы рекомендуем распечатать электронный полис страхования. Он может "
+"быть необходим как для прохождения пограничного контроля в некоторых странах, так и в случаях, "
+"когда нужна экстренная помощь: в полисе содержится информация для врачей, которая сориентирует "
+"их, какие действия необходимо предпринять, если у клиента нет возможности самостоятельно "
+"связаться со страховой компанией"
+msgstr ""
+"Just in these situations we recommend to print the electronic insurance policy It can be "
+"necessary both for passing the frontier control in some countries and in case of emergency "
+"help:  the policy has information for doctors,which direct them in case if the client has no "
+"opportunity to connect  with the insurance company on his own."
+
+#: templates/flatpages/faq.html:211
+msgid "Не нашли ответ на свой вопрос? Задайте его нам."
+msgstr "Couldn't find the answer to your question? Ask us"
+
+#: templates/flatpages/includes/home_feedback.html:4
+msgid "Экспертное мнение о нас"
+msgstr "Expert’s opinion about us"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:9
+msgid "Как работает автострахование?"
+msgstr "How does autoinsurance work?"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:10
+#: templates/flatpages/includes/inner_insurance_details_health.html:10
+#: templates/flatpages/includes/inner_insurance_details_property.html:10
+#: templates/flatpages/includes/inner_insurance_details_travel.html:10
+#: templates/flatpages/site_home.html:189
+msgid "Узнать подробнее"
+msgstr "Learn more"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:30
+#: templates/flatpages/includes/inner_insurance_details_property.html:31
+#: templates/flatpages/includes/inner_insurance_details_travel.html:31
+msgid "Когда производится выплата?"
+msgstr "When is the payment made?"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:42
+#: templates/flatpages/includes/inner_insurance_details_travel.html:68
+msgid "Ответственность перед 3-ми лицами<br/>за причиненный ущерб"
+msgstr "Third party liability for caused damage"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:47
+msgid "Повреждения своего<br/>авто в случае ДТП"
+msgstr "Damage of your<br/> vehicle in accident"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:57
+msgid "Расходы на такси"
+msgstr "Taxi expenses"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:62
+msgid "Расходы на эвакуацию"
+msgstr "Evacuation expenses"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:67
+msgid "Техпомощь в дороге"
+msgstr "Technical assistance on road "
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:77
+msgid "Расходы на<br/>юридическую помощь"
+msgstr "Expenses<br/> for legal assistance"
+
+#: templates/flatpages/includes/inner_insurance_details_auto.html:91
+#: templates/flatpages/includes/inner_insurance_details_health.html:74
+#: templates/flatpages/includes/inner_insurance_details_property.html:91
+#: templates/flatpages/includes/inner_insurance_details_travel.html:81
+msgid "Когда производится выплата"
+msgstr "When is the payment made?"
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:9
+msgid "Как работает страхование здоровья?"
+msgstr "How does health insurance work?"
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:42
+msgid "Накопительное инвестиционное<br/>страхование жизни"
+msgstr "Universal<br/> life insurance"
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:47
+msgid "страховка от<br/>несчатного случая"
+msgstr "Accident<br/> insurance"
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:52
+msgid "страховка от<br/>инвалидности"
+msgstr "Disability<br/> insurance"
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:57
+msgid "Потеря работы"
+msgstr "Job loss"
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:62
+msgid "Критические заболевания<br/>(Спид, Рак)"
+msgstr "Critical disease (AIDS, Cancer) "
+
+#: templates/flatpages/includes/inner_insurance_details_health.html:79
+#: templates/flatpages/includes/inner_insurance_details_travel.html:86
+msgid "Выберите компанию"
+msgstr "Select a company"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:9
+msgid "Как работает страхование имущества?"
+msgstr "How does property insurance work?"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:42
+msgid "Внутренняя отделка"
+msgstr "Interior trim"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:47
+msgid "Повреждения от пожара"
+msgstr "Damaged by fire"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:52
+msgid "Ответственность перед<br/>третьими лицами"
+msgstr "Third party<br/> responsibility"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:57
+msgid "Противоправные<br/>действия третьих лиц"
+msgstr "Illegal<br/> acts by third parties"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:62
+msgid "Драгоценное имущество<br/>(золото, меха, картины)"
+msgstr "Valuables (gold, fur, pictures)"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:67
+msgid "Дополнительные<br/>строения"
+msgstr "Additional<br/> buildings"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:72
+msgid "Повреждения от<br/>стихийного бедствия"
+msgstr "Damage <br/>caused by disaster"
+
+#: templates/flatpages/includes/inner_insurance_details_property.html:77
+msgid "Повреждения от залива"
+msgstr "Mudflow damage"
+
+#: templates/flatpages/includes/inner_insurance_details_travel.html:9
+msgid "Как работает страхование выезжающих за рубеж?"
+msgstr "How does travel insurance work?"
+
+#: templates/flatpages/includes/inner_insurance_details_travel.html:43
+msgid "Досрочное возвращение<br/>из поездки"
+msgstr "Early return from travel"
+
+#: templates/flatpages/includes/inner_insurance_details_travel.html:48
+msgid "Отмена или задержка<br/>рейса"
+msgstr "Flight cancellation or delay"
+
+#: templates/flatpages/includes/inner_insurance_details_travel.html:53
+msgid "Несчастный<br/>случай"
+msgstr "Accident"
+
+#: templates/flatpages/includes/inner_policy_delivery_auto.html:7
+#: templates/flatpages/includes/inner_policy_delivery_health.html:7
+#: templates/flatpages/includes/inner_policy_delivery_property.html:7
+#: templates/flatpages/includes/inner_policy_delivery_travel.html:7
+msgid "Варианты доставки<br class=\"visible-xs\"> полиса"
+msgstr "Policy delivery options "
+
+#: templates/flatpages/includes/inner_policy_delivery_auto.html:18
+#: templates/flatpages/includes/inner_policy_delivery_health.html:18
+#: templates/flatpages/includes/inner_policy_delivery_property.html:18
+#: templates/flatpages/includes/inner_policy_delivery_travel.html:18
+msgid "Курьером"
+msgstr "By a courier"
+
+#: templates/flatpages/includes/inner_policy_delivery_auto.html:26
+#: templates/flatpages/includes/inner_policy_delivery_health.html:26
+#: templates/flatpages/includes/inner_policy_delivery_property.html:26
+#: templates/flatpages/includes/inner_policy_delivery_travel.html:26
+msgid "Забрать на<br> территории любого<br> ASAN XİDMƏT"
+msgstr "To collect from any<br> ASAN XİDMƏT"
+
+#: templates/flatpages/includes/inner_policy_delivery_auto.html:34
+#: templates/flatpages/includes/inner_policy_delivery_health.html:34
+#: templates/flatpages/includes/inner_policy_delivery_property.html:34
+#: templates/flatpages/includes/inner_policy_delivery_travel.html:34
+msgid "Отправка по<br> электронной почте"
+msgstr "Sending by e-mail"
+
+#: templates/flatpages/includes/inner_policy_ordering_auto.html:8
+#: templates/flatpages/includes/inner_policy_ordering_health.html:8
+#: templates/flatpages/includes/inner_policy_ordering_property.html:8
+#: templates/flatpages/includes/inner_policy_ordering_travel.html:8
+msgid "Для покупки полиса<br/> выберите любой удобный вариант"
+msgstr "Choose any comfortable option for purchasing of policy"
+
+#: templates/flatpages/includes/inner_policy_ordering_auto.html:23
+#: templates/flatpages/includes/inner_policy_ordering_health.html:23
+#: templates/flatpages/includes/inner_policy_ordering_property.html:22
+#: templates/flatpages/includes/inner_policy_ordering_travel.html:22
+msgid "Закажите<br>полис<br> по телефону"
+msgstr "Order a policy by phone"
+
+#: templates/flatpages/includes/inner_policy_ordering_auto.html:36
+#: templates/flatpages/includes/inner_policy_ordering_health.html:36
+#: templates/flatpages/includes/inner_policy_ordering_property.html:34
+#: templates/flatpages/includes/inner_policy_ordering_travel.html:34
+msgid "Оформите полис<br> самостоятельно<br>на сайте"
+msgstr "Issue an insurance policy independently on website"
+
+#: templates/flatpages/includes/inner_policy_ordering_auto.html:49
+#: templates/flatpages/includes/inner_policy_ordering_health.html:49
+#: templates/flatpages/includes/inner_policy_ordering_property.html:46
+#: templates/flatpages/includes/inner_policy_ordering_travel.html:46
+msgid "оформите полис<br> с помощью<br> онлайн-консультанта"
+msgstr "Issue an insurance policy by assistance of an online consultant"
+
+#: templates/flatpages/insurance.html:43
+msgid "страхование автомобиля"
+msgstr "car Insurance"
+
+#: templates/flatpages/insurance.html:81
+msgid "сравнить продукты"
+msgstr "compare products"
+
+#: templates/flatpages/insurance.html:97
+msgid "страхование недвижимости"
+msgstr "property insurance"
+
+#: templates/flatpages/insurance.html:122
+msgid "страхование здоровья"
+msgstr "health insurance"
+
+#: templates/flatpages/insurance.html:129 templates/flatpages/insurance/health/urgentcare.html:50
+msgid "Скорая помощь"
+msgstr "Urgent care"
+
+#: templates/flatpages/insurance.html:139 templates/flatpages/insurance/health/program69.html:50
+msgid "Онкопомощь 69 и 69+"
+msgstr "Oncologic help 69 и 69+"
+
+#: templates/flatpages/insurance.html:155
+msgid "страхование путешествий"
+msgstr "travel insurance"
+
+#: templates/flatpages/insurance.html:162
+#: templates/flatpages/insurance/travel/programtravel.html:50
+msgid "Туристическое страхование"
+msgstr "Travel insurance"
+
+#: templates/flatpages/insurance.html:168
+msgid "cравнение продуктов для разных cтраховых компаний"
+msgstr "comparison of products for various insurance companies"
+
+#: templates/flatpages/insurance/auto.html:20
+msgid "ОСАГО и КАСКО для опытных и не очень:"
+msgstr "Car insurance for experienced and inexperienced drivers"
+
+#: templates/flatpages/insurance/auto.html:23
+msgid "Убедитесь, что это не дорого"
+msgstr "Make sure that it is not expensive"
+
+#: templates/flatpages/insurance/auto.html:24
+msgid "Выберите уникальный продукт для себя"
+msgstr "Choose an unique product for yourself"
+
+#: templates/flatpages/insurance/auto/5lik.html:41
+#: templates/flatpages/insurance/auto/confidentdriver.html:41
+#: templates/flatpages/insurance/auto/cvi.html:41
+#: templates/flatpages/insurance/auto/icbariplus.html:41
+#: templates/flatpages/insurance/auto/simplekasko.html:41
+#: templates/flatpages/insurance/auto/superkasko.html:41
+#: templates/flatpages/insurance/health/program69.html:41
+#: templates/flatpages/insurance/health/refundpediatric.html:41
+#: templates/flatpages/insurance/health/urgentcare.html:41
+#: templates/flatpages/insurance/property/crpi.html:41
+#: templates/flatpages/insurance/travel/programtravel.html:41
+msgid "К списку страховых продуктов"
+msgstr "To the list of insurance products"
+
+#: templates/flatpages/insurance/auto/5lik.html:56
+#: templates/flatpages/insurance/auto/confidentdriver.html:56
+#: templates/flatpages/insurance/auto/cvi.html:56
+#: templates/flatpages/insurance/auto/icbariplus.html:56
+#: templates/flatpages/insurance/auto/simplekasko.html:56
+#: templates/flatpages/insurance/auto/superkasko.html:56
+#: templates/flatpages/insurance/health/program69.html:56
+#: templates/flatpages/insurance/health/refundpediatric.html:56
+#: templates/flatpages/insurance/health/urgentcare.html:56
+#: templates/flatpages/insurance/property/crpi.html:56
+#: templates/flatpages/insurance/travel/programtravel.html:56
+msgid "Что страхует продукт?"
+msgstr "What insures the product?"
+
+#: templates/flatpages/insurance/auto/5lik.html:57
+msgid "Жизнь и здоровье водителя и пассажира переднего сидения."
+msgstr "Life and health of the driver and the passenger of front seat."
+
+#: templates/flatpages/insurance/auto/5lik.html:59
+#: templates/flatpages/insurance/auto/confidentdriver.html:59
+#: templates/flatpages/insurance/auto/cvi.html:59
+#: templates/flatpages/insurance/auto/icbariplus.html:59
+#: templates/flatpages/insurance/auto/simplekasko.html:59
+#: templates/flatpages/insurance/auto/superkasko.html:59
+#: templates/flatpages/insurance/health/program69.html:59
+#: templates/flatpages/insurance/health/refundpediatric.html:59
+#: templates/flatpages/insurance/health/urgentcare.html:59
+#: templates/flatpages/insurance/property/crpi.html:59
+#: templates/flatpages/insurance/travel/programtravel.html:59
+msgid "Срок договора"
+msgstr "The term of the contract"
+
+#: templates/flatpages/insurance/auto/5lik.html:60 templates/flatpages/insurance/auto/5lik.html:74
+#: templates/flatpages/insurance/auto/icbariplus.html:60
+msgid ""
+"Дата начала и окончания страхового полиса совпадает с датой начала и окончания прикрепленного к "
+"нему ОСАГО."
+msgstr ""
+"The date of the beginning and end of insurance policy coincides with the date of the beginning "
+"and end of the attached CMTPL."
+
+#: templates/flatpages/insurance/auto/5lik.html:62
+#: templates/flatpages/insurance/auto/confidentdriver.html:62
+#: templates/flatpages/insurance/auto/cvi.html:62
+#: templates/flatpages/insurance/auto/icbariplus.html:62
+#: templates/flatpages/insurance/auto/simplekasko.html:62
+#: templates/flatpages/insurance/auto/superkasko.html:62
+#: templates/flatpages/insurance/health/program69.html:62
+#: templates/flatpages/insurance/health/refundpediatric.html:62
+#: templates/flatpages/insurance/health/urgentcare.html:62
+#: templates/flatpages/insurance/property/crpi.html:62
+#: templates/flatpages/insurance/travel/programtravel.html:62
+msgid "Краткое описание страхового продукта"
+msgstr "Short description about insurance product"
+
+#: templates/flatpages/insurance/auto/5lik.html:63
+msgid ""
+"Продукт «Пятерочка» является своего рода дополнением к ОСАГО. Продукт «Пятерочка» представляет "
+"собой  гарантию страховой защиты в случае причинения вреда жизни и здоровью в результате ДТП для "
+"водителя и пассажира переднего сидения транспортного средства. Кроме этого, в случае "
+"необходимости предусматривается услуга эвакуации автомобиля.  Оплачивая всего 5 AZN, Вы "
+"приобретаете годовое страховое покрытие с лимитом 1000 AZN."
+msgstr ""
+"The product \"Five\" is a complemention in its role to the CMTPL. The product \"Five\" is a "
+"warranty of insurance protection in case of the life and health harm done to the driver and the "
+"passenger of front seat of the vehicle in a traffic accident. Besides, in case of necessity the "
+"evacuation service of a car is taken into account.  Paying for just 5 AZN, you get annual "
+"insurance coverage with a limit of 1000 AZN."
+
+#: templates/flatpages/insurance/auto/5lik.html:65
+#: templates/flatpages/insurance/auto/confidentdriver.html:74
+#: templates/flatpages/insurance/auto/cvi.html:65
+#: templates/flatpages/insurance/auto/icbariplus.html:65
+#: templates/flatpages/insurance/auto/simplekasko.html:75
+#: templates/flatpages/insurance/auto/superkasko.html:68
+#: templates/flatpages/insurance/health/program69.html:68
+#: templates/flatpages/insurance/health/urgentcare.html:65
+#: templates/flatpages/insurance/property/crpi.html:78
+#: templates/flatpages/insurance/travel/programtravel.html:73
+msgid "Преимущества продукта"
+msgstr "Advantages of the product"
+
+#: templates/flatpages/insurance/auto/5lik.html:67
+msgid "Стоимость всего 5 AZN."
+msgstr "The cost is just 5 AZN."
+
+#: templates/flatpages/insurance/auto/5lik.html:71
+#: templates/flatpages/insurance/auto/confidentdriver.html:86
+#: templates/flatpages/insurance/auto/cvi.html:71
+#: templates/flatpages/insurance/auto/icbariplus.html:71
+#: templates/flatpages/insurance/auto/simplekasko.html:84
+#: templates/flatpages/insurance/auto/superkasko.html:76
+#: templates/flatpages/insurance/health/program69.html:78
+#: templates/flatpages/insurance/health/urgentcare.html:75
+#: templates/flatpages/insurance/property/crpi.html:82
+#: templates/flatpages/insurance/travel/programtravel.html:80
+msgid "Важно знать"
+msgstr "It's important"
+
+#: templates/flatpages/insurance/auto/5lik.html:73
+#: templates/flatpages/insurance/auto/superkasko.html:78
+msgid "Можно купить ТОЛЬКО в момент приобретения ОСАГО в Атешгях;"
+msgstr ""
+"The registration of the given product should coincide with the registration of CMTPL, it means "
+"that agreements must come in force simultaneously "
+
+#: templates/flatpages/insurance/auto/5lik.html:75
+msgid ""
+"Досрочная ливидация либо аннулирование ОСАГО влечет за собой автоматическую ликвидацию "
+"страхового полиса."
+msgstr ""
+"The advance dissolution or cancellation of CMTPL leads the the automatic dissolution of the "
+"insurance policy."
+
+#: templates/flatpages/insurance/auto/5lik.html:76
+msgid ""
+"Услуга эвакуации предоставляется в случае ограничения движения автотранспортного средства в "
+"результате столкновения двух или более автотранспортных средств."
+msgstr ""
+"The evacuation service is provided in case of traffic limitation of the vehicle as a result of "
+"the collision of two or more vehicles."
+
+#: templates/flatpages/insurance/auto/5lik.html:79
+#: templates/flatpages/insurance/auto/confidentdriver.html:89
+#: templates/flatpages/insurance/auto/cvi.html:83
+#: templates/flatpages/insurance/auto/icbariplus.html:78
+#: templates/flatpages/insurance/auto/simplekasko.html:120
+#: templates/flatpages/insurance/auto/superkasko.html:83
+#: templates/flatpages/insurance/health/program69.html:84
+#: templates/flatpages/insurance/health/refundpediatric.html:88
+#: templates/flatpages/insurance/health/urgentcare.html:78
+#: templates/flatpages/insurance/property/crpi.html:102
+#: templates/flatpages/insurance/travel/programtravel.html:86
+msgid "Мнение экспертов “Odlar Yurdu Sığorta Brokeri”"
+msgstr "\"Odlar Yurdu Broker Insurance\" experts' opinion"
+
+#: templates/flatpages/insurance/auto/5lik.html:81
+msgid ""
+"Если Вы хотите защитить себя и рядом сидящего пассажира от причинения вреда Вашему здоровью в "
+"результате ДТП, то эксперты “Odlar Yurdu Sığorta Brokeri” рекомендуют Вам приобрести полис "
+"Пятерочка, так как полис выгоден и удобен тем, кто постоянно страхуется в Атешгях ввиду того, "
+"что предоставляется только с ОСАГО."
+msgstr ""
+"If you want to protect yourself and the passengers who are next to you from the infliction of "
+"harm to your health as a result of traffic accident, then the experts of \" Odlar Yurdu "
+"Insurance Broker \" recommend you to acquire the policy \" Five\" as the policy is profitable "
+"and convenient for those who are constantly insured in \" Ateshgah Insurance \" due to the fact "
+"that it is provided only with CMTPL."
+
+#: templates/flatpages/insurance/auto/5lik.html:82
+#: templates/flatpages/insurance/auto/confidentdriver.html:92
+#: templates/flatpages/insurance/auto/cvi.html:86
+#: templates/flatpages/insurance/auto/icbariplus.html:81
+#: templates/flatpages/insurance/auto/simplekasko.html:123
+#: templates/flatpages/insurance/auto/superkasko.html:86
+#: templates/flatpages/insurance/health/program69.html:87
+#: templates/flatpages/insurance/health/refundpediatric.html:91
+#: templates/flatpages/insurance/health/urgentcare.html:81
+#: templates/flatpages/insurance/property/crpi.html:105
+#: templates/flatpages/insurance/travel/programtravel.html:89
+msgid "Команда “Odlar Yurdu Sığorta Brokeri”"
+msgstr "Team of the “Odlar Yurdu Sığorta Brokeri”"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:60
+#: templates/flatpages/insurance/auto/cvi.html:60
+#: templates/flatpages/insurance/auto/simplekasko.html:60
+#: templates/flatpages/insurance/auto/superkasko.html:60
+#: templates/flatpages/insurance/health/refundpediatric.html:60
+#: templates/flatpages/insurance/health/urgentcare.html:60
+#: templates/flatpages/insurance/property/crpi.html:60
+msgid "Договор заключается на 12 месяцев"
+msgstr "The contract is set up on 12 months"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:63
+msgid ""
+"Всего за 0,55&#37; от рыночной стоимости автомобиля Вы сможете уберечь свой автомобиль от любых "
+"неприятностей, произошедших не по Вашей вине: дорожно-транспортные происшествия, повреждение "
+"упавшим предметом, незаконные действия третьих лиц, кража, угон и прочие непредвиденные "
+"ситуации, в результате которых нанесен ущерб автотранспортному средству."
+msgstr ""
+"You can protect your car from any troubles which happened not by your fault just for 0,55&#37; "
+"from the market cost: traffic accidents, damage from the fallen objects, outlaw actions of the "
+"third party, robbery, driving away and other unforeseen situations which damaged your vehicle."
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:65
+#: templates/flatpages/insurance/auto/simplekasko.html:65
+#: templates/flatpages/insurance/auto/superkasko.html:65
+#: templates/flatpages/insurance/health/program69.html:65
+#: templates/flatpages/insurance/property/crpi.html:65
+msgid "Покрываемые риски"
+msgstr "Covered risks"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:67
+msgid "Падение на автомобиль какого-либо предмета"
+msgstr "The falling of any object onto the car"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:68
+msgid "Противоправные незаконные действия со стороны 3-х лиц"
+msgstr "Outlaw illegal actions by the third party"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:69
+msgid "Кража, угон"
+msgstr "Theft, robbery and stealing of a vehicle"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:70
+msgid "Ограбление"
+msgstr "Robbery"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:71
+msgid "Ущерб, нанесенный автотранспортному средству со стороны животных"
+msgstr "The damage of the vehicle done by animals"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:76
+msgid "Возможность застраховать автомобиль за минимальную страховую премию;"
+msgstr "The opportunity to insure the car for a minimal insurance award;"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:77
+msgid "Большой спектр рисков (как и в полноценном каско);"
+msgstr "Big spectrum of risks(like in a sterling casco);"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:78
+msgid "Высокий уровень обслуживания;"
+msgstr "High level of service;"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:79
+msgid ""
+"Без франшизы (франшиза – это часть причиненного в результате страхового случая ущерба, которая "
+"не обеспечивается страхованием и оплачивается страхователем);"
+msgstr ""
+"Without deductible (deductible – is a part of the damage caused by insurance incident which is "
+"not provided by insurance and not paid by insurer);"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:80
+msgid "Выплата при страховом случае производится без учета амортизации;"
+msgstr "In case of insurance incident the payment is done without including amortization;"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:81
+msgid "Оплата всех расходов на эвакуацию;"
+msgstr "Payment of all the expenditures on evacuation;"
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:82
+msgid "Сбор документов и официальное оформление в ГАИ со стороны A-Group."
+msgstr "Collection of documents and official registration in RPU(road policing unit) by A-Group."
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:87
+msgid "Выплата осуществляется только в случае вашей невиновности."
+msgstr "Payment can be done only in case of your innocence."
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:91
+msgid ""
+"Если Вы давно водите автомобиль, прекрасно справляетесь с его управлением и считаете, что "
+"причиной ДТП могут стать другие участники дорожного движения, а не Вы, то эксперты “Odlar Yurdu "
+"Sığorta Brokeri” рекомендуют Вам приобрести полис Уверенный водитель, который практически "
+"содержит все покрытия обычного договора каско."
+msgstr ""
+"If you drive for a long time, do it well and consider that other traffic participants can be the "
+"reason of the traffic accident, then experts of “Odlar Yurdu Insurance Broker” recommend you to "
+"buy the Confident driver policy, which includes all the covers of the simple casco agreement."
+
+#: templates/flatpages/insurance/auto/confidentdriver.html:95
+#: templates/flatpages/insurance/auto/cvi.html:89
+#: templates/flatpages/insurance/auto/icbariplus.html:84
+#: templates/flatpages/insurance/auto/simplekasko.html:126
+#: templates/flatpages/insurance/auto/superkasko.html:89
+msgid "Похожие продукты"
+msgstr "Similiar products"
+
+#: templates/flatpages/insurance/auto/cvi.html:57
+msgid "Вашу гражданскую ответственность."
+msgstr "Сivil liability"
+
+#: templates/flatpages/insurance/auto/cvi.html:63
+msgid ""
+"ОСАГО — обязательное страхование, и ее условия одинаковы во всех страховых компаниях. Важно "
+"понимать, что это страхование автогражданской ответственности, то есть компания оплатит за вас "
+"компенсацию другому водителю, если вы окажетесь виноваты в повреждении чужого автомобиля или "
+"причинении вреда здоровью других участников дорожного движения. ОСАГО – это полис обязательного "
+"страхования гражданской ответственности владельцев транспортных средств. Особенностью ОСАГО "
+"является возмещение убытков и ущерба, которые были причинены другому автомобилю, жизни и "
+"здоровью пассажиров. Тарифы по ОСАГО устанавливает государство, и без ОСАГО на дороге появляться "
+"запрещено."
+msgstr ""
+"Insurance against civil liability of motor vehicle holders is compulsory and applies when the "
+"holder or driver of a vehicle causes loss or injury to others in using that vehicle and is "
+"civilly liable therefore according to the provisions of the law in force. The purpose of "
+"Compulsory Motor TPL Insurance Contract is to secure reimbursement of the damage to individual’s "
+"health, as well as reimbursement of the loss or damage to individual’s or legal entity’s "
+"property, resulted from a vehicle usage. Rates for insurance set by the government, and without "
+"insurance emerge on the road prohibited."
+
+#: templates/flatpages/insurance/auto/cvi.html:67
+msgid ""
+"Застраховав свою гражданскую ответственность, в случае виновности вы избавляетесь от забот по "
+"возмещению нанесенного ущерба. Убытки, которые в результате ваших действий понёс второй "
+"участник, должна компенсировать страховая компания."
+msgstr ""
+"Insure your civil liability in the case of guilt you get rid of worries for compensation of "
+"damage. Losses as a result of your actions bore to second party should compensate from the "
+"insurance company."
+
+#: templates/flatpages/insurance/auto/cvi.html:72
+msgid ""
+"Обязательно страхование гражданской ответственности перед третьими лицами в связи с "
+"использованием следующих автотранспортных средств:"
+msgstr ""
+"The Compulsory third party liability insurance shall apply to the owners of the following types "
+"of motor vehicles:"
+
+#: templates/flatpages/insurance/auto/cvi.html:74
+msgid "Автотранспортные средства, у которых объем цилиндров больше 50 см3"
+msgstr "The following motor vehicles with a volume of engine being in excess of 50 sm3"
+
+#: templates/flatpages/insurance/auto/cvi.html:75
+msgid "легковые автомобили и другие автотранспортные средства, произведенные на их базе;"
+msgstr "Passenger vehicles and other motor vehicles produced on their basis;"
+
+#: templates/flatpages/insurance/auto/cvi.html:76
+msgid "грузовые автомобили и другие автотранспортные средства, произведенные на их базе;"
+msgstr "Cargo vehicles and other motor vehicles produced on their basis;"
+
+#: templates/flatpages/insurance/auto/cvi.html:77
+msgid "микроавтобусы, автобусы и другие автотранспортные средства, произведенные на их базе;"
+msgstr "Micro-buses, buses and other motor vehicles produced on their basis;"
+
+#: templates/flatpages/insurance/auto/cvi.html:78
+msgid "мотоциклы и мотороллеры;"
+msgstr "Motorcycles and motor rollers;"
+
+#: templates/flatpages/insurance/auto/cvi.html:79
+msgid ""
+"тракторы, автотранспортные средства, используемые в дорожно-строительных работах, лесном и "
+"сельском хозяйствах;"
+msgstr ""
+"Tractors, means of auto transportation used in construction of roads, forest and agricultural "
+"industry"
+
+#: templates/flatpages/insurance/auto/cvi.html:80
+msgid "троллейбусы и трамваи."
+msgstr "Trolleybuses and trams."
+
+#: templates/flatpages/insurance/auto/cvi.html:85
+msgid ""
+"Эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам застраховать автогражданскую "
+"ответственность перед третьими лицами с целью возмещения ущерба, причиненного здоровью "
+"физических лиц, а также имуществу физических и юридических лиц в результате использования "
+"механических автотранспортных средств на территории Азербайджанской Республики."
+msgstr ""
+"Experts of “Odlar Yurdu Insurance Broker” recommend you to buy the Compulsory third party "
+"liability insurance of motor vehicles is used for the purpose of providing compensation for the "
+"damages which may be caused to health of physical persons, as well as to property of legal "
+"entities and physical persons in course of use of mechanical means of transportation within the "
+"territory of the Republic of Azerbaijan"
+
+#: templates/flatpages/insurance/auto/icbariplus.html:57
+msgid "Ответственность перед 3ми лицами за причиненный им ущерб при управлении ТС"
+msgstr "Third party liability"
+
+#: templates/flatpages/insurance/auto/icbariplus.html:63
+msgid ""
+"Продукт «ОСАГО+» является своего рода дополнением к ОСАГО. Новый продукт компании является "
+"своего рода его «продолжением» и подразумевает увеличение лимита страхового покрытия до 10 000 "
+"AZN (Из которых 5 000 AZN - лимит по ОСАГО и 5 000 AZN по данному продукту, являющимся "
+"дополнением к полису ОСАГО). Отныне при приобретении полиса ОСАГО доплатив  всего 19 AZN каждый "
+"автовладелец сможет приобрести дополнительное покрытие по добровольному страхованию "
+"автоответственности с лимитом в 5 000 AZN."
+msgstr ""
+"The product \"CMTPL+\" is a complemention in its role to the CMTPL. The product “CMTPL+” can be "
+"described as an extended MTPL with an insurance cover limit of up to AZN 10,000 (of which AZN "
+"5,000 is the CALS limit and AZN 5,000 is an additional limit offered to buyers of the product). "
+"Paying just AZN 19 every car owner can buy an additional cover on voluntary insurance of "
+"autoresponsibility with a limit AZN 5000."
+
+#: templates/flatpages/insurance/auto/icbariplus.html:67
+msgid "Возможность увеличить лимит страхового покрытия в 2 раза."
+msgstr "The possibility to increase the limit of the insurance coverage in 2 times."
+
+#: templates/flatpages/insurance/auto/icbariplus.html:73
+msgid ""
+"Оформление данного продукта  должно совпадать с оформлением ОСАГО, то есть требуется "
+"еденовременное вступление в силу договоров;"
+msgstr ""
+"The registration of the given product should coincide with the registration of CMTPL, it means "
+"that agreements must come in force simultaneously;"
+
+#: templates/flatpages/insurance/auto/icbariplus.html:74
+msgid "Данный продукт предусмотрен только для физических лиц;"
+msgstr "This product provided only for individuals;"
+
+#: templates/flatpages/insurance/auto/icbariplus.html:75
+msgid "Дополнительное покрытие по  автогражданской ответсвенности  без ОСАГО покупать запрещается."
+msgstr ""
+"Additional cover according to third party car insurance without CMTPL is prohibited to buy."
+
+#: templates/flatpages/insurance/auto/icbariplus.html:80
+msgid ""
+"Эксперты “Odlar Yurdu Sığorta Brokeri” рекомендуют Вам увеличить лимит страхового покрытия на "
+"случай, если в случае ДТП ущерб имуществу, причиненный 3-м лицам превысит 5000 AZN. Продукт "
+"выгоден и удобен тем, кто постоянно страхуется в Атешгях ввиду того, что предоставляется только "
+"с ОСАГО."
+msgstr ""
+"Experts of \"Odlar Yurdu Broker Insurance\" recommend to increase the limitation of insurance "
+"policy if in case of traffic accident the damage to the property done to the 3 parties will "
+"exceed AZN 5000, as the policy is profitable and convenient for those who are constantly insured "
+"in \" Ateshgah Insurance \" due to the fact that it is provided only with CMTPL."
+
+#: templates/flatpages/insurance/auto/simplekasko.html:63
+msgid ""
+"Страховой продукт «Простое каско» является аналогом КАСКО и представляет собой 2 варианта "
+"покрытия, первый из которых предусматривает страховое обеспечение при первом происшествии; (то "
+"есть после первой страховой выплаты со стороны страховщика полис Простое каско теряет свою "
+"силу); второй же предусматривает страховое обеспечение при нескольких случаях ( то есть "
+"страховая компания обязуется оплачивать все страховые случаи в течение страхового периода при "
+"соблюдении страховой суммы). "
+msgstr ""
+"Insurance product “Simple Casco” is an analogue of CASCO, which represents 2 type of coverage, "
+"the first of which provides insurance coverage in the first incident; (that is, after the first "
+"insurance payment from the insurer's policy of Simple Casco loses its power); the second one "
+"provides insurance coverage for several cases (that is, the insurance company agrees to pay all "
+"insurance claims during the insurance period, subject to the sum insured)."
+
+#: templates/flatpages/insurance/auto/simplekasko.html:67
+msgid "Дорожно-транспортное происшествие"
+msgstr "Damages to the vehicle from an accident;"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:68
+msgid "Пожар, воспламенение"
+msgstr "Fire, inflammation"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:69
+msgid "Стихийные бедствия"
+msgstr "Natural disasters"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:70
+msgid "Противоправные действия 3-х лиц"
+msgstr "Outlaw illegal actions by the third party"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:71
+msgid "Повреждение транспортных средств со стороны животных"
+msgstr "The damage of the vehicle done by animals"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:72
+msgid "Кража, ограбление, угон"
+msgstr "Theft, robbery and stealing of a vehicle"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:77
+msgid "Возможность выбора из 2-х оптимальных вариантов;"
+msgstr "Possibility to choose of 2 optimal options;"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:78
+msgid "Минимальная франшиза – при каждом страховом случае 100 азн;"
+msgstr "Minimum deductible - for each insured event AZN 100;"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:79
+msgid "По предпочтению клиента предоставление услуги эвакуации и дополнительного водителя;"
+msgstr "By customer preferences providing services of the evacuation or additional driver;"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:80
+msgid ""
+"Выбирая данный продукт, Вы можете также приобрести добровольное страхование водителя и "
+"пассажиров от несчастных случаев и добровольное страхование гражданской ответственности перед "
+"третьими лицами."
+msgstr ""
+"By choosing this product, you can also purchase the voluntary insurance driver and passenger "
+"accident and voluntary insurance of civil liability to third parties."
+
+#: templates/flatpages/insurance/auto/simplekasko.html:85
+msgid "Вам предоставляется 2 варианта страховых покрытий, один из которых Вы можете выбрать"
+msgstr "You are given 2 options of insurance coverage, one of which you can choose"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:86
+msgid "Условия I варианта"
+msgstr "Conditions of first variant"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:91
+#: templates/flatpages/insurance/auto/simplekasko.html:108
+#: templates/flatpages/insurance/property/crpi.html:89
+msgid "Страховая сумма (AZN)"
+msgstr "Insurance sum (AZN)"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:92
+#: templates/flatpages/insurance/auto/simplekasko.html:109
+#: templates/flatpages/insurance/property/crpi.html:91
+msgid "Страховая премия (AZN)"
+msgstr "Insurance cost (AZN)"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:103
+msgid "Условия II варианта"
+msgstr "Conditions of second variant"
+
+#: templates/flatpages/insurance/auto/simplekasko.html:122
+msgid ""
+"Продукт «Простое каско» - это прекрасная возможность получить надежную защиту и сэкономить "
+"деньги. Эксперты “Odlar Yurdu Sığorta Brokeri” рады порекомендовать Вам страхование «Простое "
+"каско» для транспортных средств с доступными для Вашего выбора лимитами ответственности. В "
+"случае если Вы не готовы потратить большие деньги на страхование Вашего автотранспортного "
+"средства, то данный продукт создан именно для Вас!"
+msgstr ""
+"The product \"Simple Casco\" is a great opportunity to get protection and save money. Experts "
+"\"Odlar Yurdu Sığorta Brokeri\" glad to recommend for you insurance \"Simple CASCO\" for "
+"vehicles with available for your choice of limits of liability. If you are not willing to spend "
+"much money for insurance of your vehicle, this product is designed for you!"
+
+#: templates/flatpages/insurance/auto/superkasko.html:63
+msgid ""
+"Супер КАСКО – является своего рода дополнением к ОСАГО. Данный продукт является аналогом КАСКО. "
+"Супер КАСКО – это добровольное страхование вашего автомобиля со страховым покрытием в 5000 AZN, "
+"которое Вы можете купить всего за 50 AZN."
+msgstr ""
+"The product \"Super Casco\" is a complemention in its role to the CMTPL. This product is an "
+"analog of CASCO. Super CASCO - is a voluntary insurance of your car with insurance coverage in "
+"AZN 5000, which you can buy in just AZN 50."
+
+#: templates/flatpages/insurance/auto/superkasko.html:66
+msgid "Столкновение 2-х или более транспортных средств"
+msgstr "Clash of 2 or more vehicles"
+
+#: templates/flatpages/insurance/auto/superkasko.html:70
+msgid "Сбор документов со стороны сотрудников компании «Атешгях»."
+msgstr "Collection of documents from the company's employees."
+
+#: templates/flatpages/insurance/auto/superkasko.html:71
+msgid ""
+"Франшиза не применяется (франшиза – это часть причиненного в результате страхового случая "
+"ущерба, которая не обеспечивается страхованием и оплачивается страхователем)."
+msgstr ""
+"Without deductible (deductible – is a part of the damage caused by insurance incident which is "
+"not provided by insurance and not paid by insurer)."
+
+#: templates/flatpages/insurance/auto/superkasko.html:72
+msgid "Выгодные условия"
+msgstr "Favourable conditions"
+
+#: templates/flatpages/insurance/auto/superkasko.html:79
+msgid ""
+"Истечение страхового периода либо досрочная ликвидация договора ОСАГО влечет за собой "
+"автоматическое аннулирование страхового продукта «Супер КАСКО»;"
+msgstr ""
+"The advance dissolution or cancellation of CMTPL leads the the automatic dissolution of “Super "
+"CASCO”;"
+
+#: templates/flatpages/insurance/auto/superkasko.html:80
+msgid "При страховом случае страховая выплата осуществляется в случае Вашей невиновности"
+msgstr "Payment can be done only in case of your innocence."
+
+#: templates/flatpages/insurance/auto/superkasko.html:85
+msgid ""
+"Если Вы считаете, что причиной ДТП могут стать другие участники дорожного движения, а не Вы, то "
+"эксперты “Odlar Yurdu Sığorta Brokeri” рекомендуют Вам приобрести полис Супер КАСКО, так как "
+"полис выгоден и удобен тем, кто постоянно страхуется в Атешгях ввиду того, что предоставляется "
+"только с ОСАГО."
+msgstr ""
+"If you think that the cause of the accident may be other road users, not you, the experts of "
+"\"Odlar Yurdu Sığorta Brokeri\" recommend you to purchase a policy “Super CASCO”, as the policy "
+"is profitable and convenient for those who are constantly insured in \" Ateshgah Insurance \" "
+"due to the fact that it is provided only with CMTPL."
+
+#: templates/flatpages/insurance/health.html:20
+msgid "Сохраните самое ценное!"
+msgstr "Save the most valuable!"
+
+#: templates/flatpages/insurance/health.html:23
+msgid "Страхование от несчастных случаев"
+msgstr "Accident insurance"
+
+#: templates/flatpages/insurance/health.html:24
+msgid "Добровольное медицинское страхование для детей и взрослых"
+msgstr "Voluntary medical insurance for children and adults"
+
+#: templates/flatpages/insurance/health.html:25
+msgid "Накопительное страхование жизни"
+msgstr "Universal life insurance"
+
+#: templates/flatpages/insurance/health/program69.html:57
+#: templates/flatpages/insurance/health/refundpediatric.html:57
+#: templates/flatpages/insurance/health/urgentcare.html:57
+msgid "Ваше здоровье"
+msgstr "Your health"
+
+#: templates/flatpages/insurance/health/program69.html:60
+msgid "Договор заключается на 5 лет"
+msgstr "The contract is set up on 5 years"
+
+#: templates/flatpages/insurance/health/program69.html:63
+msgid ""
+"Страхование «Онкопомощь 69 и 69+» оплачивает расходы на лечение, если у Вас появилось "
+"злокачественное онкозаболевание в течение срока действия договора страхования."
+msgstr ""
+"Insurance \"Oncologic help 69 и 69+\" pays for treatment if you have a malignant of oncological "
+"diseases over the term of the insurance contract."
+
+#: templates/flatpages/insurance/health/program69.html:66
+msgid "Появление злокачественного онкозаболевания в течение срока действия договора страхования"
+msgstr "The appearance of the malignant cancers during the term of the insurance contract"
+
+#: templates/flatpages/insurance/health/program69.html:70
+msgid "Очень выгодный страховой продукт – всего 69 $ в год;"
+msgstr "Very convenient insurance product - just $ 69 per year;"
+
+#: templates/flatpages/insurance/health/program69.html:71
+msgid "Возможно лечение за рубежом;"
+msgstr "Perhaps treatment abroad;"
+
+#: templates/flatpages/insurance/health/program69.html:72
+msgid "Эффективность полиса сохраняется в течение 1,8 – 2 лет после диагностирования заболевания;"
+msgstr ""
+"The effectiveness of the policy maintained for 1.8 - 2 years after diagnosis of the disease;"
+
+#: templates/flatpages/insurance/health/program69.html:73
+msgid ""
+"Выплаты необходимо осуществлять в пределах страхового лимита (в течение 1.8 (для программы 69) "
+"или 2 лет (для программы 69+) с даты диагнострования заболевания), несмотря на окончание срока "
+"действия договора. Восстановление лимита не предусмотрено;"
+msgstr ""
+"Payments should be implemented within the insurance limit (for 1.8 (for program 69) or 2 years "
+"(69+ programs) from the date of diagnosis disease), despite the end of the contract period. "
+"Recovery of the limit is not provided;"
+
+#: templates/flatpages/insurance/health/program69.html:74
+msgid ""
+"Ежегодная страховая сумма возрастает на 2000 манат (для 69) или 3000 (для 69+). За 15 лет "
+"непрерывного контракта сумма достигнет 10000 + (2000 *15 лет) = 40000 манат. Дальнейший рост "
+"страховой суммы не предусмотрен. Страховые премии при этом остаются фиксированными."
+msgstr ""
+"Annual insurance sum increases by 2000 manats (for 69) or 3000 (for 69+). For 15 years of "
+"continuous the contract sum will reach 10,000+ (2000 * 15) = 40,000 manat. Further growth of the "
+"sum insured is not provided. Insurance premiums remain fixed at the same time."
+
+#: templates/flatpages/insurance/health/program69.html:80
+msgid ""
+"Для первичного договора предусмотрен waiting period (период ожидания)  длительностью 4 месяцев"
+msgstr "For the primary contract provided waiting period duration of 4 months"
+
+#: templates/flatpages/insurance/health/program69.html:81
+msgid "Максимальный возраст для заключения первичного договора 55 лет"
+msgstr "The maximum age for initial contract of 55 years"
+
+#: templates/flatpages/insurance/health/program69.html:86
+msgid ""
+"Эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам приобрести страхование «Онкопомощь 69 и "
+"69+» с разнообразными вариантами покрытия, быстрым оформлением договора и организацией выплаты, "
+"что делает этот страховой продукт действительно привлекательным, тем более, что сервис "
+"предоставляется одной из ведущих страховых компаний A-Group."
+msgstr ""
+"Experts of \"Odlar Yurdu Sığorta Brokeri\" offer you to buy insurance \" Oncologic help 69 and "
+"69+\" with a variety of coverage options, express contract and paying the organization, making "
+"this insurance product is really attractive."
+
+#: templates/flatpages/insurance/health/refundpediatric.html:63
+msgid ""
+"Добровольное медицинское страхование «REFUND Pediatric» предусмотрен для новорожденных и детей. "
+"В страховое покрытие годового медицинского страхования входит: скорая, амбулаторная, "
+"стационарная помощь, обеспечение медикаментами, физиотерапия, патронаж для новорожденных, "
+"плановая вакцинация, терапевтическая стомотология."
+msgstr ""
+"Voluntary medical insurance «REFUND Pediatric» provided for infants and children. The coverage "
+"of the annual medical insurance include: emergency, outpatient, inpatient care, provision of "
+"medicines, physiotherapy, nursing newborn, routine vaccination, therapeutic stomatology."
+
+#: templates/flatpages/insurance/health/refundpediatric.html:82
+msgid "Дополнительные опции"
+msgstr "Additional options"
+
+#: templates/flatpages/insurance/health/refundpediatric.html:84
+msgid "плановая вакцинация согласно календарю"
+msgstr "routine vaccination according to the calendar"
+
+#: templates/flatpages/insurance/health/refundpediatric.html:85
+msgid "массаж в субконтракторных клиниках (лимит 10 процедур)"
+msgstr "massage in clinics (limit – 10 procedures)"
+
+#: templates/flatpages/insurance/health/refundpediatric.html:90
+msgid ""
+"Эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам приобрести гарантированный способ решения "
+"вопроса медицинского обслуживания с возможностью получать качественную и доступную по деньгам "
+"помощь — добровольное медицинское страхование «REFUND Pediatric»."
+msgstr ""
+"Experts \"Odlar Yurdu Sığorta Brokeri\" offer you to buy voluntary medical insurance «REFUND "
+"Pediatric». It is a guaranteed way to resolve the issue of health services with the ability to "
+"receive high-quality and affordable care for the money."
+
+#: templates/flatpages/insurance/health/urgentcare.html:63
+msgid ""
+"Данная программа предусматривает возмещение расходов, связанных с получение скорой экстренной "
+"помощи"
+msgstr ""
+"This program provides for reimbursement of costs associated with the obtaining emergency care."
+
+#: templates/flatpages/insurance/health/urgentcare.html:67
+msgid "Вызов скорой помощи (лимит 3 вызова)"
+msgstr "Emergency call (limit 3 calls)"
+
+#: templates/flatpages/insurance/health/urgentcare.html:68
+msgid ""
+"Лечение в стационаре (в т.ч. и хирургическое) одного неотложного заболевания (лимит на "
+"количество дней пребывания в стационаре - 21)"
+msgstr ""
+"Inpatient care (including surgery) of one emergency disease (limit of hospitalization - 21)"
+
+#: templates/flatpages/insurance/health/urgentcare.html:69
+msgid "Обеспечение медикаментами (во время оказания неотложной помощи и пребывания в стационаре)"
+msgstr "Providing medical supplies (during acute care and hospital stay)"
+
+#: templates/flatpages/insurance/health/urgentcare.html:70
+msgid "Неотложная стоматология"
+msgstr "Emergency dental care"
+
+#: templates/flatpages/insurance/health/urgentcare.html:71
+msgid "Неотложная вакцинация"
+msgstr "Emergency vaccinations"
+
+#: templates/flatpages/insurance/health/urgentcare.html:76
+msgid "Стоимость страхового продукта – 142 AZN."
+msgstr "The cost of insurance policy - 142 AZN."
+
+#: templates/flatpages/insurance/health/urgentcare.html:80
+msgid ""
+"Мы все боимся болеть. Ведь это всегда потеря времени, очереди в поликлиниках, постоянное "
+"беспокойство за неправильный диагноз или некачественное лечение. Чтобы избежать этих "
+"неприятностей эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам приобрести годовое страховое "
+"покрытие  «Скорая помощь»."
+msgstr ""
+"We are all afraid to hurt. It's always a waste of time, queues at clinics, constant concern for "
+"the wrong diagnosis or substandard care. In order to avoid of these troubles experts of \"Odlar "
+"Yurdu Broker Insurance\" offer you to buy an annual insurance coverage of \"Urgent Care»."
+
+#: templates/flatpages/insurance/property.html:18
+msgid "Страхование имущества"
+msgstr "Property insurance"
+
+#: templates/flatpages/insurance/property.html:20
+msgid "Защитите свое имущество от непредвиденных ситуаций!"
+msgstr "Save your property from unforseen situations!"
+
+#: templates/flatpages/insurance/property.html:23
+msgid "Страхование движимого и недвижимого имущества"
+msgstr "Insurance of movable and immovable property"
+
+#: templates/flatpages/insurance/property.html:24
+msgid "Страхование отделки в вашей квартире и загородном доме"
+msgstr "Insurance of decoration of your apartment and country-house"
+
+#: templates/flatpages/insurance/property.html:25
+msgid "Страхование гражданской ответственности перед соседями"
+msgstr "Civil liability insurance to the neighbors"
+
+#: templates/flatpages/insurance/property/crpi.html:50
+msgid "ОС Имущества"
+msgstr "Compulsory real property insurance"
+
+#: templates/flatpages/insurance/property/crpi.html:57
+msgid "Ваше имущество"
+msgstr "Your property"
+
+#: templates/flatpages/insurance/property/crpi.html:63
+msgid ""
+"Обязательное страхование имущества – этот вид страхования регулируется Законом Азербайджанской "
+"Республики об Обязательном Страховании. Целью обязательного страхования недвижимого имущества "
+"является выплата компенсации за ущерб, понесенный в связи с повреждением, уничтожением или какой-"
+"либо иной формой потери недвижимого имущества Застрахованных в результате пожара или других "
+"событий, защита их имущественных интересов и выдача обеспечения в дополнение к социальной "
+"защите. "
+msgstr ""
+"Compulsory insurance of real estate - this type of insurance is regulated by the Law of the "
+"Republic of Azerbaijan about Compulsory Insurance. The purpose of the compulsory insurance of "
+"real estate is payment of reimbursement for the losses incurred due to damage, destruction or "
+"any other form of loss of the real estate of the Insured persons in the result of fire or other "
+"events, protection of their property interests and issue of coverage in addition to social "
+"protection."
+
+#: templates/flatpages/insurance/property/crpi.html:67
+msgid ""
+"Стихийные бедствия - землетрясение, извержение вулкана, ураган, буря, смерч, град, наводнение, "
+"сель, проливной дождь, оползень;"
+msgstr ""
+"Natural disasters - earthquake, volcanic eruption, hurricane, storm, tornado, hail, flood, "
+"mudflow, heavy rain, landslide;"
+
+#: templates/flatpages/insurance/property/crpi.html:68
+msgid "Пожар, удар молнии;"
+msgstr "Fire, lightning;"
+
+#: templates/flatpages/insurance/property/crpi.html:69
+msgid "Взрыв газа бытового и промышленного назначения;"
+msgstr "Explosion of gas for domestic and industrial use;"
+
+#: templates/flatpages/insurance/property/crpi.html:70
+msgid "Короткое замыкание электропроводки;"
+msgstr "Short-circuit of wiring, explosion of steam boilers;"
+
+#: templates/flatpages/insurance/property/crpi.html:71
+msgid ""
+"Взрыв паровых котлов, газовых хранилищ, газопроводов, машин, аппаратов, устройств и других "
+"подобных устройств или приборов;"
+msgstr ""
+"Gas storage facilities, gas pipelines, machinery, apparatus, devices, and other similar devices "
+"or appliances;"
+
+#: templates/flatpages/insurance/property/crpi.html:72
+msgid ""
+"Аварии водопроводов, отопительных и канализационных линий, и систем пожаротушения, наводнения от "
+"воды, поступающей из соседних строений, жилых и нежилых площадей, жилых домов и зданий, квартир, "
+"комнат;"
+msgstr ""
+"Accidents with water, heating and sewerage pipelines, and fire fighting systems, as well as "
+"floods from water coming from neighboring constructions, residential and non-residential areas, "
+"dwelling houses and buildings, apartments and rooms;"
+
+#: templates/flatpages/insurance/property/crpi.html:73
+msgid ""
+"Падение, бросание, повреждение, разрушение, унос течением, и другие подобные формы воздействия "
+"на какой-либо предмет или его части;"
+msgstr ""
+"Falling, throwing, damage, destruction, carry over, and other similar forms of influence on any "
+"object or a part thereof;"
+
+#: templates/flatpages/insurance/property/crpi.html:74
+msgid "Удар наземного транспортного средства;"
+msgstr "Bump of ground vehicle;"
+
+#: templates/flatpages/insurance/property/crpi.html:75
+msgid "Неправомерные действия третьих лиц."
+msgstr "Actions of third parties."
+
+#: templates/flatpages/insurance/property/crpi.html:79
+msgid "Возможность застраховать своё имущество за минимальную страховую премию."
+msgstr "The opportunity to insure the car for a minimal insurance award."
+
+#: templates/flatpages/insurance/property/crpi.html:83
+msgid "Страховые суммы по обязательному страхованию жилых домов и квартир."
+msgstr "The insured amounts on compulsory insurance of dwelling houses and apartments."
+
+#: templates/flatpages/insurance/property/crpi.html:90
+msgid "Франшиза (AZN)"
+msgstr "Deductible (AZN)"
+
+#: templates/flatpages/insurance/property/crpi.html:95
+msgid "Город Баку"
+msgstr "Baku"
+
+#: templates/flatpages/insurance/property/crpi.html:96
+msgid "Гянджа, Сумгаит и Нахичевань"
+msgstr "Ganja, Sumgayit and Nakhchivan"
+
+#: templates/flatpages/insurance/property/crpi.html:97
+msgid "Другие населенные пункты"
+msgstr "Other populated localities"
+
+#: templates/flatpages/insurance/property/crpi.html:104
+msgid ""
+"Эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам страхование недвижимого имущества, которое "
+"на сегодняшний день является востребованной услугой. И это неудивительно. Ведь когда человеку "
+"есть что терять, он хочет быть уверен, что сможет сохранить свои деньги, если с его "
+"собственностью что-то произойдет."
+msgstr ""
+"Experts of \"Odlar Yurdu Insurance Broker\" offer you the insurance of real estate which is "
+"claimed service at present time. And it is not surprising. If the person has something to lose, "
+"he wants to be sure, that he will be able to save his money in case something will happen with "
+"his estate."
+
+#: templates/flatpages/insurance/travel.html:20
+msgid "Чемоданное настроение<br/> Билет, паспорт, полис"
+msgstr "A traveling mood <br/> The ticket, passport, insurance policy"
+
+#: templates/flatpages/insurance/travel.html:23
+msgid "Полис принимается всеми посольствами и визовыми центрами"
+msgstr "Polis is accepted by all embassies and visa centers"
+
+#: templates/flatpages/insurance/travel.html:24
+msgid "Лучшие страховые компании"
+msgstr "Best insurance companies"
+
+#: templates/flatpages/insurance/travel.html:25
+msgid "Уникальные дополнительные опции"
+msgstr "Unique options"
+
+#: templates/flatpages/insurance/travel/programtravel.html:57
+msgid "Ваши путешествия"
+msgstr "Your trip"
+
+#: templates/flatpages/insurance/travel/programtravel.html:60
+msgid "По инициативе страхователя"
+msgstr "At the initiative of the insured"
+
+#: templates/flatpages/insurance/travel/programtravel.html:63
+msgid ""
+"Туристическое страхование – это специальная страховая программа, в рамках которой человек, "
+"выезжающий за пределы своей страны страхует свою жизнь и здоровье. "
+msgstr ""
+"Travel insurance is a special insurance program in which people traveling outside their country "
+"insure their life and health."
+
+#: templates/flatpages/insurance/travel/programtravel.html:64
+msgid "Программа включает в себя расходы на"
+msgstr "The program includes the costs of"
+
+#: templates/flatpages/insurance/travel/programtravel.html:66
+msgid "медицинскую помощь;"
+msgstr "Medical expenses;"
+
+#: templates/flatpages/insurance/travel/programtravel.html:67
+msgid "репартацию;"
+msgstr "Expences for repatration;"
+
+#: templates/flatpages/insurance/travel/programtravel.html:68
+msgid "риски потери багажа;"
+msgstr "Luggage lost;"
+
+#: templates/flatpages/insurance/travel/programtravel.html:69
+msgid "риски отмены поездки и задержки рейса;"
+msgstr "Trip cancellation and flight delay;"
+
+#: templates/flatpages/insurance/travel/programtravel.html:70
+msgid "юридическую поддержку в случае потери документов."
+msgstr "Loss of documents / Legal Support."
+
+#: templates/flatpages/insurance/travel/programtravel.html:75
+msgid "Полис принимается всеми посольствами и визовыми центрами;"
+msgstr "Policy is accepted by all embassies and visa centers;"
+
+#: templates/flatpages/insurance/travel/programtravel.html:76
+msgid "Уникальные дополнительные опции на Ваше усмотрение;"
+msgstr "Unique options;"
+
+#: templates/flatpages/insurance/travel/programtravel.html:77
+msgid "Организация необходимой помощи нашим клиентам 24/7, 365 дней в году в любой точке мира."
+msgstr "Organizations need to help our customers 24/7, 365 days a year anywhere in the world."
+
+#: templates/flatpages/insurance/travel/programtravel.html:82
+msgid ""
+"Оформляя медицинскую страховку перед поездкой за границу, важно учесть территорию, на которую "
+"будет распространяться страховое покрытие."
+msgstr ""
+"Making health insurance before traveling abroad, it is important to consider the territory to be "
+"covered by insurance coverage."
+
+#: templates/flatpages/insurance/travel/programtravel.html:83
+msgid ""
+"Важно не только тщательно выбрать подходящую вам страховую компанию и оформить все нужные вам "
+"страховые полисы, но и правильно вести себя при наступлении страхового случая."
+msgstr ""
+"It is important not only carefully choose the right insurance company and arrange the insurance "
+"policies, but also how to behave in the insurance case."
+
+#: templates/flatpages/insurance/travel/programtravel.html:88
+msgid ""
+"Удачно провести отпуск, сбросить накопившийся за год груз усталости и избавиться от негативной "
+"энергии – это мечта каждого из нас. Поэтому, в первую очередь, мы должны думать о нашей "
+"безопасности. Эксперты “Odlar Yurdu Sığorta Brokeri” гарантируют Вам безопасность во время Ваших "
+"путешествий."
+msgstr ""
+"We all wish to enjoy our time during a trip and snap out of tiredness and negative energy. And "
+"special care shall be taken of the security issues. Experts \"Odlar Yurdu Broker Insurance\" "
+"guarantees your safety and security during your trip."
+
+#: templates/flatpages/partners.html:21
+msgid "Нашими партнерами являются лидирующие страховые компании и банки Азербайджана."
+msgstr "Our partners are the leading insurance companies and banks of Azerbaijan."
+
+#: templates/flatpages/site_home.html:99
+msgid "5 причин приобрести страховой полис у нас"
+msgstr "5 reasons to get the insurance policy from us"
+
+#: templates/flatpages/site_home.html:104
+msgid "Работаем на клиента,<br/> а не страховую компанию"
+msgstr "We work on client <br/> instead of the insurance company"
+
+#: templates/flatpages/site_home.html:111
+msgid "Единое окно<br/> на рынок страхования"
+msgstr "Single Window <br/> into insurance market"
+
+#: templates/flatpages/site_home.html:118
+msgid "Эксклюзивный<br/> партнер <span>ASAN Xi̇dmət</span>"
+msgstr "Exclusive <br/>partner <span>ASAN XİDMƏT</span>"
+
+#: templates/flatpages/site_home.html:123
+msgid "Уникальные страховые<br/> продукты, учитывающие<br/> индивидуальные потребности"
+msgstr "Unique insurance <br/> products, taking into account <br/> individual needs"
+
+#: templates/flatpages/site_home.html:130
+msgid "Информационная поддержка<br/> и помощь в урегулировании<br/> убытков"
+msgstr "Information support <br/> and assistance in the claim settlement"
+
+#: templates/flatpages/site_home.html:141
+msgid "С нами удобнее"
+msgstr "It is more convenient with us"
+
+#: templates/flatpages/site_home.html:146
+msgid "Покупка и оплата<br/> договоров страхования через<br/> ASAN ödəni̇ş"
+msgstr "Purchase and payment <br/> of insurance contracts through <br/> ASAN ödəni̇ş"
+
+#: templates/flatpages/site_home.html:151
+msgid "Онлайн оплата"
+msgstr "Online payment"
+
+#: templates/flatpages/site_home.html:158
+msgid "Оплата договоров<br/> страхования через терминалы<br/> Mi̇lli̇ÖN"
+msgstr "Payment for <br/> insurance contracts <br/> through MİLLİÖN  terminals"
+
+#: templates/flatpages/site_home.html:163
+msgid "Подписание договоров<br/> с использованием ASAN IMZA / E IMZA"
+msgstr "Signing of contracts <br/> with ASAN IMZA / E IMZA"
+
+#: templates/flatpages/site_home.html:170
+msgid "Бесплатная доставка курьером"
+msgstr "Free courier delivery"
+
+#: templates/flatpages/site_home.html:187
+msgid "Самый простой способ получить информацию<br/>о страховых продуктах и сравнить их"
+msgstr "The easiest way to get information <br/> of insurance products and compare them"
+
+#, fuzzy
+#~| msgid "Программа 69"
+#~ msgid "Программа Travel"
+#~ msgstr "Program 69"
+
+#~ msgid "Программа Travel Стандарт"
+#~ msgstr "Program Travel Standart"
+
+#~ msgid "Программа Travel Премиум"
+#~ msgstr "Program Travel Premium"
+
+#, fuzzy
+#~| msgid ""
+#~| "обеспечение медикаментами (во время оказания неотложной помощи и пребывания в стационаре)"
+#~ msgid "перевод пациента из одного стационара в другой, домой либо обратно в стационар;"
+#~ msgstr "providing medicines (during emergency care and hospital stay)"
+
+#, fuzzy
+#~| msgid "Экстренная помощь"
+#~ msgid "Скорая помошь"
+#~ msgstr "Emergency Assistance"
+
+#~ msgid ""
+#~ "грузовые автомобили и другие автотранспортные средства, произведенные на их базе;"
+#~ "микроавтобусы, автобусы и другие автотранспортные средства, произведенные на их базе;"
+#~ msgstr "Cargo vehicles and other motor vehicles produced on their basis;"
+
+#~ msgid "Персональные<br/>данные"
+#~ msgstr "Personal<br/>details"
+
+#~ msgid "Мои<br/>расчеты"
+#~ msgstr "My<br/>calculations"
+
+#~ msgid "Мои договора<br/>страхования"
+#~ msgstr "My contract<br>insurance"
+
+#~ msgid "Бонусы"
+#~ msgstr "Bonus"
+
+#~ msgid "Личный кабинет"
+#~ msgstr "Profile Page"
+
+#~ msgid "Вид страхования"
+#~ msgstr "Class of insurance"
+
+#~ msgid "Сумма / Номер расчета"
+#~ msgstr "The amount/calculation number"
+
+#~ msgid "действующие"
+#~ msgstr "active"
+
+#~ msgid "завершенные"
+#~ msgstr "сompleted"
+
+#~ msgid "Информировать меня о новых уникальных продуктах"
+#~ msgstr "Inform me of new unique products"
+
+#~ msgid "по E-mail"
+#~ msgstr "By email"
+
+#~ msgid "по телефону"
+#~ msgstr "By phone"
+
+#~ msgid "Поля обязательные для заполнения"
+#~ msgstr "Required fields"
+
+#~ msgid "Сохранить"
+#~ msgstr "Save"
+
+#~ msgid "Мой кабинет"
+#~ msgstr "Profile Page"
+
+#, fuzzy
+#~| msgid "Франшиза"
+#~ msgid "Фарншиза"
+#~ msgstr "Franchise"
+
+#~ msgid "Title"
+#~ msgstr "Title"
+
+#~ msgid "Address (central office)"
+#~ msgstr "Address (central office)"
+
+#~ msgid "Phone (central office)"
+#~ msgstr "Phone (central office)"
+
+#~ msgid "Купить полис сейчас"
+#~ msgstr "Buy policy just now"
+
+#~ msgid "Выбор оптимальной страховки"
+#~ msgstr "Selection of the optimal insurance"
+
+#~ msgid ""
+#~ "Указывается в правом нижне углу удостоверения личности. Справа отсчитываем 8 знаков и убираем "
+#~ "последний символ. Получаем 7 значный код"
+#~ msgstr ""
+#~ "Indicated in the lower right corner of the ID card. Count 8 symbols from the right and omit "
+#~ "the last one. We get the 7 digit code"
+
+#~ msgid "Вклады"
+#~ msgstr "Deposit"
+
+#~ msgid "AZ1025 Баку,<br/>Ахмед Раджабли 31/5, Aztex Plaza<br/>Азербайджан"
+#~ msgstr "AZ1025, Baku city,<br/>  Ahmad Rajabli Street 31/5, <br/>Aztex Plaza Azerbaijan"
+
+#~ msgid ""
+#~ "это профессиональный страховой эксперт,<br/>обладающий наиболее полной и<br/>достоверной "
+#~ "информацией о рынке<br/>страхования."
+#~ msgstr ""
+#~ "It is a professional insurance expert possessing<br/> the most completed and<br/> reliable "
+#~ "information on insurance market."
+
+#~ msgid "Центральный офис<br/>«Odlar Yurdu Sigorta Brokeri»"
+#~ msgstr "Central office of<br/> “Odlar Yurdu Sigorta Brokeri”"
+
+#~ msgid ""
+#~ "Наша компания придерживается высоких стандартов обслуживания клиентов. Большое количество "
+#~ "филиалов для вашего удобства."
+#~ msgstr ""
+#~ "Our company is keeping high servicing standards. We always take into consideration clients' "
+#~ "individual features or special requirements."
+
+#~ msgid "Забрать в любой<br> точке продажи"
+#~ msgstr "To collect from<br> any point of sale"
+
+#~ msgid "Доступная цена"
+#~ msgstr "Moderate price"
+
+#~ msgid "С места ДТП сразу в сервис"
+#~ msgstr "Directly to car service centre from place of accident"
+
+#~ msgid "Доставим бесплатно в удобное место и время"
+#~ msgstr "We can delivery to any place and time suitable for you"
+
+#~ msgid "Управляй здоровьем!"
+#~ msgstr "Manage your health!"
+
+#~ msgid "Страхование выезжающих за рубеж – это"
+#~ msgstr "Travel insurance is"
+
+#~ msgid "защита от несчастного случая"
+#~ msgstr "Protection from accident"
+
+#~ msgid "защита от отмены поездки или изменения ее сроков по независящим от вас причинам"
+#~ msgstr ""
+#~ "Protection from travel cancellation or travel date change due to reasons beyond your control"
+
+#~ msgid "компенсация в случае повреждения, утраты или задержки багажа"
+#~ msgstr "Compensation payment<br/> in case of luggage damage"
+
+#~ msgid "Расчет стоимости и <br/>  Выбор оптимального<br/> решения"
+#~ msgstr "Cost calculation and<br/> optimal decision selection."
+
+#~ msgid "Найдите необходимую тематику для страхования, остальное сделаем мы."
+#~ msgstr "Find the necessary subject for insurance, we'll do the rest"
+
+#~ msgid "Оформить полис на:"
+#~ msgstr "Adjust the policy on:"
+
+#~ msgid "Например: недвижимость в Баку или автомобиль 2013 года"
+#~ msgstr "For example: property in Baku or vehicle produced in 2013."
+
+#~ msgid "Поиск"
+#~ msgstr "Search"
+
+#~ msgid "Застраховать автомобиль не выходя из дома!"
+#~ msgstr "Insure your vehicle staying at home!"
+
+#~ msgid "Сертификаты<br/>«Odlar Yurdu Sigorta Brokeri»"
+#~ msgstr "“Odlar Yurdu Sigorta Brokeri”<br/>  Certificates"
+
+#~ msgid "FIN код"
+#~ msgstr "Continue "
+
+#~ msgid "VIN"
+#~ msgstr "VIN"
+
+#~ msgid "Регистрационный номер ТС"
+#~ msgstr "Vehicle plate number"
+
+#, fuzzy
+#~| msgid "Забрать в любой<br> точке продажи"
+#~ msgid "Забрать в точке продаж"
+#~ msgstr "To collect from<br> any point of sale"
+
+#, fuzzy
+#~| msgid "отправить"
+#~ msgid "Отправить по email"
+#~ msgstr "Send"
+
+#~ msgid "User profile"
+#~ msgstr "User profile"
+
+#~ msgid "Edit profile"
+#~ msgstr "Edit profile"
+
+#~ msgid "Save"
+#~ msgstr "Save"
+
+#~ msgid "Required field."
+#~ msgstr "Required field."
+
+#~ msgid "Draft"
+#~ msgstr "Draft"
+
+#~ msgid "Использовать данные из личного кабинета"
+#~ msgstr "Use info kept at a personal account "
+
+#~ msgid "Да"
+#~ msgstr "Yes"
+
+#~ msgid "Change"
+#~ msgstr "Change"
+
+#~ msgid "Next"
+#~ msgstr "Next"
+
+#~ msgid "This contract was issued earlier."
+#~ msgstr "This contract was issued earlier."
+
+#~ msgid "Contract issued successfully."
+#~ msgstr "Contract issued successfully."

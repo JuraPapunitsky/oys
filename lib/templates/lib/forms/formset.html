@@ -1,0 +1,77 @@
+{% comment %}
+    Печатает Formset с поддержкой bootstrap и динамического добавления новых форм 
+{% endcomment %}
+
+{% load lib_tags %}
+{% load lib_filters %}
+
+{{formset.management_form}}
+
+{% if formset.non_field_errors %}
+    <div class='alert alert-danger'>
+        {% for error in form.non_field_errors %}
+            {{ error|safe }}<br/>
+        {% endfor %}
+    </div>
+{% endif %}
+
+
+<table id="id_{{formset.prefix}}" class='widget_formset'>
+    <caption>{{formset.label}}</caption>
+    
+    {% for form in formset %}
+        {% if forloop.first %}
+            <thead>
+            {% if formset.formset_header %}
+                {{formset.formset_header|safe}}
+            {% else %}
+                <tr>
+                {% for field in form.visible_fields %}
+                    {% if field.name == 'DELETE' %}
+                        <td></td>
+                    {% else %}
+                        <td class="id_{{formset.prefix}}_{{field.name}}">{{field.label}}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endif %}
+            </thead>
+            <tbody>
+        {% endif %}
+
+        <tr data-row_index="{{ forloop.counter0 }}">
+            {% for field in form.hidden_fields %}
+                {{field}}
+            {% endfor %}
+
+            {% for field in form.visible_fields %}
+                {% if field.name == 'DELETE' %}
+                    <th >
+                        <div class='hide'>{{field}}</div>
+                        <a onclick="formset_row_delete_toggle(this, '{{field.auto_id}}')" class="pointer">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </th>
+                {% else %}
+                    <td class="id_{{formset.prefix}}_{{field.name}} {% if field.errors %}has-error{% endif %}" data-row_index="{{ forloop.counter }}">
+                        
+                        {% if editable %}
+                            {{ field|to_bootstrap_widget }}
+                        {% else %}
+                            {{ field|to_bootstrap_widget|widget_readonly }}
+                        {% endif %}
+
+                        {% if field.errors %}
+                            <span class="help-block">
+                                        {% for error in field.errors %}
+                                            {{ error|safe }}<br/>
+                                        {% endfor %}
+                                        </span>
+                        {% endif %}
+                    </td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

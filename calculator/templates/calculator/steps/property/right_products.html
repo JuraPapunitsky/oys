@@ -1,0 +1,22 @@
+{% load i18n %}
+<div class="b-right__detail n-brd__btm-no p3__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Полис недвижимости' %}</p>
+        <p class="b-detail__text">{% trans 'Оформление в' %} <span></span></p>
+        <p class="b-detail__price"><span></span> AZN</p>
+
+        {% trans 'Страхование от ущерба, причиненный конструктивным элементам, помещениям, в том числе дверным и оконным конструкциям, включая стекла, трубам систем водоснабжения, канализации и газоснабжения, а также тепловой системы, проводам связи, электрическим и иным проводам, элементам украшения, в том числе всем видам внешних или внутренних штукатурных работ, стенам, потолку и полу' as property_help_t %}
+        {% include 'calculator/question.html' with answ=property_help_t %}
+    </div>
+</div>
+
+<div class="b-right__detail n-brd__btm-no delivery__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Доставка курьером' %}</p>
+        <p class="b-detail__text">{% trans 'осуществляется в Bakı или Sumqayıt' %}</p>
+        <p class="b-detail__price"><span>0</span> AZN</p>
+    </div>
+</div>
+
+<p class="b-total__text">{% trans 'итого Стоимость' %}</p>
+<p class="b-total__summ">0 <span>AZN</span></p>

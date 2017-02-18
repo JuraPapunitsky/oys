@@ -1,0 +1,125 @@
+{% load i18n %}
+<div class="xs-ins-travel-work container-fluid"></div>
+
+<div class="insurance-travel-work container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="row">
+                <h1>
+                    {% trans 'Как работает страхование выезжающих за рубеж?' %}
+                </h1><a href="#" class="order button j-layer__fix">{% trans 'Узнать подробнее' %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Контент всплывающего слоя Узнать подробнее #}
+<div class="layer-box-fix l-fix-tourism">
+    <a href="#" class="layer-box-close"></a>
+
+    <table class="l-table l-table-main">
+        <tr class="l-tr l-row-top">
+            <td class="l-td">
+                <div class="l-title-bg"><p>{% trans 'Страхование путешествий' %}</p></div>
+                <div class="l-title-sub"><p>{% trans 'Что можно застраховать?' %}</p></div>
+            </td>
+        </tr>
+
+        <tr class="l-tr">
+            <td class="l-td l-td-btm">
+                <div class="l-td-img"><img src="{{ STATIC_URL }}common/img/l-fix/ins-main-img.png"></div>
+                <div class="l-text-viplata"><a href="#" class="j-ins__show">{% trans 'Когда производится выплата?' %}</a></div>
+                <a href="#" class="button order buy-now" onclick="layer_box_close(); calculator.start_calculator('travel')">
+                    {% trans 'Калькулятор' %}
+                </a>
+
+            </td>
+        </tr>
+    </table>
+
+    <div class="l-ico-wrapp">
+        <div class="l-ico-item tourism-ico__1">
+            <img src="{{ STATIC_URL }}common/img/l-fix/tourism-1.png">
+            <p>{% trans 'Досрочное возвращение<br/>из поездки' %}</p>
+        </div>
+
+        <div class="l-ico-item tourism-ico__2 l-ico-center-left">
+            <img src="{{ STATIC_URL }}common/img/l-fix/tourism-2.png">
+            <p>{% trans 'Отмена или задержка<br/>рейса' %}</p>
+        </div>
+
+        <div class="l-ico-item tourism-ico__3 l-ico-center-left_2">
+            <img src="{{ STATIC_URL }}common/img/l-fix/tourism-3.png">
+            <p>{% trans 'Несчастный<br/>случай' %}</p>
+        </div>
+
+        <div class="l-ico-item tourism-ico__4">
+            <img src="{{ STATIC_URL }}common/img/l-fix/tourism-4.png">
+            <p>{% trans 'Медицинские расходы' %}</p>
+        </div>
+
+        <div class="l-ico-item tourism-ico__5 l-ico-center-right_2">
+            <img src="{{ STATIC_URL }}common/img/l-fix/tourism-5.png">
+            <p>{% trans 'Потеря багажа' %}</p>
+        </div>
+
+        <div class="l-ico-item tourism-ico__6 l-ico-center-right">
+            <img src="{{ STATIC_URL }}common/img/l-fix/auto-1.png">
+            <p>{% trans 'Ответственность перед 3-ми лицами<br/>за причиненный ущерб' %}</p>
+        </div>
+
+{#        <a href="#" class="button order buy-now visible-mob" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>#}
+        <a href="#" class="button order buy-now visible-mob" data-toggle="modal" data-backdrop="false" data-target=".callback" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>
+
+    </div>
+
+    <div class="ins-v j-ins-v">
+        <table class="l-table">
+            <tr class="l-tr l-row-top">
+                <td class="l-td">
+                    <div class="l-title-bg"><p>{% trans 'Страхование путешествий' %}</p></div>
+                    <div class="l-title-sub"><p>{% trans 'Когда производится выплата' %}</p></div>
+                    <div class="ins-form-select clearfix">
+                        <div class="ins-select-company">
+                            <form action="#" class="select-company-form j-clr-form">
+                                <select class="select-company">
+                                    <option value="0">{% trans 'Выберите компанию' %}</option>
+                                    <option value="1">Ateshgah</option>
+                                    <option value="5">Meqa Sigorta</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="clearfix b-rules__block b-company-1__block">
+                            <div class="row clearfix">
+                                <div class="col-md-offset-4 col-sm-6 col-xs-12">
+                                    <p class="pdf-text-ico">
+                                        <a target="_blank" href="{{ STATIC_URL }}common/docs/ateshgah_travel.pdf">{% trans 'Путешествия' %}<br/>PDF, 483 Kb</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix b-rules__block b-company-5__block">
+                            <div class="row clearfix">
+                                <div class="col-md-offset-4 col-sm-6 col-xs-12">
+                                    <p class="pdf-text-ico">
+                                        <a target="_blank" href="{{ STATIC_URL }}common/docs/meqa_travel.pdf">{% trans 'Путешествия' %}<br/>PDF, 618 Kb</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-text-viplata"><a href="#" class="j-ins__hide">{% trans 'Что можно застраховать?' %}</a></div>
+
+{#                    <a href="#" class="button order buy-now" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>#}
+                    <a href="#" class="button order buy-now" data-toggle="modal" data-backdrop="false" data-target=".callback" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

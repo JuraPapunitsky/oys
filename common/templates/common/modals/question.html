@@ -1,0 +1,125 @@
+{% load i18n %}
+
+<div class="modal fade question_modal question_show_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="sticker-window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="{{ STATIC_URL }}common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">{% trans 'Обратная связь' %}</h4>
+            </div>
+            <div class="cont">
+                <div class="left" role="tabpanel">
+
+                    <ul class="row" role="tablist">
+                        <li class="col-xs-6 active">
+                            <a href="#question" aria-controls="question" role="tab" data-toggle="tab">
+                                <p>{% trans 'Задать вопрос' %}</p>
+                                <img class="q_down" src="{{ STATIC_URL }}common/img/question/q_down.png">
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#complaint" aria-controls="complaint" role="tab" data-toggle="tab">
+                                <p>{% trans 'Пожаловаться' %}</p>
+                                <img class="q_down" src="{{ STATIC_URL }}common/img/question/q_down.png">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="question" role="tabpanel" class="tab-pane fade in active ">
+                            {% include 'common/forms/ask_question.html' %}
+                        </div>
+                        <div id="complaint" role="tabpanel" class="tab-pane fade">
+                            {% include 'common/forms/make_complaint.html' %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="{{ STATIC_URL }}common/img/qwe.png">
+
+                    <h3>{% trans 'Проверьте, возможно ваш вопрос уже задавали ранее.' %}</h3>
+
+                    <div>
+                        <img src="{{ STATIC_URL }}common/img/faq_arr.png" class="arrow_ri">
+                        <ul>
+                            <li>
+                                <a href="#class1" data-target="#class1" class="faq_button">
+                                    {% trans 'Что такое франшиза и как она влияет на страховую плату?' %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class2" data-target="#class2" class="faq_button">
+                                    {% trans 'Могу ли я застраховать автомобиль, которым пользуюсь на основании доверенности?' %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class3" data-target="#class3" class="faq_button">
+                                    {% trans 'На какой срок можно оформить полис каско, ОСАГО?' %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class4" data-target="#class4" class="faq_button">
+                                    {% trans 'Надо ли страховать своё имущество и недвижимость, если квартира находится в ипотеке и, соответственно, застрахована по программе ипотечного страхования?' %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class5" data-target="#class5" class="faq_button">
+                                    {% trans 'Возможно ли внести изменения в полис, если я выйду замуж/женюсь/разведусь?' %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class6" data-target="#class6" class="faq_button">
+                                    {% trans 'Подходит ли полис TRAVEL для получения визы в страны Шенген?' %}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="all_quest" href="/faq/">{% trans 'Все вопросы и ответы' %}</a>
+                </div>
+
+                <div class="faq" id="class1">
+                    <a class="close"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+                    <h2>{% trans 'Что такое франшиза и как она влияет на страховую плату?' %}</h2>
+                    <img class="imag" src="{{ STATIC_URL }}common/img/faq_border.png">
+                    <p>{% trans 'Франшиза – это часть причиненного в результате страхового случая ущерба, которая не обеспечивается страхованием и оплачивается страхователем. Вы часто сталкиваетесь с мелкими ущербами, с которыми можете разбираться самостоятельно, без обращения к страховщику. Для таких случаев в договоре страхования предусмотрена франшиза. Страховщик оплачивает сумму причиненного в результате страхового случая ущерба, за вычетом франшизы' %}</p>
+                </div>
+
+                <div class="faq" id="class2">
+                    <a class="close"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+                    <h2>{% trans 'Могу ли я застраховать автомобиль, которым пользуюсь на основании доверенности?' %}</h2>
+                    <img class="imag" src="{{ STATIC_URL }}common/img/faq_border.png">
+                    <p>{% trans 'Да, Вы можете застраховать автомобиль, которым пользуетесь на основании доверенности' %}</p>
+                </div>
+
+                <div class="faq" id="class3">
+                    <a class="close"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+                    <h2>{% trans 'На какой срок можно оформить полис каско, ОСАГО?' %}</h2>
+                    <img class="imag" src="{{ STATIC_URL }}common/img/faq_border.png">
+                    <p>{% trans 'Полис Каско оформляется на срок от 1 года. Срок страхования по полису ОСАГО 1 год' %}</p>
+                </div>
+
+                <div class="faq" id="class4">
+                    <a class="close"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+                    <h2>{% trans 'Надо ли страховать своё имущество и недвижимость, если квартира находится в ипотеке и, соответственно, застрахована по программе ипотечного страхования?' %}</h2>
+                    <img class="imag" src="{{ STATIC_URL }}common/img/faq_border.png">
+                    <p>{% trans 'Ипотечное страхование по требованию банков подразумевает страхование только конструктивных элементов квартиры, т.е. защиту от тотального повреждения или разрушения несущих конструкций. При этом ваш ремонт, вся внутренняя отделка квартиры и движимое имущество остаются незащищенными. По программе добровольного страхования имущества вы можете застраховать отделку квартиры и движимое имущество, а также ответственность перед соседями' %}</p>
+                </div>
+
+                <div class="faq" id="class5">
+                    <a class="close"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+                    <h2>{% trans 'Возможно ли внести изменения в полис, если я выйду замуж/женюсь/разведусь?' %}</h2>
+                    <img class="imag" src="{{ STATIC_URL }}common/img/faq_border.png">
+                    <p>{% trans 'Конечно, в любое время вы можете внести изменения в договор, позвонив нам в контактный центр по телефону *0707, либо через личный кабинет на нашем сайте' %}</p>
+                </div>
+
+                <div class="faq" id="class6">
+                    <a class="close"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+                    <h2>{% trans 'Подходит ли полис TRAVEL для получения визы в страны Шенген?' %}</h2>
+                    <img class="imag" src="{{ STATIC_URL }}common/img/faq_border.png">
+                    <p>{% trans 'Полис TRAVEL соответствует всем необходимым требованиям для получения визы в страны Шенгенского соглашения. Некоторые страны предъявляют особые требования к полису страхования. Все они учитываются нашей системой онлайн-оформления' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

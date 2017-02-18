@@ -1,0 +1,14 @@
+﻿{% extends 'lib/modal.html' %}
+{% load i18n %}
+
+
+{% block body_modal_header %}{% trans 'Logoff' %}{% endblock %}
+
+{% block body_modal_body %}
+	{% trans 'All the best.<br>Thank you for the time spent' %}
+{% endblock %}
+
+{% block body_modal_footer %}
+	<a href="{% url 'lib:login' %}" class="btn btn-primary">{% trans 'Login' %}</a>
+	<a href="{% url 'home' %}" class="btn">{% trans 'Home' %}</a>	 
+{% endblock %}

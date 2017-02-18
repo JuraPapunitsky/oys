@@ -1,0 +1,112 @@
+/* jQuery UI customization */
+
+.ui-widget {
+    font-family: 'Lato-Light',Arial,Helvetica,sans-serif !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    border-radius: 5px !important;
+    border: 1px solid #e3e2e0;
+    background: #fbfaf9;
+}
+
+.ui-widget-header{
+    color: #50434e;
+    border: 0 none;
+    font-size: 16px;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background: transparent;
+    font-weight: normal !important;
+}
+
+.ui-datepicker-calendar thead{
+    display: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+a.ui-state-default{
+    background: transparent !important;
+    border: 0 !important;
+    padding: 4px 0px !important;
+    text-align: center !important;
+}
+
+.ui-widget-content .ui-priority-secondary:hover,
+a.ui-state-default{
+    color: #50434e !important;
+}
+
+.ui-widget-content .ui-priority-secondary{
+    opacity: 1 !important;
+    color: #cbc2c9 !important;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev{
+    background: transparent !important;
+    border: 0 !important;
+    cursor: pointer;
+}
+
+a.ui-state-default.ui-state-hover,
+a.ui-state-default.ui-state-highlight{
+    background: #cbc2c9 !important;
+}
+
+.ui-datepicker td{
+    padding: 0;
+}
+
+.ui-datepicker {
+    width: 320px;
+    padding: 10px 17px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-widget-header .ui-icon{
+    background: transparent !important;
+}
+
+.ui-datepicker-header .ui-icon:after{
+    content: '';
+    display: block;
+    left: 4px;
+    top: 3px;
+    position: absolute;
+}
+
+.ui-datepicker-prev .ui-icon:after{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #50434e;
+}
+
+.ui-datepicker-next .ui-icon:after{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #50434e;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px !important;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 2px !important;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{
+    top: 2px!important;
+}
+
+.ui-datepicker table{
+    margin: 0 !important;
+}

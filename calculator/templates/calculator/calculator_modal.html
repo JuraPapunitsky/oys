@@ -1,0 +1,88 @@
+{% load i18n %}
+<div class="modal fade b-calc__block n-modal__calk" show tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div class="b-curtain__modal"></div>
+        <div class="b-spinner__modal"></div>
+
+        <div class="sticker-window">
+            <a class="close b-close__modal" data-dismiss="modal"></a>
+            <form class="j-clr-calcform clearfix" novalidate="novalidate">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="">
+                <input type="hidden" name="step" value="step-1">
+                <input type="hidden" name="substep" value="substep-1">
+                <input type="hidden" name="layer" value="layer-1">
+
+                <div class="j-clr-calcform-steps">
+
+                    {% block calculator_steps %}
+                    <div class="b-form__block n-form__icons n-form__step e-active clearfix" id="step-1">
+                        <h2>{% trans 'Расчет стоимости полиса' %}</h2>
+
+                        <div class="b-line__separator"></div>
+                        <p>{% trans 'Выберите категорию для определения параметров наиболее подходящего Вам полиса.' %}</p>
+
+                        <div class="form-block-xs">
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-1">
+                                        <a href="#" class="j-ins-type-sel__click" data-ins-type="vehicle" onclick="calculator.ins_type_select(this)">
+                                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><span>{% trans 'страхование<br/> автомобиля' %}</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-2">
+                                        <a href="#" class="j-ins-type-sel__click" data-ins-type="property" onclick="calculator.ins_type_select(this)">
+                                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><span>{% trans 'страхование<br/> недвижимости' %}</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-3">
+                                        <a href="#" class="j-ins-type-sel__click" data-ins-type="health" onclick="calculator.ins_type_select(this)">
+                                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><span>{% trans 'страхование<br/> здоровья' %}</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-4">
+                                        <a href="#" class="j-ins-type-sel__click" data-ins-type="travel" onclick="calculator.ins_type_select(this)">
+                                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><span>{% trans 'страхование<br/> путешествий' %}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock %}
+
+                </div>
+            </form>
+
+            {# Скрытая форма online-оплаты. Управляется через calculator.payment #}
+            {# Вынесена физически, потому что форма в форме не хорошо отрабатывается #}
+            <div class="b-form__block clearfix" id="step_payment">
+                <div class="b-last__step col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    {# Форма с кнопкой #}
+                    <form action="https://213.172.75.248/cgi-bin/cgi_link"
+                          id="online_payment_form"
+                          target="_blank"
+                          method="post"
+                          class="hidden_container">
+                    </form>
+
+                    {# Ждем оплату #}
+                    <div id="online_payment_progress" class="hidden_container">
+                        Ожидаем поступления денег...
+                    </div>
+
+                    {# Поздравление #}
+                    <div id="online_payment_success" class="hidden_container">
+                        <p>{% trans 'Оплата поступила' %}</p>
+                        <p>{% trans 'В ближайшее время с Вами свяжется оператор для подтверждения адреса доставки' %}</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

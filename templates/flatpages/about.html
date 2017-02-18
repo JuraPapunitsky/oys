@@ -1,0 +1,146 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+{% load common_tags %}
+
+
+{% block body_content %}
+
+<div class="container-fluid visible-xs black-title-xs about-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'партнеры' %}</span>
+        </div>
+    </div>
+</div>
+<div class="about-header">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'о компании' %}</span>
+                    <h1>«Odlar Yurdu Sığorta brokeri»</h1>
+                    <p class="about-sub-title">— {% trans 'профессиональный эксперт в области страхования,<br/> действующий от имени и в интересах клиентов с целью<br/> обеспечения максимального уровня комфорта и<br/> удовлетворения их потребностей в страховании,<br/> гарантируя защиту прав страхователей' %}</p>
+{#                    <a href="#" class="order button" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block">{% trans 'Калькулятор' %}</a>#}
+{#                    <a href="#" class="order button" data-toggle="modal" data-backdrop="false" data-target=".callback">{% trans 'Калькулятор' %}</a>#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Иконки рассчет, чат и отзывы для мобильных устройств #}
+{% include 'common/includes/base_modal_icons_xs.html' %}
+
+<div class="about-text container-fluid">
+    <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <!--<div class="row"> -->
+            <h1>{% trans 'Наша компания придерживается высоких стандартов обслуживания клиентов. Мы всегда учитываем индивидуальные особенности клиента и его особые требования.' %}</h1>
+            <p class="col-sm-12">{% trans 'Специалисты «Odlar Yurdu Sigorta Brokeri» – Ваши надежные помощники и консультанты на весь период действия страхового полиса. При наступлении страхового случая наши специалисты разъяснят вам все процедуры взаимодействия со страховой компанией и помогут решить все вопросы, связанные со страховой выплатой.' %}</p>
+        <!--</div>-->
+    </div>
+</div>
+
+<div class="about-serf container-fluid">
+    <div class="row">
+        <div class="col-md-offset-2 col-lg-offset-3 col-sm-offset-1 col-md-8 col-lg-6 col-sm-10">
+            <div class="row">
+
+                <h2>{% trans 'Лицензии и сертификаты' %}</h2>
+                <div id="slides3">
+
+                    <div class="serf-window col-sm-12">
+                        <div class="row">
+                            <div class="serf-licens col-sm-6">
+                                <img src="{{ STATIC_URL }}common/img/licens.jpg" alt="" class="license-img center-block">
+                            </div>
+                            <div class="serf-licens col-sm-6">
+                                <a href="{{ STATIC_URL }}common/docs/license.pdf">
+                                    <p class="serf-text">{% trans 'Лицензия' %}</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="serf-window col-sm-12">
+                        <div class="row">
+                            <div class="serf-licens col-sm-6">
+                                <img src="{{ STATIC_URL }}common/img/cert2.jpg" alt="" class="cert2-img center-block" style="margin-top: 59px; margin-bottom: 59px;">
+                            </div>
+                            <div class="serf-licens col-sm-6">
+                                <a href="{{ STATIC_URL }}common/docs/cert2.pdf">
+                                    <p class="serf-text" style="font-size: 10pt">{% trans '"Сертификат "За предоставление высоких этических стандартов обслуживания"' %}</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row employee-header-row">
+        <div class="col-md-12 col-sm-12">
+            <h2>{% trans 'Наша команда' %}</h2>
+        </div>
+    </div>
+
+    <div class="row employee-content-row">
+        <div class="col-md-offset-1 col-md-3 col-sm-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="center-block" src="{{ STATIC_URL }}common/img/employee_elman.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center" style="font-size: 20px">Elman&nbsp;Mustafayev</h4>
+                    <p class="text-center" style="font-size: 18px; color: #de5d31">İcraçı&nbsp;direktor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="center-block" src="{{ STATIC_URL }}common/img/employee_sabina.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center" style="font-size: 20px">Səbinə&nbsp;Maksimova</h4>
+                    <p class="text-center" style="font-size: 18px; color: #de5d31">Layihə&nbsp;meneceri</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="center-block" src="{{ STATIC_URL }}common/img/employee_fatima.jpg">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center" style="font-size: 20px">Fatimə&nbsp;Hüseynova</h4>
+                    <p class="text-center" style="font-size: 18px; color: #de5d31">Satış&nbsp;və&nbsp;Marketinq departamentinin&nbsp;Müdiri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# FEEDBACK #}
+{#{% include 'flatpages/includes/home_feedback.html' %}#}
+
+{# Модальное окно калькулятора #}
+{#{% include 'calculator/calculator_modal.html' %}#}
+
+{% endblock %}

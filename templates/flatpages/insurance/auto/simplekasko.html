@@ -1,0 +1,141 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="/insurance/">{% trans 'К списку страховых продуктов' %}</a>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_1.png">
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9 text-capitalize">
+                            <p style="font-size: 24px; padding-top: 10px;">{% trans 'Простое КАСКО' %}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{% trans 'Что страхует продукт?' %}</h3>
+                            <p>{% trans 'Ваш автомобиль' %}</p>
+
+                            <h3>{% trans 'Срок договора' %}</h3>
+                            <p>{% trans 'Договор заключается на 12 месяцев' %}</p>
+
+                            <h3>{% trans 'Краткое описание страхового продукта' %}</h3>
+                            <p>{% trans 'Страховой продукт «Простое каско» является аналогом КАСКО и представляет собой 2 варианта покрытия, первый из которых предусматривает страховое обеспечение при первом происшествии; (то есть после первой страховой выплаты со стороны страховщика полис Простое каско теряет свою силу); второй же предусматривает страховое обеспечение при нескольких случаях ( то есть страховая компания обязуется оплачивать все страховые случаи в течение страхового периода при соблюдении страховой суммы). ' %}</p>
+
+                            <h3>{% trans 'Покрываемые риски' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Дорожно-транспортное происшествие' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Пожар, воспламенение' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Стихийные бедствия' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Противоправные действия 3-х лиц' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Повреждение транспортных средств со стороны животных' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Кража, ограбление, угон' %}</span>
+                            </p>
+
+                            <h3>{% trans 'Преимущества продукта' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Возможность выбора из 2-х оптимальных вариантов;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Минимальная франшиза – при каждом страховом случае 100 азн;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'По предпочтению клиента предоставление услуги эвакуации и дополнительного водителя;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Выбирая данный продукт, Вы можете также приобрести добровольное страхование водителя и пассажиров от несчастных случаев и добровольное страхование гражданской ответственности перед третьими лицами.' %}</span>
+                            </p>
+
+
+                            <h3>{% trans 'Важно знать' %}</h3>
+                            <p>{% trans 'Вам предоставляется 2 варианта страховых покрытий, один из которых Вы можете выбрать' %}:</p>
+                            <p class="text-center">{% trans 'Условия I варианта' %}:</p>
+                            <div class="center-block" style="width: 400px;">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>{% trans 'Страховая сумма (AZN)' %}</th>
+                                            <th>{% trans 'Страховая премия (AZN)' %}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>2000</td><td>85</td></tr>
+                                        <tr><td>3000</td><td>130</td></tr>
+                                        <tr><td>5000</td><td>235</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p class="text-center">{% trans 'Условия II варианта' %}:</p>
+                            <div class="center-block" style="width: 400px;">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>{% trans 'Страховая сумма (AZN)' %}</th>
+                                            <th>{% trans 'Страховая премия (AZN)' %}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>2000</td><td>115</td></tr>
+                                        <tr><td>3000</td><td>170</td></tr>
+                                        <tr><td>5000</td><td>315</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3>{% trans 'Мнение экспертов “Odlar Yurdu Sığorta Brokeri”' %}</h3>
+                            <blockquote>
+                              <p>{% trans 'Продукт «Простое каско» - это прекрасная возможность получить надежную защиту и сэкономить деньги. Эксперты “Odlar Yurdu Sığorta Brokeri” рады порекомендовать Вам страхование «Простое каско» для транспортных средств с доступными для Вашего выбора лимитами ответственности. В случае если Вы не готовы потратить большие деньги на страхование Вашего автотранспортного средства, то данный продукт создан именно для Вас!' %}</p>
+                              <footer>{% trans 'Команда “Odlar Yurdu Sığorta Brokeri”' %}</footer>
+                            </blockquote>
+
+                            <h3>{% trans 'Похожие продукты' %}</h3>
+                            <ul>
+                                <li><a href="/insurance/auto/confidentdriver/">{% trans 'Уверенный водитель' %}</a></li>
+                                <li><a href="/insurance/auto/superkasko/">{% trans 'СуперКАСКО' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body_content %}

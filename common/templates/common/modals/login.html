@@ -1,0 +1,36 @@
+{% load i18n %}
+<div class="modal fade login3 log_in login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="{{ STATIC_URL }}common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">{% trans 'Авторизация' %}</h4>
+            </div>
+            <div class="cont">
+                <p>{% trans 'Введите код доступа, полученный по SMS на указанный номер телефона' %}</p>
+                <input maxlength="4" type="text" id="login_pass1">
+                <input maxlength="4" type="text" id="login_pass2">
+                <input maxlength="4" type="text" id="login_pass3">
+                <input maxlength="4" type="text" id="login_pass4">
+                <button href="#" class="btn_log" onClick="login.login_by_password()">{% trans 'Вход' %}</button>
+                <a href="#" class="red_link" onClick="login.generate_code()">{% trans 'Отправить SMS повторно' %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login2 log_in login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="{{ STATIC_URL }}common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">{% trans 'Авторизация' %}</h4>
+            </div>
+            <div class="cont" action="#">
+                <p>{% trans 'Введите номер мобильного телефона для получения SMS с кодом доступа' %}</p>
+                <input type="text" id="login_generate_code_phone">
+                <button href="#" class="btn_log" onClick="login.generate_code()">{% trans 'Получить пароль' %}</button>
+            </div>
+        </div>
+    </div>
+</div>

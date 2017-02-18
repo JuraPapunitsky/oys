@@ -1,0 +1,98 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="/insurance/">{% trans 'К списку страховых продуктов' %}</a>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_1.png">
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9 text-capitalize">
+                            <p style="font-size: 24px; padding-top: 10px;">{% trans 'ОСАГО+' %}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{% trans 'Что страхует продукт?' %}</h3>
+                            <p>{% trans 'Ответственность перед 3ми лицами за причиненный им ущерб при управлении ТС' %}</p>
+
+                            <h3>{% trans 'Срок договора' %}</h3>
+                            <p>{% trans 'Дата начала и окончания страхового полиса совпадает с датой начала и окончания прикрепленного к нему ОСАГО.' %}</p>
+
+                            <h3>{% trans 'Краткое описание страхового продукта' %}</h3>
+                            <p>{% trans 'Продукт «ОСАГО+» является своего рода дополнением к ОСАГО. Новый продукт компании является своего рода его «продолжением» и подразумевает увеличение лимита страхового покрытия до 10 000 AZN (Из которых 5 000 AZN - лимит по ОСАГО и 5 000 AZN по данному продукту, являющимся дополнением к полису ОСАГО). Отныне при приобретении полиса ОСАГО доплатив  всего 19 AZN каждый автовладелец сможет приобрести дополнительное покрытие по добровольному страхованию автоответственности с лимитом в 5 000 AZN.' %}</p>
+
+                            <h3>{% trans 'Преимущества продукта' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Возможность увеличить лимит страхового покрытия в 2 раза.' %}</span>
+                            </p>
+
+
+                            <h3>{% trans 'Важно знать' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Оформление данного продукта  должно совпадать с оформлением ОСАГО, то есть требуется еденовременное вступление в силу договоров;' %}</span> <br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Данный продукт предусмотрен только для физических лиц;' %}</span> <br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Дополнительное покрытие по  автогражданской ответсвенности  без ОСАГО покупать запрещается.' %}</span>
+                            </p>
+
+                            <h3>{% trans 'Мнение экспертов “Odlar Yurdu Sığorta Brokeri”' %}</h3>
+                            <blockquote>
+                              <p>{% trans 'Эксперты “Odlar Yurdu Sığorta Brokeri” рекомендуют Вам увеличить лимит страхового покрытия на случай, если в случае ДТП ущерб имуществу, причиненный 3-м лицам превысит 5000 AZN. Продукт выгоден и удобен тем, кто постоянно страхуется в Атешгях ввиду того, что предоставляется только с ОСАГО.' %}</p>
+                              <footer>{% trans 'Команда “Odlar Yurdu Sığorta Brokeri”' %}</footer>
+                            </blockquote>
+
+                            <h3>{% trans 'Похожие продукты' %}</h3>
+                            <ul>
+                                <li><a href="/insurance/auto/cvi/">{% trans 'ОСАГО' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body_content %}

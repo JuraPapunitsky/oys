@@ -1,0 +1,71 @@
+{% load i18n %}
+<div class="b-right__detail n-brd__btm-no p9_1__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Полис Urgent Care' %}</p>
+        <p class="b-detail__product" style="display: none">Urgent Care</p>
+        <p class="b-detail__text">{% trans 'Оформление в' %} <span></span></p>
+        <p class="b-detail__price"><span></span> AZN</p>
+
+        {% trans 'Лечение и обеспечение медикаментами во время неотложной помощи (вкл. стоматологию и вакцинацию)' as uc_help_t %}
+        {% include 'calculator/question.html' with answ=uc_help_t %}
+    </div>
+</div>
+
+<div class="b-right__detail n-brd__btm-no p9_2__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Полис REFUND Pediatric' %}</p>
+        <p class="b-detail__product" style="display: none">REFUND Pediatric</p>
+        <p class="b-detail__text">{% trans 'Оформление в' %} <span></span></p>
+        <p class="b-detail__price"><span></span> AZN</p>
+
+        {% trans 'Добровольное медицинское страхование (патронаж новорожденных, возмещение расходов на скорую помощь, амбулаторную помощь, стационарную помощь, стоматологию, физиотерапию и т.д.)' as uc_help_t %}
+        {% include 'calculator/question.html' with answ=uc_help_t %}
+    </div>
+</div>
+
+<div class="b-right__detail n-brd__btm-no p9_3__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Полис Программы 69' %}</p>
+        <p class="b-detail__product" style="display: none">{% trans 'Программа 69' %}</p>
+        <p class="b-detail__text">{% trans 'Оформление в' %} <span></span></p>
+        <p class="b-detail__price"><span></span> AZN/{% trans 'год' %}</p>
+
+        {% trans 'Лечение при диагностировании злокачественного онкозаболевания' as uc_help_t %}
+        {% include 'calculator/question.html' with answ=uc_help_t %}
+    </div>
+</div>
+
+<div class="b-right__detail n-brd__btm-no p9_4__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Полис Программы 69+' %}</p>
+        <p class="b-detail__product" style="display: none">{% trans 'Программа 69+' %}</p>
+        <p class="b-detail__text">{% trans 'Оформление в' %} <span></span></p>
+        <p class="b-detail__price"><span></span> AZN/{% trans 'год' %}</p>
+
+        {% trans 'Лечение при диагностировании злокачественного онкозаболевания' as uc_help_t %}
+        {% include 'calculator/question.html' with answ=uc_help_t %}
+    </div>
+</div>
+
+<div class="b-right__detail n-brd__btm-no p9_5__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Полис REFUND Pediatric VIP' %}</p>
+        <p class="b-detail__product" style="display: none">REFUND Pediatric VIP</p>
+        <p class="b-detail__text">{% trans 'Оформление в' %} <span></span></p>
+        <p class="b-detail__price"><span></span> AZN</p>
+
+        {% trans 'Добровольное медицинское страхование (патронаж новорожденных, возмещение расходов на скорую помощь, амбулаторную помощь, стационарную помощь, стоматологию, физиотерапию и т.д.)' as uc_help_t %}
+        {% include 'calculator/question.html' with answ=uc_help_t %}
+    </div>
+</div>
+
+<div class="b-right__detail n-brd__btm-no delivery__detail" style="display: none">
+    <div class="b-data__line clearfix">
+        <p class="b-detail__title">{% trans 'Доставка курьером' %}</p>
+        <p class="b-detail__text">{% trans 'осуществляется в Bakı или Sumqayıt' %}</p>
+        <p class="b-detail__price"><span>0</span> AZN</p>
+    </div>
+</div>
+
+<p class="b-total__text">{% trans 'итого Стоимость' %}</p>
+<p class="b-total__summ">0 <span>AZN</span></p>

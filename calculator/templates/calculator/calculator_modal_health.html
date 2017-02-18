@@ -1,0 +1,77 @@
+{% include 'calculator/steps/health/step_2.html' %}
+{% include 'calculator/steps/health/step_3.html' %}
+{% include 'calculator/steps/health/step_4.html' %}
+{% include 'calculator/steps/health/step_5.html' %}
+{% include 'calculator/steps/health/step_6.html' %}
+{% include 'calculator/steps/health/step_7.html' %}
+
+
+<script type="text/javascript">
+    function init_calculator() {
+        if ($('.over').length) over_position();
+
+        /*** Инициализация jClever ***/
+        calculator.init_jclever();
+
+        /*** Возврат до нужной ступени ***/
+        $(document).on('click', '.j-step__item-close', calculator.previous_substep);
+
+        /*** Возврат до нужного слоя ***/
+        $(document).on('click', '.j-prev__layer', calculator.previous_layer);
+
+        /*** Закрыть подсказку ***/
+        $(document).on('click', '.j-layer__fix', function () {
+            $('.b-aw__info').fadeOut(100).parents('.b-qw__block').removeClass('n-qw__open');
+            $(this).remove();
+        });
+
+        /*** календарь на инпут ***/
+        $('.j-dog__from')
+                .datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    dateFormat: 'dd.mm.yy'
+                })
+                .datepicker('setDate', '+1d');
+
+        $('.j-insurer__dateborn, .j-insured__birthday')
+                .datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: "-80:+00",
+                    dateFormat: 'dd.mm.yy'
+                });
+
+        $('.j-delivery__date')
+                .datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    changeMonth: false,
+                    changeYear: false,
+                    yearRange: "-00:+00",
+                    dateFormat: 'dd.mm.yy'
+                })
+                .datepicker('setDate', '+1d');
+
+        $('.j-dog__from, .j-insurer__dateborn, .j-insured__birthday, .j-delivery__date').datepicker('option', 'onSelect', function(){
+            $('.b-calc__block').css('-webkit-overflow-scrolling', 'auto');
+        });
+
+        /*** Calculator reset link ***/
+        $('.j-calculator__reset').unbind('click').click(calculator.reset_calculator);
+
+        /*** Travel edit link ***/
+        $('.j-health__edit').unbind('click').click(health_calculator.health_edit_click);
+
+        /*** Calculator right panel scrolling ***/
+        calculator.right_panel_scroll();
+
+        /*** Init contract object ***/
+        health_calculator.init_contract();
+
+        /* Workflow initialization */
+        workflow.init(health_calculator.workflow_steps, 'substep_1');
+    }
+</script>

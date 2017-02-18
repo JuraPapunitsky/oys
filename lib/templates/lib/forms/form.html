@@ -1,0 +1,111 @@
+{% load lib_filters %}
+{% load lib_tags %}
+
+
+{# Если это целая форма, а не ее часть с определенным списком полей #}
+{# Покажем ошибки формы и скрытые поля #}
+{% if is_form_standalone %}
+    {% for field in form.hidden_fields %}
+        {{field}}
+    {% endfor %}
+
+    {% if form.non_field_errors %}
+        <div class='alert alert-sm alert-danger'>
+            {% for error in form.non_field_errors %}
+                {{ error|safe }}<br/>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endif %}
+
+
+{% if layout == 'inline' %}
+    {# Форму inline выводим без заголовков #}
+    {% for field_set in fields_column %}
+        <div class="form-group {{ field.name|slugify }}">
+            {{ field_set.field|to_bootstrap_widget }}
+        </div>
+    {% endfor %}
+
+{% else %}
+
+    {# Обычная форма, разбитая на колонки #}
+    <div class="row">
+        <div class="col-md-{{column_width}}">
+            {% for field_set in fields_column %}
+
+                {% if forloop.counter0 in fields_column_switch %}
+                    </div>
+                    <div class="col-md-{{column_width}}">
+                {% endif %}
+
+                <div class="form-group
+                            {{ field_set.name|slugify }}
+                            {% if field_set.field.errors %}has-error{% endif %}">
+
+                    <label for="id_{{ field_set.name }}"
+                           class="control-label label_for_{{ field_set.name }}
+                                  {% if field_set.layout == 'horizontal' %}
+                                    col-sm-{{label_weight}}
+                                  {% endif %}">
+                           {{ field_set.label }}
+                           <span class="glyphicon glyphicon-info-sign field_warning_tooltip {{ field_set.name|slugify }}_tooltip"
+                                 data-toggle="tooltip"
+                                 data-placement="top"
+                                 data-original-title=""></span>
+                    </label>
+
+                    <div class="{% if field_set.layout == 'horizontal' %}
+                                    col-sm-{{field_weight}}
+                                {% endif %}">
+
+                        {{ field_set.field|to_bootstrap_widget }}
+
+                        {% if field_set.field.help_text %}
+                            <span class="help-block">{{field_set.field.help_text}}</span>
+                        {% endif %}
+
+                        {% if field_set.field.errors %}
+                            <span class="help-block">
+                            {% for error in field_set.field.errors %}
+                                {{ error|safe }}<br/>
+                            {% endfor %}
+                            </span>
+                        {% endif %}
+                        <span class="label label-info {{ field_set.name }}_info" style="display: none;"></span>
+                    </div>
+
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
+
+{# Поля, которые нужно расположить в одну строку #}
+{% for field_set in fields_row %}
+    <div class="row">
+
+        <div class="col-md-12
+                    {% if field_set.field.errors %}has-error{% endif %}
+                    {{field_set.name|slugify}}">
+
+            <div class="form-group">
+
+                <div class="col-md-12">
+
+                    <span class='label label-default'>{{field_set.label}}</span>
+
+                    {{ field_set.field|to_bootstrap_widget }}
+                    {% if field_set.field.errors %}
+                        <span class="help-block">
+                        {% for error in field_set.field.errors %}
+                            {{ error|safe }}<br/>
+                        {% endfor %}
+                        </span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

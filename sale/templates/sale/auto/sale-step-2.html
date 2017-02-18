@@ -1,0 +1,201 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+{% load staticfiles %}
+{% load static %}
+
+
+{% block body_content %}
+    <div class="scr2 sale-container">
+        <div class="container-fluid inner-container step-2">
+            <div class="row">
+                <div class="col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-lg-8 col-md-10 col-sm-10 col-xs-12">
+                    <h1>ОСАГО Покупка Полиса</h1>
+                    <p>"Odlar Yurdu Sığorta brokeri" не несет ответственность за информацию, введенную неправильно.</p>
+
+                    <form method="post" action="/sale/auto-step-3/" class="clearfix j-clr-form" id="saleForm">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="carNumber">Регистрационный номер*</label>
+                                    <input
+                                            type="text" name="car[num]" id="carNumber" class="form-control"
+                                            maxlength="9" data-validation="alphanumeric" data-validation-length="6-7"
+                                            data-validation-allowing="-"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="carMake">Марка автомобиля*</label>
+                                    <select name="car[make]" class="form-control" id="carMake">
+
+                                        {% for car_manufacturer in car_manufacturers %}
+                                            <option value="{{ car_manufacturer.id }}" {% if car_manufacturer.id == 1 %}
+                                                selected
+                                            {% endif %}>{{ car_manufacturer.name }}</option>
+                                        {% endfor %}
+                                       <!-- <option value="1" selected>Ford</option>
+                                        <option value="2">Kia</option>
+                                        <option value="3">Mercedes</option>
+                                        <option value="4">Alfa Romeo</option> -->
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="carModel">Модель автомобиля*</label>
+                                    <select name="car[model]" class="form-control" id="carModel"></select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="carType">Тип автомобиля*</label>
+                                    <select name="car[type]" class="form-control" id="carType"></select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="carEngine">Объем двигателя см*</label>
+                                    <input type="text" name="car[engine]" class="form-control" id="carEngine"
+                                           maxlength="5"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="carSize">Пассажирские места*</label>
+                                    <input type="text" name="car[size]" class="form-control" id="carSize"
+                                           maxlength="3"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="carWeight">Максимальный вес*</label>
+                                    <input type="text" name="car[weight]" class="form-control" id="carWeight"
+                                           maxlength="6"/>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="personType">Тип страхователя*</label>
+                                    <select name="person[type]" class="form-control" id="personType">
+                                        <option value="1" selected>Физическое лицо</option>
+                                        <option value="2">Юридическое лицо</option>
+                                    </select>
+                                </div>
+
+                                <!-- SERVER ERROR EXAMPLE START -->
+                                <div class="form-group has-error">
+                                    <label for="personId">Пин Код/ИНН/Другой ИД*</label>
+                                    <input
+                                            type="text" name="person[id]" class="form-control error" id="personId"
+                                            value="123"
+                                            maxlength="15" data-validation="custom"
+                                            data-validation-regexp="^[0-9A-HJ-NP-Za-hj-np-z]{7,15}$"
+                                    />
+                                    <span class="help-block form-error">Вы  ввели не корректное данные</span>
+                                </div>
+                                <!-- SERVER ERROR EXAMPLE END -->
+
+                                <div class="form-group doc clearfix">
+                                    <label for="personSerie">Серия и номер удостоверения*</label>
+                                    <input
+                                            type="text" name="person[serie]" class="form-control pull-left"
+                                            id="personSerie"
+                                            maxlength="5" data-validation="alphanumeric" data-validation-length="1-5"
+                                    />
+                                    <input
+                                            type="text" name="person[num]" class="form-control pull-right"
+                                            maxlength="20" data-validation="alphanumeric" data-validation-length="2-20"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dateStart">Дата начала*</label>
+                                    <input
+                                            type="text" name="start" class="form-control n-calendar" id="dateStart"
+                                            data-validation="date" data-validation-format="dd.mm.yyyy"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="regTerritory">Территория регистрации*</label>
+                                    <select name="territory" class="form-control" id="regTerritory">
+                                        <option value="1" selected>Azərbaycan</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="telNumber">Телефон*</label>
+                                    <input
+                                            type="text" name="tel" id="telNumber" class="form-control"
+                                            data-validation="required"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="email">E-mail*</label>
+                                    <input
+                                            type="text" name="email" class="form-control" id="email"
+                                            data-validation="email"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-offset-4 col-md-4 col-xs-12">
+                                <button type="submit" class="order button">Рассчитать Премию</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'flatpages/includes/inner_policy_ordering_auto.html' %}
+
+    {# Блок "Как работает" #}
+    {% include 'flatpages/includes/inner_insurance_details_auto.html' %}
+
+    {# Часть страницы продукта с вариантами доставки полиса #}
+    {% include 'flatpages/includes/inner_policy_delivery_auto.html' %}
+
+
+{% endblock %}
+{% block sale_js %}
+<script type="text/javascript">
+			window.saleInsurancePremiumVals = {
+				/* car[make] */
+				1: {
+					/* car[model] */
+					1: {
+					    title: "Focus",
+                        /* car[type] */
+                        type: {
+                            1: "Легковые автомобили"
+                        }, more: {
+                                1: "#carEngine"
+                            }
+					},
+					2: {title: "Mondeo", /* car[type] */ type: {1: "Легковые автомобили", 5: "Прицепы и полуприцепы"}, more: {1: "#carEngine"}}
+				},
+				2: {
+					1: {title: "Sportage", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Sorento", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					3: {title: "Rio", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}}
+				},
+				3: {
+					1: {title: "CL203", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Transporter", type: {3: "Автобус и микроавтобусы"}, more: {3: "#carSize"}}
+				},
+				4: {
+					1: {title: "8C Spider", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Giulietta", type: {4: "Грузовые автомобили"}, more: {4: "#carWeight"}}
+				}
+			};
+		</script>
+
+		<!-- NEW HTML END -->
+{% endblock %}

@@ -1,0 +1,140 @@
+{% load i18n %}
+<div class="b-form__block n-form__detailinfo n-form__step clearfix" id="step-2">
+    <div style="padding-right: 20px;">
+        <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+    </div>
+    <div class="b-step__title n-title__ico n-t-ico__travel">
+        <h2>{% trans 'Информация о поездке' %}</h2>
+    </div>
+
+    {# Выбранные значения #}
+    <ul class="b-step__list">
+        <li class="b-step__item">
+            <span></span>
+            <a href="#" class="b-step__item-close j-step__item-close"><small>{% trans 'изменить' %}</small></a>
+        </li>
+    </ul>
+
+    {# Полоса прогресса заполнения формы (точки) #}
+    <ul class="b-step__current">
+        <li class="b-step__current-item n-item__curr"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+    </ul>
+
+    {#  Подэтапы данного этапа #}
+    <div class="b-calc__item n-calc__area n-radio__hidden n-form__substep e-active" id="substep-1">
+        <h3>{% trans 'Куда едите?' %}</h3>
+        <div class="b-area__list n-justify__col b-substep-1__list">
+
+            <div class="clearfix" style="margin-bottom: 10px">
+                <div class="badge-text-wr">
+                    <input class="badge-text" type="hidden" value="">
+                </div>
+                <a href="#" class="pull-right order button j-next__click">{% trans 'Продолжить' %}</a>
+            </div>
+
+            {% for c in travel_countries %}
+            <div class="b-radio__wr">
+                <input type="checkbox" name="countries" id="id_countries[{{ c.id }}]" value="{{ c.id }}" data-value="{{ c.title }}">
+                <label for="id_countries[{{ c.id }}]">{{ c.title }}</label>
+            </div>
+            {% endfor %}
+
+            <div class="b-justify__helper"></div>
+        </div>
+    </div>
+
+    <div class="b-calc__item n-calc__costcar n-radio__hidden n-form__substep" id="substep-2">
+        <h3>{% trans 'Даты поездки' %}</h3>
+
+        <div class="b-data__line b-d_rest_start input-wr">
+            <div class="b-data__wr">
+                <input type="checkbox" name="rest_term_year" id="id_rest_term_year" class="b-form__input">
+                <label for="id_rest_term_year">{% trans 'Годичный договор' %}</label>
+            </div>
+        </div>
+
+        <div class="b-data__line b-d_rest_start input-wr">
+            <div class="b-label__wr col-md-4 col-xs-5">
+                <div class="row">
+                    <label for="id_d_start">{% trans 'Дата начала договора' %}</label>
+                </div>
+            </div>
+            <div class="b-input__wr col-md-2 col-xs-2">
+                <div class="row">
+                    <input type="text" name="d_start" id="id_d_start" class="b-input j-d_start n-calendar">
+                </div>
+            </div>
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <div class="b-data__line b-d_rest_end input-wr">
+            <div class="b-label__wr col-md-4 col-xs-5">
+                <div class="row">
+                    <label for="id_d_end">{% trans 'Дата окончания договора' %}</label>
+                </div>
+            </div>
+            <div class="b-input__wr col-md-2 col-xs-2">
+                <div class="row">
+                    <input type="text" name="d_end" id="id_d_end" class="b-input j-d_end n-calendar">
+                </div>
+            </div>
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <div class="badge-text-wr">
+            <input class="badge-text" type="hidden" value="">
+        </div>
+
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+    <div class="b-calc__item n-calc__slider n-radio__hidden n-form__substep" id="substep-3">
+        <h3>{% trans 'Количество застрахованных дней' %}</h3>
+        <div class="b-style__slider n-insured_days">
+            <input type="text" name="insured_days" value="" class="b-input__costcar">
+            <div class="b-slider"></div>
+            <span class="b-price__from"></span>
+            <span class="b-price__to"></span>
+        </div>
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+    <div class="b-calc__item n-calc__slider n-radio__hidden n-form__substep" id="substep-4">
+        <h3>{% trans 'Тип поездки' %}</h3>
+
+        <select name="rest_type" id="id_rest_type" class="b-select">
+            <option value="3">{% trans 'Туризм' %}</option>
+            <option value="5">{% trans 'Учеба' %}</option>
+            <option value="7">{% trans 'Любительский спорт' %}</option>
+            <option value="2">{% trans 'Профессиональный спорт' %}</option>
+            <option value="1">{% trans 'Командировка' %}</option>
+            <option value="4">{% trans 'Работа c низким уровнем риска' %}</option>
+            <option value="6">{% trans 'Тяжелая и опасная работа' %}</option>
+        </select>
+
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+    <div class="b-calc__item n-calc__slider n-radio__hidden n-form__substep" id="substep-5">
+        <h3>{% trans 'Информация о застрахованном' %}</h3>
+
+        <div class="b-data__line b-d_rest_start input-wr">
+
+            <div class="b-input__wr col-md-2 col-xs-2">
+                <div class="row">
+                    <input type="text" name="traveller_birthday" id="id_traveller_birthday" class="b-input j-traveller__birthday n-calendar" placeholder="{% trans 'Дата рождения' %}">
+                </div>
+            </div>
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+</div>

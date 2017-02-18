@@ -1,0 +1,5 @@
+/* Calendar input */
+.n-calendar {
+    background: #fff url('../img/calendar-ico.png') 97% center no-repeat !important;
+    width: 150px !important;
+}

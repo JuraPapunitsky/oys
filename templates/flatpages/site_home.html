@@ -1,0 +1,250 @@
+{% extends 'common/base.html' %}
+{% load i18n %}
+{% load common_tags %}
+
+{% block body_content %}
+
+{# Пусть ваш отдых пройдет легко и весело! #}
+{% get_random_background as bg_info %}
+<div class="main-header-wr hidden-xs">
+    <div class="main-header" style="background-image: url('{{ STATIC_URL }}{{ bg_info.background_url }}')">
+        <div class="over">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-md-9 col-lg-6 ">
+                        <div class="row">
+                            <span class="black-title">{% trans 'страхование' %}</span>
+                            <h1>{% trans bg_info.text|safe %}</h1>
+                            {% include 'calculator/includes/buy_now_button.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+             <div class="container-fluid">
+                <div class="col-md-2 col-sm-3 icon1 col-md-offset-2">
+                    <a href="/insurance/auto/">
+                        <img src="{{ STATIC_URL }}common/img/icon1.png"><p>{% trans 'страхование<br/> автомобиля' %}</p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-3 icon2">
+                    <a href="/insurance/property/">
+                        <img src="{{ STATIC_URL }}common/img/icon2.png"><p>{% trans 'страхование<br/> недвижимости' %}</p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-3 icon3">
+                    <a href="/insurance/health/">
+                        <img src="{{ STATIC_URL }}common/img/icon3.png"><p>{% trans 'страхование<br/> здоровья' %}</p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-3 icon4">
+                    <a href="/insurance/travel/">
+                        <img src="{{ STATIC_URL }}common/img/icon4.png"><p>{% trans 'страхование<br/> путешествий' %}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="over visible-xs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <span class="black-title">{% trans 'страхование' %}</span>
+                <h1>{% trans bg_info.text|safe %}</h1>
+                {% include 'calculator/includes/buy_now_button.html' %}
+            </div>
+        </div>
+        <div class="row icons">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="row">
+                    <div class="col-xs-6 icon1">
+                        <a href="/insurance/auto/">
+                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><p>{% trans 'страхование<br/> автомобиля' %}</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 icon2">
+                        <a href="/insurance/property/">
+                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><p>{% trans 'страхование<br/> недвижимости' %}</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 icon3">
+                        <a href="/insurance/health/">
+                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><p>{% trans 'страхование<br/> здоровья' %}</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 icon4">
+                        <a href="/insurance/travel/">
+                            <img src="{{ STATIC_URL }}common/img/320/icon-sm.png"><p>{% trans 'страхование<br/> путешествий' %}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# 5 причин приобрести страховой полис у нас #}
+<div class="scr2 comfort-work">
+    <div class="container-fluid">
+        <div id="slides1">
+
+            <div class="row">
+                <div class="visible-xs col-xs-1"></div>
+                <div class="col-sm-12 col-xs-10 col-md-12">
+                    <div class="row comfort-icons">
+                        <div class="col-sm-12 col-xs-12">
+                            <h1>{% trans '5 причин приобрести страховой полис у нас' %}</h1>
+                        </div>
+
+                        <div class="col-sm-2 col-sm-offset-1 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/infog7.png" class="center-block">
+                            <p>{% trans 'Работаем на клиента,<br/> а не страховую компанию' %} </p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <a href="/partners/">
+                                <img src="{{ STATIC_URL }}common/img/infog1.png" class="center-block">
+                            </a>
+                            <p>{% trans 'Единое окно<br/> на рынок страхования' %}</p>
+                        </div>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/infog3.png" class="center-block">
+                            <p>{% trans 'Эксклюзивный<br/> партнер <span>ASAN Xi̇dmət</span>' %}</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/infog8.png" class="center-block">
+                            <p>{% trans 'Уникальные страховые<br/> продукты, учитывающие<br/> индивидуальные потребности' %}</p>
+                        </div>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/infog9.png" class="center-block">
+                            <p>{% trans 'Информационная поддержка<br/> и помощь в урегулировании<br/> убытков' %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="visible-xs col-xs-1"></div>
+                <div class="col-sm-12 col-xs-10 col-md-12">
+                    <div class="row comfort-icons">
+                        <div class="col-sm-12 col-xs-12">
+                            <h1>{% trans 'С нами удобнее' %}<br class="visible-xs-block">&nbsp;</h1>
+                        </div>
+
+                        <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/l-fix/comfort-3.png" class="center-block">
+                            <p>{% trans 'Покупка и оплата<br/> договоров страхования через<br/> ASAN ödəni̇ş' %}</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/l-fix/comfort-2.png" class="center-block">
+                            <p>{% trans 'Онлайн оплата' %}</p>
+                        </div>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <!-- <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/l-fix/comfort-5.png" class="center-block">
+                            <p>{% trans 'Оплата договоров<br/> страхования через терминалы<br/> Mi̇lli̇ÖN' %}</p>
+                        </div> -->
+
+                        <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/l-fix/comfort-4.png" class="center-block">
+                            <p>{% trans 'Подписание договоров<br/> с использованием ASAN IMZA / E IMZA' %}</p>
+                        </div>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <img src="{{ STATIC_URL }}common/img/l-fix/comfort-1.png" class="center-block">
+                            <p>{% trans 'Бесплатная доставка курьером' %} </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- NEW HTML START -->
+
+<div class="modal fade b-sale__block n-modal__calk" show tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div class="b-curtain__modal"></div>
+        <div class="b-spinner__modal"></div>
+
+        <div class="sticker-window clearfix">
+            <a class="close b-close__modal" data-dismiss="modal"></a>
+
+						<h2>Расчет стоимости полиса</h2>
+
+						<div class="b-line__separator"></div>
+						<p>Выберите категорию для определения параметров наиболее подходящего Вам полиса.</p>
+
+						<div class="form-block-xs">
+								<div class="col-xs-1"></div>
+								<div class="col-xs-10">
+										<div class="row">
+												<div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-1">
+														<a href="/sale/auto-step-1/">
+																<img src="http://oys.az/static/common/img/320/icon-sm.png"><span>страхование<br/> автомобиля</span>
+														</a>
+												</div>
+												<div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-2">
+														<a href="#">
+																<img src="http://oys.az/static/common/img/320/icon-sm.png"><span>страхование<br/> недвижимости</span>
+														</a>
+												</div>
+												<div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-3">
+														<a href="#">
+																<img src="http://oys.az/static/common/img/320/icon-sm.png"><span>страхование<br/> здоровья</span>
+														</a>
+												</div>
+												<div class="col-sm-3 col-xs-6 b-icon__item n-icon__item-4">
+														<a href="#">
+																<img src="http://oys.az/static/common/img/320/icon-sm.png"><span>страхование<br/> путешествий</span>
+														</a>
+												</div>
+										</div>
+								</div>
+						</div>
+        </div>
+    </div>
+</div>
+
+<!-- NEW HTML END -->
+
+{# Самый простой способ оформить полис #}
+<div class="insurance-compare-work container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="row">
+                <h1>
+                    {% trans 'Самый простой способ получить информацию<br/>о страховых продуктах и сравнить их' %}
+                </h1>
+                <a href="/insurance/" class="button order">{% trans 'Узнать подробнее' %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# FEEDBACK #}
+{% include 'flatpages/includes/home_feedback.html' %}
+
+{# Модальное окно калькулятора #}
+{#{% include 'calculator/calculator_modal.html' %}#}
+
+{% endblock %}

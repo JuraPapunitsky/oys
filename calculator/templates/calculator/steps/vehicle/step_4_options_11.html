@@ -1,0 +1,63 @@
+{% load i18n %}
+
+{# Поле Выбор СТОА #}
+<div class="b-data__line clearfix b-sts_selection">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Выбор СТОА' %}</p>
+
+        <div class="b-data__wr col-sm-6">
+            <div class="row">
+                <input type="radio" name="p11_product_option" id="id_sts_insurer" value="a-group-insurer-select" checked
+                       class="b-form__radio n-casco__ugon">
+                <label for="id_sts_insurer">{% trans 'По выбору страховщика' %}</label>
+            </div>
+        </div>
+        <div class="b-data__wr col-sm-6 ">
+            <div class="row">
+                <input type="radio" name="p11_product_option" id="id_sts_insurant" value="a-group-insurant-select"
+                       class="b-form__radio n-casco__ugon">
+                <label for="id_sts_insurant">{% trans 'По выбору страхователя' %}</label>
+            </div>
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Выгодопреобретатель #}
+<div class="b-data__line clearfix b-p11_beneficiary">
+    <div class="b-data__wr j-block__scr">
+        <p class="b-title__sm">{% trans 'Выгодоприобретатель' %}</p>
+
+        <div class="b-data__wr col-sm-6">
+            <div class="row">
+                <input type="radio" data-window="1" name="p11_beneficiary" id="id_p11_beneficiary_insurant" value="insurant" checked
+                       class="b-form__radio">
+                <label for="id_p11_beneficiary_insurant">{% trans 'Страхователь' %}</label>
+            </div>
+        </div>
+        <div class="b-data__wr col-sm-6 ">
+            <div class="row">
+                <input type="radio" data-window="2" name="p11_beneficiary" id="id_p11_beneficiary_bank" value="bank"
+                       class="b-form__radio n-main__radio">
+                <label for="id_p11_beneficiary_bank">{% trans 'Банк' %}
+                    <span class="b-name__replace j-replace__text">{% trans 'Выбрать' %}</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="b-block__scr n-src__window_2" data-window="2" style="margin: 19px -4px 0px -10px;">
+            <div class="b-bank__list j-replace__value clearfix">
+                {% for b in banks %}
+                <div class="b-radio__wr col-sm-4 col-xs-6">
+                    <input type="radio" name="p11_bank_beneficiary" value="{{ b.id }}"  data-value="{{ b.title }}" id="id_p11_bank_beneficiary_{{ b.id }}">
+                    <label for="id_p11_bank_beneficiary_{{ b.id }}">{{ b.title }}</label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>

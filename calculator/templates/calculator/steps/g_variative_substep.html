@@ -1,0 +1,22 @@
+{% load i18n %}
+<h3>{% trans step_title %}</h3>
+<div class="b-area__list n-justify__col b-{{ step_id|default:'substep-0' }}__list">
+    {% for obj in objects %}
+    <div class="b-radio__wr">
+        <input type="radio" name="{{ name }}" id="{{ name }}[{{ obj.id }}]" value="{{ obj.id }}" data-value="{{ obj.title }}">
+        <label for="{{ name }}[{{ obj.id }}]">{{ obj.title }}</label>
+    </div>
+    {% endfor %}
+    {% if objects_more %}
+    <div class="b-radio__wr b-link__more">
+        <a href="#" onclick="$(this).parent().hide().nextAll().show();return false;">{% trans 'Подробнее' %}</a>
+    </div>
+    {% for obj in objects_more %}
+    <div class="b-radio__wr" style="display: none">
+        <input type="radio" name="{{ name }}" id="{{ name }}[{{ obj.id }}]" value="{{ obj.id }}" data-value="{{ obj.title }}">
+        <label for="{{ name }}[{{ obj.id }}]">{{ obj.title }}</label>
+    </div>
+{% endfor %}
+{% endif %}
+    <div class="b-justify__helper"></div>
+</div>

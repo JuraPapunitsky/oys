@@ -1,0 +1,118 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="/insurance/">{% trans 'К списку страховых продуктов' %}</a>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_2.png">
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9 text-capitalize">
+                            <p style="font-size: 24px; padding-top: 10px;">{% trans 'ОС Имущества' %}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{% trans 'Что страхует продукт?' %}</h3>
+                            <p>{% trans 'Ваше имущество' %}</p>
+
+                            <h3>{% trans 'Срок договора' %}</h3>
+                            <p>{% trans 'Договор заключается на 12 месяцев' %}</p>
+
+                            <h3>{% trans 'Краткое описание страхового продукта' %}</h3>
+                            <p>{% trans 'Обязательное страхование имущества – этот вид страхования регулируется Законом Азербайджанской Республики об Обязательном Страховании. Целью обязательного страхования недвижимого имущества является выплата компенсации за ущерб, понесенный в связи с повреждением, уничтожением или какой-либо иной формой потери недвижимого имущества Застрахованных в результате пожара или других событий, защита их имущественных интересов и выдача обеспечения в дополнение к социальной защите. ' %}</p>
+
+                            <h3>{% trans 'Покрываемые риски' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Стихийные бедствия - землетрясение, извержение вулкана, ураган, буря, смерч, град, наводнение, сель, проливной дождь, оползень;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Пожар, удар молнии;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Взрыв газа бытового и промышленного назначения;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Короткое замыкание электропроводки;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Взрыв паровых котлов, газовых хранилищ, газопроводов, машин, аппаратов, устройств и других подобных устройств или приборов;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Аварии водопроводов, отопительных и канализационных линий, и систем пожаротушения, наводнения от воды, поступающей из соседних строений, жилых и нежилых площадей, жилых домов и зданий, квартир, комнат;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Падение, бросание, повреждение, разрушение, унос течением, и другие подобные формы воздействия на какой-либо предмет или его части;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Удар наземного транспортного средства;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Неправомерные действия третьих лиц.' %}</span>
+                            </p>
+
+                            <h3>{% trans 'Преимущества продукта' %}</h3>
+                            <p>{% trans 'Возможность застраховать своё имущество за минимальную страховую премию.' %}</p>
+
+
+                            <h3>{% trans 'Важно знать' %}</h3>
+                            <p>{% trans 'Страховые суммы по обязательному страхованию жилых домов и квартир.' %}</p>
+                            <div class="center-block" style="width: 800px;">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">{% trans 'Город' %}</th>
+                                            <th class="text-center">{% trans 'Страховая сумма (AZN)' %}</th>
+                                            <th class="text-center">{% trans 'Франшиза (AZN)' %}</th>
+                                            <th class="text-center">{% trans 'Страховая премия (AZN)' %}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>{% trans 'Город Баку' %}</td><td>25 000</td><td>250</td><td>50</td></tr>
+                                        <tr><td>{% trans 'Гянджа, Сумгаит и Нахичевань' %}</td><td>20 000</td><td>200</td><td>40</td></tr>
+                                        <tr><td>{% trans 'Другие населенные пункты' %}</td><td>15 000</td><td>150</td><td>30</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3>{% trans 'Мнение экспертов “Odlar Yurdu Sığorta Brokeri”' %}</h3>
+                            <blockquote>
+                              <p>{% trans 'Эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам страхование недвижимого имущества, которое на сегодняшний день является востребованной услугой. И это неудивительно. Ведь когда человеку есть что терять, он хочет быть уверен, что сможет сохранить свои деньги, если с его собственностью что-то произойдет.' %}</p>
+                              <footer>{% trans 'Команда “Odlar Yurdu Sığorta Brokeri”' %}</footer>
+                            </blockquote>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body_content %}

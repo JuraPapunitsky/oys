@@ -1,0 +1,15 @@
+{% extends 'common/base.html' %}
+{% load lib_tags %}
+{% load i18n %}
+
+{% block navigation_menu %}
+{% endblock %}
+
+{% block body_content %}
+    <form method="post" class='form-horizontal single_form well'>
+        {% csrf_token %}
+        {% form_bootstrap form %}
+        <input type="submit" class='btn btn-primary pull-right' value="{% trans 'Register' %}">
+        <div class="clearfix"></div>
+    </form>
+{% endblock %}

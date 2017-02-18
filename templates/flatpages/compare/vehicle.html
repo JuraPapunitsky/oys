@@ -1,0 +1,314 @@
+{% load i18n %}
+<table class="table product-compare-table">
+    <thead>
+        <tr>
+            <th width="40%" style="vertical-align: top"></th>
+            <th width="10%" style="vertical-align: top">{% trans 'ОСАГО' %}</th>
+            <th width="10%" style="vertical-align: top">{% trans 'Простое КАСКО' %}</th>
+            <th width="10%" style="vertical-align: top">{% trans 'Уверенный водитель' %}</th>
+            <th width="10%" style="vertical-align: top">{% trans 'СуперКАСКО' %}</th>
+            <th width="10%" style="vertical-align: top">{% trans 'ОСАГО+' %}</th>
+            <th width="10%" style="vertical-align: top">{% trans 'Пятерочка' %}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Страховая сумма' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Сумма в пределах, которой осуществляется выплата при наступлении страхового случая' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght"><small>5000&nbsp;AZN</small></td>
+            <td class="text-center brd-rght"><small>5000&nbsp;AZN</small></td>
+            <td class="text-center brd-rght"><small>{% trans 'Рыночная стоимость авто' %}</small></td>
+            <td class="text-center brd-rght"><small>{% trans 'До 5000&nbsp;AZN' %}</small></td>
+            <td class="text-center brd-rght">5000&nbsp;AZN</td>
+            <td class="text-center"><small>1000&nbsp;AZN</small></td>
+        </tr>
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Ответственность перед 3-ми лицами' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Возмещение убытков и ущерба, которые были причинены Вами при управлении ТС другому автомобилю, жизни и здоровью пассажиров.' %}">
+                </a>
+            </td>
+            <td class="brd-rght">
+                <div class="icon-ok center-block"></div>
+            </td>
+            <td class="text-center brd-rght">
+                <a href="javascript:void(0)" role="button" tabindex="0"
+                   data-trigger="hover"
+                   data-toggle="popover"
+                   data-placement="bottom"
+                   data-content="{% trans 'Расширение ОСАГО до 10 000 AZN - Стоимость 25 AZN' %}<br/>{% trans 'Расширение ОСАГО до 15 000 AZN - Стоимость 50 AZN' %}">
+                    {% trans 'платно' %}
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Ущерб во время ДТП' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Возмещение убытков и ущерба, которые были причинены Вашем автомобилю во время ДТП' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Противоправные действия 3х лиц' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Возмещение ущерба, когда Ваш автомобиль был поцарапан, получил вмятины, будучи припаркованным, был облит краской. Также под понятие повреждений в результате ПДТЛ подпадают случаи, когда транспортное средство повреждено в результате попытки угона или хищения оставленного в салоне имущества, например, были взломаны двери или разбиты элементы остекления.' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Угон' %}
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Падение предметов' %}
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Пожар' %}
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Нападение животных' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Возмещение ущерба, когда Ваш автомобиль был поврежден в результате нападения диких животных' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Эвакуация' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Возмещение расходов на эвакуацию при наступлении страхового случая. Эвакуация с места ДТП/Страхового случая до автостоянки.' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght">
+                <a href="javascript:void(0)" role="button" tabindex="0" data-trigger="hover" data-toggle="popover"
+                   data-placement="bottom"
+                   data-content="{% trans 'Стоимость 30 AZN' %}">
+                    {% trans 'платно' %}
+                </a>
+            </td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td><div class="icon-ok center-block"></div></td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Сбор справок в ГАИ' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Услуги по сбору всех необходимых документов для признания страхового случая из ГАИ' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Здоровье пассажиров' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Возмещение расходов на лечение пассажиров, получивших травмы/повреждения при наступлении страхового случая' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght">
+                <a href="javascript:void(0)" role="button" tabindex="0" data-trigger="hover" data-toggle="popover"
+                   data-placement="bottom"
+                   data-content="{% trans 'Страхование  1 пассажира на сумму 5000 AZN - Стоимость 8 AZN' %}">
+                    {% trans 'платно' %}
+                </a>
+            </td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td><div class="icon-ok center-block"></div></td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Наличие вашей НЕВИНОВНОСТИ для выплаты' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Страховая выплата производится только в случае, если Вы не были причиной возникновения ущерба' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Франшиза' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Часть суммы, которая не возмещается со стороны Страховой компании' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght">100 AZN</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Выплата без учета износа' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'При расчете размера причиненного ущерба Вашему автомобилю не учитывается процент износа/амортизации' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="brd-rght"><div class="icon-ok center-block"></div></td>
+            <td class="text-center brd-rght" style="font-weight: bold">—</td>
+            <td class="text-center" style="font-weight: bold">—</td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Кол-во страховых случаев' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Количество страховых случаев, когда можно обратиться в страховую компанию в период действия договора страхования' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght"><small>{% trans 'не ограничено' %}</small></td>
+            <td class="text-center brd-rght">
+                <a href="javascript:void(0)" role="button" tabindex="0" data-trigger="hover" data-toggle="popover"
+                   data-placement="bottom"
+                   data-content="{% trans 'На ваш выбор, либо 1, либо до тех пор пока не израсходуется страховая сумма' %}">
+                    {% trans 'подробнее' %}
+                </a>
+            </td>
+            <td class="text-center brd-rght"><small>{% trans 'не ограничено' %}</small></td>
+            <td class="text-center brd-rght"><small>{% trans 'Только 1' %}</small></td>
+            <td class="text-center brd-rght"><small>{% trans 'не ограничено' %}</small></td>
+            <td class="text-center"><small>{% trans 'не ограничено' %}</small></td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">{% trans 'ПРОЧИЕ УСЛОВИЯ' %}</td>
+            <td class="text-center brd-rght"></td>
+            <td class="text-center brd-rght">
+                <a href="javascript:void(0)" role="button" tabindex="0" data-trigger="hover" data-toggle="popover"
+                   data-placement="top"
+                   data-content="{% trans 'Если ТС управляет не страхователь, он должен быть обязательно вписан в полис' %}">
+                    {% trans 'подробнее' %}
+                </a>
+            </td>
+            <td class="text-center brd-rght">
+                <a href="javascript:void(0)" role="button" tabindex="0" data-trigger="hover" data-toggle="popover"
+                   data-placement="top"
+                   data-content="<small>{% trans 'При получении водителем или пассажирами застрахованного ТС  телесных повреждений в результате страхового случая, полис покрывает расходы на услугу скорой помощи со стороны MediClub.' %}</small>">
+                    {% trans 'подробнее' %}
+                </a>
+            </td>
+            <td class="text-center brd-rght"><small style="color: red">{% trans 'ТОЛЬКО С ОСАГО АТЕШГЯХ' %}</small></td>
+            <td class="text-center brd-rght"><small style="color: red">{% trans 'ТОЛЬКО С ОСАГО АТЕШГЯХ' %}</small></td>
+            <td class="text-center"><small style="color: red">{% trans 'ТОЛЬКО С ОСАГО АТЕШГЯХ' %}</small></td>
+        </tr>
+
+        <tr>
+            <td class="brd-rght">
+                {% trans 'Стоимость' %}
+                <a href="javascript:void(0)" class="b-qw__link pull-right" role="button" tabindex="0"
+                   data-trigger="hover" data-toggle="popover" data-placement="right"
+                   data-content="{% trans 'Стоимость страхового продукта с учетом указанных вами параметров по ТС' %}">
+                </a>
+            </td>
+            <td class="text-center brd-rght" id="p2-price">{% if request.GET.p2 %}{{ request.GET.p2 }}&nbsp;AZN{% endif %}</td>
+            <td class="text-center brd-rght" id="p12-price">{% if request.GET.p12 %}{% trans 'от' %} {{ request.GET.p12 }}&nbsp;AZN{% endif %}</td>
+            <td class="text-center brd-rght" id="p11-price">{% if request.GET.p11 %}{{ request.GET.p11 }}&nbsp;AZN{% endif %}</td>
+            <td class="text-center brd-rght">50.00&nbsp;AZN</td>
+            <td class="text-center brd-rght">19.00&nbsp;AZN</td>
+            <td class="text-center">5.00&nbsp;AZN</td>
+        </tr>
+        <tr><td colspan="7"></td></tr>
+    </tbody>
+</table>
+
+<script>
+    $('[data-toggle="popover"]').popover({html: true});
+</script>

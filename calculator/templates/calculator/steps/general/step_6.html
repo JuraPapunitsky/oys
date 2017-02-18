@@ -1,0 +1,242 @@
+{% load i18n %}
+<div class="b-form__block n-form__despolicy n-form__step clearfix" id="step-6">
+    <div class="b-form__left clearfix">
+        <div>
+            <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+        </div>
+        <div class="b-step__title n-title__ico {% block header_icon %}{% endblock %}">
+            <h2>{% trans 'Оплата и доставка' %}</h2>
+        </div>
+
+        {# Доставка #}
+        <div class="b-data__line clearfix">
+            <div class="b-data__wr j-block__scr">
+                <p class="b-title__sm">{% trans 'Доставка полиса' %}</p>
+
+                <div class="b-data__wr col-sm-4">
+                    <div class="row">
+                        <input type="radio" data-window="1" name="delivery_type" id="id_delivery_type_courier"
+                               value="courier" checked class="b-form__radio n-main__radio">
+                        <label for="id_delivery_type_courier">{% trans 'Курьерская доставка' %}</label>
+                    </div>
+                </div>
+{#                <div class="b-data__wr col-sm-4">#}
+{#                    <div class="row">#}
+{#                        <input type="radio" data-window="2" name="delivery_type" id="id_delivery_type_takeout"#}
+{#                               value="takeout"#}
+{#                               class="b-form__radio n-main__radio">#}
+{#                        <label for="id_delivery_type_takeout">{% trans 'Забрать в точке продаж' %}</label>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="b-data__wr col-sm-4">#}
+{#                    <div class="row">#}
+{#                        <input type="radio" data-window="3" name="delivery_type" id="id_delivery_type_email"#}
+{#                               value="email"#}
+{#                               class="b-form__radio n-main__radio">#}
+{#                        <label for="id_delivery_type_email">{% trans 'Отправить по email' %}</label>#}
+{#                    </div>#}
+{#                </div>#}
+
+                <div class="clearfix"></div>
+
+                {# Адрес для доставки курьером #}
+                <div class="b-block__scr n-src__window_1" data-window="1" style="display: block">
+                    <div class="b-data__line n-line__delivery">
+                        <div class="b-label__wr col-md-4 col-xs-5">
+                            <div class="row"><label for="id_delivery_date">{% trans 'Дата доставки' %}</label></div>
+                        </div>
+                        <div class="b-input__wr col-md-2 col-xs-5">
+                            <div class="row clearfix">
+                                <input type="text" name="delivery_date" id="id_delivery_date"
+                                       class="b-input j-delivery__date n-calendar">
+                            </div>
+                        </div>
+                        <div class="col-lg-1 pull-right"></div>
+                        <div class="col-lg-4 col-xs-12 flat-wr b-input__wr clearfix">
+                            <div class="row">
+                                <div class="b-label__wr col-md-4  col-xs-5">
+                                    <div class="row">
+                                        <label for="id_delivery_time">{% trans 'Время' %}</label>
+                                    </div>
+                                </div>
+                                <div class="b-input__wr col-md-7 col-xs-5">
+                                    <div class="row">
+                                        <select id="id_delivery_time" name="delivery_time" class="b-select">
+                                            <option value="1">09:00 - 10:00</option>
+                                            <option value="2">10:00 - 11:00</option>
+                                            <option value="3">11:00 - 12:00</option>
+                                            <option value="4">12:00 - 13:00</option>
+                                            <option value="5">13:00 - 14:00</option>
+                                            <option value="6">14:00 - 15:00</option>
+                                            <option value="7">15:00 - 16:00</option>
+                                            <option value="8">16:00 - 17:00</option>
+                                            <option value="9">17:00 - 18:00</option>
+                                            <option value="10">18:00 - 19:00</option>
+                                            <option value="11">19:00 - 20:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-error"><span></span></div>
+                    </div>
+
+                    {# Город #}
+                    {% trans 'Город' as city_tr %}
+                    {% include 'calculator/steps/g_selection_field.html' with field_name='delivery_city' field_label=city_tr objects=delivery_cities %}
+
+                    {# Район #}
+                    {% trans 'Район' as region_tr %}
+                    {% include 'calculator/steps/g_selection_field.html' with field_name='delivery_region' field_label=region_tr objects=delivery_regions %}
+
+                    <div class="b-data__line">
+                        <div class="b-label__wr col-md-4 col-xs-5">
+                            <div class="row"><label for="id_delivery_street">{% trans 'Улица' %}</label></div>
+                        </div>
+                        <div class="b-input__wr col-md-7 col-xs-6">
+                            <div class="row">
+                                <input type="text" name="delivery_street" id="id_delivery_street" class="b-input">
+                            </div>
+                        </div>
+                        <div class="field-error"><span></span></div>
+                    </div>
+
+                    <div class="b-data__line">
+                        <div class="b-label__wr col-md-4 col-xs-5">
+                            <div class="row"><label for="id_delivery_house">{% trans 'Дом' %}</label></div>
+                        </div>
+                        <div class="b-input__wr col-md-2 col-xs-5">
+                            <div class="row">
+                                <input type="text" name="delivery_house" id="id_delivery_house" class="b-input w-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-1 pull-right"></div>
+                        <div class="col-lg-4 col-xs-12 flat-wr b-input__wr clearfix">
+                            <div class="row">
+                                <div class="b-label__wr col-md-4 col-xs-5">
+                                    <div class="row">
+                                        <label for="id_delivery_apartment">{% trans 'Квартира' %}</label>
+                                    </div>
+                                </div>
+                                <div class="b-input__wr col-md-7 col-xs-5">
+                                    <div class="row">
+                                        <input type="text" name="delivery_apartment" id="id_delivery_apartment" class="b-input w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-error"><span></span></div>
+                    </div>
+
+                    <div class="b-data__line">
+                        <div class="b-label__wr col-md-4 col-xs-5">
+                            <div class="row"><label for="id_delivery_phone">{% trans 'Телефон' %}</label></div>
+                        </div>
+                        <div class="b-input__wr col-md-7 col-xs-6">
+                            <div class="row">
+                                <input type="text" name="delivery_phone" id="id_delivery_phone" class="b-input">
+                            </div>
+                        </div>
+                        <div class="field-error"><span></span></div>
+                    </div>
+
+                    <div class="b-data__line">
+                        <div class="b-label__wr col-md-4 col-xs-5">
+                            <div class="row">
+                                <label for="id_delivery_comment">{% trans 'Комментарий' %}</label>
+                            </div>
+                        </div>
+                        <div class="b-input__wr col-md-7 col-xs-6">
+                            <div class="row">
+                                <textarea name="delivery_comment" id="id_delivery_comment" class="b-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="field-error"><span></span></div>
+                    </div>
+                </div>
+
+                {# Выбор точки самовывоза #}
+{#                <div class="b-block__scr n-src__window_2" data-window="2">#}
+{#                    <div class="b-data__line n-adress__map">#}
+{##}
+{#                        <div class="b-data__wr">#}
+{#                            <input type="radio" name="delivery_takeout" id="id_delivery_takeout_1" class="b-form__radio" value="1" data-latitude="40.398417" data-longitude="49.832223" data-zoom="17" checked>#}
+{#                            <label for="id_delivery_takeout_1">#}
+{#                                A-Group Insurance Company г. Баку, Нобелевский пр-т. 15, 22-ый этаж#}
+{#                            </label>#}
+{#                        </div>#}
+{##}
+{#                        <div class="b-data__wr">#}
+{#                            <input type="radio" name="delivery_takeout" id="id_delivery_takeout_2" class="b-form__radio" value="2" data-latitude="40.379821" data-longitude="49.8788296" data-zoom="17">#}
+{#                            <label for="id_delivery_takeout_2">#}
+{#                                Amrah Sigorta г. Баку, Нобелевский пр-т. 15, 22-ый этаж#}
+{#                            </label>#}
+{#                        </div>#}
+{##}
+{#                        <div class="b-data__wr">#}
+{#                            <input type="radio" name="delivery_takeout" id="id_delivery_takeout_3" class="b-form__radio" value="3" data-latitude="40.379821" data-longitude="49.8788296" data-zoom="17">#}
+{#                            <label for="id_delivery_takeout_3">#}
+{#                                Ateshgah Sigorta (Азадлыг) г. Баку, Нобелевский пр-т. 15, 22-ый этаж#}
+{#                            </label>#}
+{#                        </div>#}
+{##}
+{#                        <div class="field-error"><span></span></div>#}
+{##}
+{#                    </div>#}
+{#                    <div id="map_list" class="b-points__map"></div>#}
+{#                </div>#}
+
+                {# Адрес электорнной почты для отправки #}
+{#                <div class="b-block__scr n-src__window_3" data-window="3">#}
+{#                    <div class="b-data__line n-delivery__email">#}
+{#                        <div class="b-label__wr col-md-4 col-xs-5">#}
+{#                            <div class="row">#}
+{#                                <label for="id_delivery_email">E-mail</label>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="b-input__wr col-md-7 col-xs-6">#}
+{#                            <div class="row">#}
+{#                                <input type="text" name="delivery_email" id="id_delivery_email" class="b-input">#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                        <div class="field-error"><span></span></div>#}
+{#                    </div>#}
+{#                </div>#}
+
+            </div>
+
+        </div>
+
+        {# Оплата #}
+        <div class="b-data__line clearfix">
+            <div class="b-data__wr">
+                <p class="b-title__sm">{% trans 'Оплата' %}</p>
+
+                <div class="row">
+                    <div class="b-data__wr col-xs-6">
+                        <input type="radio" name="payment_type" id="id_payment_type_cash" class="b-form__radio" value="cash" checked>
+                        <label for="id_payment_type_cash">{% trans 'Наличным курьеру' %}</label>
+                    </div>
+                    <div class="b-data__wr col-xs-6">
+                        <input type="radio" data-window="1" name="payment_type" id="id_payment_type_epay" class="b-form__radio" value="epay">
+                        <label for="id_payment_type_epay">{% trans 'Онлайн оплата' %}</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <div class="b-data__line clearfix"></div>
+
+    </div>
+
+    <div class="b-form__right clearfix">
+        <div class="b-right__info j-right__info-fixed">
+            {% block right_sideboard %}{% endblock %}
+            <button type="button" class="order button j-last__show j-next__click e-show">{% trans 'Завершить оформление' %}</button>
+        </div>
+    </div>
+
+</div>

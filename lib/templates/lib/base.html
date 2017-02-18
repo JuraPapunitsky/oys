@@ -1,0 +1,185 @@
+{% load i18n %}
+{% load lib_filters %}
+{% load lib_tags %}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block page_title %}SmartBPS{% endblock %}</title>
+    <link type="image/x-icon" rel="shortcut icon" href="{{ STATIC_URL }}lib/favicon.ico" />
+
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}lib/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}lib/bootstrap/css/bootstrap-theme.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}lib/bootstrap_datepicker/css/datepicker3.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}lib/select2/css/select2.min.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}lib/style.css"/>
+        <link rel="stylesheet" href="{{ STATIC_URL }}lib/spinners16/css/spinners-16.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}lib/spinners16/css/animation.css">
+        <!--[if IE 7]><link rel="stylesheet" href="{{ STATIC_URL }}lib/spinners16/css/spinners-16-ie7.css"><![endif]-->
+
+        <link rel="stylesheet" href="{{ STATIC_URL }}lib/intro_js/css/introjs.min.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}lib/intro_js/css/introjs-nassim.css">
+
+    {% endblock css %}
+
+    {% block javascript_header %}
+        <script type="text/javascript" src="{{ STATIC_URL }}lib/jquery/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL}}lib/i18next/i18next-1.7.7.min.js"></script>
+        <script type="text/javascript">
+            var language_code = '{{ LANGUAGE_CODE }}'
+            var static_url = '{{STATIC_URL}}'
+        </script>
+    {% endblock javascript_header %}
+</head>
+<body>
+
+{% block body %}
+
+{% block navigation %}
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">{% block navbar_brand %}SmartBPS{% endblock %}</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+
+
+            <ul class="nav navbar-nav">
+                {% block navigation_items %}
+                {% endblock %}
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                {% block navigation_right %}
+                    <li><a class='btn btn-link' onClick="introJs().start();">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </a></li>
+
+                    {% if user.is_authenticated %}
+                        <li class="dropdown" data-intro="Вход, выход и изменение языка">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                {{ user.get_short_name }} <b class="caret"></b>
+                            </a>
+                            {% block dropdown %}
+                                <ul class="dropdown-menu">
+                                    {% block navbar_user_dropdown %}
+                                    <li><a href="#" onClick="$('#modal_setlang').modal('show');">
+                                        {% trans 'Change language' %}
+                                    </a></li>
+                                    <li><a href="{% url 'lib:password_change' %}">
+                                        {% trans 'Change password' %}</a></li>
+                                    <li><a href="{% url 'lib:logout' %}">{% trans 'Logoff' %}</a></li>
+                                    {% endblock navbar_user_dropdown %}
+                                </ul>
+                            {% endblock %}
+                        </li>
+                    {% else %}
+                        <li><a class='btn btn-link' href="{% url 'lib:login' %}">{% trans 'Login' %}</a></li>
+                    {% endif %}
+                {% endblock navigation_right %}
+            </ul>
+        </div>
+    </nav>
+
+{% endblock navigation %}
+
+
+<div class="container container-full">
+
+    {% block breadcrumb %}{% endblock %}
+
+
+    {% block body_messages %}
+        {% if messages %}
+            <div id="site_messages">
+            {% for message in messages %}
+                <div class="alert alert-sm {{message.tags}}">{{message|safe}}</div>
+            {% endfor %}
+            </div>
+        {% endif %}
+    {% endblock %}
+
+
+    {% block body_content %}
+
+    {% endblock %}
+
+</div>
+
+{% endblock body %}
+
+{% block javascript %}
+
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/date.format.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/jquery/jquery.maskedinput.min.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/bootstrap_datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/bootstrap_datepicker/js/locales/bootstrap-datepicker.ru.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/select2/js/select2.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/select2/js/i18n/ru.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/intro_js/js/intro.min.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/script.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/utils.js"></script>
+{% endblock javascript %}
+
+{% block modals %}
+
+
+    <div id="modal_setlang" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">{% trans 'Change language' %}</h4>
+                </div>
+
+                <form action="{% url 'i18n:set_language' %}" method="post">
+
+
+                <div class="modal-body">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+
+                    <select name="language" class="form-control">
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                            {{ language.name_local }} ({{ language.code }})
+                        </option>
+                        {% endfor %}
+                    </select>
+
+                </div>
+
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="{% trans 'Change' %}" />
+                </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+{% endblock modals %}
+
+</body>
+</html>

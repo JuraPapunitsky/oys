@@ -1,0 +1,130 @@
+{% load i18n %}
+{% load static %}
+{% load staticfiles %}
+<div class="xs-ins-work container-fluid"></div>
+
+<div class="insurance-work container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="row">
+                <h1>
+                    {% trans 'Как работает автострахование?' %}
+                </h1><a href="#" class="order button j-layer__fix">{% trans 'Узнать подробнее' %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Контент всплывающего слоя Узнать подробнее #}
+<div class="layer-box-fix l-fix-auto">
+    <a href="#" class="layer-box-close"></a>
+
+    <table class="l-table l-table-main">
+        <tr class="l-tr l-row-top">
+            <td class="l-td">
+                <div class="l-title-bg"><p>{% trans 'Страхование автомобиля' %}</p></div>
+                <div class="l-title-sub"><p>{% trans 'Что можно застраховать?' %}</p></div>
+            </td>
+        </tr>
+        <tr class="l-tr">
+            <td class="l-td l-td-btm">
+                <div class="l-td-img"><img src="{% static "common/img/l-fix/ins-main-img.png" %}"></div>
+                <div class="l-text-viplata"><a href="#" class="j-ins__show">{% trans 'Когда производится выплата?' %}</a></div>
+                <a href="#" class="button order buy-now" onclick="layer_box_close(); calculator.start_calculator('vehicle')">
+                    {% trans 'Калькулятор' %}
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="l-ico-wrapp">
+
+        <div class="l-ico-item auto-ico__1 l-ico-top-left">
+            <img src="{% static "common/img/l-fix/auto-1.png" %}">
+            <p>{% trans 'Ответственность перед 3-ми лицами<br/>за причиненный ущерб' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__2  l-ico-center-left">
+            <img src="{% static "common/img/l-fix/auto-1.png" %}">
+            <p>{% trans 'Повреждения своего<br/>авто в случае ДТП' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__3 l-ico-center-left_2">
+            <img src="{% static "common/img/l-fix/auto-3.png" %}">
+            <p>{% trans 'Угон' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__4 l-ico-btm-left">
+            <img src="{% static "common/img/l-fix/auto-4.png" %}">
+            <p>{% trans 'Расходы на такси' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__5 l-ico-btm-right">
+            <img src="{% static "common/img/l-fix/auto-5.png" %}">
+            <p>{% trans 'Расходы на эвакуацию' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__6 l-ico-center-right_2">
+            <img src="{% static "common/img/l-fix/auto-6.png" %}">
+            <p>{% trans 'Техпомощь в дороге' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__7 l-ico-center-right">
+            <img src="{% static "common/img/l-fix/auto-7.png" %}">
+            <p>{% trans 'Здоровье пассажиров' %}</p>
+        </div>
+
+        <div class="l-ico-item auto-ico__8 l-ico-top-right">
+            <img src="{% static "common/img/l-fix/auto-8.png" %}">
+            <p>{% trans 'Расходы на<br/>юридическую помощь' %}</p>
+        </div>
+
+        <a href="#" class="button order buy-now visible-mob" onclick="layer_box_close(); calculator.start_calculator('vehicle')">
+            {% trans 'Калькулятор' %}
+        </a>
+
+    </div>
+
+    <div class="ins-v j-ins-v">
+        <table class="l-table">
+            <tr class="l-tr l-row-top">
+                <td class="l-td">
+                    <div class="l-title-bg"><p>{% trans 'Страхование автомобиля' %}</p></div>
+                    <div class="l-title-sub"><p>{% trans 'Когда производится выплата' %}</p></div>
+                    <div class="ins-form-select clearfix">
+                        <div class="clearfix b-rules__block b-company-0__block" style="display: block">
+                            <div class="row clearfix">
+                                <div class="col-sm-4 col-xs-12">
+                                    <p class="pdf-text-ico">
+                                        <a target="_blank" href="{% static "common/docs/icbari.pdf" %}">{% trans 'ОСАГО' %}<br/>PDF, 664 Kb</a>
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-4 col-xs-12">
+                                    <p class="pdf-text-ico">
+                                        <a target="_blank" href="{% static "common/docs/goydendusme_teklif.pdf" %}">{% trans 'Уверенный водитель' %}<br/>PDF, 475 Kb</a>
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-4 col-xs-12">
+                                    <p class="pdf-text-ico">
+                                        <a target="_blank" href="{% static "common/docs/sade_kasko.pdf" %}">{% trans 'Простое КАСКО' %}<br/>PDF, 315 Kb</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-text-viplata"><a href="#" class="j-ins__hide">{% trans 'Что можно застраховать?' %}</a></div>
+
+                    <a href="#" class="button order buy-now" onclick="layer_box_close(); calculator.start_calculator('vehicle')">
+                        {% trans 'Калькулятор' %}
+                    </a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,94 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="/insurance/">{% trans 'К списку страховых продуктов' %}</a>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_3.png">
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9">
+                            <p style="font-size: 24px; padding-top: 10px;">{% trans 'Скорая помощь' %}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{% trans 'Что страхует продукт?' %}</h3>
+                            <p>{% trans 'Ваше здоровье' %}</p>
+
+                            <h3>{% trans 'Срок договора' %}</h3>
+                            <p>{% trans 'Договор заключается на 12 месяцев' %}</p>
+
+                            <h3>{% trans 'Краткое описание страхового продукта' %}</h3>
+                            <p>{% trans 'Данная программа предусматривает возмещение расходов, связанных с получение скорой экстренной помощи' %}</p>
+
+                            <h3>{% trans 'Преимущества продукта' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Вызов скорой помощи (лимит 3 вызова)' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Лечение в стационаре (в т.ч. и хирургическое) одного неотложного заболевания (лимит на количество дней пребывания в стационаре - 21)' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Обеспечение медикаментами (во время оказания неотложной помощи и пребывания в стационаре)' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Неотложная стоматология' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Неотложная вакцинация' %}</span>
+                            </p>
+
+
+                            <h3>{% trans 'Важно знать' %}</h3>
+                            <p>{% trans 'Стоимость страхового продукта – 142 AZN.' %}</p>
+
+                            <h3>{% trans 'Мнение экспертов “Odlar Yurdu Sığorta Brokeri”' %}</h3>
+                            <blockquote>
+                              <p>{% trans 'Мы все боимся болеть. Ведь это всегда потеря времени, очереди в поликлиниках, постоянное беспокойство за неправильный диагноз или некачественное лечение. Чтобы избежать этих неприятностей эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам приобрести годовое страховое покрытие  «Скорая помощь».' %}</p>
+                              <footer>{% trans 'Команда “Odlar Yurdu Sığorta Brokeri”' %}</footer>
+                            </blockquote>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body_content %}

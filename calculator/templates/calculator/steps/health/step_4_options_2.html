@@ -1,0 +1,51 @@
+{% load i18n %}
+
+<div class="b-data__line clearfix b-sts_selection">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Франшиза' %}</p>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="deductible" id="id_deductible[0]" value="0"
+                       class="b-form__radio">
+                <label for="id_deductible[0]">{% trans 'Нет' %}</label>
+            </div>
+        </div>
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="deductible" id="id_deductible[1]" value="15"
+                       class="b-form__radio">
+                <label for="id_deductible[1]">15%</label>
+            </div>
+        </div>
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="deductible" id="id_deductible[2]" value="25" checked
+                       class="b-form__radio">
+                <label for="id_deductible[2]">25%</label>
+            </div>
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+<div class="b-data__line clearfix">
+    <div class="b-data__wr">
+        <input type="checkbox" name="vac" id="id_vac" class="b-form__input">
+        <label for="id_vac">{% trans 'Плановая вакцинация' %}</label>
+    </div>
+</div>
+
+<div class="b-data__line clearfix">
+    <div class="b-data__wr">
+        <input type="checkbox" name="massage" id="id_massage" class="b-form__input">
+        <label for="id_massage">{% trans 'Массаж' %}</label>
+    </div>
+</div>
+
+<div class="b-data__line clearfix">
+    <div class="b-data__wr">
+        <input type="checkbox" name="refund_vip" id="id_refund_vip" class="b-form__input">
+        <label for="id_refund_vip">{% trans 'VIP программа' %}</label>
+    </div>
+</div>

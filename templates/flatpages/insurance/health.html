@@ -1,0 +1,48 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-health-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-health-header">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страхование здоровья' %}</span>
+                    <h1>
+                        {% trans 'Сохраните самое ценное!' %}
+                    </h1>
+                    <p class="insurance-sub-title">
+                        - {% trans 'Страхование от несчастных случаев' %}<br>
+                        - {% trans 'Добровольное медицинское страхование для детей и взрослых' %}<br>
+                        - {% trans 'Накопительное страхование жизни' %}
+                    </p>
+                    <a href="#" class="order button" onclick="calculator.start_calculator('health')">
+                        {% trans 'Калькулятор' %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами покупки полиса #}
+{% include 'flatpages/includes/inner_policy_ordering_health.html' %}
+
+{# Блок "Как работает" #}
+{% include 'flatpages/includes/inner_insurance_details_health.html' %}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+{% include 'flatpages/includes/inner_policy_delivery_health.html' %}
+
+{% endblock body_content %}

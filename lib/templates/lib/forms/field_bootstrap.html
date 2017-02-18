@@ -1,0 +1,14 @@
+{% load lib_filters %}
+
+<div class="form-group {% if field.errors %}has-error{% endif %}">
+    <div class="col-sm-12">
+        {{field|to_bootstrap_widget}}
+        {% if field.errors %}
+            <span class="help-block">
+            {% for error in field_set.field.errors %}
+                {{ error|safe }}{% if error %}<br/>{% endif %}
+            {% endfor %}
+            </span>
+        {% endif %}
+    </div>
+</div>

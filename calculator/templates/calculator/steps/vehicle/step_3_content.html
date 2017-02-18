@@ -1,0 +1,61 @@
+{% load i18n %}
+<div>
+    <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+</div>
+<div class="b-step__title n-title__ico n-t-ico__car">
+    <h2>{% trans 'Страховые продукты' %}</h2>
+</div>
+<div class="b-insurance__row">
+
+    <div class="b-insurance__item">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p2.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p2.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+            <p class="b-insurance__price">{{ p2.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p2.id }}" data-product-title="{{ p2.title }}" data-product-price="{{ p2.price|floatformat:"2" }}">{% trans 'выбрать' %}</a>
+        </div>
+    </div>
+
+    {% if p11 %}
+    <div class="b-insurance__item n-ins__pad">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p11.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p11.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+            <p class="b-insurance__price">{{ p11.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p11.id }}" data-product-title="{{ p11.title }}" data-product-price="{{ p11.price|floatformat:"2" }}">{% trans 'выбрать' %}</a>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<div class="b-insurance__row">
+    {% if p12 %}
+    <div class="b-insurance__item">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p12.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p12.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+            <p class="b-insurance__price">{{ p12.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p12.id }}" data-product-title="{{ p12.title }}" data-product-price="{{ p12.price|floatformat:"2" }}">{% trans 'выбрать' %}</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<div id="product_preload_block">
+<div id="p2_preloaded" style="display: none"><table>{{ p2_preload|safe }}</table></div>
+<div id="p11_preloaded" style="display: none"><table>{{ p11_preload|safe }}</table></div>
+<div id="p12_preloaded" style="display: none"><table>{{ p12_preload|safe }}</table></div>
+</div>

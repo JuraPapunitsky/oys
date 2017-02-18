@@ -1,0 +1,13 @@
+{% load i18n %}
+<div class="b-form__block n-last__step n-form__step clearfix" id="step-7">
+    <div class="b-last__step col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <div id="step_7_pay_cash" class="hidden_container">
+            <h2>{% trans 'Поздравляем вас! Вы&nbsp;застрахованы!' %}</h2>
+            <p>{% trans 'В ближайшее время с Вами свяжется оператор для подтверждения адреса доставки' %}</p>
+        </div>
+        <div id="step_7_pay_online" class="hidden_container">
+            <h2>{% trans 'Остался последний шаг.' %}</h2>
+            {# Форма оплаты с кнопкой торчит в шаблоне calculator/templates/calculator/calculator_modal.html #}
+        </div>
+    </div>
+</div>

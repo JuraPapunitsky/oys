@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OYSB</title>
+
+
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/ui.customization.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/inputs.css">
+        <link rel="stylesheet" type="text/css" href="/static/common/css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/superslides.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/js/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/jquery.rollbar.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/jquery.jscrollpane.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/jquery.confirm.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/jClever.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/css/contacts-style.css">
+        <link rel="stylesheet" type="text/css" href="/static/common/css/style.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/style.css">
+
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/common/js/videojs/video-js.min.css">
+
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/calculator/css/calculator.css">
+        <link rel="stylesheet" type="text/css" href="http://oys.az/static/calculator/css/calculator-add.css">
+
+				<!-- NEW HTML START -->
+				<link rel="stylesheet" type="text/css" href="/static/sale/css/sale.css">
+				<!-- NEW HTML END -->
+    <script>
+        var current_path = '/insurance/auto/'
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter36790000 = new Ya.Metrika({
+                    id:36790000,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/36790000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+
+<header class="inner">
+    <nav class="navbar navbar-default navbar-fixed-top" id="top_nav" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+
+
+<div class="dropdown menu">
+    <a data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+       aria-expanded="false">
+    </a>
+
+    <div class="dropdown-menu" role="menu">
+        <p class="big">страхование </p>
+        <a href="http://oys.az/insurance/auto/" class="menu-border">Автомобиль
+            <img src="http://oys.az/static/common/img/menu-icon_03.png">
+        </a>
+        <a href="http://oys.az/insurance/property/" class="menu-border">Недвижимость
+            <img src="http://oys.az/static/common/img/menu-icon_06.png">
+        </a>
+        <a href="http://oys.az/insurance/health/" class="menu-border">Здоровье
+            <img src="http://oys.az/static/common/img/menu-icon_08.png">
+        </a>
+        <a href="http://oys.az/insurance/travel/">Путешествия
+            <img src="http://oys.az/static/common/img/menu-icon_10.png">
+        </a>
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+                <div id="logo" class="col-sm-2 col-md-4 col-xs-6">
+                    <a href="/" alt="OYSB">
+                        <img id="logo-img" class="logo-img-poz2" src="http://oys.az/static/common/img/logo1.png">
+                        <img id="logo-text" class="logo-text-poz2 hidden-xs" src="http://oys.az/static/common/img/logo2.png">
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-7 text-nowrap col-xs-3 pull-right head-r">
+
+                    <a><img src="http://oys.az/static/common/img/call-ico.png"></a>
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".callback">
+                        <span class="hidden-xs" style="font-size: 20px; color: #000; font-weight: normal">заказ звонка</span>
+                        <p class="hidden-xs text-nowrap phone-icon" style="font-size: 37px"> *0707</p>
+                    </a>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+            </div>
+            <div class="row visible-xs mob">
+                <div class="col-xs-12">
+                    <a href="/" alt="OYSB">
+                        <img class="logo-text-poz1" src="http://oys.az/static/common/img/logo2.png">
+                    </a>
+                </div>
+                <div class="col-xs-12">
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".callback">
+                        <span style="font-size: 18px; color: #50434e; font-weight: normal; padding-right: 30px">заказ звонка</span>
+                        <p class="text-nowrap phone-icon" style="color: #DE5D31">*0707</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- NEW HTML START -->
+
+<div class="scr2 sale-container">
+    <div class="container-fluid inner-container step-3">
+        <div class="row">
+            <div class="col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-lg-8 col-md-10 col-sm-10 col-xs-12">
+							<h1>ОСАГО Покупка Полиса</h1>
+							<p>"Odlar Yurdu Sığorta brokeri" не несет ответственность за информацию, введенную неправильно.</p>
+
+							<form method="post" action="/sale-step-3.html" class="clearfix j-clr-form" id="saleForm">
+								<div class="row">
+									<div class="col-md-offset-1 col-md-4 col-xs-6">
+										<div class="form-group">
+											<label>Регистрационный номер:</label>
+											<div class="data">90-mb-096</div>
+										</div>
+
+										<div class="form-group">
+											<label>Марка автомобиля:</label>
+											<div class="data">Ford</div>
+										</div>
+
+										<div class="form-group">
+											<label>Модель автомобиля:</label>
+											<div class="data">Focus</div>
+										</div>
+
+										<div class="form-group">
+											<label>Тип автомобиля:</label>
+											<div class="data">Легковые автомобили</div>
+										</div>
+
+										<div class="form-group">
+											<label>Объем двигателя:</label>
+											<div class="data">1 400</div>
+										</div>
+									</div>
+
+									<div class="col-md-offset-2 col-md-4 col-xs-6">
+										<div class="form-group">
+											<label>Тип страхователя:</label>
+											<div class="data">Физическое лицо</div>
+										</div>
+
+										<div class="form-group">
+											<label>Пин Код/ИНН/Другой ИД:</label>
+											<div class="data">A4451CQZ5S4</div>
+										</div>
+
+										<div class="form-group doc clearfix">
+											<label>Серия и номер удостоверения:</label>
+											<div class="data">0450 452269</div>
+										</div>
+
+										<div class="form-group">
+											<label>Периуд действия:</label>
+											<div class="data">с 15.02.2017г. по 15.02.2018г.</div>
+										</div>
+
+										<div class="form-group">
+											<label>Территория регистрации:</label>
+											<div class="data">Azərbaycan</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-offset-1 col-md-4 col-xs-6">
+										<div class="form-group">
+											<label>Телефон:</label>
+											<div class="data">+7 (929) 614 80 91</div>
+										</div>
+									</div>
+
+									<div class="col-md-offset-2 col-md-4 col-xs-6">
+										<div class="form-group">
+											<label>E-mail:</label>
+											<div class="data">test@gmail.com</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-offset-1 col-md-4 col-xs-6">
+										<div class="form-group">
+											<div class="checkbox-inline">
+												<label>
+													<input type="checkbox" name="license" value="1" data-validation="required">
+													Данные указаны верно
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-offset-2 col-md-4 col-xs-6">
+										<div class="form-group">
+											<label>ваша коммися:</label>
+											<div class="data">35.60 AZN</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-offset-1 col-md-4 col-xs-6">
+										<a href="/sale-step-2.html" class="order button">Редактировать</a>
+									</div>
+
+									<div class="col-md-offset-2 col-md-4 col-xs-6">
+										<button type="submit" class="order button">Оплатить</button>
+									</div>
+								</div>
+							</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NEW HTML END -->
+
+
+<footer class="page-footer">
+    <div class="container-fluid">
+        <div class="row footer-menu foot-1">
+            <div class="col-xs-1 "></div>
+            <div class="col-md-3 col-sm-4 col-xs-11">
+                <div class="foot-l">
+                    <h3>Страхование</h3>
+                    <ul>
+                        <li><a href="http://oys.az/insurance/"><p>Все страховые продукты</p></a></li>
+                        <li><a href="http://oys.az/insurance/auto/"><p>Страхование автомобиля</p></a></li>
+                        <li><a href="http://oys.az/insurance/property/"><p>Страхование недвижимости</p></a></li>
+                        <li><a href="http://oys.az/insurance/health/"><p>Страхование здоровья</p></a></li>
+                        <li><a href="http://oys.az/insurance/travel/"><p>Страхование путешествий</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-1 visible-xs"></div>
+            <div class="col-md-4 col-sm-4 col-xs-11">
+
+
+
+
+
+
+
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-md-3 col-sm-2  col-xs-11">
+                <div class="foot-r">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="http://oys.az/about/"><p>О компании</p></a></li>
+                        <li><a href="http://oys.az/partners/"><p>Партнеры</p></a></li>
+                        <li><a href="http://oys.az/faq/"><p>Вопросы и ответы</p></a></li>
+                        <li><a href="http://oys.az/contacts/"><p>Контакты</p></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-menu foot-2">
+            <div class="col-xs-1"></div>
+            <div class="col-sm-3 col-xs-11">
+                <div class="foot-l">
+                    <h3>Язык</h3>
+
+                    <div class="lang">
+
+                            <a
+                               href="http://oys.az/lib/set_lang/az/?back_url=/insurance/auto/">
+                                <p>&nbsp; AZ &nbsp;</p>
+                            </a>
+
+                                <p>&#8260;&nbsp;</p>
+
+
+                            <a
+                               href="http://oys.az/lib/set_lang/en/?back_url=/insurance/auto/">
+                                <p>&nbsp; EN &nbsp;</p>
+                            </a>
+
+                                <p>&#8260;&nbsp;</p>
+
+
+                            <a class="active"
+                               href="http://oys.az/lib/set_lang/ru/?back_url=/insurance/auto/">
+                                <p>&nbsp; RU &nbsp;</p>
+                            </a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 visible-sm visible-xs"></div>
+            <div class="col-sm-4 col-xs-10">
+                <div class="foot-c foot-center">
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".callback">
+                        <span class="text-nowrap" style="font-size: 37px">*0707</span>
+                    </a>
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".question_show_modal" class="button">
+                        Задайте вопрос
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-sm-2 col-xs-11">
+                <div class="foot-r">
+                    <h3>Контакты</h3>
+
+                    <p><a href="mailto:info@oys.az">info@oys.az</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-1"></div>
+            <div class="col-sm-6 col-xs-10">
+                <div class="list row">
+                    <div class="btn-group" role="toolbar" aria-label="...">
+                        <a href="https://www.facebook.com/oysaz"><img src="http://oys.az/static/common/img/icon_01.png"></a>
+                        <a href="#"><img src="http://oys.az/static/common/img/icon_03.png"></a>
+
+
+                        <a href="#"><img src="http://oys.az/static/common/img/icon_09.png"></a>
+                    </div>
+                </div>
+                <p class="pol">© 2015 «Odlar Yurdu Sığorta brokeri». Лицензия С № 080624 от 05 ноября 2014 года</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="modal fade callback login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="http://oys.az/static/common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">Обратный звонок</h4>
+            </div>
+
+<form class="cont label_left j-clr-form" id="j-callme__form" method='post' action="/call_me_handler/">
+    <input type='hidden' name='csrfmiddlewaretoken' value='2FdVl2X276rtmQrUMwndyERh3i8diC1K' />
+    <input type="hidden" name="next_url" value="/">
+
+    <div class="call-input-wr"><label>Имя</label><input type="text" name="name" data-validation="required"></div>
+    <div class="call-input-wr"><label>Телефон</label><input type="text" class="j-phone__input" name="phone" data-validation="required"></div>
+    <div class="call-input-wr"><label>Дата звонка</label><input class="j-date__input n-calendar" type="text" name="d_call" data-validation="required"></div>
+    <div class="time-call call-input-wr">
+        <label>Время звонка</label>
+
+        <div class="select-wr time-call-from-wr">
+            <span>с</span>
+            <select class="time-call-from" name="d_call_from" data-validation="required">
+                <option value="9:00">9:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+            </select>
+        </div>
+        <div class="select-wr time-call-to-wr">
+            <span>по</span>
+            <select class="time-call-to" name="d_call_to" data-validation="required">
+                <option value="9:00">9:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+            </select>
+        </div>
+    </div>
+    <div><label>Тема звонка</label>
+
+        <div class="select-wr subj-call" name="reason">
+            <select class="subj-call" name="reason" data-validation="required">
+                <option value="1">Купить страховку</option>
+                <option value="2">Обсудить условия</option>
+                <option value="3">Прочее</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <button class="btn_log btn disabled" id="callback_form_btn">
+            Позвоните мне
+        </button>
+    </div>
+</form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade question_modal question_show_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="sticker-window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="http://oys.az/static/common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">Обратная связь</h4>
+            </div>
+            <div class="cont">
+                <div class="left" role="tabpanel">
+
+                    <ul class="row" role="tablist">
+                        <li class="col-xs-6 active">
+                            <a href="#question" aria-controls="question" role="tab" data-toggle="tab">
+                                <p>Задать вопрос</p>
+                                <img class="q_down" src="http://oys.az/static/common/img/question/q_down.png">
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#complaint" aria-controls="complaint" role="tab" data-toggle="tab">
+                                <p>Пожаловаться</p>
+                                <img class="q_down" src="http://oys.az/static/common/img/question/q_down.png">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="question" role="tabpanel" class="tab-pane fade in active ">
+
+<form action="/ask_question/" class="j-clr-form" id="j-ask-question__form" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='2FdVl2X276rtmQrUMwndyERh3i8diC1K' />
+    <input type="hidden" name="next_url" value="/">
+
+    <div class="quest-wr quest-area"><label>Ваш вопрос*</label><textarea name="question" data-validation="required"></textarea></div>
+    <div class="quest-wr"><label>Фамилия</label><input type="text" name="last_name"></div>
+    <div class="quest-wr"><label>Имя*</label><input type="text" name="first_name" data-validation="required"></div>
+    <div class="quest-wr"><label>Отчество</label><input type="text" name="middle_name"></div>
+    <div class="quest-wr"><label>Мобильный телефон*</label><input class="phone j-phone__input" type="text" name="phone" data-validation="required"></div>
+    <div class="quest-wr"><label>Электронная почта*</label><input type="text" data-validation="email" name="email"></div>
+    <div class="quest-wr"><label>Связаться со мной</label>
+
+        <div class="quest-wr-block">
+            <div class="select-wr subj-back">
+                <select class="subj-back" name="response_type">
+                    <option value="mobile">По мобильному телефону</option>
+                    <option value="email">По электронной почте</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="quest-wr"><label>&nbsp;</label>
+        <button type="submit" class="q_button">отправить</button>
+    </div>
+</form>
+                        </div>
+                        <div id="complaint" role="tabpanel" class="tab-pane fade">
+
+<form action="/make_complaint/" class="j-clr-form" id="j-complaint__form" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='2FdVl2X276rtmQrUMwndyERh3i8diC1K' />
+    <input type="hidden" name="next_url" value="/">
+
+    <div class="quest-wr quest-area"><label>Жалоба*</label><textarea name="complaint" data-validation="required"></textarea></div>
+    <div class="quest-wr"><label>Фамилия</label><input type="text" name="last_name"></div>
+    <div class="quest-wr"><label>Имя*</label><input type="text" name="first_name" data-validation="required"></div>
+    <div class="quest-wr"><label>Отчество</label><input type="text" name="middle_name"></div>
+    <div class="quest-wr"><label>Мобильный телефон*</label><input class="phone j-phone__input" type="text" name="phone" data-validation="required"></div>
+    <div class="quest-wr"><label>Электронная почта*</label><input type="text" name="email" data-validation="email"></div>
+    <div class="quest-wr"><label>Связаться со мной</label>
+
+        <div class="quest-wr-block">
+            <div class="select-wr subj-back">
+                <select class="subj-back" name="response_type">
+                    <option value="mobile">По мобильному телефону</option>
+                    <option value="email">По электронной почте</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="quest-wr"><label>&nbsp;</label>
+        <button class="q_button">отправить</button>
+    </div>
+</form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="http://oys.az/static/common/img/qwe.png">
+
+                    <h3>Проверьте, возможно ваш вопрос уже задавали ранее.</h3>
+
+                    <div>
+                        <img src="http://oys.az/static/common/img/faq_arr.png" class="arrow_ri">
+                        <ul>
+                            <li>
+                                <a href="#class1" data-target="#class1" class="faq_button">
+                                    Что такое франшиза и как она влияет на страховую плату?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class2" data-target="#class2" class="faq_button">
+                                    Могу ли я застраховать автомобиль, которым пользуюсь на основании доверенности?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class3" data-target="#class3" class="faq_button">
+                                    На какой срок можно оформить полис каско, ОСАГО?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class4" data-target="#class4" class="faq_button">
+                                    Надо ли страховать своё имущество и недвижимость, если квартира находится в ипотеке и, соответственно, застрахована по программе ипотечного страхования?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class5" data-target="#class5" class="faq_button">
+                                    Возможно ли внести изменения в полис, если я выйду замуж/женюсь/разведусь?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#class6" data-target="#class6" class="faq_button">
+                                    Подходит ли полис TRAVEL для получения визы в страны Шенген?
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="all_quest" href="http://oys.az/faq/">Все вопросы и ответы</a>
+                </div>
+
+                <div class="faq" id="class1">
+                    <a class="close"><img src="http://oys.az/static/common/img/ex.png"></a>
+                    <h2>Что такое франшиза и как она влияет на страховую плату?</h2>
+                    <img class="imag" src="http://oys.az/static/common/img/faq_border.png">
+                    <p>Франшиза – это часть причиненного в результате страхового случая ущерба, которая не обеспечивается страхованием и оплачивается страхователем. Вы часто сталкиваетесь с мелкими ущербами, с которыми можете разбираться самостоятельно, без обращения к страховщику. Для таких случаев в договоре страхования предусмотрена франшиза. Страховщик оплачивает сумму причиненного в результате страхового случая ущерба, за вычетом франшизы</p>
+                </div>
+
+                <div class="faq" id="class2">
+                    <a class="close"><img src="http://oys.az/static/common/img/ex.png"></a>
+                    <h2>Могу ли я застраховать автомобиль, которым пользуюсь на основании доверенности?</h2>
+                    <img class="imag" src="http://oys.az/static/common/img/faq_border.png">
+                    <p>Да, Вы можете застраховать автомобиль, которым пользуетесь на основании доверенности</p>
+                </div>
+
+                <div class="faq" id="class3">
+                    <a class="close"><img src="http://oys.az/static/common/img/ex.png"></a>
+                    <h2>На какой срок можно оформить полис каско, ОСАГО?</h2>
+                    <img class="imag" src="http://oys.az/static/common/img/faq_border.png">
+                    <p>Полис Каско оформляется на срок от 1 года. Срок страхования по полису ОСАГО 1 год</p>
+                </div>
+
+                <div class="faq" id="class4">
+                    <a class="close"><img src="http://oys.az/static/common/img/ex.png"></a>
+                    <h2>Надо ли страховать своё имущество и недвижимость, если квартира находится в ипотеке и, соответственно, застрахована по программе ипотечного страхования?</h2>
+                    <img class="imag" src="http://oys.az/static/common/img/faq_border.png">
+                    <p>Ипотечное страхование по требованию банков подразумевает страхование только конструктивных элементов квартиры, т.е. защиту от тотального повреждения или разрушения несущих конструкций. При этом ваш ремонт, вся внутренняя отделка квартиры и движимое имущество остаются незащищенными. По программе добровольного страхования имущества вы можете застраховать отделку квартиры и движимое имущество, а также ответственность перед соседями</p>
+                </div>
+
+                <div class="faq" id="class5">
+                    <a class="close"><img src="http://oys.az/static/common/img/ex.png"></a>
+                    <h2>Возможно ли внести изменения в полис, если я выйду замуж/женюсь/разведусь?</h2>
+                    <img class="imag" src="http://oys.az/static/common/img/faq_border.png">
+                    <p>Конечно, в любое время вы можете внести изменения в договор, позвонив нам в контактный центр по телефону *0707, либо через личный кабинет на нашем сайте</p>
+                </div>
+
+                <div class="faq" id="class6">
+                    <a class="close"><img src="http://oys.az/static/common/img/ex.png"></a>
+                    <h2>Подходит ли полис TRAVEL для получения визы в страны Шенген?</h2>
+                    <img class="imag" src="http://oys.az/static/common/img/faq_border.png">
+                    <p>Полис TRAVEL соответствует всем необходимым требованиям для получения визы в страны Шенгенского соглашения. Некоторые страны предъявляют особые требования к полису страхования. Все они учитываются нашей системой онлайн-оформления</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lang-sticker hidden-xs">
+    <ul>
+
+            <li >
+                <a href="http://oys.az/lib/set_lang/az/?back_url=/insurance/auto/">az</a>
+            </li>
+
+            <li >
+                <a href="http://oys.az/lib/set_lang/en/?back_url=/insurance/auto/">en</a>
+            </li>
+
+            <li class="active">
+                <a href="http://oys.az/lib/set_lang/ru/?back_url=/insurance/auto/">ru</a>
+            </li>
+
+    </ul>
+</div>
+
+
+
+
+    <script src="http://oys.az/static/common/js/jquery-1.11.2.min.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.mousewheel.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.maskedinput.min.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.rollbar.min.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.jscrollpane.min.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.superslides.min.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.confirm.js"></script>
+    <script src="http://oys.az/static/common/js/jquery-ui.min.js"></script>
+    <script src="http://oys.az/static/common/js/jClever.min.js"></script>
+    <script src="http://oys.az/static/common/js/md5.js"></script>
+    <script src="http://oys.az/static/common/js/script.js"></script>
+    <script src="http://oys.az/static/common/js/bootstrap.min.js"></script>
+    <script src="http://oys.az/static/common/js/slick/slick.min.js"></script>
+    <script src="http://oys.az/static/common/js/jquery.x-tools.js"></script>
+    <script src="http://oys.az/static/common/js/underscore-min.js"></script>
+
+
+    <script type="text/javascript">
+        var currLng = 'ru';
+        var requestGet = {
+
+        };
+    </script>
+
+    <script src="http://oys.az/static/common/js/moment.min.js"></script>
+    <script src="http://oys.az/static/common/js/moment-range.min.js"></script>
+    <script src="http://oys.az/static/common/js/js.cookie.js"></script>
+    <script src="http://oys.az/static/common/js/videojs/video.js"></script>
+    <script>videojs.options.flash.swf = "/static/common/js/videojs/video-js.swf"</script>
+
+    <script src="http://oys.az/static/common/js/i18next-1.9.0.min.js"></script>
+    <script src="http://oys.az/static/common/js/form-validator/jquery.form-validator.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9OW6Sl5MPFzgiRLjA7lujc4wpRj5Qgws&amp;sensor=false"></script>
+
+    <script src="http://oys.az/static/calculator/js/workflow.js"></script>
+    <script src="http://oys.az/static/calculator/js/calculator.js"></script>
+    <script src="http://oys.az/static/calculator/js/vehicle_calculator.js"></script>
+    <script src="http://oys.az/static/calculator/js/property_calculator.js"></script>
+    <script src="http://oys.az/static/calculator/js/travel_calculator.js"></script>
+    <script src="http://oys.az/static/calculator/js/health_calculator.js"></script>
+    <script src="http://oys.az/static/calculator/js/online_payment.js"></script>
+
+    <script src="http://oys.az/static/lib/script.js"></script>
+
+		<!-- NEW HTML START -->
+		<script src="/static/sale/js/sale.js"></script>
+		<script type="text/javascript">
+			window.saleInsurancePremiumVals
+			window.saleInsurancePremiumVals = {
+				/* car[make] */
+				1: {
+					/* car[model] */
+					1: {title: "Focus", /* car[type] */ type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Mondeo", /* car[type] */ type: {1: "Легковые автомобили", 5: "Прицепы и полуприцепы"}, more: {1: "#carEngine"}}
+				},
+				2: {
+					1: {title: "Sportage", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Sorento", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					3: {title: "Rio", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}}
+				},
+				3: {
+					1: {title: "CL203", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Transporter", type: {3: "Автобус и микроавтобусы"}, more: {3: "#carSize"}}
+				},
+				4: {
+					1: {title: "8C Spider", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Giulietta", type: {4: "Грузовые автомобили"}, more: {4: "#carWeight"}}
+				}
+			};
+		</script>
+		</script>
+		<!-- NEW HTML END -->
+
+    <script src="http://oys.az/static/common/script.js"></script>
+    <script src="http://oys.az/static/common/utils.js"></script>
+    <script src="http://oys.az/static/account/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load static %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OYSB</title>
+
+    {% block css %}
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/ui.customization.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/inputs.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/fonts.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/bootstrap.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/bootstrap-theme.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/superslides.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/js/slick/slick.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/jquery.rollbar.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/jquery.jscrollpane.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/jquery.confirm.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/jClever.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/contacts-style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/css/style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "common/style.css" %}">
+
+        <link rel="stylesheet" type="text/css" href="{% static "common/js/videojs/video-js.min.css" %}">
+
+        <link rel="stylesheet" type="text/css" href="{% static "calculator/css/calculator.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "calculator/css/calculator-add.css" %}">
+        <!-- NEW HTML START -->
+				<link rel="stylesheet" type="text/css" href="{% static "sale/css/sale.css" %}">
+				<!-- NEW HTML END -->
+    {% endblock css %}
+
+    <script>
+        var current_path = '{{request.path}}'
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter36790000 = new Ya.Metrika({
+                    id:36790000,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/36790000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+{% if messages %}
+<div id="confirmOverlay" style="">
+    <div id="confirmBox">
+        <p class="confirmTitle">{% trans 'Внимание' %}</p>
+        <a href="" class="confirmClose"></a>
+        <p>
+            {% for message in messages %}{{ message|safe }}{% if not forloop.last %}<br/>{% endif %}{% endfor %}
+        </p>
+        <div id="confirmButtons" class="clearfix">
+            <a href="#" class="button order confirm-btn confirm-yes" onclick="$(this).parents('#confirmOverlay').remove()">OK</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{# Панель навигации #}
+{% block header %}
+    {% include 'common/includes/base_header.html' %}
+{% endblock header %}
+
+
+{# Контент должен быть тут #}
+{% block body_content %}{% endblock %}
+
+
+{# Подвал #}
+<footer class="page-footer">
+    <div class="container-fluid">
+        <div class="row footer-menu foot-1">
+            <div class="col-xs-1 "></div>
+            <div class="col-md-3 col-sm-4 col-xs-11">
+                <div class="foot-l">
+                    <h3>{% trans 'Страхование' %}</h3>
+                    <ul>
+                        <li><a href="/insurance/"><p>{% trans 'Все страховые продукты' %}</p></a></li>
+                        <li><a href="/insurance/auto/"><p>{% trans 'Страхование автомобиля' %}</p></a></li>
+                        <li><a href="/insurance/property/"><p>{% trans 'Страхование недвижимости' %}</p></a></li>
+                        <li><a href="/insurance/health/"><p>{% trans 'Страхование здоровья' %}</p></a></li>
+                        <li><a href="/insurance/travel/"><p>{% trans 'Страхование путешествий' %}</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-1 visible-xs"></div>
+            <div class="col-md-4 col-sm-4 col-xs-11">
+{#                <div class="foot-c">#}
+{#                    <h3>{% trans 'Банковские услуги' %}</h3>#}
+{#                    <ul>#}
+{#                        <li><a href="#"><p>{% trans 'Кредитование для физических лиц' %}</p></a></li>#}
+{#                        <li><a href="#"><p>{% trans 'Вклады' %}</p></a></li>#}
+{#                    </ul>#}
+{#                </div>#}
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-md-3 col-sm-2  col-xs-11">
+                <div class="foot-r">
+                    <h3>{% trans 'Компания' %}</h3>
+                    <ul>
+                        <li><a href="/about/"><p>{% trans 'О компании' %}</p></a></li>
+                        <li><a href="/partners/"><p>{% trans 'Партнеры' %}</p></a></li>
+                        <li><a href="/faq/"><p>{% trans 'Вопросы и ответы' %}</p></a></li>
+                        <li><a href="/contacts/"><p>{% trans 'Контакты' %}</p></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-menu foot-2">
+            <div class="col-xs-1"></div>
+            <div class="col-sm-3 col-xs-11">
+                <div class="foot-l">
+                    <h3>{% trans 'Язык' %}</h3>
+
+                    <div class="lang">
+                        {% for lang_code, lang_name in LANGUAGES %}
+                            <a {% if lang_code == LANGUAGE_CODE %}class="active"{% endif %}
+                               href="{% url 'lib:set_lang' code=lang_code %}?back_url={{request.path}}">
+                                <p>&nbsp; {{lang_code|upper}} &nbsp;</p>
+                            </a>
+                            {% if not forloop.last %}
+                                <p>&#8260;&nbsp;</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 visible-sm visible-xs"></div>
+            <div class="col-sm-4 col-xs-10">
+                <div class="foot-c foot-center">
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".callback">
+                        <span class="text-nowrap" style="font-size: 37px">*0707</span>
+                    </a>
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".question_show_modal" class="button">
+                        {% trans 'Задайте вопрос' %}
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-sm-2 col-xs-11">
+                <div class="foot-r">
+                    <h3>{% trans 'Контакты' %}</h3>
+
+                    <p><a href="mailto:info@oys.az">info@oys.az</a></p>
+{#                    <p>{% trans 'AZ1025 Баку,<br/>Ахмед Раджабли 31/5, Aztex Plaza<br/>Азербайджан' %}</p>#}
+                </div>
+            </div>
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-1"></div>
+            <div class="col-sm-6 col-xs-10">
+                <div class="list row">
+                    <div class="btn-group" role="toolbar" aria-label="...">
+                        <a href="https://www.facebook.com/oysaz"><img src="{% static "common/img/icon_01.png" %}"></a>
+                        <a href="#"><img src="{% static "common/img/icon_03.png" %}"></a>
+                        {# <a href="#"><img src="{{ STATIC_URL }}common/img/icon_05.png"></a> #}
+                        {# <a href="#"><img src="{{ STATIC_URL }}common/img/icon_07.png"></a>#}
+                        <a href="#"><img src="{% static "common/img/icon_09.png" %}"></a>
+                    </div>
+                </div>
+                <p class="pol">© 2015 «Odlar Yurdu Sığorta brokeri». {% trans 'Лицензия С № 080624 от 05 ноября 2014 года' %}</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{# Фиксированная панель (боковая панель, с иконками для вызова модалок) #}
+{#{% include 'common/includes/base_modal_icons.html' %}#}
+
+{# Модальные окна #}
+{# Чат #}
+{#{% include 'common/modals/chat.html' %}#}
+
+{# Мои расчеты #}
+{#{% include 'common/modals/calc.html' %}#}
+
+{# Feed #}
+{#{% include 'common/modals/feed.html' %}#}
+
+
+{# Обратный звонок #}
+{% include 'common/modals/callback.html' %}
+
+{# Задать вопрос (модальное окно) #}
+{% include 'common/modals/question.html' %}
+
+{# Модальное окно калькулятора (!!! не забудь стили и скрипты раскомментить) #}
+{% include 'calculator/calculator_modal.html' %}
+
+{# Вход #}
+{#{% include 'common/modals/login.html' %}#}
+
+{# Маленькая всплывашка с уникальным банковским предложением#}
+{#{% include 'common/modals/bank_offer.html' %}#}
+
+{# Выор языка #}
+{% include 'common/modals/lang.html' %}
+
+{% block js %}
+    <script src="{% static "common/js/jquery-1.11.2.min.js" %}"></script>
+    <script src="{% static "common/js/jquery.mousewheel.js" %}"></script>
+    <script src="{% static "common/js/jquery.maskedinput.min.js" %}"></script>
+    <script src="{% static "common/js/jquery.rollbar.min.js" %}"></script>
+    <script src="{% static "common/js/jquery.jscrollpane.min.js" %}"></script>
+    <script src="{% static "common/js/jquery.superslides.min.js" %}"></script>
+    <script src="{% static "common/js/jquery.confirm.js" %}"></script>
+    <script src="{% static "common/js/jquery-ui.min.js" %}"></script>
+    <script src="{% static "common/js/jClever.min.js" %}"></script>
+    <script src="{% static "common/js/md5.js" %}"></script>
+    <script src="{% static "common/js/script.js" %}"></script>
+    <script src="{% static "common/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "common/js/slick/slick.min.js" %}"></script>
+    <script src="{% static "common/js/jquery.x-tools.js" %}"></script>
+    <script src="{% static "common/js/underscore-min.js" %}"></script>
+
+
+    <script type="text/javascript">
+        var currLng = '{{ LANGUAGE_CODE }}';
+        var requestGet = {
+            {% for k, v in request.GET.items %}{{ k }}: '{{ v }}'{% endfor %}
+        };
+    </script>
+
+    <script src="{% static "common/js/moment.min.js" %}"></script>
+    <script src="{% static "common/js/moment-range.min.js" %}"></script>
+    <script src="{% static "common/js/js.cookie.js" %}"></script>
+    <script src="{% static "common/js/videojs/video.js" %}"></script>
+    <script>videojs.options.flash.swf = "{% static "common/js/videojs/video-js.swf" %}"</script>
+
+    <script src="{% static "common/js/i18next-1.9.0.min.js" %}"></script>
+    <script src="{% static "common/js/form-validator/jquery.form-validator.min.js" %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9OW6Sl5MPFzgiRLjA7lujc4wpRj5Qgws&amp;sensor=false"></script>
+
+    <script src="{% static "calculator/js/workflow.js" %}"></script>
+    <script src="{% static "calculator/js/calculator.js" %}"></script>
+    <script src="{% static "calculator/js/vehicle_calculator.js" %}"></script>
+    <script src="{% static "calculator/js/property_calculator.js" %}"></script>
+    <script src="{% static "calculator/js/travel_calculator.js" %}"></script>
+    <script src="{% static "calculator/js/health_calculator.js" %}"></script>
+    <script src="{% static "calculator/js/online_payment.js" %}"></script>
+
+    <script src="{% static "lib/script.js" %}"></script>
+
+    <script src="{% static "common/script.js" %}"></script>
+    <script src="{% static "common/utils.js" %}"></script>
+    <script src="{% static "account/script.js" %}"></script>
+    <script src="{% static "sale/js/sale.js" %}"></script>
+
+
+
+
+{% endblock %}
+{% block sale_js %}
+
+    {% endblock %}
+<div class="splash-box-fix" style="background-color: rgba(0, 0, 0, 0.85);">
+    <a href="#" class="splash-box-close"></a>
+    <div class="splash-video-container"></div>
+</div>
+<div class="compare-box-fix">
+    <a href="#" class="compare-box-close"></a>
+    <div class="splash-compare-container"></div>
+</div>
+</body>
+</html>

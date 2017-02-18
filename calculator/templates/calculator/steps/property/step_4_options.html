@@ -1,0 +1,40 @@
+{% load i18n %}
+
+{# Основной продукт ОСН - ничего нет в основных опциях #}
+<div class="b-data__line clearfix">
+    <div class="b-data__wr j-block__scr clearfix">
+        <p class="b-title__sm">{% trans 'Страховая сумма' %}</p>
+
+        <div class="b-data__wr col-sm-12">
+            <div class="row">
+                <div style="height:20px"></div>
+                <div class="b-style__slider b-s_insurance_2__slider">
+                    <input type="text" name="s_insurance_2" value="">
+
+                    <div class="b-slider"></div>
+                    <span class="b-price__from"></span>
+                    <span class="b-price__to"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b-data__line clearfix">
+    <div class="b-data__wr j-block__scr clearfix">
+        <p class="b-title__sm">{% trans 'Франшиза' %}</p>
+
+        <div class="b-data__wr col-sm-12">
+            <div class="row">
+                <div style="height:20px"></div>
+                <div class="b-style__slider b-franchise_2__slider">
+                    <input type="text" name="franchise_2" value="">
+
+                    <div class="b-slider"></div>
+                    <span class="b-price__from"></span>
+                    <span class="b-price__to"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

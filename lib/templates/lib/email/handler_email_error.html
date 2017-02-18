@@ -1,0 +1,52 @@
+{% load lib_tags %}
+
+<pre>{{message}}</pre>
+
+<h4>Основное</h4>
+{{level}} in {{logger}} <br>
+{{pathname}}:{{lineno}} {{function}}() <br>
+
+<pre>
+    {{exception}}
+</pre>
+
+{% if data %}
+    <h4>Дополнительные данные</h4>
+    <table>
+        {% for k, v in data.items %}
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+
+{% if data %}
+    <h4>Запрос</h4>
+    <table>
+        <tr>
+            <td>URL</td>
+            <td>
+                [{{request.method}}]
+                <a href="{% site_url %}{{request.url}}">{{request.url}}</a>
+            </td>
+        </tr>
+        <tr>
+            <td>GET параметры</td>
+            <td>{{request.get_args}}</td>
+        </tr>
+        <tr>
+            <td nowrap>POST параметры</td>
+            <td>{{request.post_args}}</td>
+        </tr>
+        {% if request.user_title %}
+            <tr>
+                <td nowrap>Оператор</td>
+                <td>
+                    <a href="mailto:{{request.user_email}}">{{request.user_title}}</a>
+                </td>
+            </tr>
+        {% endif %}
+    </table>
+{% endif %}

@@ -1,0 +1,158 @@
+{% load i18n %}
+
+{% if product == '2' %}
+    {# Основной продукт ОСАГО - ничего нет в основных опциях #}
+{% elif product == '11' and auto_type == '4' %}
+    {# Основной продука Уверенный водитель #}
+    {% include 'calculator/steps/vehicle/step_4_options_11.html' %}
+{% elif product == '12' and auto_type == '4' %}
+    {# Основной продукт Простое КАСКО #}
+    {% include 'calculator/steps/vehicle/step_4_options_12.html' %}
+{% endif %}
+
+{% if auto_type == '4' %}
+<div class="b-line__separator table-separator"></div>
+
+<a href="#" class="b-more__options-link j-more__options-link">{% trans 'Дополнительные страховые продукты' %}</a>
+
+<div class="b-more__options clearfix">
+
+    {# Опции для ОСАГО компании Атешгях #}
+    <div id="ateshgah-options" style="display:block">
+
+        <div class="b-data__line clearfix">
+            <div class="b-data__wr">
+                <input type="checkbox" name="ateshgah_icbariplus" id="id_ateshgah_icbariplus" class="b-form__input" data-price="19">
+                <label for="id_ateshgah_icbariplus">{% trans 'ОСАГО+' %}</label>
+                <span class="small" style="color: #de5d31">({% trans 'только с ОСАГО Atəşgah Sığorta' %})</span>
+
+                <div class="b-qw__block">
+                    <a href="#" class="b-qw__link j-qw__link"></a>
+                    <div class="b-aw__info">
+                        <p>{% trans 'ОСАГО+' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-data__line clearfix">
+            <div class="b-data__wr">
+                <input type="checkbox" name="ateshgah_superkasko" id="id_ateshgah_superkasko" class="b-form__input" data-price="50">
+                <label for="id_ateshgah_superkasko">{% trans 'Супер КАСКО' %}</label>
+                <span class="small" style="color: #de5d31">({% trans 'только с ОСАГО Atəşgah Sığorta' %})</span>
+
+                <div class="b-qw__block">
+                    <a href="#" class="b-qw__link j-qw__link"></a>
+                    <div class="b-aw__info">
+                        <p>{% trans 'Супер КАСКО' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-data__line clearfix">
+            <div class="b-data__wr">
+                <input type="checkbox" name="ateshgah_beshlik" id="id_ateshgah_beshlik" class="b-form__input" data-price="5">
+                <label for="id_ateshgah_beshlik">{% trans 'Пятерочка' %}</label>
+                <span class="small" style="color: #de5d31">({% trans 'только с ОСАГО Atəşgah Sığorta' %})</span>
+
+                <div class="b-qw__block">
+                    <a href="#" class="b-qw__link j-qw__link"></a>
+                    <div class="b-aw__info">
+                        <p>{% trans 'Пятерочка' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% if product == '2' %}
+    {# Основной продукт ОСАГО - ничего нет в основных опциях #}
+
+    {# Опции продукта Уверенный водитель #}
+    <div class="b-data__line clearfix">
+        <div class="b-data__wr">
+            <input type="checkbox" name="p11_selected" id="id_product_11" class="b-form__input">
+            <label for="id_product_11">{% trans 'Уверенный водитель' %}</label>
+
+            <div class="b-qw__block">
+                <a href="#" class="b-qw__link j-qw__link"></a>
+                <div class="b-aw__info">
+                    <p>{% trans 'Полноценное страхование вашего автомобиля от ущерба, гибели, угон и противоправных действий 3х лиц. Страховая выплата только в случае вашей невиновности.' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p11_selected__scr b-block__scr">
+        {% include 'calculator/steps/vehicle/step_4_options_11.html' %}
+    </div>
+
+    {# Опции продукта Простое КАСКО #}
+    <div class="b-data__line clearfix">
+        <div class="b-data__wr">
+            <input type="checkbox" name="p12_selected" id="id_product_12" class="b-form__input">
+            <label for="id_product_12">{% trans 'Простое КАСКО' %}</label>
+
+            <div class="b-qw__block">
+                <a href="#" class="b-qw__link j-qw__link"></a>
+                <div class="b-aw__info">
+                    <p>{% trans 'Самое доступное каско с возможностью застраховать Ваш автомобиль от ущерба на сумму до 5000 AZN' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p12_selected__scr b-block__scr">
+        {% include 'calculator/steps/vehicle/step_4_options_12.html' %}
+    </div>
+
+{% elif product == '11' %}
+    {# Основной продука Уверенный водитель #}
+    {% include 'calculator/steps/vehicle/step_4_options_2.html' %}
+
+    {# Опции продукта Простое КАСКО #}
+    <div class="b-data__line clearfix">
+        <div class="b-data__wr">
+            <input type="checkbox" name="p12_selected" id="id_product_12" class="b-form__input">
+            <label for="id_product_12">{% trans 'Простое КАСКО' %}</label>
+
+            <div class="b-qw__block">
+                <a href="#" class="b-qw__link j-qw__link"></a>
+                <div class="b-aw__info">
+                    <p>{% trans 'Самое доступное каско с возможностью застраховать Ваш автомобиль от ущерба на сумму до 5000 AZN' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p12_selected__scr b-block__scr">
+        {% include 'calculator/steps/vehicle/step_4_options_12.html' %}
+    </div>
+
+{% elif product == '12' %}
+    {# Основной продукт Простое КАСКО #}
+    {% include 'calculator/steps/vehicle/step_4_options_2.html' %}
+
+    {# Опции продукта Уверенный водитель #}
+    <div class="b-data__line clearfix">
+        <div class="b-data__wr">
+            <input type="checkbox" name="p11_selected" id="id_product_11" class="b-form__input">
+            <label for="id_product_11">{% trans 'Уверенный водитель' %}</label>
+
+            <div class="b-qw__block">
+                <a href="#" class="b-qw__link j-qw__link"></a>
+                <div class="b-aw__info">
+                    <p>{% trans 'Полноценное страхование вашего автомобиля от ущерба, гибели, угон и противоправных действий 3х лиц. Страховая выплата только в случае вашей невиновности.' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p11_selected__scr b-block__scr">
+        {% include 'calculator/steps/vehicle/step_4_options_11.html' %}
+    </div>
+{% endif %}
+</div>
+{% endif %}

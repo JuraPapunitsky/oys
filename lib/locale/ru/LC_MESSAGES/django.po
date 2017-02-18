@@ -1,0 +1,608 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-04 22:45+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin.py:19
+msgid "Personal info"
+msgstr "Персональная информация"
+
+#: admin.py:20
+msgid "Permissions"
+msgstr "Разрешения"
+
+#: admin.py:22
+msgid "Important dates"
+msgstr "Важные даты"
+
+#: forms.py:32
+msgid "Username"
+msgstr "Логин"
+
+#: forms.py:33
+msgid "Password"
+msgstr "Пароль"
+
+#: forms.py:53
+msgid "Recipients"
+msgstr "Получатели"
+
+#: forms.py:57
+msgid "Theme"
+msgstr "Тема"
+
+#: forms.py:58
+msgid "Message"
+msgstr "Сообщение"
+
+#: models.py:70
+msgid "Enter a valid username."
+msgstr "Введите правильный логин"
+
+#: models.py:73
+msgid "last name"
+msgstr "Фамилия"
+
+#: models.py:74
+msgid "first name"
+msgstr "Имя"
+
+#: models.py:75
+msgid "middle name"
+msgstr "Отчество"
+
+#: models.py:83
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: templates/base.html:57 templates/base.html.py:153
+msgid "Change language"
+msgstr "Изменить язык"
+
+#: templates/base.html:58 templates/password_change.html:6
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: templates/base.html:59
+msgid "Logoff"
+msgstr "Выйти"
+
+#: templates/base.html:63 templates/login.html:5 templates/login.html.py:13
+msgid "Login"
+msgstr "Войти"
+
+#: templates/base.html:101
+msgid "User messages"
+msgstr "Пользовательские сообщения"
+
+#: templates/base.html:107
+msgid "Inbox"
+msgstr "Входящие"
+
+#: templates/base.html:109
+msgid "Sended"
+msgstr "Отправленные"
+
+#: templates/base.html:110
+msgid "Create"
+msgstr "Создать"
+
+#: templates/base.html:119
+msgid "To archive"
+msgstr "В архив"
+
+#: templates/base.html:121
+msgid "Show archive"
+msgstr "Показать архив"
+
+#: templates/base.html:136
+msgid "Send"
+msgstr "Отправить"
+
+#: templates/base.html:175 templates/password_change.html:14
+msgid "Change"
+msgstr "Изменить"
+
+#: templates/home.html:21
+msgid "Reports"
+msgstr "Отчеты"
+
+#: templates/home.html:24
+msgid "Tasks"
+msgstr "Задачи"
+
+#: templates/home.html:27
+msgid "Docflow"
+msgstr "Документооборот"
+
+#: templates/home.html:30
+msgid "Mailer"
+msgstr "Почта"
+
+#: templates/home.html:33
+msgid "WIKI"
+msgstr "Статьи"
+
+#: templates/home.html:36
+msgid "Admin"
+msgstr "Управление"
+
+#: templates/login.html:14
+msgid "Cancel"
+msgstr "Отмена"
+
+#: templates/login.html:15
+msgid "Forgot your password"
+msgstr "Забыли пароль"
+
+#: templates/filter/paginator.html:13
+msgid "Page"
+msgstr "Страница"
+
+#: templates/filter/paginator.html:13
+msgid "of"
+msgstr "из"
+
+msgid "Documents"
+msgstr "Документы"
+
+msgid "Employees"
+msgstr "Сотрудники"
+
+msgid "Django Documentation"
+msgstr "Документация"
+
+msgid "FileBrowser"
+msgstr "Файловый менеджер"
+
+msgid "Reload Server"
+msgstr "Перезагрузить сервер"
+
+msgid "Exit"
+msgstr "Выход"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Invalid order"
+msgstr "Не правильный порядок"
+
+msgid "No messages"
+msgstr "Сообщений нет"
+
+#: plugins/df_comments/templates/df_comments/show.html:5
+#: plugins/df_comments/templates/df_comments/show.html:34
+#: plugins/df_favorites/templates/df_favorites/get_list.html:18
+msgid "Add"
+msgstr "Добавить"
+
+#: plugins/df_comments/templates/df_comments/show.html:8
+#: plugins/df_files/templates/df_files/files_list.html:72
+msgid "Show"
+msgstr "Показать"
+
+#: plugins/df_favorites/templates/df_favorites/get_list.html:8
+msgid "Favorites"
+msgstr "Избранное"
+
+#: plugins/df_favorites/templates/df_favorites/get_list.html:15
+#: templates/docflow_document_form_actions.html:29
+msgid "Delete"
+msgstr "Удалить"
+
+#: plugins/df_files/functions.py:31
+msgid "Document files"
+msgstr "Файлы документа"
+
+#: plugins/df_files/templates/df_files/files_list.html:12
+#: plugins/df_files/templates/df_files/files_list.html:13
+msgid "Gallery"
+msgstr "Галерея"
+
+#: plugins/df_files/templates/df_files/files_list.html:57
+#: plugins/df_files/templates/df_files/upload_block.html:21
+#, fuzzy
+msgid "Uploaded"
+msgstr "Загрузить"
+
+#: plugins/df_files/templates/df_files/files_list.html:60
+msgid "Typed"
+msgstr "Типизировать"
+
+#: plugins/df_files/templates/df_files/files_list.html:64
+#, fuzzy
+msgid "File"
+msgstr "Файлы"
+
+#: plugins/df_files/templates/df_files/files_list.html:67
+msgid "Download"
+msgstr "Скачать"
+
+#: plugins/df_files/templates/df_files/files_list.html:77
+msgid "Print"
+msgstr "Печать"
+
+#: plugins/df_files/templates/df_files/files_list.html:110
+#: templates/docflow_document_accept.html:15
+msgid "Forward"
+msgstr "Вперед"
+
+
+#: plugins/df_files/templates/df_files/filetyping.html:20
+#: plugins/df_files/templates/df_files/filetyping.html:44
+#: templates/docflow_projects/document_18.html:8
+#: templates/docflow_projects/documents_18.html:7
+msgid "Typing files"
+msgstr "Типизация файлов"
+
+#: plugins/df_files/templates/df_files/filetyping.html:41
+#: templates/docflow_document.html:12 templates/docflow_documents.html:32
+#: templates/docflow_home.html:8
+msgid "Home"
+msgstr "Домой"
+
+#: plugins/df_files/templates/df_files/filetyping.html:57
+#: templates/docflow_filter.html:48
+msgid "Apply"
+msgstr "Применить"
+
+#: plugins/df_files/templates/df_files/filetyping.html:96
+msgid "Untyped files are missing"
+msgstr "Не типизированные файлы не найдены"
+
+#: plugins/df_files/templates/df_files/filetyping_filter.html:9
+#: plugins/df_files/templates/df_files/filetyping_filter.html:22
+msgid "Search"
+msgstr "Поиск"
+
+#: plugins/df_files/templates/df_files/gallery_window.html:55
+msgid "No available actions"
+msgstr "Нет доступных действий"
+
+#: plugins/df_files/templates/df_files/gallery_window.html:60
+msgid "To the left"
+msgstr "Влево"
+
+#: plugins/df_files/templates/df_files/gallery_window.html:61
+msgid "To the right"
+msgstr "Вправо"
+
+#: plugins/df_files/templates/df_files/upload_block.html:11
+#, fuzzy
+msgid "Select files"
+msgstr "Выбрать документы"
+
+#: plugins/df_files/templates/df_files/upload_block.html:12
+msgid "Add files to the upload queue and click the start button."
+msgstr "Добавьте файлы в очередь загрузки и нажмите кнопку Старт"
+
+#: plugins/df_files/templates/df_files/upload_block.html:13
+#, fuzzy
+msgid "Filename"
+msgstr "Файлы"
+
+#: plugins/df_files/templates/df_files/upload_block.html:14
+#: templates/docflow_document_history.html:17
+msgid "Status"
+msgstr "Статус"
+
+#: plugins/df_files/templates/df_files/upload_block.html:15
+msgid "Size"
+msgstr "Размер"
+
+#: plugins/df_files/templates/df_files/upload_block.html:16
+#, fuzzy
+msgid "Add files"
+msgstr "Загрузка файлов"
+
+#: plugins/df_files/templates/df_files/upload_block.html:17
+msgid "Stop current upload"
+msgstr "Остановить загрузку"
+
+#: plugins/df_files/templates/df_files/upload_block.html:18
+msgid "Start uploading queue"
+msgstr "Запустить очередь загрузки"
+
+#: plugins/df_files/templates/df_files/upload_block.html:19
+msgid "Start upload"
+msgstr "Начать загрузку"
+
+#: plugins/df_files/templates/df_files/upload_block.html:20
+msgid "Drag files here"
+msgstr "Перетяните файлы сюда"
+
+#: plugins/df_files/templates/df_files/upload_block.html:93
+msgid "Upload files"
+msgstr "Загрузка файлов"
+
+#: templates/docflow_document.html:18
+msgid "New document"
+msgstr "Новый документ"
+
+#: templates/docflow_document.html:85
+msgid "Process"
+msgstr "Процесс"
+
+#: templates/docflow_document_accept.html:7
+msgid "Document wait accept"
+msgstr "Документ ожидает принятия"
+
+#: templates/docflow_document_accept.html:18
+msgid "It can take the operator"
+msgstr "Его может принять оператор"
+
+#: templates/docflow_document_form_actions.html:6
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/docflow_document_form_actions.html:37
+msgid "Create and Send"
+msgstr "Создать и отправить"
+
+#: templates/docflow_document_history.html:6
+#- msgid "Sended"
+#- msgstr "Отправленно"
+
+#: templates/docflow_document_history.html:7
+msgid "Received"
+msgstr "Получено"
+
+#: templates/docflow_document_history.html:11
+#: templates/docflow_document_history.html:19
+msgid "Date"
+msgstr "Дата"
+
+#: templates/docflow_document_history.html:12
+msgid "Author"
+msgstr "Автор"
+
+#: templates/docflow_document_history.html:13
+msgid "From"
+msgstr "Из"
+
+#: templates/docflow_document_history.html:14
+msgid "To"
+msgstr "В"
+
+#: templates/docflow_document_history.html:15
+#: templates/docflow_document_history.html:20
+#- msgid "Message"
+#- msgstr "Сообщение"
+
+#: templates/docflow_document_history.html:18
+msgid "Responsible"
+msgstr "Ответственный"
+
+#: templates/docflow_document_history.html:39
+msgid "Wait"
+msgstr "Ожидает"
+
+#: templates/docflow_document_history.html:47
+msgid "Document has not been transmitted anywhere"
+msgstr "Документ еще никуда не передавался"
+
+#: templates/docflow_documents.html:41
+msgid "Collective sending"
+msgstr "Групповая отправка"
+
+#: templates/docflow_documents.html:43
+msgid "Collective take"
+msgstr "Групповое принятие"
+
+#: templates/docflow_documents.html:106
+msgid "No document"
+msgstr "Не найдено ни одного документа"
+
+#: templates/docflow_filter.html:11
+msgid "Document search"
+msgstr "Поиск документов"
+
+#: templates/docflow_filter.html:49 templates/docflow_navigation.html:14
+msgid "Reset"
+msgstr "Сброс"
+
+#: templates/docflow_navigation.html:8
+msgid "Filter"
+msgstr "Фильтр"
+
+#: templates/docflow_navigation.html:12
+msgid "Folders"
+msgstr "Папки"
+
+#: templates/docflow_navigation.html:25
+#: templates/docflow_ajax/event_form.html:22
+#- msgid "Send"
+#- msgstr "Отправить"
+
+#: templates/docflow_navigation.html:43
+msgid "Accept"
+msgstr "Принять"
+
+msgid "Reject"
+msgstr "Отклонить"
+
+#: templates/docflow_navigation.html:46
+msgid "From queue"
+msgstr "Из очереди"
+
+#: templates/docflow_navigation.html:51
+msgid "Select documents"
+msgstr "Выбрать документы"
+
+#: templates/docflow_ajax/event_form.html:23
+#- msgid "Cancel"
+#- msgstr "Отмена"
+
+#: templates/docflow_projects/document_18.html:34
+#, fuzzy
+msgid "Uploading documents"
+msgstr "Не найдено ни одного документа"
+
+#: templates/docflow_projects/document_18.html:39
+msgid "Notes"
+msgstr "Заметки"
+
+#: templates/docflow_projects/document_18.html:46
+msgid "Others"
+msgstr "Прочее"
+
+#: templates/docflow_projects/document_18.html:50
+msgid "Your role"
+msgstr "Ваши роли"
+
+#: templates/docflow_projects/document_18.html:56
+msgid "Options loss"
+msgstr "Признаки убытка"
+
+#: templates/docflow_projects/document_18.html:60
+msgid "Blocked transmission"
+msgstr "Заблокированные передачи"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Queue"
+msgstr "Очередь"
+
+msgid "Presets"
+msgstr "Преднастройки"
+
+msgid "From state"
+msgstr "С этапа"
+
+msgid "Get from queue"
+msgstr "Взять из очереди"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Collapse all"
+msgstr "Свернуть все"
+
+msgid "Expand all"
+msgstr "Развернуть все"
+
+msgid "Accepted"
+msgstr "Принято"
+
+msgid "Rejected"
+msgstr "Отклонено"
+
+msgid "File generator"
+msgstr "Генератор файлов"
+
+msgid "Sending on stage after creation"
+msgstr "Отправка на этап после создания"
+
+msgid "Send to process"
+msgstr "Отправить по процессу"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Methods"
+msgstr "Методики"
+
+msgid "Add to favorites"
+msgstr "Добавить в избранное"
+
+msgid "Manage"
+msgstr "Управление"
+
+msgid "Manage filters"
+msgstr "Управление фильтрами"
+
+msgid "Additionally"
+msgstr "Дополнительно"
+
+msgid "Main"
+msgstr "Основное"
+
+msgid "Data"
+msgstr "Данные"
+
+msgid "Tables"
+msgstr "Таблицы"
+
+msgid "Forms"
+msgstr "Формы"
+
+msgid "Methodology of this report is not described"
+msgstr "Методика этого отчета на описана"
+
+msgid "Confiration required"
+msgstr "Требуется подтверждение"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Expire"
+msgstr "Истекает"
+
+msgid "State"
+msgstr "Состояние"
+
+msgid "Task"
+msgstr "Задача"
+
+msgid "Result description"
+msgstr "Описание результата"
+
+msgid "Task description"
+msgstr "Описание задачи"
+
+msgid "No tasks"
+msgstr "Задач нет"
+
+msgid "File archive"
+msgstr "Файловый архив"
+
+msgid "Upload"
+msgstr "Загрузить"
+
+msgid "Scan"
+msgstr "Сканировать"
+
+msgid "Typing"
+msgstr "Типизировать"
+
+msgid "Personal task"
+msgstr "Персональная задача"
+
+msgid "Notification"
+msgstr "Оповещение"
+
+msgid "Individual person"
+msgstr "Частное лицо"
+
+msgid "Legal person"
+msgstr "Оргинизация"
+
+msgid "Select contractor type"
+msgstr "Выберите тип контрагента"
+
+msgid "Save draft"
+msgstr "Сохранить черновик"
+
+msgid "Service orders"
+msgstr "Направления в сервис"
+
+#msgid ""
+#msgstr ""

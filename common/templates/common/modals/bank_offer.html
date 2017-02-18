@@ -1,0 +1,17 @@
+{% load i18n %}
+<a href="#" data-toggle="modal" data-backdrop="false" data-target=".bs-example-modal-sm" class="stiker hidden-xs"><span>{% trans 'Уникальное банковское предложение' %}</span></a>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="mod-vindow">
+            <a class="close" data-dismiss="modal"><img src="{{ STATIC_URL }}common/img/ex.png"></a>
+
+            <div class="cont">
+                <span>{% trans 'Банковские услуги' %}</span>
+
+                <p>{% trans 'Всеми остальными вопросами займется профессионал.' %}</p>
+                <a href="#" class="but">{% trans 'Узнать больше' %}</a>
+            </div>
+        </div>
+    </div>
+</div>

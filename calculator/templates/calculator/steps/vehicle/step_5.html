@@ -1,0 +1,239 @@
+{% load i18n %}
+<div class="b-form__block n-form__despolicy n-form__step clearfix" id="step-5">
+    <div class="b-form__left clearfix">
+        <div>
+            <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+        </div>
+        <div class="b-step__title n-title__ico n-t-ico__car">
+            <h2>{% trans 'Оформление полиса' %}</h2>
+        </div>
+
+        {# Полоса прогресса заполнения формы (точки) #}
+        <ul class="b-step__current">
+            <li class="b-step__current-item n-item__curr"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+            <li class="b-step__current-item"><a href="#"></a></li>
+        </ul>
+
+        {# Использование данных личного кабинета (временно отключено, до появления личного кабинета) #}
+{#        <div class="b-data__line">#}
+{#            <div class="b-data__wr n-wr__green">#}
+{#                <p>{% trans 'Использовать данные из личного кабинета' %}</p>#}
+{#                <div class="row">#}
+{#                    <div class="b-data__wr col-xs-6">#}
+{#                        <input type="radio" data-window="1" name="calc[savedata]" id="calc[savedata][no]"#}
+{#                               class="b-form__radio n-main__radio n-savedata__no">#}
+{#                        <label for="calc[savedata][no]">{% trans 'Нет' %}</label>#}
+{#                    </div>#}
+{#                    <div class="b-data__wr col-xs-6">#}
+{#                        <input type="radio" data-window="1" name="calc[savedata]" id="calc[savedata][yes]"#}
+{#                               class="b-form__radio n-main__radio n-savedata__yes">#}
+{#                        <label for="calc[savedata][yes]">{% trans 'Да' %}</label>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+
+        {# Данные о ТС #}
+        <div class="b-calc__item n-calc__vehicle n-form__layer e-active clearfix" id="layer-1" style="display: block">
+            <h3>{% trans 'Транспортное средство' %}</h3>
+
+            <div class="b-layer__content">
+
+                {# Поле VIN #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row"><label for="id_auto_vin">VIN</label></div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="auto_vin" id="id_auto_vin" class="b-input">
+                        </div>
+                    </div>
+
+                    {% trans 'Vehicle identification number — уникальный код транспортного средства, состоящий из 17 символов' as vin_help %}
+                    {% include 'calculator/question.html' with answ=vin_help %}
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# Поле Номер двигателя #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_auto_engine">{% trans 'Номер двигателя' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="auto_engine" id="id_auto_engine" class="b-input">
+                        </div>
+                    </div>
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# Поле Номер кузова #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_auto_chassis">{% trans 'Номер кузова' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="auto_chassis" id="id_auto_chassis" class="b-input">
+                        </div>
+                    </div>
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# Поле Регистрационный номер ТС #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_auto_number">{% trans 'Регистрационный<br/>номер ТС' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="auto_number" id="id_auto_number" class="b-input">
+                        </div>
+                    </div>
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# Поле Регион регистрации #}
+                {% trans 'Регион регистрации' as reg_region_tr %}
+                {% trans 'Регион, в котором ТС зарегистрировано' as reg_region_help %}
+                {% include 'calculator/steps/g_selection_field.html' with field_name='auto_region' field_label=reg_region_tr help_text=reg_region_help objects=auto_regions %}
+
+                <a href="#" class="order button j-next__layer">{% trans 'Продолжить' %}</a>
+            </div>
+        </div>
+
+        {# Данные о договоре страхования TODO: #}
+        <div class="b-calc__item n-calc__insurance n-form__layer clearfix" id="layer-2">
+            <h3>{% trans 'Условия страхования' %}</h3>
+
+            <div class="b-layer__content">
+
+                {# Дата начала действия договора #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_d_start">{% trans 'Дата начала договора' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row">
+                            <input type="text" name="d_start" id="id_d_start" class="b-input j-dog__from n-calendar">
+                        </div>
+                    </div>
+
+                    {% trans 'Дата, с которой договор страхования вступает в силу' as d_start_help %}
+                    {% include 'calculator/question.html' with answ=d_start_help %}
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                {# Срок страхования #}
+                <div class="b-data__line">
+                    <div class="b-label__wr col-md-4 col-xs-5">
+                        <div class="row">
+                            <label for="id_term_insurance">{% trans 'Срок страхования' %}</label>
+                        </div>
+                    </div>
+                    <div class="b-input__wr col-md-7 col-xs-6">
+                        <div class="row n-insurance__term">
+                            <select name="term_insurance" id="id_term_insurance" class="b-select">
+                                <option value="1">{% trans '12 месяцев' %}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    {% trans 'Срок, в течение которого договор страхования будет действовать' as termn_ins_help %}
+                    {% include 'calculator/question.html' with answ=termn_ins_help %}
+
+                    <div class="field-error"><span></span></div>
+                </div>
+
+                <a href="#" class="order button j-next__layer">{% trans 'Продолжить' %}</a>
+            </div>
+        </div>
+
+        {# Данные о страхователе #}
+        <div class="b-calc__item n-calc__insurer n-form__layer clearfix" id="layer-3">
+            <h3>{% trans 'Страхователь' %}</h3>
+
+            <div class="b-layer__content">
+
+                {% include 'calculator/steps/vehicle/step_5_person_info.html' with fields=ins_fields %}
+
+                <a href="#" class="order button j-next__layer">{% trans 'Продолжить' %}</a>
+
+            </div>
+        </div>
+
+        {# Данные о владельце #}
+        <div class="b-calc__item n-calc__insurer n-form__layer clearfix" id="layer-4">
+            <h3>{% trans 'Владелец ТС' %}</h3>
+
+            <div class="b-layer__content">
+
+                <div class="b-data__line">
+                    <div class="b-data__wr">
+                        <input type="checkbox" name="ins_owner" id="id_ins_owner" class="b-form__input" checked>
+                        <label for="id_ins_owner">{% trans 'Страхователь - владелец ТС' %}</label>
+                    </div>
+                </div>
+
+                <div id="ins_owner_fields" style="display: none;">
+                {% include 'calculator/steps/vehicle/step_5_person_info.html' with fields=owner_fields %}
+                </div>
+
+                <a href="#" class="order button j-next__layer">{% trans 'Продолжить' %}</a>
+
+            </div>
+        </div>
+
+        {# Данные о дополнительных водителях #}
+        <div class="b-calc__item n-calc__insurer n-form__layer clearfix" id="layer-5">
+            <h3>{% trans 'Дополнительные водители' %}</h3>
+
+            <div class="b-layer__content">
+
+                {% include 'calculator/steps/vehicle/step_5_person_info.html' with fields=ad1_fields %}
+
+                <div class="b-data__line">
+                    <div class="b-data__wr">
+                        <input type="checkbox" name="additional_driver_2" id="id_additional_driver_2" class="b-form__input">
+                        <label for="id_additional_driver_2">{% trans 'Есть еще один дополнительный водитель' %}</label>
+                    </div>
+                </div>
+
+                <div id="additional_driver_2_fields" style="display: none">
+                    {% include 'calculator/steps/vehicle/step_5_person_info.html' with fields=ad2_fields %}
+                </div>
+
+                <a href="#" class="order button j-next__layer">{% trans 'Продолжить' %}</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="b-form__right clearfix">
+        <div class="b-right__info j-right__info-fixed">
+            {# Информация о ТС #}
+            {% include 'calculator/steps/vehicle/right_info.html' %}
+            {# Выбранные продукты #}
+            {% include 'calculator/steps/vehicle/right_products.html' %}
+
+            <button type="button" class="order button j-last__show j-next__click">{% trans 'Оформить' %}</button>
+
+        </div>
+    </div>
+
+</div>

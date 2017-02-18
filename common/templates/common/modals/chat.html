@@ -1,0 +1,35 @@
+{% load i18n %}
+<div class="chat sticker-l">
+    <div class="modal-dialog modal-sm">
+        <div class="sticker-window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="{{ STATIC_URL }}common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">{% trans 'Онлайн поддержка' %}</h4>
+            </div>
+            <div class="cont">
+                <div class="moder">
+                    <p>{% trans 'Пожалуйста, подождите - идет соединение со свободным специалистом.' %}</p>
+                    <img class="shape-l" src="{{ STATIC_URL }}common/img/sticker-shape_07.png">
+                </div>
+                <div class="client">
+                    <p>Добрый день.<br/>У меня есть несколько вопросов по поводу страхования.</p>
+                    <img class="shape-r" src="{{ STATIC_URL }}common/img/sticker-shape_11.png">
+                </div>
+                <div class="moder">
+                    <p class="mod_name">Александр</p>
+                    <p>Добрый день.<br/>Чем я могу Вам помочь?</p>
+                    <img class="shape-l" src="{{ STATIC_URL }}common/img/sticker-shape_07.png">
+                </div>
+            </div>
+            <form action="#" class="modal-footer">
+                <div class="input-group form-control">
+                    <input name="" class="input" type="text">
+
+                    <div class="input-group-btn">
+                        <input value="" type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

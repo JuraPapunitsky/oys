@@ -1,0 +1,19 @@
+table.sortable th {
+    padding:5px 20px 5px 5px;
+}
+
+table.sortable th {
+    cursor: pointer;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg.gif");
+}
+table.sortable th.headerSortUp {
+    background-color: #ddd;
+    background-image: url("../img/asc.gif");
+}
+
+table.sortable th.headerSortDown {
+    background-color: #ddd;
+    background-image: url("../img/desc.gif");
+}

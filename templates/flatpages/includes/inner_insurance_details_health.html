@@ -1,0 +1,95 @@
+{% load i18n %}
+<div class="xs-ins-health-work container-fluid"></div>
+
+<div class="insurance-health-work container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="row">
+                <h1>
+                    {% trans 'Как работает страхование здоровья?' %}
+                </h1><a href="#" class="order button j-layer__fix">{% trans 'Узнать подробнее' %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Контент всплывающего слоя Узнать подробнее #}
+<div class="layer-box-fix l-fix-health">
+    <a href="#" class="layer-box-close"></a>
+
+    <table class="l-table l-table-main">
+        <tr class="l-tr l-row-top">
+            <td class="l-td">
+                <div class="l-title-bg"><p>{% trans 'Страхование здоровья' %}</p></div>
+                <div class="l-title-sub"><p>{% trans 'Что можно застраховать?' %}</p></div>
+            </td>
+        </tr>
+
+        <tr class="l-tr">
+            <td class="l-td l-td-btm">
+                <div class="l-td-img"><img src="{{ STATIC_URL }}common/img/l-fix/ins-main-img.png"></div>
+{#                <div class="l-text-viplata"><a href="#" class="j-ins__show">{% trans 'Когда производится выплата?' %}</a></div>#}
+                <a href="#" class="button order buy-now" onclick="layer_box_close(); calculator.start_calculator('health')">
+                    {% trans 'Калькулятор' %}
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="l-ico-wrapp">
+        <div class="l-ico-item health-ico__1">
+            <img src="{{ STATIC_URL }}common/img/l-fix/health-1.png">
+            <p>{% trans 'Накопительное инвестиционное<br/>страхование жизни' %}</p>
+        </div>
+
+        <div class="l-ico-item health-ico__2 l-ico-center-left">
+            <img src="{{ STATIC_URL }}common/img/l-fix/health-2.png">
+            <p>{% trans 'страховка от<br/>несчатного случая' %}</p>
+        </div>
+
+        <div class="l-ico-item health-ico__3 l-ico-center-left_2">
+            <img src="{{ STATIC_URL }}common/img/l-fix/health-3.png">
+            <p>{% trans 'страховка от<br/>инвалидности' %}</p>
+        </div>
+
+        <div class="l-ico-item health-ico__4 l-ico-center-right_2">
+            <img src="{{ STATIC_URL }}common/img/l-fix/health-4.png">
+            <p>{% trans 'Потеря работы' %}</p>
+        </div>
+
+        <div class="l-ico-item health-ico__5 l-ico-center-right">
+            <img src="{{ STATIC_URL }}common/img/l-fix/health-5.png">
+            <p>{% trans 'Критические заболевания<br/>(Спид, Рак)' %}</p>
+        </div>
+
+{#        <a href="#" class="button order buy-now visible-mob" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>#}
+        <a href="#" class="button order buy-now visible-mob" data-toggle="modal" data-backdrop="false" data-target=".callback" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>
+    </div>
+
+    <div class="ins-v j-ins-v">
+        <table class="l-table">
+            <tr class="l-tr l-row-top">
+                <td class="l-td">
+                    <div class="l-title-bg"><p>{% trans 'Страхование здоровья' %}</p></div>
+                    <div class="l-title-sub"><p>{% trans 'Когда производится выплата' %}</p></div>
+                    <div class="ins-form-select clearfix">
+                        <div class="ins-select-company">
+                            <form action="#" class="select-company-form j-clr-form">
+                                <select class="select-company">
+                                    <option value="0">{% trans 'Выберите компанию' %}</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="l-text-viplata"><a href="#" class="j-ins__hide">{% trans 'Что можно застраховать?' %}</a></div>
+
+{#                    <a href="#" class="button order buy-now" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>#}
+                    <a href="#" class="button order buy-now" data-toggle="modal" data-backdrop="false" data-target=".callback" onclick="layer_box_close()">{% trans 'Калькулятор' %}</a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+{% load i18n %}
+<div class="modal fade callback login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal"><img src="{{ STATIC_URL }}common/img/sticker-l_ex.png"></a>
+                <h4 class="modal-title">{% trans 'Обратный звонок' %}</h4>
+            </div>
+            {% include 'common/forms/callback.html' %}
+        </div>
+    </div>
+</div>

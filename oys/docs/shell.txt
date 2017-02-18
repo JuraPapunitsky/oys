@@ -1,0 +1,19 @@
+##############
+
+export PYTHONPATH=$PATH:/home/www/projects/smartbps_core
+source /home/www/.virtualenv/oys/bin/activate
+
+pg_dump --format=c --host=localhost --username=django oys > ~/oys_`date +"%Y-%m-%d_%H-%M"`.bk
+
+# Обновление
+cd ~/smartbps_core_test/
+hg up
+cd ~/oys
+hg up
+./manage.py collectstatic
+./manage.py migrate
+touch ./manage.py
+
+./manage.py runserver --settings=oys.settings_debug 0.0.0.0:8000
+
+./manage.py makemigrations account calculator common

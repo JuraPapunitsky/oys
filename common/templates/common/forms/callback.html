@@ -1,0 +1,64 @@
+{% load i18n %}
+<form class="cont label_left j-clr-form" id="j-callme__form" method='post' action="{% url 'common:call_me_handler' %}">
+    {% csrf_token %}
+    <input type="hidden" name="next_url" value="{{ request.path }}">
+
+    <div class="call-input-wr"><label>{% trans 'Имя' %}</label><input type="text" name="name" data-validation="required"></div>
+    <div class="call-input-wr"><label>{% trans 'Телефон' %}</label><input type="text" class="j-phone__input" name="phone" data-validation="required"></div>
+    <div class="call-input-wr"><label>{% trans 'Дата звонка' %}</label><input class="j-date__input n-calendar" type="text" name="d_call" data-validation="required"></div>
+    <div class="time-call call-input-wr">
+        <label>{% trans 'Время звонка' %}</label>
+
+        <div class="select-wr time-call-from-wr">
+            <span>{% trans 'с' %}</span>
+            <select class="time-call-from" name="d_call_from" data-validation="required">
+                <option value="9:00">9:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+            </select>
+        </div>
+        <div class="select-wr time-call-to-wr">
+            <span>{% trans 'по' %}</span>
+            <select class="time-call-to" name="d_call_to" data-validation="required">
+                <option value="9:00">9:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+            </select>
+        </div>
+    </div>
+    <div><label>{% trans 'Тема звонка' %}</label>
+
+        <div class="select-wr subj-call" name="reason">
+            <select class="subj-call" name="reason" data-validation="required">
+                <option value="1">{% trans 'Купить страховку' %}</option>
+                <option value="2">{% trans 'Обсудить условия' %}</option>
+                <option value="3">{% trans 'Прочее' %}</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <button class="btn_log btn disabled" id="callback_form_btn">
+            {% trans 'Позвоните мне' %}
+        </button>
+    </div>
+</form>

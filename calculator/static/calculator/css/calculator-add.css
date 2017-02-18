@@ -1,0 +1,334 @@
+#substep-5 .col-md-6{
+    margin-bottom: 10px;
+}
+/**{*/
+/*font-family:arial!important;*/
+/*}*/
+.flat-wr{
+    text-align: right;
+    min-width: 180px;
+    float: right;
+}
+.b-layer__content .b-data__line.n-adress__map{
+    margin-right: -18px;
+}
+.b-data__wr.col-sm-6, .b-data__wr.col-sm-3 {
+    margin-bottom: 16px
+}
+@media (max-width: 1280px){
+    .b-data__wr label{
+        padding: 0px 0px 0px 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .flat-wr .col-xs-6,.flat-wr .col-xs-5{
+        width: auto;
+    }
+}
+@media (min-width: 992px)  and (max-width: 1080px){
+    .n-calendar {
+        width: 130px !important;
+    }
+    .clevered.default .jClever-element-select-center {
+        padding: 0px 20px 0px 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+    .b-icon__item img{
+        width: 82px;
+    }
+    .b-calc__block .modal-dialog{
+        margin: 70px auto;
+    }
+    .n-form__icons, .n-form__detailinfo {
+        min-height: 450px;
+    }
+    .n-calc__drive .button, .n-calc__costcar .button {
+        margin: 80px auto 50px;
+    }
+    .n-title__ico:before {
+        background-position: 0 -9px;
+        background-size: cover;
+    }
+    .b-aw__info {
+        padding: 14px 36px 14px 23px;
+        width: 330px;
+    }
+    .b-form__right {
+        min-width: 320px;
+    }
+    .n-calc__drive .button, .n-calc__costcar .button,.b-insurance__item .button .n-form__layer .j-next__layer ,.b-calc__block button.button.j-last__show{
+        min-width: 200px;
+    }
+    .b-calc__block .button{
+        padding: 14px 20px;
+    }
+    .b-total__text {
+        font: 600 13px 'Lato-Medium';
+    }
+    .b-total__summ {
+        font: 28px 'Lato-Medium';
+    }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+    .b-calc__block .modal-dialog{
+        max-width: 80%;
+    }
+    .b-form__right {
+        min-width: 300px;
+    }
+    .b-drive__title{
+        padding-right: 0;
+    }
+}
+@media (max-width: 1200px) {
+    .flat-wr{
+        float: none;
+        display: inline-block;
+        margin: 20px 0px 0px;
+        position: relative;
+        text-align: left;
+    }
+}
+@media (max-width: 992px) {
+    .n-line__sex label{
+        margin: 2px 0px !important;
+    }
+}
+
+/************************************************
+*************************************************
+************************************************/
+@media (min-width: 992px) and (max-width: 1090px) {
+    .n-line__houseapp .col-md-1.pull-right{
+        display: none;
+    }
+}
+@media (max-width: 1280px) {
+    .n-adress__map .b-data__wr label{
+        line-height: 1.2;
+    }
+}
+
+/************************************************
+*************************************************
+************************************************/
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .b-calc__block .modal-dialog{
+        max-width: 95%;
+    }
+    .b-form__right {
+        min-width: 260px;
+    }
+    .n-calc__drive .b-drive__title{
+        margin-bottom: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .b-sigorta__table{
+        text-align: center;
+    }
+    .b-sigorta__table .th{
+        text-align: center;
+        background: #fbfaf9;
+        padding: 15px 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    .b-sigorta__table .col-xs-12{
+        padding: 12px 0px;
+    }
+    .b-sigorta__table .radio-block{
+        border-bottom: 1px solid #cbc2c9;
+        width: 100%;
+        display: inline-block;
+        padding: 12px 0px;
+    }
+    .b-mega__ico{
+        margin: auto;
+    }
+    .n-calc__pay .b-layer__content{
+        min-height: 0;
+    }
+    .b-data__wr label{
+        font: 900 16px/1.4 'Lato-Light';
+    }
+    .b-insurance__row{
+        margin: 0;
+    }
+    .b-insurance__row:last-child{
+        margin-bottom: 24px;
+    }
+    .n-calc__delivery .rollbar-content{
+        padding-right: 20px;
+    }
+    .n-calc__vehicle .b-qw__block{
+        top: -6px;
+    }
+    .b-drive__title{
+        padding-right: 0;
+    }
+    .n-calc__drive .button, .n-calc__costcar .button{
+        margin: 50px auto;
+    }
+    .b-qw__block {
+        right: -15px;
+    }
+    .b-calc__block .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+    .b-calc__block .close{
+        position: absolute;
+    }
+    .b-form__right,.b-form__left {
+        min-width: 100%;
+        display: inline-block;
+    }
+    .b-form__left {
+        padding: 15px 25px 0;
+    }
+    .n-wr__green{
+        margin-left: -5px;
+    }
+    .clevered.default .jClever-element-select-center {
+        font: 14px/50px "Lato-Light";
+    }
+    .b-step__current-item {
+        margin: 0px 2%;
+    }
+    .form-block-xs{
+        margin: 0 -30px;
+    }
+    .n-form__detailinfo h3{
+        text-align: center;
+    }
+    .n-justify__col .b-radio__wr {
+        min-width: 228px;
+    }
+    .b-style__slider input[type=text] {
+        max-width: 80px;
+        margin-left: -40px;
+        font-size: 14px;
+    }
+    .n-title__ico:before {
+        background-size: cover;
+        background-position: 0 -25px;
+        top: 50%;
+        margin-top: -40px;
+        left: -12px;
+
+    }
+    .n-title__ico h2 {
+        padding-left: 80px;
+    }
+    .b-block__scr{
+        margin-left: 0;
+    }
+    .b-data__wr.col-sm-6, .b-data__wr.col-sm-3,.n-calc__drive .b-drive__title, .b-sex__wr label,.n-delivery__line > .b-data__wr, .n-calc__pay .b-data__wr{
+        margin-bottom: 24px;
+    }
+    .n-calc__pay .b-data__wr:last-child{
+        margin-bottom: 0;
+    }
+    .b-sex__wr .b-data__wr{
+        margin-top: 15px;
+    }
+    .b-sex__wr .b-data__wr:first-child{
+        margin-top: 0;
+    }
+    .b-radio__wr.col-xs-6{
+        text-align: center;
+    }
+    .b-input__wr.col-md-7.col-xs-5{
+        margin-top: -7px;
+        min-width: 140px;
+    }
+}
+@media (min-width: 520px) and (max-width: 992px){
+    .b-drive__info{
+        float: right;
+    }
+}
+@media (max-width: 520px) {
+
+
+    .b-last__step {
+        padding: 0;
+    }
+    .n-justify__col .b-radio__wr {
+        min-width: 160px;
+    }
+    #layer-2 .b-label__wr{
+        width: 100%;
+    }
+
+    .b-sigorta__table td{
+        padding: 12px 2px;
+    }
+    .n-calc__drive{
+        text-align: center;
+    }
+    .b-price__center{
+        display: none;
+    }
+    table.b-sigorta__table label{
+        padding-left: 30px;
+    }
+
+    .n-justify__col{
+        text-align: center;
+    }
+    .b-car__titlesep{
+        margin: 10px 0 5px;
+    }
+    .b-drive__title {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .b-insurance__item{
+        width: 80%;
+        margin-left: 10%;
+        padding: 0;
+    }
+    .b-insurance__item.n-ins__pad{
+        padding-left: 0;
+    }
+    .b-data__wr.col-xs-6,.b-radio__wr.col-xs-6,.b-input__wr.col-xs-6{
+        width: 100%;
+    }
+    .b-label__wr{
+        margin-bottom: 8px;
+    }
+    .n-wr__green .b-data__wr{
+        margin-bottom: 10px;
+    }
+    .b-sigorta__table .col-xs-6{
+        width: 50%;
+    }
+    .b-sigorta__table .b-data__wr input[type=radio]+label:before {
+        left: 50%;
+        top: 0;
+        margin-left: -15px;
+    }
+    .b-sigorta__table .b-data__wr label{
+        padding: 20px 0px 0px 0;;
+    }
+    .n-line__delivery .col-xs-5{
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .ui-datepicker{
+        padding: 10px 1px;
+        width: 280px;
+    }
+    .b-aw__info{
+        width: 300px;
+    }
+    .b-input__wr.col-md-7.col-xs-5{
+        min-width: 50px;
+    }
+}

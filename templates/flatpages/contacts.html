@@ -1,0 +1,216 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+{% load common_tags %}
+
+
+{% block js %}
+    {{ block.super }}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9OW6Sl5MPFzgiRLjA7lujc4wpRj5Qgws&amp;sensor=false"></script>
+{% endblock %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs contacts-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'контакты' %}</span>
+        </div>
+    </div>
+</div>
+
+<div class="contacts-header">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'контакты' %}</span>
+{#                    <h1>{% trans 'Наша компания придерживается высоких стандартов обслуживания клиентов.' %}</h1>#}
+                    <h1>«Odlar Yurdu Sığorta brokeri» Sığortanın asan yolu</h1>
+{#                    <h1>{% trans 'Телефон горячей линии' %} *0707</h1>#}
+{#                    <p class="end-sub-title"></p>#}
+{#                    <p class="adress-text">{% trans 'Телефон горячей линии' %} *0707</p>#}
+
+                    <a href="#" class="order button" data-toggle="modal" data-backdrop="false" data-target=".b-calc__block">{% trans 'Калькулятор' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Иконки рассчет, чат и отзывы для мобильных устройств #}
+{% include 'common/includes/base_modal_icons_xs.html' %}
+
+<div class="contacts-text container-fluid">
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+            <!--<div class="row"> -->
+            <div class="row">
+                <div class="col-xs-1 visible-xs clearfix"></div>
+                <div class="col-sm-12 col-xs-10">
+                    <div class="row">
+                        <h1>{% trans 'По всем интересующим Вас вопросам обращайтесь по телефону * 0707 или электронной почте' %} <a href="mailto:info@oys.az">info@oys.az</a></h1>
+                    </div>
+                </div>
+            </div>
+{#                <div class="check-row col-md-offset-1 clearfix row">#}
+{#                    <div class="check-item col-sm-4">#}
+{#                        <div class="col-xs-3 visible-xs clearfix"></div>#}
+{#                        <div class="check-block">#}
+{#                            <input id="ch-c-1" type="checkbox" name="" class="check-cont">#}
+{#                            <label for="ch-c-1">Автострахование</label>#}
+{#                        </div>#}
+{#                        <div class="col-xs-3 visible-xs clearfix"></div>#}
+{#                        <div class="check-block">#}
+{#                            <input id="ch-c-2" type="checkbox" name="" class="check-cont">#}
+{#                            <label for="ch-c-2">Путешествие</label>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="check-item col-sm-4">#}
+{#                        <div class="col-xs-3 visible-xs clearfix"></div>#}
+{#                        <div class="check-block">#}
+{#                            <input id="ch-c-3" type="checkbox" name="" class="check-cont">#}
+{#                            <label for="ch-c-3">Недвижимость</label>#}
+{#                        </div>#}
+{#                        <div class="col-xs-3 visible-xs clearfix"></div>#}
+{#                        <div class="check-block">#}
+{#                            <input id="ch-c-4" type="checkbox" name="" class="check-cont">#}
+{#                            <label for="ch-c-4">Здоровье</label>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="check-item col-sm-4">#}
+{#                        <div class="col-xs-3 visible-xs clearfix"></div>#}
+{#                        <div class="check-block">#}
+{#                            <input id="ch-c-5" type="checkbox" name="" class="check-cont">#}
+{#                            <label for="ch-c-5">Кредитование</label>#}
+{#                        </div>#}
+{#                        <div class="col-xs-3 visible-xs clearfix"></div>#}
+{#                        <div class="check-block">#}
+{#                            <input id="ch-c-6" type="checkbox" name="" class="check-cont">#}
+{#                            <label for="ch-c-6">Вклады</label>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+                <div class="row">
+                    <div class="col-xs-12 adres-wrap">
+                        <div class="row">
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">1 saylı Bakı "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Həsən Əliyev, 36, Nərimanov, Bakı<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.398417, 49.832223, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">2 saylı Bakı "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Alfred Nobel, 23, Xətai, Bakı<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.379821,49.8788296,17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">3 saylı Bakı "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Abbas Mirzə Şərifzadə, 157, Yasamal, Bakı<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.385598, 49.803130, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">4 saylı Bakı "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Sülh, 197, Bakıxanov, Sabunçu, Bakı<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.418868, 49.962358, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">Sumqayıt "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Bakı, 15-ci məhəllə 42d, Sumqayıt<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.5806902, 49.6888129, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">Gəncə "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Heydər Əliyev, 87A, Gəncə<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.6970838,46.3573653, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">Sabirabad "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Heydər Əliyev, 128, Sabirabad<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(39.9968352,48.469459, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="adress-item">
+                                <div class="adress-left col-xs-5 pull-left">
+                                    <p class="adress-title">Bərdə "ASAN xidmət" mərkəzi</p>
+                                    <p class="adress-sub-text">{% trans 'Автострахование' %}, {% trans 'Путешествие' %}, {% trans 'Недвижимость' %}, {% trans 'Здоровье' %}</p>
+                                </div>
+                                <div class="adress-right col-xs-5 pull-right">
+                                    <p class="adress-info">
+                                        Heydər Əliyev, 100, Bərdə<br/>10:00 - 20:00 {% trans 'ежедневно' %}<br/>*0707
+                                    </p>
+                                    <a href="#map" class="adress-show-link" onclick="initializeMap(40.369679,47.126870, 17);">{% trans 'Показать на карте' %}</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            <!--</div>-->
+        </div>
+    </div>
+
+    <a name="map"></a>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div id="map_canvas" class="map_canvas"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

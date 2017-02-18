@@ -1,0 +1,9 @@
+*~
+.DS_Store
+*.pyc
+/oys/settings_local.py
+/static/
+/media/
+oys/logs/
+.idea
+oysone

@@ -1,0 +1,30 @@
+{% load i18n %}
+
+
+{% if page_obj.has_other_pages %}
+        <ul class="pagination pagination-sm">
+
+            {% if page_obj.has_previous %}
+                <li><a href="?page=1{% if query_string %}&{{ query_string }}{% endif %}">&lt;&lt;</a></li>
+                <li><a href="?page={{ page_obj.previous_page_number }}{% if query_string %}&{{ query_string }}{% endif %}">&lt;</a></li>
+            {% else %}
+                <li class="disabled"><a>&lt;&lt;</a></li>
+                <li class="disabled"><a>&lt;</a></li>
+            {% endif %}
+
+            <li class="disabled">
+                <a href="#">{% trans 'Page' %} {{ page_obj.number }} {% trans 'of' %} {{ page_obj.paginator.num_pages }}</a>
+            </li>
+
+            {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}{% if query_string %}&{{ query_string }}{% endif %}">&gt;</a></li>
+                <li><a href="?page={{ page_obj.paginator.num_pages }}{% if query_string %}&{{ query_string }}{% endif %}">&gt;&gt;</a></li>
+
+            {% else %}
+                <li class="disabled"><a>&gt;</a></li>
+                <li class="disabled"><a>&gt;&gt;</a></li>
+
+            {% endif %}
+
+        </ul>
+{% endif %}

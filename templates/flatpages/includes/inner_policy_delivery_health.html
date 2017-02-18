@@ -1,0 +1,47 @@
+{% load i18n %}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-10 col-xs-offset-1">
+            <div class="row">
+                <h1>
+                    {% trans 'Варианты доставки<br class="visible-xs"> полиса' %}
+                </h1>
+            </div>
+        </div>
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row">
+                <div class="insurance-dev-item col-md-4 col-xs-6">
+                    <p class="insurance-dev-img">
+                        <img src="{{ STATIC_URL }}common/img/insurance-img-1.png" alt="">
+                    </p>
+                    <p class="insurance-dev-text">
+                        {% trans 'Курьером' %}
+                    </p>
+                </div>
+                <div class="insurance-dev-item col-md-4 col-xs-6">
+                    <p class="insurance-dev-img">
+                        <img src="{{ STATIC_URL }}common/img/insurance-img-3.png" alt="">
+                    </p>
+                    <p class="insurance-dev-text">
+                        {% trans 'Забрать на<br> территории любого<br> ASAN XİDMƏT' %}
+                    </p>
+                </div>
+                <div class="insurance-dev-item col-md-4 col-md-offset-0 col-xs-offset-3 col-xs-6">
+                    <p class="insurance-dev-img">
+                        <img src="{{ STATIC_URL }}common/img/insurance-img-4.png" alt="">
+                    </p>
+                    <p class="insurance-dev-text">
+                        {% trans 'Отправка по<br> электронной почте' %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="row">
+                <a href="#" class="order button" onclick="calculator.start_calculator('health')">
+                    {% trans 'Калькулятор' %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

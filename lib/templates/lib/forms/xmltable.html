@@ -1,0 +1,56 @@
+{% load lib_tags %}
+{% load lib_filters %}
+
+{{formset.management_form}}
+
+{% if formset.non_field_errors %}
+    <div class='alert alert-danger'>
+        {% for error in form.non_field_errors %}
+            {{ error }}<br/>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<table id="id_{{name}}">
+    {% for form in formset %}
+        {% if forloop.first %}
+            {% if formset_header %}
+                {{formset_header|safe}}
+            {% else %}
+                <tr>
+                {% for field in form.visible_fields %}
+                    {% if field.name == 'DELETE' %}
+                        <td></td>
+                    {% else %}
+                        <td>{{field.label}}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endif %}
+        {% endif %}
+
+        <tr>
+            {% for field in form.visible_fields %}
+                {% if field.name == 'DELETE' %}
+                    <th >
+                        <div class='hide'>{{field}}</div>
+                        <a onclick="xmltable_mark_deleted(this, '{{field.auto_id}}')" class="pointer">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </th>
+                {% else %}
+                    <td class="id_{{name}}_{{field.name}}">
+                        {{ field|to_bootstrap_widget }}
+                        {% if field.errors %}
+                            <span class="help-block">
+                                        {% for error in field.errors %}
+                                            {{ error }}<br/>
+                                        {% endfor %}
+                                        </span>
+                        {% endif %}
+                    </td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>

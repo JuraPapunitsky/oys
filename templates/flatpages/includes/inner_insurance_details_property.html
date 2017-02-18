@@ -1,0 +1,116 @@
+{% load i18n %}
+<div class="xs-ins-property-work container-fluid"></div>
+
+<div class="insurance-property-work container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="row">
+                <h1>
+                    {% trans 'Как работает страхование имущества?' %}
+                </h1><a href="#" class="order button j-layer__fix">{% trans 'Узнать подробнее' %}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Контент всплывающего слоя Узнать подробнее #}
+<div class="layer-box-fix l-fix-realestate">
+    <a href="#" class="layer-box-close"></a>
+
+    <table class="l-table l-table-main">
+        <tr class="l-tr l-row-top">
+            <td class="l-td">
+                <div class="l-title-bg"><p>{% trans 'Страхование недвижимости' %}</p></div>
+                <div class="l-title-sub"><p>{% trans 'Что можно застраховать?' %}</p></div>
+            </td>
+        </tr>
+
+        <tr class="l-tr">
+            <td class="l-td l-td-btm">
+                <div class="l-td-img"><img src="{{ STATIC_URL }}common/img/l-fix/ins-main-img.png"></div>
+                <div class="l-text-viplata"><a href="#" class="j-ins__show">{% trans 'Когда производится выплата?' %}</a></div>
+                <a href="#" class="button order buy-now" onclick="layer_box_close(); calculator.start_calculator('property')">
+                    {% trans 'Калькулятор' %}
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="l-ico-wrapp">
+        <div class="l-ico-item realestate-ico__1 l-ico-top-left">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-1.png">
+            <p>{% trans 'Внутренняя отделка' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__2 l-ico-center-left">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-2.png">
+            <p>{% trans 'Повреждения от пожара' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__3 l-ico-center-left_2">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-3.png">
+            <p>{% trans 'Ответственность перед<br/>третьими лицами' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__4 l-ico-btm-left">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-4.png">
+            <p>{% trans 'Противоправные<br/>действия третьих лиц' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__5 l-ico-btm-right">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-5.png">
+            <p>{% trans 'Драгоценное имущество<br/>(золото, меха, картины)' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__6 l-ico-center-right_2">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-6.png">
+            <p>{% trans 'Дополнительные<br/>строения' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__7 l-ico-center-right">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-7.png">
+            <p>{% trans 'Повреждения от<br/>стихийного бедствия' %}</p>
+        </div>
+
+        <div class="l-ico-item realestate-ico__8 l-ico-top-right">
+            <img src="{{ STATIC_URL }}common/img/l-fix/realestate-8.png">
+            <p>{% trans 'Повреждения от залива' %}</p>
+        </div>
+
+        <a href="#" class="button order buy-now visible-mob" onclick="layer_box_close(); calculator.start_calculator('property')">
+            {% trans 'Калькулятор' %}
+        </a>
+
+    </div>
+
+    <div class="ins-v j-ins-v">
+        <table class="l-table">
+            <tr class="l-tr l-row-top">
+                <td class="l-td">
+                    <div class="l-title-bg"><p>{% trans 'Страхование недвижимости' %}</p></div>
+                    <div class="l-title-sub"><p>{% trans 'Когда производится выплата' %}</p></div>
+                    <div class="ins-form-select clearfix">
+                        <div class="clearfix b-rules__block b-company-0__block" style="display:block">
+                            <div class="row clearfix">
+                                <div class="col-md-offset-4 col-sm-6 col-xs-12">
+                                    <p class="pdf-text-ico">
+                                        <a target="_blank" href="{{ STATIC_URL }}common/docs/icbari.pdf">{% trans 'Недвижимость' %}<br/>PDF, 664 Kb</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-text-viplata"><a href="#" class="j-ins__hide">{% trans 'Что можно застраховать?' %}</a></div>
+
+                    <a href="#" class="button order buy-now" onclick="layer_box_close(); calculator.start_calculator('property')">
+                        {% trans 'Калькулятор' %}
+                    </a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

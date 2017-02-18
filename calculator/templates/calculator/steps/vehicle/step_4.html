@@ -1,0 +1,32 @@
+{% load i18n %}
+<div class="b-form__block n-form__insurance-item n-form__step clearfix" id="step-4">
+    <div class="b-form__left clearfix">
+        <div>
+            <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+        </div>
+        <div class="b-step__title n-title__ico n-t-ico__car"><h2></h2></div>
+
+        <div class="b-step-4__options">
+        {# step_4_options.html via ajax #}
+        </div>
+
+        <div class="b-data__line clearfix" style="text-align: center">
+            <a class="text-uppercase j-compare__click" href="#">{% trans 'описание и сравнение продуктов' %}</a>
+        </div>
+
+        <div class="b-line__separator table-separator"></div>
+
+        <table class="b-sigorta__table"></table>
+    </div>
+
+    <div class="b-form__right clearfix">
+        <div class="b-right__info j-right__info-fixed">
+            {# Информация о ТС #}
+            {% include 'calculator/steps/vehicle/right_info.html' %}
+            {# Выбранные продукты #}
+            {% include 'calculator/steps/vehicle/right_products.html' %}
+
+            <a href="#" class="order button b-to__pass j-next__click">{% trans 'Перейти к оформлению' %}</a>
+        </div>
+    </div>
+</div>

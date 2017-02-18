@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartBPS</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/css/bootstrap.min.css"/>
+
+    <script>
+        function goBack() {
+            alert(1)
+            window.history.go(-1)
+            alert(2) 
+        }
+    </script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">SmartBPS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="jumbotron">
+        <h1>Ошибка сервера</h1>
+        <p class="lead">
+            На сервере произошла ошибка.<br/>
+            Разработчики извещены о проблеме.<br/>
+            Они устранят ее в ближайшее время.
+        </p>
+        <p>
+            <a class="btn btn-lg btn-success" href="/">На главную</a>
+        </p>
+      </div>
+
+    </div>
+
+
+</body>
+</html>
+

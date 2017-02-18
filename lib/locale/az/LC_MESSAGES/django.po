@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-04 22:46+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Personal info"
+msgstr "Şəxsi məlmat"
+
+msgid "Permissions"
+msgstr "İcazə"
+
+msgid "Important dates"
+msgstr "Vacib tarixlər"
+
+msgid "Enter a valid username."
+msgstr "Düzgün istifadəçi adını daxil edin"
+
+msgid "last name"
+msgstr "Soyad"
+
+msgid "first name"
+msgstr "ad"
+
+msgid "middle name"
+msgstr "Ata adı"
+
+msgid "Change password"
+msgstr "Parolu dəyiş"
+
+msgid "Logoff"
+msgstr "Çıxış"
+
+msgid "Login"
+msgstr "Daxil ol"
+
+msgid "User messages"
+msgstr "İstifadəçi mesajı"
+
+msgid "Inbox"
+msgstr "Daxil olanlar"
+
+msgid "Sended"
+msgstr "Göndərildi"
+
+msgid "Create"
+msgstr "Yaratmaq"
+
+msgid "To archive"
+msgstr "Arxivləşdirmək"
+
+msgid "Send"
+msgstr "Göndər"
+
+msgid "Reports"
+msgstr "Hesabatlar"
+
+msgid "Tasks"
+msgstr "Tapşırıq"
+
+
+msgid "Mailer"
+msgstr "Poçt"
+
+msgid "WIKI"
+msgstr ""
+
+
+msgid "Admin"
+msgstr "İdarə etmək"
+
+msgid "Cancel"
+msgstr "Ləğv etmək"
+
+msgid "Forgot your password"
+msgstr "Parol unudulub"
+
+msgid "Change"
+msgstr "Dəyişmək"
+
+msgid "Page"
+msgstr "Səhifə"
+
+msgid "of"
+msgstr "dan/dən"
+
+msgid "Documents"
+msgstr "Sənədlər"
+
+msgid "Employees"
+msgstr "İşçi"
+
+
+msgid "Django Documentation"
+msgstr "Sənədləşmə"
+
+msgid "FileBrowser"
+msgstr "Fayl meneceri"
+
+msgid "Reload Server"
+msgstr "Serveri yenidən yükləmək"
+
+msgid "Exit"
+msgstr "Çıxış"
+
+msgid "Edit"
+msgstr "Redaktə etmək"
+
+msgid "Show archive"
+msgstr "Arxivi göstərmək"
+
+msgid "Username"
+msgstr "İstifadəçi adı"
+
+msgid "Password"
+msgstr "parol"
+
+msgid "Theme"
+msgstr "Mövzu"
+
+msgid "Message"
+msgstr "İsmarıc"
+
+msgid "Recipients"
+msgstr "Qəbul edən"
+
+msgid "Change language"
+msgstr "Dili dəyişmək"
+
+msgid "Invalid order"
+msgstr "Düzgün olmayan ardıcıllıq"
+
+msgid "Uploading documents"
+msgstr ""
+
+msgid "Favorites"
+msgstr "Seçilmiş"
+
+msgid "Docflow"
+msgstr "Sənədlərin dövriyyəsi"
+
+msgid "Home"
+msgstr "Baş səhifəyə"
+
+msgid "New document"
+msgstr "Yeni sənəd"
+
+msgid "Process"
+msgstr "Proses"
+
+msgid "Document wait accept"
+msgstr "Sənəd qəbulu gözləyir"
+
+msgid "Forward"
+msgstr "Yönləndirmək"
+
+msgid "It can take the operator"
+msgstr "Operator onu qəbul edə bilər"
+
+msgid "Save"
+msgstr "Yaddaşda saxlamaq"
+
+msgid "Delete"
+msgstr "Pozmaq/təmizləmək"
+
+msgid "Create and Send"
+msgstr "Yaratmaq və göndərmək"
+
+msgid "Wait"
+msgstr "Gözləyir"
+
+msgid "Document has not been transmitted anywhere"
+msgstr "Sənəd hələ heç yere göndərilməyib"
+
+msgid "Collective sending"
+msgstr "Qrup halda göndərmə"
+
+msgid "Collective take"
+msgstr "Qrup halda qəbul"
+
+msgid "No document"
+msgstr "Heç bir sənəd tapılmayıb"
+
+msgid "Document search"
+msgstr "Sənəd axtarışı"
+
+msgid "Filter"
+msgstr "Filtr"
+
+msgid "Folders"
+msgstr "Qovluq"
+
+msgid "Reset"
+msgstr "Atma/tullama"
+
+msgid "Accept"
+msgstr "Qəbul etmək"
+
+msgid "Reject"
+msgstr "İmtina etmək"
+
+msgid "From queue"
+msgstr "növbədən"
+
+msgid "Select documents"
+msgstr "Sənədi seçmək"
+
+msgid "Projects"
+msgstr "Layihə"
+
+msgid "Queue"
+msgstr "Növbə"
+
+msgid "Presets"
+msgstr "Əvvəlki kökləmə"
+
+
+msgid "From state"
+msgstr "Mərhələdən"
+
+msgid "Get from queue"
+msgstr "Növbədən götürmək"
+
+msgid "Files"
+msgstr "Fayllar"
+
+msgid "Upload"
+msgstr "Yükləmək"
+
+msgid "Upload files"
+msgstr "Faylları yükləmək"
+
+msgid "Close"
+msgstr "Bağlamaq"
+
+msgid "Collapse all"
+msgstr "Hər şeyi bükmək/sıxlaşdırmaq"
+
+msgid "Expand all"
+msgstr "Hər şeyi açmaq"
+
+msgid "Accepted"
+msgstr "Qəbul edildi"
+
+msgid "Rejected"
+msgstr "İmtina etmək"
+
+msgid "Notes"
+msgstr "Qeyd"
+
+msgid "File generator"
+msgstr "Sənədlərin boşaldılması"
+
+msgid "Document files"
+msgstr "Sənəd faylları"
+
+msgid "Others"
+msgstr "Digərləri"
+
+msgid "Your role"
+msgstr "Sizin rolunuz"
+
+msgid "Options loss"
+msgstr "Seçim itkiləri"
+
+msgid "Blocked transmission"
+msgstr "Bloklaşdırılmış ötürücü"
+
+msgid "Download"
+msgstr "Boşaltmaq"
+
+msgid "Sending on stage after creation"
+msgstr "Tərtib edildikdən sonra növbəti mərhələyə göndərilməsi"
+
+msgid "Не протипизировано"
+msgstr "Tiplər üzrə bölüşdürülməyib"
+
+msgid "Дата"
+msgstr "Tarix"
+
+msgid "Назначенные мне задачи"
+msgstr "Mənə təyin olunmuş tapşırıqlar"
+
+msgid "Процесс"
+msgstr "Proses"
+
+msgid "Сумма"
+msgstr "Məbləğ"
+
+msgid "Адрес банка/лизинга"
+msgstr "Bankın\\lizinqin ünvanı"
+
+msgid "Аннулировать полис"
+msgstr "Polisi ləğv etmək"
+
+msgid "Сообщение"
+msgstr "İsmarıc"
+
+msgid "Требуется заполнить поля Дата осмотра и Место осмотра"
+msgstr "Baxışın tarixi və Yeri sahələrini doldurmaq tələb olunur"
+
+msgid "Вы действительно хотите аннулировать договор?"
+msgstr "Siz müqaviləni ləğv eləmək istədiyinizdən əminsiniz ?"
+
+msgid "Осмотр ТС для авто текущего и прошлого года выпуска не требуется"
+msgstr "Cari və keçən ilki avtomobillər üçün NV-nin baxışı nəzərdə tutulmayib"
+
+msgid "Вы не можете создавать документы"
+msgstr "Siz sənəd yarada bilməzsiniz"
+
+msgid "Договор аннулирован"
+msgstr "Müqavilə ləğv edilib"
+
+msgid "Выход из системы"
+msgstr "Sistemdən çıxış"
+
+msgid "Всего хорошего."
+msgstr "Sağ olun."
+
+msgid "Благодарим вас за проведенное с нами время."
+msgstr "Bizimlə keçirdiyiniz vaxta görə təşəkkür edirik"

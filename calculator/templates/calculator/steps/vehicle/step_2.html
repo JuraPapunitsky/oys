@@ -1,0 +1,116 @@
+{% load i18n %}
+<div class="b-form__block n-form__detailinfo n-form__step clearfix" id="step-2">
+    <div style="padding-right: 20px;">
+        <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+    </div>
+    <div class="b-step__title n-title__ico n-t-ico__car">
+        <h2>{% trans 'Информация об автомобиле' %}</h2>
+    </div>
+
+    {# Выбранные значения #}
+    <ul class="b-step__list">
+        <li class="b-step__item">
+            <span></span>
+            <a href="#" class="b-step__item-close j-step__item-close"><small>{% trans 'изменить' %}</small></a>
+        </li>
+    </ul>
+
+    {# Полоса прогресса заполнения формы (точки) #}
+    <ul class="b-step__current">
+        <li class="b-step__current-item n-item__curr"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+        <li class="b-step__current-item"><a href="#"></a></li>
+    </ul>
+
+    {#  Подэтапы данного этапа #}
+    <div class="b-calc__item n-calc__area n-radio__hidden n-form__substep e-active" id="substep-1">
+        <h3>{% trans 'Тип автомобиля' %}</h3>
+        <div class="b-area__list n-justify__col b-substep-1__list">
+
+            <div class="b-radio__wr">
+                <input type="radio" name="auto_type" id="auto_type[4]" value="4" data-value="{% trans 'Легковой автомобиль' %}">
+                <label for="auto_type[4]">{% trans 'Легковой автомобиль' %}</label>
+            </div>
+
+            <div class="b-radio__wr">
+                <input type="radio" name="auto_type" id="auto_type[3]" value="3" data-value="{% trans 'Прицеп и полуприцеп' %}">
+                <label for="auto_type[3]">{% trans 'Прицеп и полуприцеп' %}</label>
+            </div>
+
+            <div class="b-radio__wr">
+                <input type="radio" name="auto_type" id="auto_type[2]" value="2" data-value="{% trans 'Автобус и микроавтобус' %}">
+                <label for="auto_type[2]">{% trans 'Автобус и микроавтобус' %}</label>
+            </div>
+
+            <div class="b-radio__wr">
+                <input type="radio" name="auto_type" id="auto_type[5]" value="5" data-value="{% trans 'Мотоцикл&nbsp;и&nbsp;скутер' %}">
+                <label for="auto_type[5]">{% trans 'Мотоцикл&nbsp;и&nbsp;скутер' %}</label>
+            </div>
+
+            <div class="b-radio__wr">
+                <input type="radio" name="auto_type" id="auto_type[6]" value="6" data-value="{% trans 'Грузовой автомобиль' %}">
+                <label for="auto_type[6]">{% trans 'Грузовой автомобиль' %}</label>
+            </div>
+
+            <div class="b-radio__wr">
+                <input type="radio" name="auto_type" id="auto_type[8]" value="8" data-value="{% trans 'Трактор и Спецтехника' %}">
+                <label for="auto_type[8]">{% trans 'Трактор и Спецтехника' %}</label>
+            </div>
+
+
+            <div class="b-justify__helper"></div>
+        </div>
+    </div>
+
+    <div class="b-calc__item n-calc__city n-radio__hidden n-form__substep" id="substep-2"></div>
+
+    <div class="b-calc__item n-calc__car n-radio__hidden n-form__substep" id="substep-3"></div>
+
+    <div class="b-calc__item n-calc__car n-radio__hidden n-form__substep" id="substep-4"></div>
+
+    <div class="b-calc__item n-calc__car n-radio__hidden n-form__substep" id="substep-5"></div>
+
+    <div class="b-calc__item n-calc__costcar n-form__substep" id="substep-6">
+        <h3>{% trans 'Стоимость автомобиля' %}</h3>
+        <div class="b-style__slider n-cost__car">
+            <input type="text" name="auto_cost" value="" class="b-input__costcar">
+            <div class="b-slider"></div>
+            <span class="b-price__from">1000 AZN</span>
+            <span class="b-price__to">200 000 AZN</span>
+        </div>
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+    <div class="b-calc__item n-calc__costcar n-form__substep" id="substep-7">
+        <h3>{% trans 'FIN код страхователя' %}</h3>
+
+        <div class="b-data__line b-ins_person_pin">
+            <div class="b-input__wr col-md-11 col-xs-11">
+                <div class="row">
+                    <input type="text" name="ins_person_pin" id="id_ins_person_pin" value="" class="b-input__personpin">
+                </div>
+            </div>
+
+            {# Help block #}
+{#            {% trans 'Указывается в правом нижнем углу удостоверения личности. Справа отсчитываем 8 знаков и убираем последний символ. Получаем 7 значный код' as fin_help %}#}
+{#            {% include 'calculator/question.html' with answ=fin_help %}#}
+            <div class="b-qw__block">
+                <a href="#" class="b-qw__link j-qw__link"></a>
+
+                <div class="b-aw__info" style="width: 390px">
+                    <p><img src="{{ STATIC_URL }}common/img/fin_code.png"></p>
+                </div>
+            </div>
+
+            <div class="field-error"><span></span></div>
+        </div>
+
+        <a href="#" class="order button j-next__click">{% trans 'Продолжить' %}</a>
+    </div>
+
+</div>

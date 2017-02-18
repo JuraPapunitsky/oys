@@ -1,0 +1,11 @@
+{% load i18n %}
+<div class="lang-sticker hidden-xs">
+    <ul>
+        {% for lang_code, lang_name in LANGUAGES %}
+            <li {% if lang_code == LANGUAGE_CODE %}class="active"{% endif %}>
+                <a href="{% url 'lib:set_lang' code=lang_code %}?back_url={{request.path}}">{{lang_code}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+

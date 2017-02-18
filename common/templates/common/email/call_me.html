@@ -1,0 +1,9 @@
+Запрошен обратный звонок с сайта http://site.oys.az
+<p>
+    Имя: {{call_request.name}} <br>
+    Телефон: {{call_request.phone}} <br>
+    Дата звонка: {{call_request.d_call|date}} 
+                 {{call_request.d_call_from|time}} 
+                 - {{call_request.d_call_to|time}}<br>
+    Причина: {{call_request.get_reason_display}} <br>
+</p>

@@ -1,0 +1,55 @@
+{% load i18n %}
+{# Ожидает значения следующих переменных field_name, field_label, objects = [{id:'',title:''}], objects_more=[], help_text #}
+<div class="b-data__line j-block__scr clearfix" id="b-{{ field_name }}">
+
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label>{% trans field_label %}</label>
+        </div>
+    </div>
+
+    <div class="b-input__wr col-md-7 col-xs-5">
+        <div class="row b-data__wr">
+            <input type="radio" name="{{ field_name }}" id="id_{{ field_name }}" data-window="1" value="" class="n-main__radio">
+            <label for="id_{{ field_name }}"><span
+                    class="b-name__replace j-replace__text">{% trans 'Выбрать' %}</span></label>
+        </div>
+    </div>
+
+    <div class="b-block__scr n-src__window_1" data-window="1">
+        <div class="b-country__list j-replace__value clearfix">
+            {% for obj in objects %}
+            <div class="b-radio__wr col-sm-4">
+                <div class="row">
+                    <input type="radio" name="{{ field_name }}" value="{{ obj.id }}" data-value="{{ obj.title }}" id="id_{{ field_name }}_{{ obj.id }}">
+                    <label for="id_{{ field_name }}_{{ obj.id }}">{{ obj.title }}</label>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% if objects_more %}
+            <div class="b-radio__wr col-sm-4">
+                <div class="row">
+                    <a href="#" onclick="$(this).closest('.b-radio__wr').hide().nextAll().show();return false;">{% trans 'Подробнее' %}</a>
+                </div>
+            </div>
+
+            {% for obj in objects_more %}
+            <div class="b-radio__wr col-sm-4" style="display: none">
+                <div class="row">
+                    <input type="radio" name="{{ field_name }}" value="{{ obj.id }}" data-value="{{ obj.title }}" id="id_{{ field_name }}_{{ obj.id }}">
+                    <label for="id_{{ field_name }}_{{ obj.id }}">{{ obj.title }}</label>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% endif %}
+        </div>
+    </div>
+
+    {% if help_text %}
+        {% include 'calculator/question.html' with answ=help_text %}
+    {% endif %}
+
+    <div class="field-error"><span></span></div>
+</div>

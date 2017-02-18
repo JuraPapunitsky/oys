@@ -1,0 +1,39 @@
+{% extends 'lib/base.html' %}
+
+{% block navigation %}{% endblock %}
+{% block body_messages %}{% endblock %}
+{% block javascript %}{% endblock %}
+
+{% block css %}
+    {{block.super}}
+    <style type="text/css">
+        body { background-color: #eee; }
+    </style>
+{% endblock css %}
+
+{% block body %}
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h3>{% block body_modal_header %}{% endblock %}</h3>
+            </div>
+
+            <form method='post' class="form-horizontal" role="form">
+                <div class="modal-body">
+                    {% block body_modal_body %}
+
+                    {% endblock %}
+                </div>
+                <div class="modal-footer">
+                    {% block body_modal_footer %}
+
+                    {% endblock %}
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+{% endblock body %}

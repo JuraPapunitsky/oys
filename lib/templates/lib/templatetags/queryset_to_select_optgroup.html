@@ -1,0 +1,8 @@
+<option value="">-----</option>
+{% for group in groups %}
+    <optgroup label="{{ group.grouper }}">
+    {% for item in group.list %}
+        <option value="{{ item.id }}">{{ item }}</option>
+    {% endfor %}
+    </optgroup>
+{% endfor %}

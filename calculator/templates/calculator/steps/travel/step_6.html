@@ -1,0 +1,10 @@
+{% extends 'calculator/steps/general/step_6.html' %}
+
+{% block header_icon %}n-t-ico__travel{% endblock %}
+
+{% block right_sideboard %}
+    {# Информация о ТС #}
+    {% include 'calculator/steps/travel/right_info.html' %}
+    {# Выбранные продукты #}
+    {% include 'calculator/steps/travel/right_products.html' %}
+{% endblock %}

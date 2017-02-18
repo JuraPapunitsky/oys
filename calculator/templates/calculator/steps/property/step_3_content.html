@@ -1,0 +1,27 @@
+{% load i18n %}
+<div>
+    <a href="#" class="pull-right b-item__edit j-calculator__reset">{% trans 'В начало' %}</a>
+</div>
+<div class="b-step__title n-title__ico n-t-ico__property">
+    <h2>{% trans 'Страховые продукты' %}</h2>
+</div>
+<div class="b-insurance__row">
+
+    <div class="b-insurance__item">
+        <div class="b-insurance__top">
+            <h2 class="b-insurance__title"><a href="#">{{ p3.title }}</a></h2>
+
+            <p class="b-insurance__info">{{ p3.description }}</p>
+        </div>
+        <div class="b-insurance__btm">
+            <p class="b-insurance__price">{{ p3.price|floatformat:"2" }} <span>AZN</span></p>
+            <a href="#" class="order button insurance_product__btn j-next__click"
+               data-product-id="{{ p3.id }}" data-product-title="{{ p3.title }}">{% trans 'выбрать' %}</a>
+        </div>
+    </div>
+
+</div>
+
+<div id="product_preload_block">
+    <div id="p3_preloaded" style="display: none"><table>{{ p3_preload|safe }}</table></div>
+</div>

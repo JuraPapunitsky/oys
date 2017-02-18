@@ -1,0 +1,100 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="/insurance/">{% trans 'К списку страховых продуктов' %}</a>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_3.png">
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9">
+                            <p style="font-size: 24px; padding-top: 10px;">{% trans 'Онкопомощь 69 и 69+' %}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{% trans 'Что страхует продукт?' %}</h3>
+                            <p>{% trans 'Ваше здоровье' %}</p>
+
+                            <h3>{% trans 'Срок договора' %}</h3>
+                            <p>{% trans 'Договор заключается на 5 лет' %}</p>
+
+                            <h3>{% trans 'Краткое описание страхового продукта' %}</h3>
+                            <p>{% trans 'Страхование «Онкопомощь 69 и 69+» оплачивает расходы на лечение, если у Вас появилось злокачественное онкозаболевание в течение срока действия договора страхования.' %}</p>
+
+                            <h3>{% trans 'Покрываемые риски' %}</h3>
+                            <p>{% trans 'Появление злокачественного онкозаболевания в течение срока действия договора страхования' %}</p>
+
+                            <h3>{% trans 'Преимущества продукта' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Очень выгодный страховой продукт – всего 69 $ в год;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Возможно лечение за рубежом;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Эффективность полиса сохраняется в течение 1,8 – 2 лет после диагностирования заболевания;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Выплаты необходимо осуществлять в пределах страхового лимита (в течение 1.8 (для программы 69) или 2 лет (для программы 69+) с даты диагнострования заболевания), несмотря на окончание срока действия договора. Восстановление лимита не предусмотрено;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Ежегодная страховая сумма возрастает на 2000 манат (для 69) или 3000 (для 69+). За 15 лет непрерывного контракта сумма достигнет 10000 + (2000 *15 лет) = 40000 манат. Дальнейший рост страховой суммы не предусмотрен. Страховые премии при этом остаются фиксированными.' %}</span>
+                            </p>
+
+
+                            <h3>{% trans 'Важно знать' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Для первичного договора предусмотрен waiting period (период ожидания)  длительностью 4 месяцев' %}</span> <br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Максимальный возраст для заключения первичного договора 55 лет' %}</span>
+                            </p>
+
+                            <h3>{% trans 'Мнение экспертов “Odlar Yurdu Sığorta Brokeri”' %}</h3>
+                            <blockquote>
+                              <p>{% trans 'Эксперты “Odlar Yurdu Sığorta Brokeri” предлагают Вам приобрести страхование «Онкопомощь 69 и 69+» с разнообразными вариантами покрытия, быстрым оформлением договора и организацией выплаты, что делает этот страховой продукт действительно привлекательным, тем более, что сервис предоставляется одной из ведущих страховых компаний A-Group.' %}</p>
+                              <footer>{% trans 'Команда “Odlar Yurdu Sığorta Brokeri”' %}</footer>
+                            </blockquote>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body_content %}

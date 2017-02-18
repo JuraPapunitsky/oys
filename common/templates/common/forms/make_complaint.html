@@ -1,0 +1,26 @@
+{% load i18n %}
+<form action="{% url 'common:make_complaint' %}" class="j-clr-form" id="j-complaint__form" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="next_url" value="{{request.path}}">
+
+    <div class="quest-wr quest-area"><label>{% trans 'Жалоба' %}*</label><textarea name="complaint" data-validation="required"></textarea></div>
+    <div class="quest-wr"><label>{% trans 'Фамилия' %}</label><input type="text" name="last_name"></div>
+    <div class="quest-wr"><label>{% trans 'Имя' %}*</label><input type="text" name="first_name" data-validation="required"></div>
+    <div class="quest-wr"><label>{% trans 'Отчество' %}</label><input type="text" name="middle_name"></div>
+    <div class="quest-wr"><label>{% trans 'Мобильный телефон' %}*</label><input class="phone j-phone__input" type="text" name="phone" data-validation="required"></div>
+    <div class="quest-wr"><label>{% trans 'Электронная почта' %}*</label><input type="text" name="email" data-validation="email"></div>
+    <div class="quest-wr"><label>{% trans 'Связаться со мной' %}</label>
+
+        <div class="quest-wr-block">
+            <div class="select-wr subj-back">
+                <select class="subj-back" name="response_type">
+                    <option value="mobile">{% trans 'По мобильному телефону' %}</option>
+                    <option value="email">{% trans 'По электронной почте' %}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="quest-wr"><label>&nbsp;</label>
+        <button class="q_button">{% trans 'отправить' %}</button>
+    </div>
+</form>

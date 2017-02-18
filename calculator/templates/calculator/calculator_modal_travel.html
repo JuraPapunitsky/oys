@@ -1,0 +1,103 @@
+{% include 'calculator/steps/travel/step_2.html' %}
+{% include 'calculator/steps/travel/step_3.html' %}
+{% include 'calculator/steps/travel/step_4.html' %}
+{% include 'calculator/steps/travel/step_5.html' %}
+{% include 'calculator/steps/travel/step_6.html' %}
+{% include 'calculator/steps/travel/step_7.html' %}
+
+
+<script type="text/javascript">
+    function init_calculator() {
+        if ($('.over').length) over_position();
+
+        /*** Инициализация jClever ***/
+        calculator.init_jclever();
+
+        /*** Возврат до нужной ступени ***/
+        $(document).on('click', '.j-step__item-close', calculator.previous_substep);
+
+        /*** Возврат до нужного слоя ***/
+        $(document).on('click', '.j-prev__layer', calculator.previous_layer);
+
+        /*** Закрыть подсказку ***/
+        $(document).on('click', '.j-layer__fix', function () {
+            $('.b-aw__info').fadeOut(100).parents('.b-qw__block').removeClass('n-qw__open');
+            $(this).remove();
+        });
+
+        /*** календарь на инпут ***/
+        $('.j-dog__from, .j-d_start, .j-d_end')
+                .datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    dateFormat: 'dd.mm.yy'
+                })
+                .datepicker('setDate', '+1d');
+
+        $('.j-insurer__dateborn, .j-traveller__birthday')
+                .datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: "-80:+00",
+                    dateFormat: 'dd.mm.yy'
+                });
+
+        $('.j-delivery__date')
+                .datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    changeMonth: false,
+                    changeYear: false,
+                    yearRange: "-00:+00",
+                    dateFormat: 'dd.mm.yy'
+                })
+                .datepicker('setDate', '+1d');
+
+        $('.j-dog__from, .j-d_start, .j-d_end, .j-insurer__dateborn, .j-traveller__birthday, .j-delivery__date').datepicker('option', 'onSelect', function() {
+            $('.b-calc__block').css('-webkit-overflow-scrolling', 'auto');
+        });
+
+        /*** Slider ***/
+        $(function () {
+            var $slider_blocks = $('.b-style__slider');
+            var $sliders = $slider_blocks.find('.b-slider');
+            $sliders.slider({slide: calculator.slider_slide_handler});
+
+            var $all_slider_inputs = $slider_blocks.find('input[type=text]');
+
+            /*** Set input value when change ***/
+            $all_slider_inputs.change(calculator.slider_input_chng_handler);
+
+            /*** Set input value and left position when load page ***/
+            calculator.slider_input_default_set($all_slider_inputs);
+
+            calculator.slider_ui_blocks_init($slider_blocks, ' AZN');
+
+            /*** Set input left position when move ***/
+            $slider_blocks.find('.ui-slider-handle').mousedown(calculator.slider_ui_handle_mousedown);
+
+            /*** Set input left position when move on mobile device ***/
+            $slider_blocks.find('.ui-slider').click(calculator.slider_ui_handle_click);
+
+        });
+
+        /*** Calculator reset link ***/
+        $('.j-calculator__reset').unbind('click').click(calculator.reset_calculator);
+
+        /*** Travel edit link ***/
+        $('.j-travel__edit').unbind('click').click(travel_calculator.travel_edit_click);
+
+{#        $('.j-property__save').unbind('click').click(property_calculator.property_save_click);#}
+
+        /*** Calculator right panel scrolling ***/
+        calculator.right_panel_scroll();
+
+        /*** Init contract object ***/
+        travel_calculator.init_contract();
+
+        /* Workflow initialization */
+        workflow.init(travel_calculator.workflow_steps, 'substep_1');
+    }
+</script>

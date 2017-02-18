@@ -1,0 +1,8 @@
+<html>
+<body>
+    На сайте создан договор по страхованию здоровья.<br/>
+    {% if p9_1_id %}Документ Urgent Care: <a href="{{ asan_url }}/docflow/9/{{ p9_1_id }}">{{ p9_1_id }}</a><br/>{% endif %}
+    {% if p9_2_id %}Документ REFUND: <a href="{{ asan_url }}/docflow/9/{{ p9_2_id }}">{{ p9_2_id }}</a><br/>{% endif %}
+    {% if p9_3_id %}Документ Program 69: <a href="{{ asan_url }}/docflow/9/{{ p9_3_id }}">{{ p9_3_id }}</a><br/>{% endif %}
+</body>
+</html>

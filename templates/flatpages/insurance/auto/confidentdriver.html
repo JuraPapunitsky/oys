@@ -1,0 +1,110 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="/insurance/">{% trans 'К списку страховых продуктов' %}</a>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_1.png">
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9 text-capitalize">
+                            <p style="font-size: 24px; padding-top: 10px;">{% trans 'Уверенный водитель' %}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{% trans 'Что страхует продукт?' %}</h3>
+                            <p>{% trans 'Ваш автомобиль' %}</p>
+
+                            <h3>{% trans 'Срок договора' %}</h3>
+                            <p>{% trans 'Договор заключается на 12 месяцев' %}</p>
+
+                            <h3>{% trans 'Краткое описание страхового продукта' %}</h3>
+                            <p>{% trans 'Всего за 0,55&#37; от рыночной стоимости автомобиля Вы сможете уберечь свой автомобиль от любых неприятностей, произошедших не по Вашей вине: дорожно-транспортные происшествия, повреждение упавшим предметом, незаконные действия третьих лиц, кража, угон и прочие непредвиденные ситуации, в результате которых нанесен ущерб автотранспортному средству.' %}</p>
+
+                            <h3>{% trans 'Покрываемые риски' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Падение на автомобиль какого-либо предмета' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Противоправные незаконные действия со стороны 3-х лиц' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Кража, угон' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Ограбление' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Ущерб, нанесенный автотранспортному средству со стороны животных' %}</span>
+                            </p>
+
+                            <h3>{% trans 'Преимущества продукта' %}</h3>
+                            <p>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Возможность застраховать автомобиль за минимальную страховую премию;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Большой спектр рисков (как и в полноценном каско);' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Высокий уровень обслуживания;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Без франшизы (франшиза – это часть причиненного в результате страхового случая ущерба, которая не обеспечивается страхованием и оплачивается страхователем);' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Выплата при страховом случае производится без учета амортизации;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Оплата всех расходов на эвакуацию;' %}</span><br/>
+                                <div class="icon-ok" style="float: left"></div> <span style="padding-left: 10px;">{% trans 'Сбор документов и официальное оформление в ГАИ со стороны A-Group.' %}</span>
+                            </p>
+
+
+                            <h3>{% trans 'Важно знать' %}</h3>
+                            <p>{% trans 'Выплата осуществляется только в случае вашей невиновности.' %}</p>
+
+                            <h3>{% trans 'Мнение экспертов “Odlar Yurdu Sığorta Brokeri”' %}</h3>
+                            <blockquote>
+                              <p>{% trans 'Если Вы давно водите автомобиль, прекрасно справляетесь с его управлением и считаете, что причиной ДТП могут стать другие участники дорожного движения, а не Вы, то эксперты “Odlar Yurdu Sığorta Brokeri” рекомендуют Вам приобрести полис Уверенный водитель, который практически содержит все покрытия обычного договора каско.' %}</p>
+                              <footer>{% trans 'Команда “Odlar Yurdu Sığorta Brokeri”' %}</footer>
+                            </blockquote>
+
+                            <h3>{% trans 'Похожие продукты' %}</h3>
+                            <ul>
+                                <li><a href="/insurance/auto/superkasko/">{% trans 'СуперКАСКО' %}</a></li>
+                                <li><a href="/insurance/auto/simplekasko/">{% trans 'Простое КАСКО' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body_content %}

@@ -1,0 +1,16 @@
+{% extends 'common/base.html' %}
+
+{% block navigation_menu %}
+{% endblock %}
+
+{% block body_content %}
+    <div class="jumbotron">
+        <h1>Всего доброго</h1>
+        <p>
+            Вы вышли из системы. Теперь мы не знаем, кто вы. <br>
+            Вы можете вновь <a href="{% url 'account:login' %}" class='btn btn-success btn-xs'>войти</a> <br>
+            или перейти на <a href="/" class='btn btn-success btn-xs'>главную страницу</a>
+        </p>
+    </div>
+    
+{% endblock %}

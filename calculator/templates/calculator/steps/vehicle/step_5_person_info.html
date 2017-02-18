@@ -1,0 +1,249 @@
+{% load i18n %}
+
+{# Фамилия #}
+<div class="b-data__line">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_last_name }}">{% trans 'Фамилия' %}</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_last_name }}" id="id_{{ fields.fld_last_name }}" class="b-input">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Имя #}
+<div class="b-data__line">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_first_name }}">{% trans 'Имя' %}</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_first_name }}" id="id_{{ fields.fld_first_name }}" class="b-input">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Отчество #}
+<div class="b-data__line">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_middle_name }}">{% trans 'Отчество' %}</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_middle_name }}" id="id_{{ fields.fld_middle_name }}" class="b-input">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Дата рождения #}
+<div class="b-data__line">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_birthday }}">{% trans 'Дата рождения' %}</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_birthday }}" id="id_{{ fields.fld_birthday }}"
+                   class="b-input j-insurer__dateborn n-calendar">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Пол #}
+<div class="b-data__line n-line__sex">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label>{% trans 'Пол' %}</label>
+        </div>
+    </div>
+    <div class="b-sex__wr col-md-7 col-xs-6">
+        <div class="row">
+            <div class="b-data__wr col-md-6">
+                <div class="row">
+                    <input type="radio" name="{{ fields.fld_gender }}" value="1" id="id_{{ fields.fld_gender }}_1" class="b-radio"
+                           checked>
+                    <label for="id_{{ fields.fld_gender }}_1">{% trans 'Мужской' %}</label>
+                </div>
+            </div>
+            <div class="b-data__wr col-md-6">
+                <div class="row">
+                    <input type="radio" name="{{ fields.fld_gender }}" value="2" id="id_{{ fields.fld_gender }}_2" class="b-radio">
+                    <label for="id_{{ fields.fld_gender }}_2">{% trans 'Женский' %}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# ПИН код #}
+{% if fields.fld_pin %}
+<div class="b-data__line">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row"><label for="id_{{ fields.fld_pin }}">{% trans 'ПИН Код' %}</label></div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_pin }}" id="id_{{ fields.fld_pin }}" class="b-input">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+{% endif %}
+
+<div class="b-data__line">
+    <p class="b-title__sm">{% trans 'Адрес регистрации' %}</p>
+</div>
+
+{# Страна #}
+{% trans 'Страна' as country_trans %}
+{% trans 'Указывается в какой стране вы проживаете более 180 дней в году' as country_help %}
+{% include 'calculator/steps/g_selection_field.html' with field_name=fields.fld_country field_label=country_trans help_text=country_help objects=countries objects_more=countries_more %}
+
+{# Блок с адресом для резидентов #}
+<div class="resident-address__block" style="display: none">
+    {# Город #}
+    {% trans 'Город' as city_tr %}
+    {% include 'calculator/steps/g_selection_field.html' with field_name=fields.fld_city field_label=city_tr objects=cities objects_more=cities_more %}
+</div>
+
+{# Блок с адресом для не резидентов #}
+<div class="foreign-address__block" style="display: none">
+    {# Город (ручн.) #}
+    <div class="b-data__line clearfix">
+        <div class="b-label__wr col-md-4 col-xs-5">
+            <div class="row">
+                <label for="id_{{ fields.fld_city_custom }}">{% trans 'Город' %}</label>
+            </div>
+        </div>
+        <div class="b-input__wr col-md-7 col-xs-6">
+            <div class="row">
+                <input type="text" name="{{ fields.fld_city_custom }}" id="id_{{ fields.fld_city_custom }}" class="b-input">
+            </div>
+        </div>
+        <div class="field-error"><span></span></div>
+    </div>
+</div>
+
+{# Почтовый индекс #}
+<div class="b-data__line postal-index__block">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_index }}">{% trans 'Индекс' %}</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-5">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_index }}" id="id_{{ fields.fld_index }}" class="b-input w-100">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Блок с адресом для резидентов #}
+<div class="resident-address__block" style="display: none">
+    {# Улица #}
+    <div class="b-data__line">
+        <div class="b-label__wr col-md-4 col-xs-5">
+            <div class="row">
+                <label for="id_{{ fields.fld_street }}">{% trans 'Улица' %}</label>
+            </div>
+        </div>
+        <div class="b-input__wr col-md-7 col-xs-6">
+            <div class="row">
+                <input type="text" name="{{ fields.fld_street }}" id="id_{{ fields.fld_street }}" class="b-input">
+            </div>
+        </div>
+        <div class="field-error"><span></span></div>
+    </div>
+
+    {# Дом и квартира #}
+    <div class="b-data__line n-line__houseapp">
+        <div class="b-label__wr col-md-4 col-xs-5">
+            <div class="row">
+                <label for="id_{{ fields.fld_house }}">{% trans 'Дом' %}</label>
+            </div>
+        </div>
+        <div class="b-input__wr col-md-2 col-xs-5">
+            <div class="row">
+                <input type="text" name="{{ fields.fld_house }}" id="id_{{ fields.fld_house }}" class="b-input w-100">
+            </div>
+        </div>
+        <div class="col-lg-1 pull-right"></div>
+        <div class="col-lg-4 col-xs-12 flat-wr b-input__wr clearfix">
+            <div class="row">
+                <div class="b-label__wr col-md-4 col-xs-5">
+                    <div class="row">
+                        <label for="id_{{ fields.fld_apartment }}">{% trans 'Квартира' %}</label>
+                    </div>
+                </div>
+                <div class="b-input__wr col-md-7 col-xs-5">
+                    <div class="row">
+                        <input type="text" name="{{ fields.fld_apartment }}" id="id_{{ fields.fld_apartment }}" class="b-input w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field-error"><span></span></div>
+    </div>
+</div>
+
+{# Блок с адресом для не резидентов #}
+<div class="foreign-address__block" style="display: none">
+    {# Адрес (ручн.) #}
+    <div class="b-data__line clearfix">
+        <div class="b-label__wr col-md-4 col-xs-5">
+            <div class="row">
+                <label for="id_{{ fields.fld_address }}">{% trans 'Адрес' %}</label>
+            </div>
+        </div>
+        <div class="b-input__wr col-md-7 col-xs-6">
+            <div class="row">
+                <input type="text" name="{{ fields.fld_address }}" id="id_{{ fields.fld_address }}" class="b-input">
+            </div>
+        </div>
+        <div class="field-error"><span></span></div>
+    </div>
+</div>
+
+{# Телефон #}
+<div class="b-data__line clearfix">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_phone }}">{% trans 'Телефон' %}</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_phone }}" id="id_{{ fields.fld_phone }}" class="b-input">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# E-mail #}
+<div class="b-data__line">
+    <div class="b-label__wr col-md-4 col-xs-5">
+        <div class="row">
+            <label for="id_{{ fields.fld_email }}">E-mail</label>
+        </div>
+    </div>
+    <div class="b-input__wr col-md-7 col-xs-6">
+        <div class="row">
+            <input type="text" name="{{ fields.fld_email }}" id="id_{{ fields.fld_email }}" class="b-input">
+        </div>
+    </div>
+    <div class="field-error"><span></span></div>
+</div>

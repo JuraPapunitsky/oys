@@ -1,0 +1,88 @@
+/* Insurance documents block in detail info layer */
+.b-rules__block {
+    display: none;
+}
+
+.polic-item:hover img {
+    background: url(./img/hover2.png)center top no-repeat;
+    background-size: cover;
+}
+
+.polic-item a {
+    width: 110px;
+    height: 124px;
+}
+
+.polic-item a:hover {
+    cursor: pointer;
+}
+
+.lang-sticker {
+    background: url(./img/sticker-lang.png) 0 0 no-repeat;
+    color: transparent;
+    position: fixed;
+    top: 50%;
+    margin-top: -35px;
+    right: 0;
+    width: 33px;
+    height: 65px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    z-index: 1100;
+}
+
+.lang-sticker ul {
+    padding-top: 2px;
+    padding-left: 7px;
+}
+
+.lang-sticker li {
+    list-style-type: none;
+}
+
+.lang-sticker li.active a {
+    font-weight: bold;
+}
+
+.lang-sticker li a {
+    color: white;
+    font-weight: normal;
+}
+
+.lang-sticker li a:hover {
+    font-weight: bold;
+}
+
+.partner-logo {
+    margin-top: 40px;
+}
+
+.employee-header-row {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.employee-content-row {
+    margin-bottom: 140px;
+}
+
+.comfort-work {
+    padding: 75px 0 145px 0;
+}
+
+.comfort-icons h1 {
+    font: 40px 'Lato-Light';
+    margin: 40px 0 44px 0;
+    display: block;
+    line-height: 40px;
+    letter-spacing: -0.048em;
+}
+
+.comfort-icons h1>span{
+    font: 60px 'Lato-Medium';
+    vertical-align: middle;
+}
+
+.comfort-icons p { height: 110px}

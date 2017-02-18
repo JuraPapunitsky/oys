@@ -1,0 +1,39 @@
+{% for row in product_matrix %}
+    {% if forloop.first %}
+        <thead>
+        <tr>
+            {% for col in row %}{% if forloop.counter0 > 0 %}
+                <th>{{ col }}</th>{% endif %}{% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+    {% else %}
+        <tr>
+            {% for col in row %}
+                {% if forloop.counter0 == 1 %}
+                    <td>{{ col }}</td>
+                {% elif forloop.counter0 > 1 %}
+                    <td>
+                        {% if col and col.price > 0 %}
+                            <div class="b-data__wr">
+                                <input type="radio"
+                                       name="p{{ col.id }}_inscompany"
+                                       value="{{ row.0 }}"
+                                       data-price="{{ col.price }}"
+                                       id="id_product_{{ col.id }}_{{ row.0 }}"
+                                       class="b-form__radio n-main__radio product-{{ col.id }}__radio">
+                                <label for="id_product_{{ col.id }}_{{ row.0 }}">{{ col.price }} AZN</label>
+                            </div>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endif %}
+
+{% if forloop.last %}
+    </tbody>
+{% endif %}
+{% endfor %}

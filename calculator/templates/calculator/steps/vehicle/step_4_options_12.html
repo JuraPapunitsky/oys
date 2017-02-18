@@ -1,0 +1,258 @@
+{% load i18n %}
+
+{# Поле Страховая сумма #}
+<div class="b-data__line clearfix b-p12_ins_sum">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Страховая сумма' %}</p>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="insurance_coverage" id="insurance_coverage_1" value="2000" checked
+                       class="b-form__radio">
+                <label for="insurance_coverage_1">2000 AZN</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="insurance_coverage" id="insurance_coverage_2" value="3000"
+                       class="b-form__radio">
+                <label for="insurance_coverage_2">3000 AZN</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="insurance_coverage" id="insurance_coverage_3" value="5000"
+                       class="b-form__radio">
+                <label for="insurance_coverage_3">5000 AZN</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле количество страховых случаев #}
+<div class="b-data__line clearfix b-p12_acc_qty">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Количество страховых случаев' %}</p>
+
+        <div class="b-data__wr col-sm-6">
+            <div class="row">
+                <input type="radio" name="accidents_quantity" id="accidents_quantity_1" value="1" checked
+                       class="b-form__radio">
+                <label for="accidents_quantity_1">{% trans 'Один' %}</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-6">
+            <div class="row">
+                <input type="radio" name="accidents_quantity" id="accidents_quantity_2" value="2"
+                       class="b-form__radio">
+                <label for="accidents_quantity_2">{% trans 'Несколько' %}</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Франшиза #}
+<div class="b-data__line clearfix b-p12_deductible">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Франшиза' %}</p>
+
+        <div class="b-data__wr col-sm-6">
+            <div class="row">
+                <input type="radio" name="p12_deductible" id="p12_deductible" value="100" checked
+                       class="b-form__radio">
+                <label for="p12_deductible">100 AZN</label>
+            </div>
+        </div>
+
+        {% trans 'Это часть причиненного в результате страхового случая ущерба, которая не обеспечивается страхованием и оплачивается страхователем' as deductible_help %}
+        {% include 'calculator/question.html' with answ=deductible_help %}
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Выгодопреобретатель #}
+<div class="b-data__line clearfix b-p12_beneficiary">
+    <div class="b-data__wr j-block__scr">
+        <p class="b-title__sm">{% trans 'Выгодоприобретатель' %}</p>
+
+        <div class="b-data__wr col-sm-6">
+            <div class="row">
+                <input type="radio" data-window="1" name="p12_beneficiary" id="id_p12_beneficiary_insurant" value="insurant" checked
+                       class="b-form__radio">
+                <label for="id_p12_beneficiary_insurant">{% trans 'Страхователь' %}</label>
+            </div>
+        </div>
+        <div class="b-data__wr col-sm-6 ">
+            <div class="row">
+                <input type="radio" data-window="2" name="p12_beneficiary" id="id_p12_beneficiary_bank" value="bank"
+                       class="b-form__radio n-main__radio">
+                <label for="id_p12_beneficiary_bank">{% trans 'Банк' %}
+                    <span class="b-name__replace j-replace__text">{% trans 'Выбрать' %}</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="b-block__scr n-src__window_2" data-window="2" style="margin: 19px -4px 0px -10px;">
+            <div class="b-bank__list j-replace__value clearfix">
+                {% for b in banks %}
+                <div class="b-radio__wr col-sm-4 col-xs-6">
+                    <input type="radio" name="p12_bank_beneficiary" value="{{ b.id }}"  data-value="{{ b.title }}" id="id_p12_bank_beneficiary_{{ b.id }}">
+                    <label for="id_p12_bank_beneficiary_{{ b.id }}">{{ b.title }}</label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Эвакуация #}
+<div class="b-data__line clearfix b-evacuation">
+    <div class="b-data__wr">
+        <input type="checkbox" name="evacuation" id="id_evacuation"
+               class="b-form__input">
+        <label for="id_evacuation">{% trans 'Эвакуация' %}</label>
+
+        {% trans 'Оплата услуг эвакуатора с места ДТП' as evacuation_help %}
+        {% include 'calculator/question.html' with answ=evacuation_help %}
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Расширение ОСАГО #}
+<div class="b-data__line clearfix b-cvi_extension_sum">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Расширение ОСАГО' %}</p>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="cvi_extension_sum" id="id_cvi_extension_sum_1" value="" checked
+                       class="b-form__radio">
+                <label for="id_cvi_extension_sum_1">{% trans 'Нет' %}</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="cvi_extension_sum" id="id_cvi_extension_sum_2" value="5000"
+                       class="b-form__radio">
+                <label for="id_cvi_extension_sum_2">5000 AZN</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="cvi_extension_sum" id="id_cvi_extension_sum_3" value="10000"
+                       class="b-form__radio">
+                <label for="id_cvi_extension_sum_3">10000 AZN</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Страховая сумма по НС #}
+<div class="b-data__line clearfix b-accident_ins_sum">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Страховая сумма по НС' %}</p>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="accident_ins_sum" id="id_accident_ins_sum_1" value="" checked
+                       class="b-form__radio">
+                <label for="id_accident_ins_sum_1">{% trans 'Нет' %}</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="accident_ins_sum" id="id_accident_ins_sum_2" value="5000"
+                       class="b-form__radio">
+                <label for="id_accident_ins_sum_2">5000 AZN</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-4">
+            <div class="row">
+                <input type="radio" name="accident_ins_sum" id="id_accident_ins_sum_3" value="10000"
+                       class="b-form__radio">
+                <label for="id_accident_ins_sum_3">10000 AZN</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Количество застрахованных по НС #}
+<div class="b-data__line clearfix b-accident_ins_drivers" style="display: none">
+    <div class="b-data__wr">
+        <p class="b-title__sm">{% trans 'Количество застрахованных по НС' %}</p>
+
+        <div class="b-data__wr col-sm-3">
+            <div class="row">
+                <input type="radio" name="accident_ins_drivers" id="id_accident_ins_drivers_1" value="1" checked
+                       class="b-form__radio">
+                <label for="id_accident_ins_drivers_1">1</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-3">
+            <div class="row">
+                <input type="radio" name="accident_ins_drivers" id="id_accident_ins_drivers_2" value="2"
+                       class="b-form__radio">
+                <label for="id_accident_ins_drivers_2">2</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-3">
+            <div class="row">
+                <input type="radio" name="accident_ins_drivers" id="id_accident_ins_drivers_3" value="3"
+                       class="b-form__radio">
+                <label for="id_accident_ins_drivers_3">3</label>
+            </div>
+        </div>
+
+        <div class="b-data__wr col-sm-3">
+            <div class="row">
+                <input type="radio" name="accident_ins_drivers" id="id_accident_ins_drivers_4" value="4"
+                       class="b-form__radio">
+                <label for="id_accident_ins_drivers_4">4</label>
+            </div>
+        </div>
+
+        <div class="b-qw__block">
+            <a href="#" class="b-qw__link j-qw__link"></a>
+
+            <div class="b-aw__info">
+                <p>{% trans 'Количество застрахованных по НС' %}</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="field-error"><span></span></div>
+</div>
+
+{# Поле Дополнительные водители #}
+<div class="b-data__line clearfix b-additional_drivers">
+    <div class="b-data__wr">
+        <input type="checkbox" name="additional_drivers" id="id_additional_drivers"
+               class="b-form__input">
+        <label for="id_additional_drivers">{% trans 'Дополнительные водители' %}</label>
+
+        {% trans 'Водители, при управлении которыми указанное ТС так же будет считать застрахованным по выбранным рискам. Страхователь включен в список водителей по-умолчанию.' as add_dr_help %}
+        {% include 'calculator/question.html' with answ=add_dr_help %}
+    </div>
+    <div class="field-error"><span></span></div>
+</div>

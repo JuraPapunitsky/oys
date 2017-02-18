@@ -1,0 +1,192 @@
+{% extends 'common/inner.html' %}
+{% load i18n %}
+
+
+{% block body_content %}
+<div class="container-fluid visible-xs black-title-xs insurance-xs">
+    <div class="row">
+        <div class=" col-xs-offset-1 col-xs-11">
+            <span class="black-title">{% trans 'Страхование' %}</span>
+        </div>
+    </div>
+</div>
+<div class="insurance-header hidden-xs">
+    <div class="container-fluid inner-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-md-8 col-lg-6 col-xs-10">
+                <div class="row">
+                    <span class="black-title hidden-xs">{% trans 'Страховые продукты' %}</span>
+                    <h1></h1>
+                    <p class="insurance-sub-title"></p>
+{#                    {% include 'calculator/includes/buy_now_button.html' %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Блок иконок вызова модалок для xs экранов #}
+{#{% include 'common/includes/base_modal_icons_xs.html' %}#}
+
+{# Часть страницы продукта с вариантами доставки полиса #}
+<div class="insurance-dev container-fluid">
+    <div class="row">
+
+        <div class="insurance-dev-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 clearfix">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-3 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_1.png">
+                        </div>
+                        <div class="col-md-9 col-sm-10 col-xs-9 text-capitalize"><span style="font-size: 24px">{% trans 'страхование автомобиля' %}</span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'ОСАГО' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/auto/cvi/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'Простое КАСКО' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/auto/simplekasko/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'Уверенный водитель' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/auto/confidentdriver/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'СуперКАСКО' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/auto/superkasko/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'ОСАГО+' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/auto/icbariplus/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'Пятерочка' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/auto/5/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <a href="#" onclick="compare_box_show('vehicle'); return false;">{% trans 'сравнить продукты' %}</a>
+                                </div>
+                            </div>
+
+                            <div class="row visible-xs hidden-md hidden-sm" style="padding: 10px;"><div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 col-md-offset-2 col-sm-12 col-xs-12">
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-3 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_2.png">
+                        </div>
+                        <div class="col-md-9 col-sm-10 col-xs-9 text-capitalize"><span style="font-size: 24px">{% trans 'страхование недвижимости' %}</span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="row" style="padding: 10px;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'ОС Недвижимости' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/property/crpi/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-bottom: 100px">
+
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-3 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_3.png">
+                        </div>
+                        <div class="col-md-9 col-sm-10 col-xs-9 text-capitalize"><span style="font-size: 24px">{% trans 'страхование здоровья' %}</span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'Скорая помощь' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/health/urgentcare/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">REFUND Pediatric</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/health/refundpediatric/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'Онкопомощь 69 и 69+' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/health/program69/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row visible-xs hidden-md hidden-sm" style="padding: 10px;"><div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 col-md-offset-2 col-sm-12 col-xs-12">
+                    <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                        <div class="col-md-3 col-sm-2 col-xs-3">
+                            <img src="{{ STATIC_URL }}common/img/question/q_icon_4.png">
+                        </div>
+                        <div class="col-md-9 col-sm-10 col-xs-9 text-capitalize"><span style="font-size: 24px">{% trans 'страхование путешествий' %}</span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="row" style="padding: 10px; border-bottom: 1px dotted #ddd;">
+                                <div class="col-md-8 col-sm-8 col-xs-8">{% trans 'Туристическое страхование' %}</div>
+                                <div class="col-md-4 col-sm-4 col-xs-4"><a class="pull-right" href="/insurance/travel/programtravel/">{% trans 'Подробнее' %}</a></div>
+                            </div>
+
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <a href="javascript:void(0)" onclick="compare_box_show('travel');">{% trans 'cравнение продуктов для разных cтраховых компаний' %}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body_content %}
+
+{% block js %}
+    {{ block.super }}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover({html: true});
+        });
+    </script>
+{% endblock %}

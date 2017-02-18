@@ -1,0 +1,48 @@
+{% load i18n %}
+<header class="main">
+    <nav class="navbar" id="top_nav" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+
+                {% include 'common/includes/header_dropdown_menu.html' %}
+
+                <div id="logo" class="col-sm-2 col-xs-6">
+                    <a href="#" alt="OYSB">
+                        <img id="logo-img" class="logo-img-poz1" src="{{ STATIC_URL }}common/img/logo1.png">
+                        <img id="logo-text" class="logo-text-poz1 hidden-xs" src="{{ STATIC_URL }}common/img/logo2.png">
+                    </a>
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-sm-7 text-nowrap col-xs-3 pull-right head-r">
+                    <a><img src="{{ STATIC_URL }}common/img/call-ico.png"></a>
+{#                    {% if not request.user.is_authenticated %}#}
+{#                        <a href="#" data-toggle="modal" data-backdrop="false" data-target=".log_in"><img src="{{ STATIC_URL }}common/img/call-ico.png"></a>#}
+{#                    {% else %}#}
+{#                        <a href="{% url 'account:profile_personal' %}"><img src="{{ STATIC_URL }}common/img/call-ico.png"></a>#}
+{#                    {% endif %}#}
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".callback">
+                        <span class="hidden-xs" style="font-size: 20px; color: #000; font-weight: normal">{% trans 'заказ звонка' %}</span>
+                        <p class="hidden-xs text-nowrap phone-icon" style="font-size: 37px;"> *0707</p>
+                    </a>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+            </div>
+
+            <div class="row visible-xs mob">
+                <div class="col-xs-12">
+                    <a href="#" alt="OYSB">
+                        <img class="logo-text-poz1" src="{{ STATIC_URL }}common/img/logo2.png">
+                    </a>
+                </div>
+
+                <div class="col-xs-12">
+                    <a href="#" data-toggle="modal" data-backdrop="false" data-target=".callback">
+                        <span style="font-size: 18px; color: #50434e; font-weight: normal; padding-right: 30px">{% trans 'заказ звонка' %}</span>
+                        <p class="text-nowrap phone-icon">*0707</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
