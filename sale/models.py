@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 
 class TransportType(models.Model):
     transport_type = models.CharField(max_length=200)
@@ -67,12 +65,14 @@ class Territory(models.Model):
     tag_value = models.IntegerField()
 
 
-
 class ClientData(models.Model):
     registration_number = models.CharField(max_length=200)
     car_manufacturer = models.ForeignKey(CarManufacturer)
     car_model = models.ForeignKey(CarModel)
     car_type = models.ForeignKey(TransportType)
+    car_engine = models.FloatField(max_length=20)
+    car_size = models.FloatField(max_length=200)
+    car_weight = models.FloatField(max_length=20)
     person_type = models.ForeignKey(PersonType)
     pin_code = models.CharField(max_length=20)
     driver_license_series = models.CharField(max_length=20)
@@ -81,3 +81,28 @@ class ClientData(models.Model):
     territory = models.ForeignKey(Territory)
     phone = models.CharField(max_length=20)
     email = models.EmailField()
+    premium = models.FloatField(10)
+
+    def get_premium(self):
+        self.premium = self.car_type + self.get_engine_premium(self);
+
+    def get_engine_premium(self):
+        if self.car_engine == 0:
+            return 0
+        start_capacity = 1500
+        for engine_capasity in EngineCapacity.objects.all():
+            if self.car_engine <= start_capacity:
+                return engine_capasity.premium
+            if start_capacity > 5000:
+                return engine_capasity.premium
+            else:
+                start_capacity = start_capacity + 500
+
+
+    def get_size_premium(self):
+        if self.car_size == 0:
+            return 0
+
+    def get_weight_premium(self):
+        if self.car_weight == 0:
+            return 0

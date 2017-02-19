@@ -17,54 +17,55 @@
                         <div class="col-md-offset-1 col-md-4 col-xs-6">
                             <div class="form-group">
                                 <label>Регистрационный номер:</label>
-                                <div class="data">90-mb-096</div>
+                                <div class="data">{{ client_data.registration_number }}</div>
+                                <!--<div class="data">90-mb-096</div> -->
                             </div>
 
                             <div class="form-group">
                                 <label>Марка автомобиля:</label>
-                                <div class="data">Ford</div>
+                                <div class="data">{{ client_data.car_manufacturer.name }}</div>
                             </div>
 
                             <div class="form-group">
                                 <label>Модель автомобиля:</label>
-                                <div class="data">Focus</div>
+                                <div class="data">{{ client_data.car_model.model }}</div>
                             </div>
 
                             <div class="form-group">
                                 <label>Тип автомобиля:</label>
-                                <div class="data">Легковые автомобили</div>
+                                <div class="data">{{ client_data.car_type.car_type }}</div>
                             </div>
 
                             <div class="form-group">
-                                <label>Объем двигателя:</label>
-                                <div class="data">1 400</div>
+                                <label>{{ type }}:</label>
+                                <div class="data">{{ value }}</div>
                             </div>
                         </div>
 
                         <div class="col-md-offset-2 col-md-4 col-xs-6">
                             <div class="form-group">
                                 <label>Тип страхователя:</label>
-                                <div class="data">Физическое лицо</div>
+                                <div class="data">{{ client_data.person_type.person_type }}</div>
                             </div>
 
                             <div class="form-group">
                                 <label>Пин Код/ИНН/Другой ИД:</label>
-                                <div class="data">A4451CQZ5S4</div>
+                                <div class="data">{{ client_data.pin_code }}</div>
                             </div>
 
                             <div class="form-group doc clearfix">
                                 <label>Серия и номер удостоверения:</label>
-                                <div class="data">0450 452269</div>
+                                <div class="data">{{ client_data.driver_license_series }} {{ client_data.driver_license_number }}</div>
                             </div>
 
                             <div class="form-group">
-                                <label>Периуд действия:</label>
-                                <div class="data">с 15.02.2017г. по 15.02.2018г.</div>
+                                <label>Период действия:</label>
+                                <div class="data">{{ client_data.start_date }}</div>
                             </div>
 
                             <div class="form-group">
                                 <label>Территория регистрации:</label>
-                                <div class="data">Azərbaycan</div>
+                                <div class="data">{{ client_data.territory.name }}</div>
                             </div>
                         </div>
                     </div>
@@ -73,14 +74,14 @@
                         <div class="col-md-offset-1 col-md-4 col-xs-6">
                             <div class="form-group">
                                 <label>Телефон:</label>
-                                <div class="data">+7 (929) 614 80 91</div>
+                                <div class="data">{{ client_data.phone }}</div>
                             </div>
                         </div>
 
                         <div class="col-md-offset-2 col-md-4 col-xs-6">
                             <div class="form-group">
                                 <label>E-mail:</label>
-                                <div class="data">test@gmail.com</div>
+                                <div class="data">{{ client_data.email }}</div>
                             </div>
                         </div>
                     </div>

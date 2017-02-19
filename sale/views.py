@@ -1,6 +1,8 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect
+from datetime import datetime
 from sale.models import TransportType, EngineCapacity, PassengerSeats, \
-    BearingCapacity, PersonType, CarManufacturer, DocType, CarModel, CarTypeCarModel
+    BearingCapacity, PersonType, CarManufacturer, DocType, CarModel, CarTypeCarModel, \
+    ClientData, Territory
 
 
 def auto_step_1(request):
@@ -70,7 +72,7 @@ def auto_step_2(request):
 
     transport_types = TransportType.objects.all()
     person_types = PersonType.objects.all()
-
+    territorys = Territory.objects.all()
     car_manufacturers = CarManufacturer.objects.all()
 
 
@@ -102,9 +104,63 @@ def auto_step_2(request):
         'transport_types': transport_types,
         'transport_selected': transport_selected,
         'person_selected': percon_selected,
+        'territoryes': territorys,
         'js': js,
     })
 
 
 def auto_step_3(request):
-    return render_to_response('sale/auto/sale-step-3.html')
+    if request.POST:
+        car_engine = str(request.POST.get('car[engine]'))
+        car_size = str(request.POST.get('car[size]'))
+        car_weight = str(request.POST.get('car[weight]'))
+        type = ''
+        value = ''
+        param = ''
+        if car_engine == '' and car_size == '':
+            car_engine = 0
+            car_size = 0
+
+            type = 'Max weight',
+            value = car_engine
+
+        elif car_size == '' and car_weight == '':
+            car_size = 0
+            car_weight = 0
+
+            type = 'Capacity engine',
+            value = car_engine
+
+        elif car_weight == '' and car_engine == '':
+            car_weight = 0
+            car_engine = 0
+
+            type = 'Seats',
+            value = car_size
+
+        client_data = ClientData(
+            registration_number= request.POST.get('car[num]'),
+            car_manufacturer= CarManufacturer.objects.get(id=request.POST.get('car[make]')),
+            car_model= CarModel.objects.get(id=request.POST.get('car[model]')),
+            car_type= TransportType.objects.get(id=request.POST.get('car[type]')),
+            car_engine= float(car_engine),
+            car_size= float(car_size),
+            car_weight= float(car_weight),
+            person_type=PersonType.objects.get(id=request.POST.get('person[type]')),
+            pin_code= request.POST.get('person[id]'),
+            driver_license_series= request.POST.get('person[serie]'),
+            driver_license_number= request.POST.get('person[num]'),
+            start_date= datetime.strptime(str(request.POST.get('start')), '%d.%m.%Y'),
+            territory= Territory.objects.get(id=request.POST.get('territory')),
+            phone= request.POST.get('tel'),
+            email= request.POST.get('email'),
+        )
+        client_data.save()
+        return render_to_response('sale/auto/sale-step-3.html', {
+            'client_data': client_data,
+            'type': type,
+            'value': value,
+        })
+    else:
+        return redirect('/sale/auto-step-3/')
+

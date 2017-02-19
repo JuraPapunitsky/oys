@@ -39,7 +39,7 @@
 
                                 <div class="form-group">
                                     <label for="carModel">Модель автомобиля*</label>
-                                    <select name="car[nodel]" class="form-control" id="carModel"></select>
+                                    <select name="car[model]" class="form-control" id="carModel"></select>
                                 </div>
 
                                 <div class="form-group">
@@ -119,7 +119,10 @@
                                 <div class="form-group">
                                     <label for="regTerritory">Территория регистрации*</label>
                                     <select name="territory" class="form-control" id="regTerritory">
-                                        <option value="1" selected>Azərbaycan</option>
+                                     {% for territory in territoryes %}
+                                         <option value="{{ territory.id }}">{{territory.name}}</option>
+                                        {% endfor %}
+                                        <!--   <option value="1" selected>Azərbaycan</option> -->
                                     </select>
                                 </div>
                             </div>
