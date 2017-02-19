@@ -31,3 +31,37 @@ INSERT INTO sale_cartype (id, name, tag_value) VALUES (7, 'Трамваи и т�
                     3: {1: {1: 18.5, 2: 16}}
                 },
                 5: {1: {1: 18.5, 2: 16}},
+
+
+
+<script type="text/javascript">
+			window.saleInsurancePremiumVals = {
+				/* car[make] */
+				1: {
+					/* car[model] */
+					1: {
+					    title: "Focus",
+                        /* car[type] */
+                        type: {
+                            1: "Легковые автомобили"
+                        }, more: {
+                                1: "#carEngine"
+                            }
+					},
+					2: {title: "Mondeo", /* car[type] */ type: {1: "Легковые автомобили", 5: "Прицепы и полуприцепы"}, more: {1: "#carEngine"}}
+				},
+				2: {
+					1: {title: "Sportage", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Sorento", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					3: {title: "Rio", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}}
+				},
+				3: {
+					1: {title: "CL203", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Transporter", type: {3: "Автобус и микроавтобусы"}, more: {3: "#carSize"}}
+				},
+				4: {
+					1: {title: "8C Spider", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
+					2: {title: "Giulietta", type: {4: "Грузовые автомобили"}, more: {4: "#carWeight"}}
+				}
+			};
+		</script>

@@ -8,7 +8,8 @@ class TransportType(models.Model):
     premium = models.FloatField(max_length=10)
     description = models.CharField(max_length=255)
 
-
+    def __str__(self):
+        return str(self.id)
 
 
 class EngineCapacity(models.Model):
@@ -17,19 +18,16 @@ class EngineCapacity(models.Model):
     tag_value = models.IntegerField()
 
 
-
 class PassengerSeats(models.Model):
     passenger_seats = models.CharField(max_length=200)
     premium = models.FloatField(max_length=10)
     tag_value = models.IntegerField()
 
 
-
 class BearingCapacity(models.Model):
     bearing_capacity = models.CharField(max_length=200)
     premium = models.FloatField(max_length=10)
     tag_value = models.IntegerField()
-
 
 
 class PersonType(models.Model):
@@ -47,21 +45,21 @@ class CarManufacturer(models.Model):
     name = models.CharField(max_length=200)
     tag_value = models.IntegerField()
 
-
+    def __str__(self):
+        return  self.name
 
 
 class CarModel(models.Model):
     brand = models.ForeignKey(CarManufacturer)
     model = models.CharField(max_length=200)
-    car_type = models.ForeignKey('CarType')
+
+    def __str__(self):
+        return self.model
 
 
-
-
-class CarType(models.Model):
-    name = models.CharField(max_length=200)
-    tag_value = models.IntegerField()
-
+class CarTypeCarModel(models.Model):
+    transport_type = models.ForeignKey(TransportType)
+    car_model = models.ForeignKey(CarModel)
 
 
 class Territory(models.Model):
@@ -74,7 +72,7 @@ class ClientData(models.Model):
     registration_number = models.CharField(max_length=200)
     car_manufacturer = models.ForeignKey(CarManufacturer)
     car_model = models.ForeignKey(CarModel)
-    car_type = models.ForeignKey(CarType)
+    car_type = models.ForeignKey(TransportType)
     person_type = models.ForeignKey(PersonType)
     pin_code = models.CharField(max_length=20)
     driver_license_series = models.CharField(max_length=20)

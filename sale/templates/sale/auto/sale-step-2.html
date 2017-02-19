@@ -27,13 +27,10 @@
                                 <div class="form-group">
                                     <label for="carMake">Марка автомобиля*</label>
                                     <select name="car[make]" class="form-control" id="carMake">
-
-                                        {% for car_manufacturer in car_manufacturers %}
-                                            <option value="{{ car_manufacturer.id }}" {% if car_manufacturer.id == 1 %}
-                                                selected
-                                            {% endif %}>{{ car_manufacturer.name }}</option>
+                                        {% for car_manufacturer in  car_manufacturers %}
+                                            <option value="{{ car_manufacturer.id }}">{{ car_manufacturer.name }}</option>
                                         {% endfor %}
-                                       <!-- <option value="1" selected>Ford</option>
+                                   <!--     <option value="1" selected>Ford</option>
                                         <option value="2">Kia</option>
                                         <option value="3">Mercedes</option>
                                         <option value="4">Alfa Romeo</option> -->
@@ -42,7 +39,7 @@
 
                                 <div class="form-group">
                                     <label for="carModel">Модель автомобиля*</label>
-                                    <select name="car[model]" class="form-control" id="carModel"></select>
+                                    <select name="car[nodel]" class="form-control" id="carModel"></select>
                                 </div>
 
                                 <div class="form-group">
@@ -51,7 +48,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="carEngine">Объем двигателя см*</label>
+                                    <label for="carEngine">Объем двигателя*</label>
                                     <input type="text" name="car[engine]" class="form-control" id="carEngine"
                                            maxlength="5"/>
                                 </div>
@@ -73,8 +70,15 @@
                                 <div class="form-group">
                                     <label for="personType">Тип страхователя*</label>
                                     <select name="person[type]" class="form-control" id="personType">
-                                        <option value="1" selected>Физическое лицо</option>
-                                        <option value="2">Юридическое лицо</option>
+                                        {% for person_type in person_types %}
+                                            <option value="{{ person_type.id }}" {% if person_type.id == person_selected %}
+                                                    selected
+                                            {% endif %}>
+                                                {{ person_type.person_type }}
+                                            </option>
+                                        {% endfor %}
+                                     <!--   <option value="1" selected>Физическое лицо</option>
+                                        <option value="2">Юридическое лицо</option> -->
                                     </select>
                                 </div>
 
@@ -165,37 +169,15 @@
 
 {% endblock %}
 {% block sale_js %}
-<script type="text/javascript">
-			window.saleInsurancePremiumVals = {
-				/* car[make] */
-				1: {
-					/* car[model] */
-					1: {
-					    title: "Focus",
-                        /* car[type] */
-                        type: {
-                            1: "Легковые автомобили"
-                        }, more: {
-                                1: "#carEngine"
-                            }
-					},
-					2: {title: "Mondeo", /* car[type] */ type: {1: "Легковые автомобили", 5: "Прицепы и полуприцепы"}, more: {1: "#carEngine"}}
-				},
-				2: {
-					1: {title: "Sportage", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
-					2: {title: "Sorento", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
-					3: {title: "Rio", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}}
-				},
-				3: {
-					1: {title: "CL203", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
-					2: {title: "Transporter", type: {3: "Автобус и микроавтобусы"}, more: {3: "#carSize"}}
-				},
-				4: {
-					1: {title: "8C Spider", type: {1: "Легковые автомобили"}, more: {1: "#carEngine"}},
-					2: {title: "Giulietta", type: {4: "Грузовые автомобили"}, more: {4: "#carWeight"}}
-				}
-			};
-		</script>
+    <script type="text/javascript">
+        window.saleInsurancePremiumVals = {
+        {% autoescape off %}
+            {{ js }}
+        {% endautoescape %}
+        };
 
-		<!-- NEW HTML END -->
+
+    </script>
+
+    <!-- NEW HTML END -->
 {% endblock %}

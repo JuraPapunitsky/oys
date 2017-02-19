@@ -32,3 +32,5 @@ INSERT INTO sale_cartype (id, name, tag_value) VALUES (4, 'Грузовые ав
 INSERT INTO sale_cartype (id, name, tag_value) VALUES (5, 'Прицепы и полуприцепы', 5);
 INSERT INTO sale_cartype (id, name, tag_value) VALUES (6, 'Тракторы', 6);
 INSERT INTO sale_cartype (id, name, tag_value) VALUES (7, 'Трамваи и троллейбусы', 7);
+
+
