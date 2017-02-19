@@ -32,32 +32,41 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('model', models.CharField(max_length=200)),
-                ('tag_value', models.IntegerField()),
                 ('brand', models.ForeignKey(to='sale.CarManufacturer')),
             ],
         ),
         migrations.CreateModel(
-            name='CarType',
+            name='CarTypeCarModel',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('name', models.CharField(max_length=200)),
-                ('tag_value', models.IntegerField()),
+                ('car_model', models.ForeignKey(to='sale.CarModel')),
             ],
         ),
         migrations.CreateModel(
             name='ClientData',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('registration_number', models.CharField(max_length=200)),
+                ('registration_numbe', models.CharField(max_length=200)),
+                ('car_engine', models.FloatField(max_length=20)),
+                ('car_size', models.FloatField(max_length=200)),
+                ('car_weight', models.FloatField(max_length=20)),
                 ('pin_code', models.CharField(max_length=20)),
                 ('driver_license_series', models.CharField(max_length=20)),
                 ('driver_license_number', models.CharField(max_length=20)),
                 ('start_date', models.DateField()),
                 ('phone', models.CharField(max_length=20)),
                 ('email', models.EmailField(max_length=254)),
+                ('prem', models.FloatField(verbose_name=10)),
                 ('car_manufacturer', models.ForeignKey(to='sale.CarManufacturer')),
                 ('car_model', models.ForeignKey(to='sale.CarModel')),
-                ('car_type', models.ForeignKey(to='sale.CarType')),
+            ],
+        ),
+        migrations.CreateModel(
+            name='DocType',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('doc_type', models.CharField(max_length=200)),
+                ('premium', models.FloatField(max_length=10)),
             ],
         ),
         migrations.CreateModel(
@@ -101,8 +110,13 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('transport_type', models.CharField(max_length=200)),
                 ('premium', models.FloatField(max_length=10)),
-                ('tag_value', models.IntegerField()),
+                ('description', models.CharField(max_length=255)),
             ],
+        ),
+        migrations.AddField(
+            model_name='clientdata',
+            name='car_type',
+            field=models.ForeignKey(to='sale.TransportType'),
         ),
         migrations.AddField(
             model_name='clientdata',
@@ -115,8 +129,8 @@ class Migration(migrations.Migration):
             field=models.ForeignKey(to='sale.Territory'),
         ),
         migrations.AddField(
-            model_name='carmodel',
-            name='car_type',
+            model_name='cartypecarmodel',
+            name='transport_type',
             field=models.ForeignKey(to='sale.TransportType'),
         ),
     ]

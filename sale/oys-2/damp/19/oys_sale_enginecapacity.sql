@@ -1,0 +1,9 @@
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('50-1500 sm3', 1, 1500);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('1501-2000 sm3', 2, 2000);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('2001-2500 sm3', 3, 2500);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('2501-3000 sm3', 4, 3000);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('3001-3500 sm3', 5, 3500);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('3501-4000 sm3', 6, 4000);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('4001-4500 sm3', 7, 4500);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('4501-5000 sm3', 8, 5000);
+INSERT INTO oys.sale_enginecapacity (engine_capacity, premium, tag_value) VALUES ('>5000 sm3', 9, 1);

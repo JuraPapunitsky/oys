@@ -7,13 +7,13 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('sale', '0002_remove_carmodel_tag_value'),
+        ('sale', '0001_initial'),
     ]
 
     operations = [
-        migrations.AlterField(
-            model_name='carmodel',
-            name='car_type',
-            field=models.ForeignKey(to='sale.CarType'),
+        migrations.RenameField(
+            model_name='clientdata',
+            old_name='registration_numbe',
+            new_name='registration_number',
         ),
     ]

@@ -111,12 +111,12 @@ def auto_step_2(request):
 
 def auto_step_3(request):
     if request.POST:
-        car_engine = str(request.POST.get('car[engine]'))
-        car_size = str(request.POST.get('car[size]'))
-        car_weight = str(request.POST.get('car[weight]'))
+        car_engine = request.POST.get('car[engine]')
+        car_size = request.POST.get('car[size]')
+        car_weight = request.POST.get('car[weight]')
         type = ''
         value = ''
-        param = ''
+
         if car_engine == '' and car_size == '':
             car_engine = 0
             car_size = 0
@@ -155,6 +155,7 @@ def auto_step_3(request):
             phone= request.POST.get('tel'),
             email= request.POST.get('email'),
         )
+        client_data.set_premium();
         client_data.save()
         return render_to_response('sale/auto/sale-step-3.html', {
             'client_data': client_data,

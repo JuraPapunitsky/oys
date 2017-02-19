@@ -81,28 +81,35 @@ class ClientData(models.Model):
     territory = models.ForeignKey(Territory)
     phone = models.CharField(max_length=20)
     email = models.EmailField()
-    premium = models.FloatField(10)
+    prem = models.FloatField(10)
 
-    def get_premium(self):
-        self.premium = self.car_type + self.get_engine_premium(self);
+    def set_premium(self):
+        self.prem = self.car_type.premium + self.get_engine_premium() + self.get_size_premium() + self.get_weight_premium();
 
     def get_engine_premium(self):
         if self.car_engine == 0:
             return 0
-        start_capacity = 1500
-        for engine_capasity in EngineCapacity.objects.all():
-            if self.car_engine <= start_capacity:
-                return engine_capasity.premium
-            if start_capacity > 5000:
-                return engine_capasity.premium
-            else:
-                start_capacity = start_capacity + 500
 
+        for engine_capasity in EngineCapacity.objects.all():
+            if float(self.car_engine) <= engine_capasity.tag_value:
+                return engine_capasity.premium
+            elif float(self.car_engine) > 5000 and engine_capasity.tag_value == 1:
+                return engine_capasity.premium
 
     def get_size_premium(self):
         if self.car_size == 0:
             return 0
+        for passangers_seats in PassengerSeats.objects.all():
+            if self.car_size <= passangers_seats.tag_value:
+                return passangers_seats.premium
+            elif passangers_seats.tag_value == 1:
+                return passangers_seats.premium
 
     def get_weight_premium(self):
         if self.car_weight == 0:
             return 0
+        for bearing_capacity in BearingCapacity.objects.all():
+            if self.car_weight <= bearing_capacity.tag_value:
+                return bearing_capacity.premium
+            elif bearing_capacity.tag_value == 1:
+                return bearing_capacity.premium
